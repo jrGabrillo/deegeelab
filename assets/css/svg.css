@@ -1,0 +1,37 @@
+/* SVG CSS ONLY */
+
+svg circle.st1{
+    fill:#02BAD0;
+
+}
+svg circle.st1:hover{
+    fill:#02bad0;
+    stroke-width:0;
+    stroke: transparent; 
+}
+
+svg circle.st1{
+	fill:#f9f9f9;
+	stroke:#000000;
+	stroke-width:0.25;
+	stroke-miterlimit:10;
+}
+
+svg #svgg path.st0{
+	fill:#02bad0;
+	stroke:transparent;
+	stroke-width:0;
+	stroke-miterlimit:10;
+	box-shadow: -5px -5px 5px #888;
+}
+
+@media screen and (max-width: 420px){
+svg:not(:root){
+	max-height: 300px
+
+	}
+}
+/*svg path#path4 {
+    fill:#02BAD0;
+
+}*/
