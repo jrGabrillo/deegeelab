@@ -48,12 +48,12 @@ $(document).on("ready",function(){
         }
     });
 
-    $("body").particleground({
-        dotColor: '#878892',
-        lineColor: '#65666d',
-        density:7500,
-        parallax:true
-    });
+//     $("body").particleground({
+//         dotColor: '#878892',
+//         lineColor: '#65666d',
+//         density:7500,
+//         parallax:true
+//     });
 
     $('.carousel').carousel({fullWidth: true});
 

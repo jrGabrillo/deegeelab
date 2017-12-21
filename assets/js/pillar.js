@@ -72,34 +72,34 @@ container.addEventListener("mouseout", function(event) {
 
 // WRITE-UP TOGGLE
 
-var shToggle = document.getElementById("shToggle");
-var writeUp = document.getElementById("write-up");
+// var shToggle = document.getElementById("shToggle");
+// var writeUp = document.getElementById("write-up");
 
-shToggle.addEventListener("click", function() {
-  if (shToggle.className == "plus") {
-    writeUp.style.width = "28em";
-    shToggle.className = "ex";
-    writeUp.className = "show";
-  } else {
-    shToggle.className = "plus";
-    writeUp.className = "hide";
-    setTimeout(function() {
-      writeUp.style.width = "";
-    }, 500);
-  }
-});
+// shToggle.addEventListener("click", function() {
+//   if (shToggle.className == "plus") {
+//     writeUp.style.width = "28em";
+//     shToggle.className = "ex";
+//     writeUp.className = "show";
+//   } else {
+//     shToggle.className = "plus";
+//     writeUp.className = "hide";
+//     setTimeout(function() {
+//       writeUp.style.width = "";
+//     }, 500);
+//   }
+// });
 
 // FS link disappearing
 
-var fslink = document.getElementById("fs-link");
+// var fslink = document.getElementById("fs-link");
 
-function fsLinkVis() {
-  if (window.location.href == "https://s.codepen.io/timaikens/fullpage/raEqpp?") {
-    fslink.className = "fshide";
-  } else {
-    fslink.className = "";
-  }
-}
+// function fsLinkVis() {
+//   if (window.location.href == "https://s.codepen.io/timaikens/fullpage/raEqpp?") {
+//     fslink.className = "fshide";
+//   } else {
+//     fslink.className = "";
+//   }
+// }
 
-window.onload = fsLinkVis;
+// window.onload = fsLinkVis;
 
