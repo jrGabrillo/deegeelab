@@ -92,7 +92,7 @@ html {
   position: absolute;
   top: 0;
   width: 25%;
-  height: 50%;
+  height: 100%;
   text-align: center;
 }
 .panel:hover{
@@ -100,44 +100,44 @@ html {
 
 }
 
-#one {
+.one {
   background: #11111100  center/cover no-repeat;
   left: 0;
 }
 
-#one:hover{
+.one:hover{
   background: #11111100 url("../images/background/pillars/bg3.jpg")
   center/cover no-repeat;
 
 }
 
-#two {
+.two {
   background: #3333331f  center/cover no-repeat;
   left: 25%;
 }
 
-#two:hover {
+.two:hover {
   background: #33333370 url("../images/background/pillars/bg4.png")  center/cover no-repeat;
   left: 25%;
 }
 
-#three {
+.three {
   background: #55555538  center/cover no-repeat;
   left: 50%;
 }
 
-#three:hover {
+.three:hover {
   background: #5555557a url("../images/background/pillars/bg2.png")  center/cover no-repeat;
   left: 50%;
 }
 
 
-#four {
+.four {
   background: #31313157  center/cover no-repeat;
   left: 75%;
 }
 
-#four:hover {
+.four:hover {
   background: #aaaaaa8c url("../images/background/pillars/bg1.jpg")  center/cover no-repeat;
   left: 75%;
 }
@@ -147,7 +147,7 @@ html {
   display: inline-block;
   position: relative;
   top: 37%;
-  text-align: left;
+  text-align: center;
   text-shadow: 0px 0px 20px #000;
 }
 
@@ -178,9 +178,10 @@ html {
 /* --- BOTTOM BUTTON --- */
 
 .bottom {
-  position: absolute;
+  position: relative;
+  top: 80%;
   left: 0;
-  bottom: 0;
+  bottom: 0%;
   width: 20%;
   height: 20%;
   text-align: center;
@@ -189,7 +190,7 @@ html {
 
 .active .bottom {
   width: 100%;
-  border-bottom: 10px solid #0a99ab;
+  /* border-bottom: 10px solid #0a99ab; */
 }
 
 .inactive .bottom {
@@ -303,3 +304,22 @@ html {
   height: 50%;
   }
 }*/
+
+
+#display_mobile .panel{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height:  25%;
+}
+
+#display_mobile .buttom{
+  top:80%;
+  color:#000 !important;
+}
+
+#display_tablet .panel{
+  position: relative;
+  width:50%;
+  height: 50%;
+}

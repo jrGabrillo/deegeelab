@@ -7,13 +7,13 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Deegeelab - Digital Marketing - SuperCharge Your Business</title>
     <link href="assets/Logo/DeegeelabWhite.png" rel="icon">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css"> -->
     <link href="assets/fonts/flaticon.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/css/jquery.fullpage.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery.fullpage.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/svg.css" rel="stylesheet" type="text/css">
     <link href="assets/css/side.css" rel="stylesheet" type="text/css">
     <link href="assets/css/pillar.css" rel="stylesheet" type="text/css">
@@ -317,82 +317,119 @@
         <!-- Pillar -->
         <div class="section col s12 Pillarbg1 ">
             <div class="row center">
-                <div class="layer wrapper " data-depth="0.3">
-                    <div class="col s6 m12 l3 end">
-                        <!-- Design based on a Dribble shot by Julius Koroll. -->
-                        <div id="container">
-                            <div class="panel" id="one">
+                <div class="layer wrapper" data-depth="0.3">
+                    <div class="col s6 m12 l3 end" id="container">
+                        <!-- desktop -->
+                        <div class="hide-on-med-only hide-on-large-only" id='display_mobile'>
+                            <div class="panel col s12 one">
+                                <div class="bottom">
+                                    <a href="marketing.html">Learn More</a>
+                                </div>
                                 <div class="text">
                                     <h5>Digital Marketing</h5>
                                 </div>
-                               <div class="bottom">
-                                    <a href="marketing.html">Learn More</a>
-                                </div>
                             </div>
-                            <div class="panel" id="two">
-                                <div class="text">
-                                    <h5>Lead Generation</h5>
-                                </div>
+                            <div class="panel col s12 two">
                                 <div class="bottom">
                                     <a href="lead.html">Learn More</a>
                                 </div>
+                                <div class="text">
+                                    <h5>Lead Generation</h5>
+                                </div>
                             </div>
-                            <div class="panel" id="three">
+                            <div class="panel col s12 three">
+                                <div class="bottom">
+                                    <a href="backend.html">Learn More</a>
+                                </div>
                                 <div class="text">
                                     <h5>Customer Support<br>
                                     <strong>Back End</strong></h5>
                                 </div>
-                                <div class="bottom">
-                                    <a href="backend.html">Learn More</a>
-                                </div>
                             </div>
-                            <div class="panel" id="four">
+                            <div class="panel col s12 four">
+                                <div class="bottom">
+                                    <a href="frontend.html">Learn More</a>
+                                </div>
                                 <div class="text">
                                     <h5>Customer Support<br>
                                     <strong>Front End</strong></h5>
                                 </div>
+                            </div>
+                        </div><!-- tablet -->
+                        <div class="hide-on-small-only hide-on-large-only" id='display_tablet'>
+                            <div class="panel col s3 one">
+                                <div class="bottom">
+                                    <a href="marketing.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Digital Marketing</h5>
+                                </div>
+                            </div>
+                            <div class="panel col s3 two">
+                                <div class="bottom">
+                                    <a href="lead.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Lead Generation</h5>
+                                </div>
+                            </div>
+                            <div class="panel col s3 three">
+                                <div class="bottom">
+                                    <a href="backend.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Customer Support<br>
+                                    <strong>Back End</strong></h5>
+                                </div>
+                            </div>
+                            <div class="panel col s3 four">
                                 <div class="bottom">
                                     <a href="frontend.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Customer Support<br>
+                                    <strong>Front End</strong></h5>
+                                </div>
+                            </div>
+                        </div><!-- desktop -->
+                        <div class="hide-on-med-only hide-on-small-only" id='display_desktop'>
+                            <div class="panel one">
+                                <div class="bottom">
+                                    <a href="marketing.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Digital Marketing</h5>
+                                </div>
+                            </div>
+                            <div class="panel two">
+                                <div class="bottom">
+                                    <a href="lead.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Lead Generation</h5>
+                                </div>
+                            </div>
+                            <div class="panel three">
+                                <div class="bottom">
+                                    <a href="backend.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Customer Support<br>
+                                    <strong>Back End</strong></h5>
+                                </div>
+                            </div>
+                            <div class="panel four">
+                                <div class="bottom">
+                                    <a href="frontend.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Customer Support<br>
+                                    <strong>Front End</strong></h5>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div id="container">
-                            <div class="panel" id="one">
-                                <div class="text">
-                                    <h5>Digital Marketing</h5>
-                                </div>
-                               <div class="bottom">
-                                    <a href="marketing.html">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="panel" id="two">
-                                <div class="text">
-                                    <h5>Lead Generation</h5>
-                                </div>
-                                <div class="bottom">
-                                    <a href="lead.html">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="panel" id="three">
-                                <div class="text">
-                                    <h5>Customer Support<br>
-                                    <strong>Back End</strong></h5>
-                                </div>
-                                <div class="bottom">
-                                    <a href="backend.html">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="panel" id="four">
-                                <div class="text">
-                                    <h5>Customer Support<br>
-                                    <strong>Front End</strong></h5>
-                                </div>
-                                <div class="bottom">
-                                    <a href="frontend.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
+
                 </div>
             </div>
         </div>
