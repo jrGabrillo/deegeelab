@@ -10,7 +10,7 @@ html {
 
 #container {
   width: 100%;
-  height: 100%;
+  height: 95%;
   margin: 0;
   padding: 0;
 }
@@ -97,7 +97,7 @@ html {
 }
 .panel:hover{
   width: 40%;
-
+  z-index:  1000;
 }
 
 .one {
@@ -179,7 +179,7 @@ html {
 
 .bottom {
   position: relative;
-  top: 80%;
+  top: 70%;
   left: 0;
   bottom: 0%;
   width: 20%;
@@ -305,16 +305,42 @@ html {
   }
 }*/
 
+#display_mobile{
+  height: 25%;
+}
+
+#display_tablet{
+  height: 100%;
+}
 
 #display_mobile .panel{
   position: relative;
   overflow: hidden;
   width: 100%;
-  height:  25%;
+  height: 100%;
 }
 
-#display_mobile .buttom{
-  top:80%;
+#display_mobile .one{
+  background: #11111100 url("../images/background/pillars/bg3.jpg")
+}
+
+
+#display_mobile .two {
+  background: #33333370 url("../images/background/pillars/bg4.png")  center/cover no-repeat;
+}
+
+#display_mobile .three {
+  background: #5555557a url("../images/background/pillars/bg2.png")  center/cover no-repeat;
+}
+
+
+#display_mobile .four {
+  background: #aaaaaa8c url("../images/background/pillars/bg1.jpg")  center/cover no-repeat;
+}
+
+
+#display_mobile .panel .buttom{
+  top:60%;
   color:#000 !important;
 }
 
