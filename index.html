@@ -17,15 +17,19 @@
     <link href="assets/css/svg.css" rel="stylesheet" type="text/css">
     <link href="assets/css/side.css" rel="stylesheet" type="text/css">
     <link href="assets/css/pillar.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
+
     <!-- <link href="assets/css/textanimation.css" rel="stylesheet" type="text/css"> -->
     <!-- <link href="assets/css/background.css" rel="stylesheet" type="text/css"> -->
 </head>
 <body>
     <div id="fullpage">
+
         <!-- header -->
         <div class="section col s12 bg ">
             <div class="row center rnr-parallax1">
                 <div class="layer" data-depth="0.3">
+
                     <svg version="1.1" id="svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" x="0px" y="0px" viewBox="-311 185 400 400" style="enable-background:new -311 185 400 400;" xml:space="preserve">
                         <metadata>
                             <sfw  xmlns="&ns_sfw;">
@@ -315,8 +319,8 @@
             </div>
         </div>  
         <!-- Pillar -->
-        <div class="section col s12 Pillarbg1 ">
-            <div class="row center">
+        <div class= "section col s12 Pillarbg1">
+            <div class="row center rnr-parallax2">
                 <div class="layer wrapper " data-depth="0.3">
                     <div class="col s6 m12 l3 end">
                         <!-- Design based on a Dribble shot by Julius Koroll. -->
@@ -356,42 +360,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div id="container">
-                            <div class="panel" id="one">
-                                <div class="text">
-                                    <h5>Digital Marketing</h5>
-                                </div>
-                               <div class="bottom">
-                                    <a href="marketing.html">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="panel" id="two">
-                                <div class="text">
-                                    <h5>Lead Generation</h5>
-                                </div>
-                                <div class="bottom">
-                                    <a href="lead.html">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="panel" id="three">
-                                <div class="text">
-                                    <h5>Customer Support<br>
-                                    <strong>Back End</strong></h5>
-                                </div>
-                                <div class="bottom">
-                                    <a href="backend.html">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="panel" id="four">
-                                <div class="text">
-                                    <h5>Customer Support<br>
-                                    <strong>Front End</strong></h5>
-                                </div>
-                                <div class="bottom">
-                                    <a href="frontend.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -472,7 +440,7 @@
                 </div>
             </div>
         </div> 
-    <!-- JAVASCRIPTS -->
+            <!-- JAVASCRIPTS -->
     <script src="assets/js/jquery.min.js"></script> 
     <script src="assets/js/jquery.easings.min.js"></script> 
     <script src="assets/js/jquery.sidr.min.js"></script>
@@ -487,6 +455,17 @@
     <script src="assets/js/parallax.min.js"></script> 
     <script src="assets/js/jquery.backgroundMove.js"></script>
     <script src="assets/js/pillar.js"></script>
+    <script src="assets/js/navbar.js"></script>
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script> 
+    <!--     
+        <script type="text/javascript">
+            $('.Pillarbg1').backgroundMove({movementStrength:'500'});
+        </script> 
+    -->
     <!-- SIDE NAV JS -->
     <script> 
         $('.datepicker').pickadate({
