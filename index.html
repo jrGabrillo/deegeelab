@@ -7,29 +7,25 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Deegeelab - Digital Marketing - SuperCharge Your Business</title>
     <link href="assets/Logo/DeegeelabWhite.png" rel="icon">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css"> -->
     <link href="assets/fonts/flaticon.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/css/jquery.fullpage.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery.fullpage.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/svg.css" rel="stylesheet" type="text/css">
     <link href="assets/css/side.css" rel="stylesheet" type="text/css">
     <link href="assets/css/pillar.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
-
     <!-- <link href="assets/css/textanimation.css" rel="stylesheet" type="text/css"> -->
     <!-- <link href="assets/css/background.css" rel="stylesheet" type="text/css"> -->
 </head>
 <body>
     <div id="fullpage">
-
         <!-- header -->
-        <div class="section col s12 ">
+        <div class="section col s12 bg ">
             <div class="row center rnr-parallax1">
                 <div class="layer" data-depth="0.3">
-
                     <svg version="1.1" id="svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" x="0px" y="0px" viewBox="-311 185 400 400" style="enable-background:new -311 185 400 400;" xml:space="preserve">
                         <metadata>
                             <sfw  xmlns="&ns_sfw;">
@@ -319,48 +315,121 @@
             </div>
         </div>  
         <!-- Pillar -->
-        <div class= "section col s12 Pillarbg1">
-            <div class="row center rnr-parallax2">
-                <div class="layer wrapper " data-depth="0.3">
-                    <div class="col s6 m12 l3 end">
-                        <!-- Design based on a Dribble shot by Julius Koroll. -->
-                        <div id="container">
-                            <div class="panel" id="one">
+        <div class="section col s12 Pillarbg1 ">
+            <div class="row center">
+                <div class="layer wrapper" data-depth="0.3">
+                    <div class="col s6 m12 l3 end" id="container">
+                        <!-- desktop -->
+                        <div class="hide-on-med-only hide-on-large-only" id='display_mobile'>
+                            <div class="panel col s12 one">
+                                <div class="bottom">
+                                    <a href="marketing.html">Learn More</a>
+                                </div>
                                 <div class="text">
                                     <h5>Digital Marketing</h5>
                                 </div>
-                               <div class="bottom">
-                                    <a href="marketing.html">Learn More</a>
-                                </div>
                             </div>
-                            <div class="panel" id="two">
-                                <div class="text">
-                                    <h5>Lead Generation</h5>
-                                </div>
+                            <div class="panel col s12 two">
                                 <div class="bottom">
                                     <a href="lead.html">Learn More</a>
                                 </div>
+                                <div class="text">
+                                    <h5>Lead Generation</h5>
+                                </div>
                             </div>
-                            <div class="panel" id="three">
+                            <div class="panel col s12 three">
+                                <div class="bottom">
+                                    <a href="backend.html">Learn More</a>
+                                </div>
                                 <div class="text">
                                     <h5>Customer Support<br>
                                     <strong>Back End</strong></h5>
                                 </div>
-                                <div class="bottom">
-                                    <a href="backend.html">Learn More</a>
-                                </div>
                             </div>
-                            <div class="panel" id="four">
+                            <div class="panel col s12 four">
+                                <div class="bottom">
+                                    <a href="frontend.html">Learn More</a>
+                                </div>
                                 <div class="text">
                                     <h5>Customer Support<br>
                                     <strong>Front End</strong></h5>
                                 </div>
+                            </div>
+                        </div><!-- tablet -->
+                        <div class="hide-on-small-only hide-on-large-only" id='display_tablet'>
+                            <div class="panel col s3 one">
+                                <div class="bottom">
+                                    <a href="marketing.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Digital Marketing</h5>
+                                </div>
+                            </div>
+                            <div class="panel col s3 two">
+                                <div class="bottom">
+                                    <a href="lead.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Lead Generation</h5>
+                                </div>
+                            </div>
+                            <div class="panel col s3 three">
+                                <div class="bottom">
+                                    <a href="backend.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Customer Support<br>
+                                    <strong>Back End</strong></h5>
+                                </div>
+                            </div>
+                            <div class="panel col s3 four">
                                 <div class="bottom">
                                     <a href="frontend.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Customer Support<br>
+                                    <strong>Front End</strong></h5>
+                                </div>
+                            </div>
+                        </div><!-- desktop -->
+                        <div class="hide-on-med-only hide-on-small-only" id='display_desktop'>
+                            <div class="panel one">
+                                <div class="bottom">
+                                    <a href="marketing.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Digital Marketing</h5>
+                                </div>
+                            </div>
+                            <div class="panel two">
+                                <div class="bottom">
+                                    <a href="lead.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Lead Generation</h5>
+                                </div>
+                            </div>
+                            <div class="panel three">
+                                <div class="bottom">
+                                    <a href="backend.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Customer Support<br>
+                                    <strong>Back End</strong></h5>
+                                </div>
+                            </div>
+                            <div class="panel four">
+                                <div class="bottom">
+                                    <a href="frontend.html">Learn More</a>
+                                </div>
+                                <div class="text">
+                                    <h5>Customer Support<br>
+                                    <strong>Front End</strong></h5>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -440,7 +509,7 @@
                 </div>
             </div>
         </div> 
-            <!-- JAVASCRIPTS -->
+    <!-- JAVASCRIPTS -->
     <script src="assets/js/jquery.min.js"></script> 
     <script src="assets/js/jquery.easings.min.js"></script> 
     <script src="assets/js/jquery.sidr.min.js"></script>
@@ -455,17 +524,6 @@
     <script src="assets/js/parallax.min.js"></script> 
     <script src="assets/js/jquery.backgroundMove.js"></script>
     <script src="assets/js/pillar.js"></script>
-    <script src="assets/js/navbar.js"></script>
-
-    <script>
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
-    </script> 
-    <!--     
-        <script type="text/javascript">
-            $('.Pillarbg1').backgroundMove({movementStrength:'500'});
-        </script> 
-    -->
     <!-- SIDE NAV JS -->
     <script> 
         $('.datepicker').pickadate({
@@ -476,7 +534,6 @@
             close: 'Ok',
             closeOnSelect: false // Close upon selecting a date,
         });
-
         $('.timepicker').pickatime({
             default: 'now', // Set default time: 'now', '1:30AM', '16:30'
             fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
@@ -488,6 +545,9 @@
             ampmclickable: true, // make AM PM clickable
             aftershow: function(){} //Function for after opening timepicker
         });
+        let h = window.height, w = window.width;
+        console.log(h);
+        console.log(w);
     </script>
 </body>
 </html>
