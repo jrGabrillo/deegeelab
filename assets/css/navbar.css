@@ -89,7 +89,7 @@
 }
 
 .menu__handle {
-	background: #2f3238;
+	background: #c7c7c7;
 	border: none;
 	width: 30px;
 	height: 24px;
@@ -104,7 +104,7 @@
 .menu__handle::before,
 .menu__handle::after,
 .menu__handle span {
-	background: #5f656f;
+	background: #0d1216;
 }
 
 .menu__handle::before,
