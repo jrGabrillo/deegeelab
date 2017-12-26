@@ -35,13 +35,14 @@
 
 	function makeActive(target) {
 		for (var i = 0; i < panels.length; i++) {
+			console.log(panels[i].dataset);
 			panels[i].className = "panel";
 		}
 		target.className = "panel active";
 		for (var j = 0; j < panels.length; j++) {
 			if (panels[j].className == "panel active") {
 				var an = j;
-				var al = j * 20;
+				var al = j * 2;
 				panels[j].style.left = al + "%";
 			}
 		}

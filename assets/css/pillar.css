@@ -106,9 +106,8 @@ html {
 }
 
 *[data-count='one']:hover{
-  background: #11111100 url("../images/background/pillars/bg3.jpg")
-  center/cover no-repeat;
-
+  background: #11111100 url("../images/background/pillars/bg3.jpg")  center/cover no-repeat;
+  left: 0;
 }
 
 *[data-count='two'] {
