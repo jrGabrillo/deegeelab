@@ -13,12 +13,41 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/jquery.fullpage.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/nav.css" rel="stylesheet" type="text/css">
-
-
+    <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/navbarD.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/snap.svg-min.js"></script>
 </head>
 <body>
+    <div class="container">
+        <nav class="menu" id="menu">
+            <button class="menu__handle"><span>Menu</span></button>
+            <div class="menu__inner">
+                <ul>
+                    <li><a href="#"><span>Lead Generation<span></span></span></a> </li>
+                    <li><span><a href="#"><span>Digital Marketing<span></span></span></a></span></li>
+                    <li><span><a href="#"><span>Customer Support Back End<span></span></span></a></span></li>
+                    <li><span><a href="#"><span>Customer Support Front End<span></span></span></a></span></li>
+                    <li><span><a href="#"><span>Social Media Management<span></span></span></a></span></li>
+                    <li><span><a href="#"><span>Website Development<span></span></span></a></span></li>
+                </ul>
+            </div>
+            <div class="morph-shape" data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410">
+                <span><svg height="100%" preserveaspectratio="none" viewbox="0 0 600 800" width="100%">
+                <path d="M300-10c0,0,0,164,0,410c0,232,0,410,0,410" fill="none"></path></svg></span>
+            </div><span></span>
+        </nav>
+                <section class="related">
+                    <p>If you enjoyed this demo you might also like:</p>
+                    <a href="http://tympanus.net/Development/WobblySlideshowEffect/">
+                        <img src="img/related/WobblySlideshowEffect.png" />
+                        <h3>Wobbly Slideshow Effect</h3>
+                    </a>
+                    <a href="http://tympanus.net/Tutorials/ShapeHoverEffectSVG/">
+                        <img src="img/related/ShapeHoverEffect.png" />
+                        <h3>Shape Hover Effect</h3>
+                    </a>
+                </section>
+    </div><!-- /container -->
 
 
     <script src="assets/js/jquery.min.js"></script> 
@@ -32,9 +61,59 @@
     <script src="assets/js/validation/additional-methods.min.js"></script> 
     <script src="assets/js/system.js"></script> 
     <script src="assets/js/scripts.js"></script> 
-    <script src="assets/js/parallax.min.js"></script> 
     <script src="assets/js/jquery.backgroundMove.js"></script>
-        <script src="assets/js/pixie.js"></script> 
- 
+     <script src="assets/js/navbar.js"></script> 
+            <script>
+            (function() {
+
+                function SVGMenu( el, options ) {
+                    this.el = el;
+                    this.init();
+                }
+
+                SVGMenu.prototype.init = function() {
+                    this.trigger = this.el.querySelector( 'button.menu__handle' );
+                    this.shapeEl = this.el.querySelector( 'div.morph-shape' );
+
+                    var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+                    this.pathEl = s.select( 'path' );
+                    this.paths = {
+                        reset : this.pathEl.attr( 'd' ),
+                        open : this.shapeEl.getAttribute( 'data-morph-open' ),
+                        close : this.shapeEl.getAttribute( 'data-morph-close' )
+                    };
+
+                    this.isOpen = false;
+
+                    this.initEvents();
+                };
+
+                SVGMenu.prototype.initEvents = function() {
+                    this.trigger.addEventListener( 'click', this.toggle.bind(this) );
+                };
+
+                SVGMenu.prototype.toggle = function() {
+                    var self = this;
+
+                    if( this.isOpen ) {
+                        classie.remove( self.el, 'menu--anim' );
+                        setTimeout( function() { classie.remove( self.el, 'menu--open' );   }, 250 );
+                    }
+                    else {
+                        classie.add( self.el, 'menu--anim' );
+                        setTimeout( function() { classie.add( self.el, 'menu--open' );  }, 250 );
+                    }
+                    this.pathEl.stop().animate( { 'path' : this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function() {
+                        self.pathEl.stop().animate( { 'path' : self.paths.reset }, 800, mina.elastic );
+                    } );
+                    
+                    this.isOpen = !this.isOpen;
+                };
+
+                new SVGMenu( document.getElementById( 'menu' ) );
+
+            })();
+        </script>
+
 </body>
 </html>

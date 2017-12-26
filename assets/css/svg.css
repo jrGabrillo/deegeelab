@@ -25,6 +25,7 @@ svg #svgg path.st0{
 	box-shadow: -5px -5px 5px #888;
 }
 
+
 @media screen and (max-width: 420px){
 svg:not(:root){
 	max-height: 300px
