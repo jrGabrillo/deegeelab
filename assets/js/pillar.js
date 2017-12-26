@@ -21,9 +21,9 @@
 					if (!isInside(event.relatedTarget, pAbbr[h])) {
 						var target = event.target;
 						console.log(target.className);
-// 						while (target.className != "panel" && target.className != "panel inactive") {
-// 							target = target.parentNode;
-// 						}
+						while (target.className != "panel" && target.className != "panel inactive") {
+							target = target.parentNode;
+						}
 						makeActive(target);
 					}
 				});
