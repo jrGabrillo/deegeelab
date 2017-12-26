@@ -41,9 +41,9 @@
       	for (var j = 0; j < panels.length; j++) {
       		if (panels[j].className == "panel active") {
       			var an = j;
-      			var al = j * 10;
+      			var al = j * 20;
       			console.log(j);
-      			panels[j].style.left = al + "px";
+      			panels[j].style.left = al + "%";
       		}
       	}
       	for (var k = 0; k < panels.length; k++) {
