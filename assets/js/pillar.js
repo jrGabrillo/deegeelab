@@ -20,9 +20,10 @@
 				pAbbr[h].addEventListener("mouseover", function(event) {
 					if (!isInside(event.relatedTarget, pAbbr[h])) {
 						var target = event.target;
-						while (target.className != "panel" && target.className != "panel inactive") {
-							target = target.parentNode;
-						}
+						console.log(target.className);
+// 						while (target.className != "panel" && target.className != "panel inactive") {
+// 							target = target.parentNode;
+// 						}
 						makeActive(target);
 					}
 				});
