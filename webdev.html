@@ -13,94 +13,121 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/jquery.fullpage.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/svg.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/navbarD.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/snap.svg-min.js"></script>
 
 </head>
-<body>
-<!--     <div class="overlay"></div>
- -->    <!-- <div class="wrap"></div> -->
-<div id="fullpage">
-<div id="header">
-  <nav class="round">
-    <div class="nav-wrapper">
-      <div class="col s6">
-        <a href="index.html" class="breadcrumb">Home</a>
-        <a href="customer.html" class="breadcrumb">Customer Support</a>
-        <a href="marketing.html" class="breadcrumb">Digital Marketing</a>
-        <a href="backsupp.html" class="breadcrumb">Back End Support</a>
-        <a href="lead.html" class="breadcrumb">Lead Generation</a>
-        <a href="social.html" class="breadcrumb">Social Media Management</a>
-        <a href="webdev.html" class="breadcrumb">Website Development</a>
-      </div>
-    </div>
-  </nav>
-</div>       <!-- header -->
-    <div class="section">
-        <div class="layer">
-            <div class="row">
-  <!--               <div class="col s6" style="float:left">
-                    <div class="">
-                        <img src="assets/images/background/bg3.jpg" width="600px" height="600px">
-                    </div>
-                </div> -->
-                <div class="col s6">
-                    <img src="assets/images/services/img1.png" width="100%">
+    <body>
+        <div class="container">
+            <nav id="menu" class="menu">
+                <button class="menu__handle"><span>Menu</span></button>
+                <div class="menu__inner">
+                    <ul>
+                        <li><a href="index.html"><i ></i><span>Home<span></a></li>
+                        <li><a href="lead.html"><i class="material-icons"></i><span>Lead Generation<span></a></li>
+                        <li><a href="marketing.html"><i ></i><span>Digital Marketing<span></a></li>
+                        <li><a href="backend.html"><i ></i><span>Customer Back End Support<span></a></li>
+                        <li><a href="frontend.html"><i ></i><span>Customer Front End Support<span></a></li>
+                        <li><a href="webdev.html"><i ></i><span>Website Development<span></a></li>
+                        <li><a href="social.html"><i ></i><span>Social Media Management<span></a></li>
+                    </ul>
                 </div>
-                <div class="col s6" style="float:right;">
-                    <div class="card-panel white">
-                        <span class="black-text head">Website Development</span><br>
-                        <br>
-                        <span class="black-text">We will take care of your current customers whilst gaining more leads for your<br>
-                        business using our sales team's proven record of success. We can tie into your <br>
-                        overarching sales plan or develop a new strategy with you.<br>
-                        <br></span> <span class="black-text">Inbound Lead Generation strategies:</span>
-                        <div class="black-text" style="margin-left: 2em">
-                            <div style="margin-left: 2em">
-                                Content Marketing
+                <div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410" data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410">
+                    <svg width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">
+                        <path fill="none" d="M300-10c0,0,0,164,0,410c0,232,0,410,0,410"/>
+                    </svg>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="row">
+                    <div class="col 12 card horizontal">
+                        <div class="card-image"><img class="imgres" height="400px" src="assets/images/background/pillars/bg3.jpg" width="600px"></div>
+                        <div class="col s12 card-stacked">
+                            <div class="card-content" style="color: black">
+<h3 style="color: black; text-align: left">Website Development</h3>
+<p style="text-align: left">We will take care of your current customers whilst gaining more leads for your business using
+ our sales team's proven record of success. We can tie into your overarching sales plan or
+  develop a new strategy with you.</p>
+<ul style="text-align: left">
+    <li>Content Marketing</li>
+    <li>Social Media Marketing</li>
+    <li>SEO</li>
+    <li>Website Optimization</li>
+    <li>Email Marketing</li>
+
+</ul>
                             </div>
-                            <div style="margin-left: 2em">
-                                Social Media Marketing
+                            <div class="card-action">
+                                <a href="#">Let's Talk</a>
                             </div>
-                            <div style="margin-left: 2em">
-                                Search Engine Optimization
-                            </div>
-                            <div style="margin-left: 2em">
-                                Website Optimization
-                            </div>
-                            <div style="margin-left: 2em">
-                                Email Marketing
-                            </div>
-                        </div><a class="waves-effect waves-light btn" href="index.html#services">Let's Talk</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div> 
-    <div id="footer">
-        <div class="row">
-            <div class="col s1">
-                <img src="assets/images/digital.png">
-            </div>
-            <div class="col s10" >
-                <img src="assets/images/digital.png">
-            </div>
-        </div>
-    </div>
-    </div>
+            </div><!-- /main -->
+        </div><!-- /container -->
+
     <script src="assets/js/jquery.min.js"></script> 
     <script src="assets/js/jquery.easings.min.js"></script> 
     <script src="assets/js/jquery.sidr.min.js"></script>
     <script src="assets/js/scrolloverflow.min.js"></script> 
     <script src="assets/js/jquery.fullPage.js"></script> 
     <script src="assets/js/jquery.fullpage.extensions.min.js"></script> 
-    <script src="assets/js/materialize.min.js"></script> 
     <script src="assets/js/validation/jquery.validate.min.js"></script> 
     <script src="assets/js/validation/additional-methods.min.js"></script> 
     <script src="assets/js/system.js"></script> 
     <script src="assets/js/scripts.js"></script> 
-    <script src="assets/js/parallax.min.js"></script> 
-    <script src="assets/js/jquery.backgroundMove.js"></script> 
+    <script src="assets/js/navbar.js"></script> 
+            <script>
+            (function() {
+
+                function SVGMenu( el, options ) {
+                    this.el = el;
+                    this.init();
+                }
+
+                SVGMenu.prototype.init = function() {
+                    this.trigger = this.el.querySelector( 'button.menu__handle' );
+                    this.shapeEl = this.el.querySelector( 'div.morph-shape' );
+
+                    var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+                    this.pathEl = s.select( 'path' );
+                    this.paths = {
+                        reset : this.pathEl.attr( 'd' ),
+                        open : this.shapeEl.getAttribute( 'data-morph-open' ),
+                        close : this.shapeEl.getAttribute( 'data-morph-close' )
+                    };
+
+                    this.isOpen = false;
+
+                    this.initEvents();
+                };
+
+                SVGMenu.prototype.initEvents = function() {
+                    this.trigger.addEventListener( 'click', this.toggle.bind(this) );
+                };
+
+                SVGMenu.prototype.toggle = function() {
+                    var self = this;
+
+                    if( this.isOpen ) {
+                        classie.remove( self.el, 'menu--anim' );
+                        setTimeout( function() { classie.remove( self.el, 'menu--open' );   }, 250 );
+                    }
+                    else {
+                        classie.add( self.el, 'menu--anim' );
+                        setTimeout( function() { classie.add( self.el, 'menu--open' );  }, 250 );
+                    }
+                    this.pathEl.stop().animate( { 'path' : this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function() {
+                        self.pathEl.stop().animate( { 'path' : self.paths.reset }, 800, mina.elastic );
+                    } );
+                    
+                    this.isOpen = !this.isOpen;
+                };
+
+                new SVGMenu( document.getElementById( 'menu' ) );
+
+            })();
+        </script>
 </body>
 </html>

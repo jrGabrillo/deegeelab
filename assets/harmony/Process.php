@@ -85,11 +85,12 @@ $function = new DatabaseClasses;
                                         <ul type='none'>
 
                                             <li>Name: {$name} {$lastname}</li>
-
-                                            <li>Email: {$email}</li>
-
-                                            <li>Message: {$message}</li>
-
+                                            <li>Business Name: {$email}</li>
+                                            <li>Contact Email: {$email}</li>
+                                            <li>Contact Number: {$email}</li>
+                                            <li>Postal Code: {$email}</li>
+                                            <li>Date: {$email}</li>
+                                            <li>Time: {$email}</li>
                                         </ul>
 
                                     </div>

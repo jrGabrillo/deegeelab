@@ -132,7 +132,7 @@ html {
 
 
 *[data-count='four'] {
-  background: #31313157  center/cover no-repeat;
+  background: #31313136  center/cover no-repeat;
   left: 75%;
 }
 
@@ -208,8 +208,10 @@ html {
   padding: 9px 20px 10px;
   border: 3px solid #0a99ab;
   border-radius: 400px;
-  box-shadow: 0px 0px 20px #333;
+  text-shadow: 0px 0px 20px #000;
 }
+
+a {}
 
 .bottom > a:hover {
   background-color: ##0a99ab;

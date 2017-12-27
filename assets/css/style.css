@@ -16,9 +16,9 @@ font-family: Open Sans;
 color: white;
 }
 ul {
-    list-style-type: none;
-    padding: 0;
-}
+    /* list-style-type: none; */
+}    padding: 0;
+
 
 p{
     font-size: 20px;
@@ -373,7 +373,7 @@ h1 strong{
     top: 52%;
     opacity: 1;
 }
-#fp-nav.left { left: 17px }
+#fp-nav.left {right: 17px;}
 #fp-nav span,
 .fp-slidesNav span { border-color: #aaa }
 #fp-nav li .active span,
@@ -906,7 +906,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     color:#fff !important;
 }
 input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus, input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default), input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus, input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default), input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus, input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default), input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus, input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown{
-    border-bottom: 1px solid #fff !important;
+    border-bottom: 1px solid #0999ab !important;
     -webkit-box-shadow: 0 1px 0 0 #fff !important;
     box-shadow: 0 1px 0 0 #fff !important;
 }
