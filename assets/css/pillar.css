@@ -101,7 +101,7 @@ html {
 }
 
 *[data-count='one'] {
-  background: #3a36367a  center/cover no-repeat;
+  background: #5d5a5a6e  center/cover no-repeat;
   left: 0;
 }
 
@@ -111,7 +111,7 @@ html {
 }
 
 *[data-count='two'] {
-  background: #3333337d  center/cover no-repeat;
+  background: #3e3b3b8c  center/cover no-repeat;
   left: 25%;
 }
 
@@ -121,7 +121,7 @@ html {
 }
 
 *[data-count='three'] {
-  background: #4a44445c  center/cover no-repeat;
+  background: #5854545c  center/cover no-repeat;
   left: 50%;
 }
 

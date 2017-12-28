@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600,700);
 
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+*, *:after, *:before {-webkit-box-sizing: border-box;zing: border-box;}
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 

@@ -7,10 +7,59 @@
     width:100%;
     text-align: center;
 }
-
-.bg{
-    background: url("../images/background/bghome.jpg");
+/*background for services*/
+.bgLEAD{
+    background: url("../images/background/pillars/bglead.jpg");
     width:  100% !important;
+    height: 400px !important;
+    background-repeat: no-repeat;
+     background-size: cover; 
+}
+
+.bgMARKETING{
+    background: url("../images/background/pillars/bgmarketing.jpg");
+    width:  100% !important;
+    height: 400px !important;
+    background-repeat: no-repeat;
+     background-size: cover; 
+}
+
+.bgFRONT{
+    background: url("../images/background/pillars/bgFRONT.jpg");
+    width:  100% !important;
+    height: 400px !important;
+    background-repeat: no-repeat;
+     background-size: cover; 
+}
+
+.bgBACK{
+    background: url("../images/background/pillars/bgBACK.jpg");
+    width:  100% !important;
+    height: 400px !important;
+    background-repeat: no-repeat;
+     background-size: cover; 
+}
+
+.bgWEBDEV{
+    background: url("../images/background/bgflat4.jpg");
+    width:  100% !important;
+    height: 400px !important;
+    background-repeat: no-repeat;
+     background-size: cover; 
+}
+
+.bgSOCIAL{
+    background: url("../images/background/bgflat4.jpg");
+    width:  100% !important;
+    height: 400px !important;
+    background-repeat: no-repeat;
+     background-size: cover; 
+}
+/*background in homepage*/
+.bg{
+    background: url("../images/background/bgflat4.jpg");
+    width:  100% !important;
+    height: 400px !important;
     background-repeat: no-repeat;
      background-size: cover; 
 }
@@ -26,7 +75,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/*end of background in homepage*/
 .icoo{
    background: url("../Logo/DeegeelabLogo.png");
    position: relative;
@@ -39,25 +88,7 @@
     text-align: center;
 }
 
-.rnr-parallax4 div[data-display='portfolio-grid']{
 
-}
-
-.rnr-parallax4 div[data-display='portfolio-grid'] .logo{
-    width: 100px;
-}
-
-.rnr-parallax4 div[data-display='portfolio-grid'] .card-image img{
-    width: 300px;
-}
-
-.rnr-parallax4 div[data-display='portfolio-grid'] .fp-tableCell{
-    height: 200px !important;
-}
-
-.rnr-parallax4 div[data-display='portfolio-grid'] img{
-    top: 10%;
-}
 
 @media (min-width: 1141px) { /* Desktop */
     #display{
@@ -510,12 +541,6 @@ p.label{
 }
 
 /* fallback */
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/google-icon.woff2) format('woff2');
-}
 
 .material-icons {
   font-family: 'Material Icons';
@@ -543,3 +568,6 @@ font-size: 25px;
 font-weight: 600;
 }
 /*Additional Css*/
+[data-collapse] {
+  display:none
+}

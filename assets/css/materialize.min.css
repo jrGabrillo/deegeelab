@@ -1621,7 +1621,7 @@ body {
 	margin: 0
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-	display: block
+	display: block;
 }
 audio, canvas, progress, video {
 	display: inline-block;
@@ -1697,18 +1697,18 @@ code, kbd, pre, samp {
 }
 button, input, optgroup, select, textarea {
 	color: inherit;
-	font: inherit;
+	font: inherit;s
 	margin: 0;
 }
 button {
 	overflow: visible
 }
 button, select {
-	text-transform: none
+	text-transform: none;
 }
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
 	-webkit-appearance: button;
-	cursor: pointer
+	cursor: pointer;
 }
 button[disabled], html input[disabled] {
 	cursor: default
@@ -1764,7 +1764,7 @@ html {
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
+	ng: inherit;
 }
 ul:not(.browser-default) {
 	padding-left: 0;
@@ -3229,11 +3229,11 @@ nav ul a span.badge {
 	}
 }
 nav {
-	color: #fff;
-	background-color: #7b7b7b;
-	width: 100%;
-	height: 56px;
-	line-height: 56px;
+	/* color: #fff; */
+	/* background-color: #7b7b7b; */
+	/* width: 100%; */
+	/* height: 56px; */
+	/* line-height: 56px; */
 }
 nav.nav-extended {
 	height: auto
@@ -3399,8 +3399,8 @@ nav .input-field label.active i {
 		min-height: 64px
 	}
 	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-		height: 64px;
-		line-height: 64px
+		/* height: 64px; */
+		/* line-height: 64px; */
 	}
 	.navbar-fixed {
 		height: 64px
@@ -3442,12 +3442,12 @@ html {
 }
 @media only screen and (min-width: 0) {
 	html {
-		font-size: 14px
+		/* font-size: 14px; */
 	}
 }
 @media only screen and (min-width: 992px) {
 	html {
-		font-size: 14.5px
+		/* font-size: 14.5px; */
 	}
 }
 @media only screen and (min-width: 1200px) {
@@ -3794,11 +3794,11 @@ small {
 	border-radius: 0 0 2px 2px
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-	color: #ffab40;
+	color: #0999ab;
 	margin-right: 24px;
 	-webkit-transition: color .3s ease;
 	transition: color .3s ease;
-	text-transform: uppercase
+	text-transform: uppercase;
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
 	color: #ffd8a6
