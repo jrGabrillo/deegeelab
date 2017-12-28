@@ -19,10 +19,11 @@ svg circle.st1{
 
 svg #svgg path.st0{
 	fill:#02bad0;
-	stroke:transparent;
+	stroke: #3c232300;
 	stroke-width:0;
 	stroke-miterlimit:10;
-	box-shadow: -5px -5px 5px #888;
+	box-shadow: 19px 20px 5px 17px #888;
+	/* -webkit-box-shadow: -5px -5px 5px #888 !important; */
 }
 
 

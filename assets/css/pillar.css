@@ -101,43 +101,43 @@ html {
 }
 
 *[data-count='one'] {
-  background: #11111100  center/cover no-repeat;
+  background: #3a36367a  center/cover no-repeat;
   left: 0;
 }
 
 *[data-count='one']:hover{
-  background: #11111100 url("../images/background/pillars/bg3.jpg")  center/cover no-repeat;
+  background: #11111100 url("../images/background/pillars/bgmarketing.jpg")  center/cover no-repeat;
   left: 0;
 }
 
 *[data-count='two'] {
-  background: #3333331f  center/cover no-repeat;
+  background: #3333337d  center/cover no-repeat;
   left: 25%;
 }
 
 *[data-count='two']:hover {
-  background: #33333370 url("../images/background/pillars/bg4.png")  center/cover no-repeat;
+  background: #33333370 url("../images/background/pillars/bglead.png")  center/cover no-repeat;
   left: 25%;
 }
 
 *[data-count='three'] {
-  background: #55555538  center/cover no-repeat;
+  background: #4a44445c  center/cover no-repeat;
   left: 50%;
 }
 
 *[data-count='three']:hover {
-  background: #5555557a url("../images/background/pillars/bg2.png")  center/cover no-repeat;
+  background: #5555557a url("../images/background/pillars/bgbackend.jpg")  center/cover no-repeat;
   left: 50%;
 }
 
 
 *[data-count='four'] {
-  background: #31313136  center/cover no-repeat;
+  background: #6b676752  center/cover no-repeat;
   left: 75%;
 }
 
 *[data-count='four']:hover {
-  background: #aaaaaa8c url("../images/background/pillars/bg1.jpg")  center/cover no-repeat;
+  background: #aaaaaa8c url("../images/background/pillars/bgfrontend.jpg")  center/cover no-repeat;
   left: 75%;
 }
 /* --- TEXT --- */
@@ -334,7 +334,7 @@ a {}
 }
 
 #display_mobile[data-count='four']{
-  background: #aaaaaa8c url("../images/background/pillars/bg1.jpg")  center/cover no-repeat;
+  background: #aaaaaa8c url("../images/background/bgcontact.jpg")  center/cover no-repeat;
 }
 
 #display_mobile .panel .buttom{

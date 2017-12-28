@@ -9,20 +9,20 @@
 }
 
 .bg{
-    background: url("../images/background/bg2.jpg");
+    background: url("../images/background/bghome.jpg");
     width:  100% !important;
     background-repeat: no-repeat;
      background-size: cover; 
 }
 
 .Contactbg1{
-    background: url("../images/background/bg1.jpg");
+    background: url("../images/background/bgcontact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .Pillarbg1{
-    background: url("../images/background/bg31.jpg");
+    background: url("../images/background/bgpillar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -34,6 +34,7 @@
   width: 190px;
   position: fixed;
   right: -160px;
+  height: 35px;
   z-index: 1000;
   font: normal normal 10px Arial;
   -webkit-transition: all .25s ease;
@@ -64,19 +65,19 @@
 }
 
 .float-fb {
-  top: 160px;
+  top: 110px;
 }
 
 .float-tw {
-  top: 215px;
+  top: 150px;
 }
 
 .float-gp {
-  top: 270px;
+  top: 190px;
 }
 
 .float-rs {
-  top: 325px;
+  top: 230px;
 }
 
 .float-ig {
