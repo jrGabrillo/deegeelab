@@ -868,24 +868,7 @@ SECTIONS
 }
 #form_registration input:focus, textarea:focus  { background: #DA9700  }
 */
-.btn {
-font-weight: 700;
-border-radius: 4px;
-color: #ffffff;
-border: none;
-min-width: 120px;
-font-size: 15px;
-margin-right: 10px;
-text-decoration: none;
-outline: none;
-padding: 10px 20px;
-cursor: pointer;
-margin-top: 10px;
-margin-bottom: 10px;
--webkit-transition: 0.3s;
--o-transition: 0.3s;
-transition: 0.3s;
-background: #DA9700;}
+.btn {font-weight: 700;border-radius: 4px;color: #ffffff;border: none;min-width: 120px;font-size: 15px;margin-right: 10px;text-decoration: none;outline: none;padding: 10px 20px;cursor: pointer;margin-top: 10px;margin-bottom: 10px;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;/* background: #DA9700; */}
 
 .btn:hover {
     background: #fff;

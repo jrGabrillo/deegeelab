@@ -1,25 +1,4 @@
-body {
-  background: #E5D5CA;
-}
 
-.text {
-  margin: 0 60px;
-}
-
-h1 {
-  font-size: 32px;
-  margin-top: 0;
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-style: italic;
-  text-align: center;
-  background: #FF7D6D;
-  color: #fff;
-  padding: 4px;
-}
-
-p,
-span,
 .twitter {
   font: normal normal 10px Arial;
   text-align: center;
@@ -45,18 +24,10 @@ span,
   text-decoration: none;
 }
 
-span {
-  font-style: italic;
-  display: block;
-}
-
-img {
-  max-width: 100%;
-}
 /* Floating Social Media Bar Style Starts Here */
 
 .fl-fl {
-  background: #000000;
+  background: #00bad0;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 4px;
