@@ -28,7 +28,7 @@ svg #svgg path.st0{
 
 @media screen and (max-width: 420px){
 svg:not(:root){
-	max-height: 300px
+	max-height: 250px
 
 	}
 }
