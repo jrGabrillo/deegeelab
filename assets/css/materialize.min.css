@@ -2032,7 +2032,7 @@ ul.staggered-list li {
 	}
 }
 .page-footer {
-	padding-top: 50%; 
+	padding-top: 50%;
 	color: #fff;
 }
 .page-footer .footer-copyright {
@@ -2568,7 +2568,7 @@ nav ul a span.badge {
 	width: 100%;
 	margin-left: auto;
 	left: auto;
-	right: auto
+	right: auto;
 }
 .row .col.offset-s1 {
 	margin-left: 8.3333333333%
@@ -3438,7 +3438,7 @@ html {
 	line-height: 1.5;
 	font-family: "Roboto", sans-serif;
 	font-weight: normal;
-	color: rgba(0, 0, 0, 0.87);
+	color: rgb(255, 255, 255);
 }
 @media only screen and (min-width: 0) {
 	html {
@@ -3651,7 +3651,7 @@ small {
 .card {
 	position: relative;
 	margin: .5rem 0 1rem 0;
-	background-color: #ffffffa3;
+	background-color: #ffffff;
 	-webkit-transition: -webkit-box-shadow .25s;
 	transition: -webkit-box-shadow .25s;
 	transition: box-shadow .25s;
@@ -3700,7 +3700,7 @@ small {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
-	display: flex
+	display: flex;
 }
 .card.horizontal.small .card-image, .card.horizontal.medium .card-image, .card.horizontal.large .card-image {
 	height: 100%;
@@ -3711,12 +3711,12 @@ small {
 	height: 100%
 }
 .card.horizontal .card-image {
-	max-width: 50%
+	max-width: 50%;
 }
 .card.horizontal .card-image img {
 	border-radius: 2px 0 0 2px;
-	max-width: 100%;
-	width: auto
+	/* max-width: 100%; */
+	/* width: auto; */
 }
 .card.horizontal .card-stacked {
 	display: -webkit-box;
@@ -3758,7 +3758,7 @@ small {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	width: 100%
+	width: 100%;
 }
 .card .card-image .card-title {
 	color: #fff;

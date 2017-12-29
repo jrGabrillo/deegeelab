@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Deegeelab - Digital Marketing - SuperCharge Your Business</title>
     <link href="assets/Logo/DeegeelabWhite.png" rel="icon">
+    <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
     <link href="assets/fonts/flaticon.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
@@ -15,9 +16,32 @@
     <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
     <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/socialfloat.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
     <link href="assets/fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+
+
 </head>
-<body class="bgBACK">
+<body class="bgpillars">
+    <header>
+        <div class="navBtn">
+        +
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#pillars">Services</a>
+            <a href="index.html#contact">Contact</a>
+            <hr>
+           OUR SERVICES
+            <hr>
+<a href="social.html">Social Media Management</a>
+<a href="marketing.html">Digital Marketing</a>
+<a href="lead.html">Lead Generation</a>
+<a href="webdev.html">Website Development</a>
+<a href="backend.html">Customer Support Back-End</a>
+<a href="frontend.html">Customer Support Front-End</a>
+
+        </nav>
+    </header>
     <div>
         <div class="fl-fl float-fb">
             <i class="fab fa-facebook fa-2x"></i> <a href="" target="_blank">Like us!</a>
@@ -33,32 +57,100 @@
         </div>
     </div>
     <div class="container">
-        <div class="section col s12 m10 l0 offset-l1">
+        <div class="section col s12 m10 l8 offset-l2">
             <div class="row">
                 <div class="layer" data-depth="0.3">
                     <div class="main">
-                        <div class="row">
-                            <div class="col s12 m6 l8 card">
-                                    <div class="card-content" style="color: black">
-                                        <h4 style="color: black; text-align: left">Customer Support (Back End)</h4>
-                                        <p style="text-align: left">Make your business expansion your focus. We will turn the average process such as office administration, account creation, outbound chat support and document processing into a thing of the past by moving it from your office to ours. All you need to do is focus on creating amazing products or services for your business.</p>
-                                        <a href="#" data-target="collapse-content1" data-text-more="" class="read-more">Read More</a>
-                                    <div data-collapse="collapse-content1"  data-text-close="Close">
-                                        <ul style="text-align: left">
-                                            <li>Handle office admin processes</li>
-                                            <li>Attract new customers into your systems.</li>
-                                            <li>Enter data in a CRM system or update customer records</li>
-                                            <li>Validate and provision customer orders and set-up billing and payment preferences, following your processes and your timeframes.</li>
-                                            <li>Digitize your business to increase its accessibility</li>
-                                            <li>Handle emails Inbound/Outbound Chat Support</li>
-                                            <li>Handle all paperwork that can be processed online</li>
-                                            <li>File documents</li>
-                                            <li>Send electronic paper transactions</li>
-                                            <li>Manage Accounting Applications – Ex: Xero and Intuit.</li>
-                                        </ul>
-                                    </div>    
-                                    <div class="card-action">
-                                        <span><a href="index.html#services">Let's Talk</a></span>
+                        <!-- desktop -->
+                        <div class="hide-on-med-only hide-on-small-only" id='display_desktop'>
+                            <div class="col s12">
+                                <div class="card horizontal">
+                                <div class="card-image" id='backend'></div>
+                                    <div class="col s12 card-stacked">
+                                        <div class="card-content" style="color: black">
+                                            <h4 style="color: black; text-align: left">Customer Support (Back End)</h4>
+                                            <p style="text-align: left">Make your business expansion your focus. We will turn the average process such as office administration, account creation, outbound chat support and document processing into a thing of the past by moving it from your office to ours. All you need to do is focus on creating amazing products or services for your business.</p>
+                                            <a href="#" data-target="collapse-content1" data-text-more="" class="read-more">Read More</a>
+                                            <div data-collapse="collapse-content1"  data-text-close="Close">
+                                                <ul style="text-align: left">
+                                                    <li>Handle office admin processes</li>
+                                                    <li>Attract new customers into your systems.</li>
+                                                    <li>Enter data in a CRM system or update customer records</li>
+                                                    <li>Validate and provision customer orders and set-up billing and payment preferences, following your processes and your timeframes.</li>
+                                                    <li>Digitize your business to increase its accessibility</li>
+                                                    <li>Handle emails Inbound/Outbound Chat Support</li>
+                                                    <li>Handle all paperwork that can be processed online</li>
+                                                    <li>File documents</li>
+                                                    <li>Send electronic paper transactions</li>
+                                                    <li>Manage Accounting Applications – Ex: Xero and Intuit.</li>
+                                                </ul>
+                                            </div>    
+                                            <div class="card-action">
+                                                <span><a href="index.html#services">Let's Talk</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tablet -->
+                        <div class="hide-on-small-only hide-on-large-only" id='display_tablet'>
+                            <div class="col s12">
+                                <div class="card horizontal">
+                                <div class="card-image" id='backend'></div>
+                                    <div class="col s12 card-stacked">
+                                        <div class="card-content" style="color: black">
+                                            <h4 style="color: black; text-align: left">Customer Support (Back End)</h4>
+                                            <p style="text-align: left">Make your business expansion your focus. We will turn the average process such as office administration, account creation, outbound chat support and document processing into a thing of the past by moving it from your office to ours. All you need to do is focus on creating amazing products or services for your business.</p>
+                                            <a href="#" data-target="collapse-content1" data-text-more="" class="read-more">Read More</a>
+                                            <div data-collapse="collapse-content1"  data-text-close="Close">
+                                                <ul style="text-align: left">
+                                                    <li>Handle office admin processes</li>
+                                                    <li>Attract new customers into your systems.</li>
+                                                    <li>Enter data in a CRM system or update customer records</li>
+                                                    <li>Validate and provision customer orders and set-up billing and payment preferences, following your processes and your timeframes.</li>
+                                                    <li>Digitize your business to increase its accessibility</li>
+                                                    <li>Handle emails Inbound/Outbound Chat Support</li>
+                                                    <li>Handle all paperwork that can be processed online</li>
+                                                    <li>File documents</li>
+                                                    <li>Send electronic paper transactions</li>
+                                                    <li>Manage Accounting Applications – Ex: Xero and Intuit.</li>
+                                                </ul>
+                                            </div>    
+                                            <div class="card-action">
+                                                <span><a href="index.html#services">Let's Talk</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- mobile -->
+                        <div class="hide-on-med-only hide-on-large-only" id='display_mobile'>
+                            <div class="col s12">
+                                <div class="card col s12">
+                                    <div class="col s12 card-stacked">
+                                        <div class="card-content" style="color: black">
+                                            <h4 style="color: black; text-align: left">Customer Support (Back End)</h4>
+                                            <p style="text-align: left">Make your business expansion your focus. We will turn the average process such as office administration, account creation, outbound chat support and document processing into a thing of the past by moving it from your office to ours. All you need to do is focus on creating amazing products or services for your business.</p>
+                                            <a href="#" data-target="collapse-content1" data-text-more="" class="read-more">Read More</a>
+                                            <div data-collapse="collapse-content1"  data-text-close="Close">
+                                                <ul style="text-align: left">
+                                                    <li>Handle office admin processes</li>
+                                                    <li>Attract new customers into your systems.</li>
+                                                    <li>Enter data in a CRM system or update customer records</li>
+                                                    <li>Validate and provision customer orders and set-up billing and payment preferences, following your processes and your timeframes.</li>
+                                                    <li>Digitize your business to increase its accessibility</li>
+                                                    <li>Handle emails Inbound/Outbound Chat Support</li>
+                                                    <li>Handle all paperwork that can be processed online</li>
+                                                    <li>File documents</li>
+                                                    <li>Send electronic paper transactions</li>
+                                                    <li>Manage Accounting Applications – Ex: Xero and Intuit.</li>
+                                                </ul>
+                                            </div>   
+                                            <div class="card-action">
+                                                <span><a href="index.html#services">Let's Talk</a></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -74,5 +166,13 @@
     <script src="assets/js/scrolloverflow.min.js"></script> 
     <script src="assets/js/jquery.fullPage.js"></script> 
     <script src="assets/js/jquery.fullpage.extensions.min.js"></script>
-    <script src="assets/js/readmore.js"></script> 
+    <script src="assets/js/readmore.js"></script>
+    <script src="assets/js/navbar.js"></script>  
+    <script >
+
+  $('.fixed-action-btn').openFAB();
+  $('.fixed-action-btn').closeFAB();
+  $('.fixed-action-btn.toolbar').openToolbar();
+  $('.fixed-action-btn.toolbar').closeToolbar()
+    </script>
 </html>

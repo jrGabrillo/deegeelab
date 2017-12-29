@@ -9,12 +9,12 @@ $(document).ready(function() {
         'verticalCentered': true,
         'easing': 'easeInOutCirc',
         'css3': false,
-        'scrollingSpeed': 900,
+        'scrollingSpeed': 1000,
         'slidesNavigation': true,
         'slidesNavPosition': 'bottom',
         'easingcss3': 'ease',
         'navigation': true,
-        'anchors': ['home','why', 'services','portfolio','team','contact'],
+        'anchors': ['home','pillars','contact'],
         'navigationPosition': 'left'
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());

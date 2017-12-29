@@ -42,7 +42,6 @@
             if (panels[j].className == "panel active") {
                   var an = j;
                   var al = j * 20;
-                  console.log(j);
                   panels[j].style.left = al + "%";
             }
       }
@@ -50,7 +49,6 @@
             if (panels[k].className != "panel active") {
                   panels[k].className = "panel inactive";
                   var il;
-                  console.log(`${k} - ${an} ${(k < an)}`);
                   if (k < an) {
                         il = al - (an - k) * 20;
                         panels[k].style.left = il + "%";

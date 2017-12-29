@@ -8,60 +8,18 @@
     text-align: center;
 }
 /*background for services*/
-.bgLEAD{
-    background: url("../images/background/pillars/bglead.jpg");
+.bgpillars{
+    background: url("../images/background/bgpillars.jpg");
     width:  100% !important;
     height: 400px !important;
     background-repeat: no-repeat;
-     background-size: cover; 
-}
-
-.bgMARKETING{
-    background: url("../images/background/pillars/bgmarketing.jpg");
-    width:  100% !important;
-    height: 400px !important;
-    background-repeat: no-repeat;
-     background-size: cover; 
-}
-
-.bgFRONT{
-    background: url("../images/background/pillars/bgFRONT.jpg");
-    width:  100% !important;
-    height: 400px !important;
-    background-repeat: no-repeat;
-     background-size: cover; 
-}
-
-.bgBACK{
-    background: url("../images/background/pillars/bgBACK.jpg");
-    width:  100% !important;
-    height: 400px !important;
-    background-repeat: no-repeat;
-     background-size: cover; 
-}
-
-.bgWEBDEV{
-    background: url("../images/background/bgflat4.jpg");
-    width:  100% !important;
-    height: 400px !important;
-    background-repeat: no-repeat;
-     background-size: cover; 
-}
-
-.bgSOCIAL{
-    background: url("../images/background/bgflat4.jpg");
-    width:  100% !important;
-    height: 400px !important;
-    background-repeat: no-repeat;
-     background-size: cover; 
+    background-size: cover;
 }
 /*background in homepage*/
 .bg{
-    background: url("../images/background/bgflat4.jpg");
-    width:  100% !important;
-    height: 400px !important;
+    background: url("../images/background/bbg1.jpg");
     background-repeat: no-repeat;
-     background-size: cover; 
+    background-size: cover;
 }
 
 .Contactbg1{
@@ -76,6 +34,53 @@
     background-size: cover;
 }
 /*end of background in homepage*/
+
+/*Images on every services Pillars*/
+#lead{
+    background: url(../images/background/pillars/bglead.png);
+    background-size: cover;
+    width:  45%;
+}
+
+#backend{
+    background: url(../images/background/pillars/bgbackend.jpg);
+    background-size: cover;
+    width:  45%;
+}
+
+#frontend{
+    background: url(../images/background/pillars/bgfrontend.jpg);
+    background-size: cover;
+    width:  45%;
+}
+
+#social{
+    background: url(../images/background/pillars/bgsocial.jpg);
+    background-size: cover;
+    width:  45%;
+}
+
+#webdev{
+    background: url(../images/background/pillars/webdev1.jpg);
+    background-size: cover;
+    width:  45%;
+}
+
+#marketing{
+    background: url(../images/background/pillars/marketing1.jpg);
+    background-size: cover;
+    width:  45%;
+}
+
+#backcon{
+    background: url(../images/background/pillars/bgcontact.jpg);
+    position:  relative;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+}
+/*end*/
+
 .icoo{
    background: url("../Logo/DeegeelabLogo.png");
    position: relative;

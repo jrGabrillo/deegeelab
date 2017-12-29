@@ -1,23 +1,161 @@
-/* Style the header */
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
+header {
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    transition: .32s ease-out;
+    z-index: 2;
+    background: #384047e8;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+header a, .navBtn {
+  
+  color: #fff;
+
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
+.toggle {
+    width: 312px;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
+.reveal {
+    opacity: 1;
+    left: 0;
+}
+
+nav {
+    padding-left: 360px;
+    overflow: hidden;
+    position: absolute;
+    transition: .3s ease-out;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+}
+    nav a {
+        float: left;
+        padding: 8px 0;
+        opacity: .5;
+        width: 100%;
+        transition: .3s ease;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.85em;
+    }
+        nav a:hover, .current, .toggle .navBtn {
+            opacity: 1;
+        }
+
+    .toggle nav {
+        padding-left: 60px;
+        opacity: 1;
+    }
+
+.navBtn {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 30px 0 0;
+    width: 100%;
+    text-align: center;
+    line-height: 1em;
+    -webkit-transform:rotate(0deg);
+    transition: .3s ease-out;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000001;
+    opacity: .5;
+    left: 0;
+}
+
+    .toggle .navBtn{
+        -webkit-transform:rotate(224deg);
+        color: #fff;
+        left: -100px;
+    }
+
+.navBtn:hover {
+    opacity: 1;
+}
+
+.main {
+    background: #f6f6f6;
+    float: right;
+    width: 95%;
+    margin: 0 0 0 5%;
+    padding: 0;
+    transition: .6s ease-in;
+    overflow: hidden;
+    z-index: 2;
+}
+.push {
+    margin-left: 240px;
+    margin-right: -240px;
+    transition: .3s ease-in;
+}
+
+.overlay {
+    width: 100%;
+    background: #384047;
+    opacity: .85;
+    z-index: 1;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+/* 1024 */
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    header {
+        width: 8%;
+    }
+    .main {
+      width: 92%;
+    }
+}
+
+/* 768 */
+@media only screen and (max-width: 768px) {
+    header {
+        width: 10%;
+    }
+    .main {
+      width: 90%;
+    }
+
+}
+
+/* 480 */
+@media only screen and (max-width: 480px) {
+    header {
+        width: 10%;
+    }
+    .main {
+      width: 90%;
+    }
+    h3 {
+      font-size: 2em;
+
+}
+
+/* 320 */
+@media only screen and (max-width: 320px) {
+    header {
+        width: 15%;
+    }
+    .main {
+      width: 85%;
+    }
+
 }

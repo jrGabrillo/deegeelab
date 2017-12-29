@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Deegeelab - Digital Marketing - SuperCharge Your Business</title>
     <link href="assets/Logo/DeegeelabWhite.png" rel="icon">
+    <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
     <link href="assets/fonts/flaticon.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
@@ -15,11 +16,32 @@
     <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
     <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/socialfloat.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
     <link href="assets/fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
 
 
 </head>
-<body class="bgFRONT">
+<body class="bgpillars">
+    <header>
+        <div class="navBtn">
+        +
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#pillars">Services</a>
+            <a href="index.html#contact">Contact</a>
+            <hr>
+           OUR SERVICES
+            <hr>
+<a href="social.html">Social Media Management</a>
+<a href="marketing.html">Digital Marketing</a>
+<a href="lead.html">Lead Generation</a>
+<a href="webdev.html">Website Development</a>
+<a href="backend.html">Customer Support Back-End</a>
+<a href="frontend.html">Customer Support Front-End</a>
+
+        </nav>
+    </header>
     <div>
         <div class="fl-fl float-fb">
             <i class="fab fa-facebook fa-2x"></i> <a href="" target="_blank">Like us!</a>
@@ -35,36 +57,106 @@
         </div>
     </div>
     <div class="container">
-        <div class="section col s12 m10 l0 offset-l1">
+        <div class="section col s12 m10 l8 offset-l2">
             <div class="row">
                 <div class="layer" data-depth="0.3">
                     <div class="main">
-                        <div class="row">
-                            <div class="col s12 m6 l8 card">
-                                <div class="col s12 card-stacked">
+                        <!-- desktop -->
+                        <div class="hide-on-med-only hide-on-small-only" id='display_desktop'>
+                            <div class="col s12">
+                                <div class="card horizontal">
+                                <div class="card-image" id='frontend'></div>
+                                    <div class="col s12 card-stacked">
+                                        <div class="card-content" style="color: black">
+                                        <h4 style="color: black; text-align: left">Customer Support (Front End)</h4>
+                                        <p style="text-align: left">Our team will be responsible for acting as a liaison between customers and companies. We also assist in processing complaints, orders, errors, account questions, billing, cancelations and other queries from the customers. We provide on going support to the customers in order to keep the business running as smoothly as possible.</p>
+                                        <a href="#" data-target="collapse-content1" data-text-more="" class="read-more">Read More</a>
+                                        <div data-collapse="collapse-content1"  data-text-close="Close">
+                                            <ul style="text-align: left">
+                                                <li>Resolve customer complaints via phone, email, mail, or social media.</li>
+                                                <li>Use telephones to reach out to customers.</li>
+                                                <li>Advise on company information.</li>
+                                                <li>Act as the company gatekeeper.</li>
+                                                <li>Suggest solutions for customer problems.</li>
+                                                <li>Inform customer of deals and promotions.</li>
+                                                <li>Sell products and services.</li>
+                                                <li>Utilize computer technology to handle high call volumes.</li>
+                                                <li>Work with customer service manager to ensure proper customer service is being delivered.</li>
+                                                <li>Close out or open call records.</li>
+                                                <li>Read from scripts.</li>
+                                                <li>Handle changes in service policies or renewals.</li>
+                                            </ul>
+                                        </div>   
+                                        <div class="card-action">
+                                            <span><a href="index.html#services">Let's Talk</a></span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tablet -->
+                        <div class="hide-on-small-only hide-on-large-only" id='display_tablet'>
+                            <div class="col s12">
+                                <div class="card horizontal">
+                                <div class="card-image" id='frontend'></div>
+                                    <div class="col s12 card-stacked">
+                                        <div class="card-content" style="color: black">
+                                        <h4 style="color: black; text-align: left">Customer Support (Front End)</h4>
+                                        <p style="text-align: left">Our team will be responsible for acting as a liaison between customers and companies. We also assist in processing complaints, orders, errors, account questions, billing, cancelations and other queries from the customers. We provide on going support to the customers in order to keep the business running as smoothly as possible.</p>
+                                        <a href="#" data-target="collapse-content1" data-text-more="" class="read-more">Read More</a>
+                                        <div data-collapse="collapse-content1"  data-text-close="Close">
+                                            <ul style="text-align: left">
+                                                <li>Resolve customer complaints via phone, email, mail, or social media.</li>
+                                                <li>Use telephones to reach out to customers.</li>
+                                                <li>Advise on company information.</li>
+                                                <li>Act as the company gatekeeper.</li>
+                                                <li>Suggest solutions for customer problems.</li>
+                                                <li>Inform customer of deals and promotions.</li>
+                                                <li>Sell products and services.</li>
+                                                <li>Utilize computer technology to handle high call volumes.</li>
+                                                <li>Work with customer service manager to ensure proper customer service is being delivered.</li>
+                                                <li>Close out or open call records.</li>
+                                                <li>Read from scripts.</li>
+                                                <li>Handle changes in service policies or renewals.</li>
+                                            </ul>
+                                        </div>     
+                                        <div class="card-action">
+                                            <span><a href="index.html#services">Let's Talk</a></span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- mobile -->
+                        <div class="hide-on-med-only hide-on-large-only" id='display_mobile'>
+                            <div class="col s12">
+                                <div class="card col s12">
+                                    <div class="col s12 card-stacked">
                                     <div class="card-content" style="color: black">
                                         <h4 style="color: black; text-align: left">Customer Support (Front End)</h4>
                                         <p style="text-align: left">Our team will be responsible for acting as a liaison between customers and companies. We also assist in processing complaints, orders, errors, account questions, billing, cancelations and other queries from the customers. We provide on going support to the customers in order to keep the business running as smoothly as possible.</p>
                                         <a href="#" data-target="collapse-content1" data-text-more="" class="read-more">Read More</a>
-                                    <div data-collapse="collapse-content1"  data-text-close="Close">
-                                        <ul style="text-align: left">
-                                            <li>Resolve customer complaints via phone, email, mail, or social media.</li>
-                                            <li>Use telephones to reach out to customers.</li>
-                                            <li>Advise on company information.</li>
-                                            <li>Act as the company gatekeeper.</li>
-                                            <li>Suggest solutions for customer problems.</li>
-                                            <li>Inform customer of deals and promotions.</li>
-                                            <li>Sell products and services.</li>
-                                            <li>Utilize computer technology to handle high call volumes.</li>
-                                            <li>Work with customer service manager to ensure proper customer service is being delivered.</li>
-                                            <li>Close out or open call records.</li>
-                                            <li>Read from scripts.</li>
-                                            <li>Handle changes in service policies or renewals.</li>
-                                        </ul>
-                                    </div>    
-                                    </div>
-                                    <div class="card-action">
-                                        <span><a href="index.html#services">Let's Talk</a></span>
+                                        <div data-collapse="collapse-content1"  data-text-close="Close">
+                                            <ul style="text-align: left">
+                                                <li>Resolve customer complaints via phone, email, mail, or social media.</li>
+                                                <li>Use telephones to reach out to customers.</li>
+                                                <li>Advise on company information.</li>
+                                                <li>Act as the company gatekeeper.</li>
+                                                <li>Suggest solutions for customer problems.</li>
+                                                <li>Inform customer of deals and promotions.</li>
+                                                <li>Sell products and services.</li>
+                                                <li>Utilize computer technology to handle high call volumes.</li>
+                                                <li>Work with customer service manager to ensure proper customer service is being delivered.</li>
+                                                <li>Close out or open call records.</li>
+                                                <li>Read from scripts.</li>
+                                                <li>Handle changes in service policies or renewals.</li>
+                                            </ul>
+                                        </div>    
+                                        <div class="card-action">
+                                            <span><a href="index.html#services">Let's Talk</a></span>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -80,5 +172,13 @@
     <script src="assets/js/scrolloverflow.min.js"></script> 
     <script src="assets/js/jquery.fullPage.js"></script> 
     <script src="assets/js/jquery.fullpage.extensions.min.js"></script>
-    <script src="assets/js/readmore.js"></script> 
+    <script src="assets/js/readmore.js"></script>
+    <script src="assets/js/navbar.js"></script>  
+    <script >
+
+  $('.fixed-action-btn').openFAB();
+  $('.fixed-action-btn').closeFAB();
+  $('.fixed-action-btn.toolbar').openToolbar();
+  $('.fixed-action-btn.toolbar').closeToolbar()
+    </script>
 </html>

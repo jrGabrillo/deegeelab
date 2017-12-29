@@ -18,40 +18,51 @@
     <link href="assets/css/pillar.css" rel="stylesheet" type="text/css">
     <link href="assets/css/preload.css" rel="stylesheet" type="text/css">
     <link href="assets/css/socialfloat.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>    
-
     <!-- Floating Social Media bar Starts -->
     <div>
-      <div class="fl-fl float-fb">
-        <i class="fab fa-facebook fa-2x"></i>
-        <a href="" target="_blank"> Like us!</a>
-      </div>
-      <div class="fl-fl float-tw">
-        <i class="fab fa-twitter fa-2x"></i>
-        <a href="" target="_blank">Follow us!</a>
-      </div>
-      <div class="fl-fl float-gp">
-        <i class="fab fa-linkedin fa-2x"></i>
-        <a href="" target="_blank">Connect with us!</a>
-      </div>
-      <div class="fl-fl float-rs">
-        <i class="fab fa-instagram fa-2x"></i>
-        <a href="" target="_blank">Follow us</a>
-      </div>
-<!--       <div class="fl-fl float-ig">
-        <i class="small material-icons">insert_chart</i>
-        <a href="" target="_blank">Follow us!</a>
-      </div>
-      <div class="fl-fl float-pn">
-        <i class="small material-icons">insert_chart</i>
-        <a href="" target="_blank">Follow us!</a>
-      </div> -->
+        <div class="fl-fl float-fb">
+            <i class="fab fa-facebook fa-2x"></i>
+            <a href="https://www.facebook.com/DeeGeeLabAU/" target="_blank"> Like us!</a>
+        </div>
+        <div class="fl-fl float-tw">
+            <i class="fab fa-twitter fa-2x"></i>
+            <a href="" target="_blank">Follow us!</a>
+        </div>
+        <div class="fl-fl float-gp">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <a href="" target="_blank">Connect with us!</a>
+        </div>
+        <div class="fl-fl float-rs">
+            <i class="fab fa-instagram fa-2x"></i>
+            <a href="" target="_blank">Follow us</a>
+        </div>
     </div>
-    <div id="fullpage">
+    <header>
+        <div class="navBtn">
+        +
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#pillars">Services</a>
+            <a href="index.html#contact">Contact</a>
+            <hr>
+           OUR SERVICES
+            <hr>
+<a href="social.html">Social Media Management</a>
+<a href="marketing.html">Digital Marketing</a>
+<a href="lead.html">Lead Generation</a>
+<a href="webdev.html">Website Development</a>
+<a href="backend.html">Customer Support Back-End</a>
+<a href="frontend.html">Customer Support Front-End</a>
 
-        <!-- header -->
+        </nav>
+    </header>
+    <div id="fullpage">
+        <!-- Home -->
         <div class="section col s12 bg ">
             <div class="row center rnr-parallax1">
                 <div class="layer wrapper" data-depth="0.3">
@@ -460,69 +471,167 @@
             </div>
         </div>
         <!-- contact us -->
-        <div class="section col s12 m10 l0 offset-l1 Contactbg1">
-            <div class="col s12 m10 l10 white-text card center">
-                <div class="row">
-                    <div class="col s12 m6 l6">
-                        <div style="">
-                            <span style="color: black !important; float: left; font-size: 25px; margin-top: 30px">Let's Talk</span>
-                            <div>
-                                <span style="color: black !important; float: left; font-size: 15px; margin-top: 30px; text-align: justify !important;">We're ready to talk. Discover more about Deegeelab.Grab Free quote, and have a chat to<br>
-                                one of our friendly team.</span>
+    <div class="section col s12 Contactbg1">
+        <div class="layer wrapper" data-depth="0.3">
+            <!-- desktop -->
+            <div class="hide-on-med-only hide-on-small-only" id='display_desktop'>
+                <div class="col s12" style="margin-right: 50px;margin-left: 50px">
+                    <div class="card horizontal">
+                        <div class="card-image" id='backcon'>
+                            <div style="float: left !important; margin-left: 20px;">
+                                <h4 style="color: white !important;">Let's Talk</h4>
+                                <p>Your Success is our success<br>
+                                Supercharge your Business Today.</p>
+                                <div style="margin-left: 2em">
+                                    <div style="margin-left: 2em">
+                                        <i class="fas fa-envelope fa-2x"></i> <a href="">
+                                        <span style="color: white !important;"> info@deegeelab.com</span>
+                                        </a>
+                                    </div>
+                                    <div style="margin-left: 2em; margin-top: 20px;">
+                                        <i class="fas fa-address-card fa-2x"></i> <a href="">
+                                        <span style="color: white !important;">Suit 3,Level 27 GovernorMacquarrie Tower 1 Farrer Place,Sydny NSW 2000 AUSTRALIA.</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 card-stacked">
+                            <div class="card-content" style="color: black">
+                                <form id="form_query" method="po st" name="form_query">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_name" name="field_name" style="color: black !important;" type="text"> <label for="field_name">Name</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_business" name="field_business" style="color: black !important;" type="text"> <label for="field_business">Business Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_conemail" name="field_conemail" style="color: black !important;" type="email"> <label for="field_conemail">Contact Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_connumber" name="field_connumber" style="color: black !important;" type="number"> <label for="field_email">Contact Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_date" name="field_message" style="color: black !important;" type="text"> <label for="field_date">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <button class="rnr-button waves-effect waves-light" style="color: black !important;">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m6 l6" style="border-left: black solid 0.5px;">
-                        <form id="form_query" method="po st" name="form_query">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input class="validate" id="field_name" name="field_name" style="color: black !important;" type="text"> <label for="field_name">Full Name</label>
-                                </div>
-                                <div class="input-field col s12">
-                                    <input class="validate" id="field_business" name="field_business" style="color: black !important;" type="text"> <label for="field_business">Business Name</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input class="validate" id="field_conemail" name="field_conemail" style="color: black !important;" type="email"> <label for="field_conemail">Contact Email</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input class="validate" id="field_connumber" name="field_connumber" style="color: black !important;" type="number"> <label for="field_email">Contact Number</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input class="validate" id="field_postal" name="field_postal" style="color: black !important;" type="number"> <label for="field_postal">Postal Code</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input class="datepicker" id="field_date" name="field_date" style="color: black !important;" type="text"> <label for="field_date">Date</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input class="validate timepicker" id="field_time" name="field_time" style="color: black !important;" type="text"> <label for="field_time">Time</label>
+                </div>
+            </div>
+            <!-- tablet -->
+            <div class="hide-on-small-only hide-on-large-only" id='display_tablet'>
+                <div class="col s12" style="margin-right: 50px;margin-left: 50px">
+                    <div class="card horizontal">
+                        <div class="card-image" id='backcon'>
+                            <div style="float: left !important; margin-left: 20px;">
+                                <h4 style="color: white !important;">Let's Talk</h4>
+                                <p>Your Success is our success<br>
+                                Supercharge your Business Today.</p>
+                                <div style="margin-left: 2em">
+                                    <div style="margin-left: 2em">
+                                        <i class="fas fa-envelope fa-2x"></i> <a href="">
+                                        <span style="color: white !important;"> info@deegeelab.com</span>
+                                        </a>
+                                    </div>
+                                    <div style="margin-left: 2em; margin-top: 20px;">
+                                        <i class="fas fa-address-card fa-2x"></i> <a href="">
+                                        <span style="color: white !important;">Suit 3,Level 27 GovernorMacquarrie Tower 1 Farrer Place,Sydny NSW 2000 AUSTRALIA.</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col s12">
-                                    <button class="rnr-button waves-effect waves-light" style="color: black !important;">Send</button>
-                                </div>
+                        </div>
+                        <div class="col s12 card-stacked">
+                            <div class="card-content" style="color: black">
+                                <form id="form_query" method="po st" name="form_query">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_name" name="field_name" style="color: black !important;" type="text"> <label for="field_name">Name</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_business" name="field_business" style="color: black !important;" type="text"> <label for="field_business">Business Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_conemail" name="field_conemail" style="color: black !important;" type="email"> <label for="field_conemail">Contact Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_connumber" name="field_connumber" style="color: black !important;" type="number"> <label for="field_email">Contact Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input class="validate" id="field_date" name="field_message" style="color: black !important;" type="text"> <label for="field_date">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <button class="rnr-button waves-effect waves-light" style="color: black !important;">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile -->
+            <div class="hide-on-med-only hide-on-large-only" id='display_mobile'>
+                <div class="card">
+                    <div class="row">
+                        <div class="col s12 m8 l8" style="border-left: black solid 0.5px;">
+                            <form id="form_query" method="po st" name="form_query">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input class="validate" id="field_name" name="field_name" style="color: black !important;" type="text"> <label for="field_name">Name</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input class="validate" id="field_business" name="field_business" style="color: black !important;" type="text"> <label for="field_business">Business Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input class="validate" id="field_conemail" name="field_conemail" style="color: black !important;" type="email"> <label for="field_conemail">Contact Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input class="validate" id="field_connumber" name="field_connumber" style="color: black !important;" type="number"> <label for="field_email">Contact Number</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input class="validate" id="field_date" name="field_message" style="color: black !important;" type="text"> <label for="field_date">Message</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <button class="rnr-button waves-effect waves-light" style="color: black !important;">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- FOOTER -->
-          
-        <div id="footer">
-            <div class="row">
-                <div class="col s12">
-                </div>
-            </div>
-        </div> 
+    </div>                  
     <!-- JAVASCRIPTS -->
     <script src="assets/js/jquery.min.js"></script> 
     <script src="assets/js/jquery.easings.min.js"></script> 
@@ -572,30 +681,26 @@
 })();
 
 </script>
-    <!-- SIDE NAV JS -->
-    <script> 
-        $('.datepicker').pickadate({
-            selectMonths: true, // Creates a dropdown to control month
-            selectYears: 15, // Creates a dropdown of 15 years to control year,
-            today: 'Today',
-            clear: 'Clear',
-            close: 'Ok',
-            closeOnSelect: false // Close upon selecting a date,
-        });
-        $('.timepicker').pickatime({
-            default: 'now', // Set default time: 'now', '1:30AM', '16:30'
-            fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
-            twelvehour: false, // Use AM/PM or 24-hour format
-            donetext: 'OK', // text for done-button
-            cleartext: 'Clear', // text for clear-button
-            canceltext: 'Cancel', // Text for cancel-button
-            autoclose: false, // automatic close timepicker
-            ampmclickable: true, // make AM PM clickable
-            aftershow: function(){} //Function for after opening timepicker
-        });
-        let h = window.height, w = window.width;
-        console.log(h);
-        console.log(w);
+    <script>
+        $(document).ready(function () { 
+
+  var toggleMenu = function() {
+      $('header').toggleClass('toggle');
+      $('.main').toggleClass('push');
+      $('.overlay').toggleClass('block');
+      $('#social, .logo').toggleClass('reveal');
+  };
+
+    //Nav
+    $('.navBtn').click(function() {
+    toggleMenu();
+    });
+
+  Mousetrap.bind('esc', function() {
+    toggleMenu();
+  });
+
+});
     </script>
 </body>
 </html>
