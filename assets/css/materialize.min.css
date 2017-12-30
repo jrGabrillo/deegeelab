@@ -3650,15 +3650,15 @@ small {
 }
 .card {
 	position: relative;
-	margin: .5rem 0 1rem 0;
+	/* margin: .5rem 0 1rem 0; */
 	background-color: #ffffff;
 	-webkit-transition: -webkit-box-shadow .25s;
 	transition: -webkit-box-shadow .25s;
 	transition: box-shadow .25s;
 	transition: box-shadow .25s, -webkit-box-shadow .25s;
 	border-radius: 2px;
-	border: solid 3px;
-	border-top-color: rgb(10, 153, 171);
+	/* border: solid 3px; */
+	/* border-top-color: rgb(10, 153, 171); */
 }
 .card .card-title {
 	font-size: 24px;
