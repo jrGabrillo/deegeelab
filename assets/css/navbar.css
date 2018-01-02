@@ -7,22 +7,16 @@ header {
     z-index: 2;
     background: #384047e8;
 }
-
 header a, .navBtn {
-  
-  color: #fff;
-
+    color: #fff;
 }
-
 .toggle {
     width: 312px;
 }
-
 .reveal {
     opacity: 1;
     left: 0;
 }
-
 nav {
     padding-left: 360px;
     overflow: hidden;
@@ -34,26 +28,24 @@ nav {
     opacity: 0;
     height: 100%;
 }
-    nav a {
-        float: left;
-        padding: 8px 0;
-        opacity: .5;
-        width: 100%;
-        transition: .3s ease;
-        font-size: 1em;
-        text-transform: uppercase;
-        font-weight: bold;
-        line-height: 1.85em;
-    }
-        nav a:hover, .current, .toggle .navBtn {
-            opacity: 1;
-        }
-
-    .toggle nav {
-        padding-left: 60px;
-        opacity: 1;
-    }
-
+nav a {
+    float: left;
+    padding: 8px 0;
+    opacity: .5;
+    width: 100%;
+    transition: .3s ease;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.85em;
+}
+nav a:hover, .current, .toggle .navBtn {
+    opacity: 1;
+}
+.toggle nav {
+    padding-left: 60px;
+    opacity: 1;
+}
 .navBtn {
     font-size: 2em;
     font-weight: 700;
@@ -61,7 +53,7 @@ nav {
     width: 100%;
     text-align: center;
     line-height: 1em;
-    -webkit-transform:rotate(0deg);
+    -webkit-transform: rotate(0deg);
     transition: .3s ease-out;
     display: block;
     cursor: pointer;
@@ -70,17 +62,14 @@ nav {
     opacity: .5;
     left: 0;
 }
-
-    .toggle .navBtn{
-        -webkit-transform:rotate(224deg);
-        color: #fff;
-        left: -100px;
-    }
-
+.toggle .navBtn {
+    -webkit-transform: rotate(224deg);
+    color: #fff;
+    left: -100px;
+}
 .navBtn:hover {
     opacity: 1;
 }
-
 .main {
     background: #f6f6f6;
     float: right;
@@ -96,7 +85,6 @@ nav {
     margin-right: -240px;
     transition: .3s ease-in;
 }
-
 .overlay {
     width: 100%;
     background: #384047;
@@ -106,12 +94,11 @@ nav {
     position: fixed;
     display: none;
 }
-
 .block {
     display: block;
 }
-
 /* 1024 */
+
 @media only screen and (max-width: 1024px) {
     .container {
         width: 100%;
@@ -121,41 +108,37 @@ nav {
         width: 8%;
     }
     .main {
-      width: 92%;
+        width: 92%;
     }
 }
-
 /* 768 */
+
 @media only screen and (max-width: 768px) {
     header {
         width: 10%;
     }
     .main {
-      width: 90%;
+        width: 90%;
     }
-
 }
-
 /* 480 */
+
 @media only screen and (max-width: 480px) {
     header {
         width: 10%;
     }
     .main {
-      width: 90%;
+        width: 90%;
     }
     h3 {
-      font-size: 2em;
-
-}
-
-/* 320 */
-@media only screen and (max-width: 320px) {
-    header {
-        width: 15%;
+        font-size: 2em;
     }
-    .main {
-      width: 85%;
+    /* 320 */
+    @media only screen and (max-width: 320px) {
+        header {
+            width: 15%;
+        }
+        .main {
+            width: 85%;
+        }
     }
-
-}
