@@ -44,9 +44,18 @@ $(document).on("ready",function(){
         $( '#social, .logo' ).toggleClass( 'reveal' );
     };
     //Nav
-    $( '.navBtn' ).click( function() {
+    $('.navBtn').click( function() {
         toggleMenu();
-    } );
+    });
+
+    let date = new Date();
+    date.setDate(date.getDate() + 7);
+    let mindate = `${date.getFullYear()}-${((date.getMonth()+1)<10?`0${(date.getMonth()+1)}`:(date.getMonth()+1))}-${date.getDate()}`;
+    let maxdate = `${date.getFullYear()}-${((date.getMonth()+6)<10?`0${(date.getMonth()+6)}`:(date.getMonth()+6))}-${date.getDate()}`;
+
+    $("#field_date").attr({"min":mindate});
+    $("#field_date").attr({"max":maxdate});
+
     $("#form_query").validate({
         rules: {
             field_name: {required: true,maxlength: 200},

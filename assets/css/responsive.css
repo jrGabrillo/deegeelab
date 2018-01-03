@@ -290,20 +290,20 @@ p.label {
     margin-bottom: 25px;
 }
 .rnr-button {
-    /*background: #f00 !important;*/
+    background: #02bad0 !important;
     background: transparent !important;
     border: 2px solid #ccc;
     padding: 10px;
-    color: #fff !important;
+    /* color: #fff !important; */
     border-radius: 5px;
     text-transform: uppercase;
     min-width: 150px;
 }
 .rnr-button:hover {
-    background-color: #0a99ab !important;
+    background-color: #02bad0 !important;
     border: 2px solid #fff;
     padding: 10px;
-    /*color: #3/33;*/
+    color: #fff;
     border-radius: 5px;
 }
 .rnr-parallax4 .card {

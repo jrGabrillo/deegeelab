@@ -923,10 +923,7 @@ input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:n
     box-shadow: 0 1px 0 0 #fff !important;
 }
 .error {
-    /* color: #fff; */
     font-size: 10px;
-    /*position: relative;
-    top: -15px;*/
 }
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
     margin: 0 0 5px 0 !important;
@@ -960,4 +957,15 @@ ul.skills {
 	background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));;
 	background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+
+.btn-round{
+    border-radius: 20px !important;
+}
+
+#contact_bg{
+    background: url("../images/bg_contact_image.png") no-repeat;
+    background-size: cover;
+    min-height: 640px;
+    opacity:  0.6;
 }

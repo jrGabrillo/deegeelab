@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Deegeelab - Your Digital Marketing Specialist in Australia</title>
     <link href="assets/Logo/DeegeelabWhite.png" rel="icon">
-    <link href="assets/fonts/flaticon.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
@@ -21,19 +21,19 @@
 <body>
     <div><!-- Floating Social Media bar Starts -->
         <div class="fl-fl float-fb">
-            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
             <a href="https://www.facebook.com/DeeGeeLabAU/" target="_blank"> Like us!</a>
         </div>
         <div class="fl-fl float-tw">
-            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
             <a href="" target="_blank">Follow us!</a>
         </div>
         <div class="fl-fl float-gp">
-            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
             <a href="" target="_blank">Connect with us!</a>
         </div>
         <div class="fl-fl float-rs">
-            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
             <a href="" target="_blank">Follow us</a>
         </div>
     </div>
@@ -466,28 +466,32 @@
         </div>
         
         <div class="section col s12 Contactbg1" style="padding: 0px;"> <!-- contact us -->
-            <div class="overlap-gradient" style="padding-top: 5%;">
+            <div class="overlap-gradient" style="padding-top: 2%;">
                 <div class="layer wrapper" data-depth="0.3">
                     <!-- desktop -->
                     <div class="" id='display_desktop'><!-- hide-on-med-only hide-on-small-only -->
                         <div class="col s12" style="margin-right: 50px;margin-left: 130px;">
                             <div class="card form_holder" style="margin: 0 auto;">
                                 <div class="card-content row">
-                                    <div class="col s12 m4 l4">
+                                    <div class="col s12 m4 l4" id='contact_bg'>
                                         <h4>Let's Talk</h4>
                                         <p class="black-text">Your Success is our success<br> Supercharge your Business Today.</p>
                                         <ul>
-                                            <li>
-                                                <i class="material-icons small" style="line-height: normal;">mail_outline</i>
-                                                <span class="right col s10">info@deegeelab.com</span>
+                                            <li class="row">
+                                                <span class="col s2"><i class="material-icons small" style="line-height: normal;">mail_outline</i></span>
+                                                <span class="col s10">info@deegeelab.com</span>
                                             </li>
-                                            <li>
-                                                <i class="material-icons small" style="line-height: normal;">phone</i>
-                                                <span class="right col s10">0948 999 9988</span>
+                                            <li class="row">
+                                                <span class="col s2"><i class="material-icons small" style="line-height: normal;">phone</i></span>
+                                                <span class="col s10">0948 999 9988</span>
                                             </li>
-                                            <li>
-                                                <i class="material-icons small" style="line-height: normal;">map</i>
-                                                <span class="right col s10">Suit 3,Level 27 GovernorMacquarrie Tower 1 Farrer Place,Sydny NSW 2000 AUSTRALIA.</span>
+                                            <li class="row">
+                                                <span class="col s2"><i class="material-icons small" style="line-height: normal;">map</i></span>
+                                                <span class="col s10">Suit 3,Level 27 GovernorMacquarrie Tower 1 Farrer Place,Sydny NSW 2000 AUSTRALIA</span>
+                                            </li>
+                                            <li class="row">
+                                                <span class="col s2"><i class="material-icons small" style="line-height: normal;">map</i></span>
+                                                <span class="col s10">Unit 8 Viliran Compound Lingayen, Pangasinan Philippines</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -517,19 +521,19 @@
                                             </div>
                                             <div class="row">
                                                 <div class="input-field col s12">
-                                                    <input id='field_dateFrom' type='date' id="field_date" name='field_date'>
+                                                    <input id='field_date' type='date' id="field_date" name='field_date'>
                                                     <label for="field_date" class="active">Schedule a meeting</label>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="input-field col s12">
-                                                    <textarea class="validate" id="field_message" name="field_message" type="text"></textarea>
+                                                    <textarea rows='5' class="validate" id="field_message" name="field_message" type="text"></textarea>
                                                     <label for="field_date">Message</label>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col s12">
-                                                    <button class="rnr-button waves-effect waves-light">Send</button>
+                                                    <button class="right btn-round rnr-button waves-effect waves-light">Send</button>
                                                 </div>
                                             </div>
                                         </form>
