@@ -20,9 +20,7 @@ $function = new DatabaseClasses;
         $id = $function->PDO_IDGenerator('tbl_leads','id');
         $date = $function->PDO_DateAndTime();
         $data = $_POST['data'];
-
-        print_r($data);
-        
+      
         $name = $function->escape($data[0]['value']);
         $business = $function->escape($data[1]['value']);
         $email = $function->escape($data[2]['value']);
@@ -40,19 +38,20 @@ $function = new DatabaseClasses;
                                     </div>
                                     <div class='container' style='text-align: center; background: white;padding: 10px;'>
                                         <div style='text-align:left; color:#000;'>
-                                            <p><strong style='font-weight: bold;'>Name:</strong><br>{$name}</p>
-                                            <p><strong style='font-weight: bold;'>Business:</strong><br>{$business}</p>
-                                            <p><strong style='font-weight: bold;'>Email:</strong><br>{$email}</p>
-                                            <p><strong style='font-weight: bold;'>Number:</strong><br>{$number}</p>
-                                            <p><strong style='font-weight: bold;'>Scheduled Date:</strong><br>{$date}</p>
-                                            <p><strong style='font-weight: bold;'>Message:</strong><br>{$message}</p>
+                                            <p><strong style='font-weight: bold;'>Name:</strong><br>{$data[0]['value']}</p>
+                                            <p><strong style='font-weight: bold;'>Business:</strong><br>{$data[1]['value']}</p>
+                                            <p><strong style='font-weight: bold;'>Email:</strong><br>{$data[2]['value']}</p>
+                                            <p><strong style='font-weight: bold;'>Number:</strong><br>{$data[3]['value']}</p>
+                                            <p><strong style='font-weight: bold;'>Scheduled Date:</strong><br>{$data[4]['value']}</p>
+                                            <p><strong style='font-weight: bold;'>Message:</strong><br>{$data[5]['value']}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>";
 
-            $mail = $function->mail($email.', rufo@deegeelab.com',"New leads for attention",$message); //, info@deegeelab.com
+            $mail = $function->mail('rufo.gabrillo@gmail.com, info@deegeelab.com, vinay@deegeelab.com',"New leads for attention",$message);
+            print_r($mail);
             echo 1;
         }
         else{

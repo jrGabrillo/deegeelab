@@ -479,6 +479,12 @@ p.label {
     position: absolute !important;
 }
 /* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/material-design-icons/material-icons.woff2) format('woff2');
+}
 
 .material-icons {
     font-family: 'Material Icons';

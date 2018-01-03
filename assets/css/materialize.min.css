@@ -1854,7 +1854,8 @@ i.tiny {
 	font-size: 1rem
 }
 i.small {
-	font-size: 2rem
+	font-size: 2rem;
+	/* line-height: 1px; */
 }
 i.medium {
 	font-size: 4rem
@@ -3438,7 +3439,7 @@ html {
 	line-height: 1.5;
 	font-family: "Roboto", sans-serif;
 	font-weight: normal;
-	color: rgb(255, 255, 255);
+	/* color: rgb(255, 255, 255); */
 }
 @media only screen and (min-width: 0) {
 	html {

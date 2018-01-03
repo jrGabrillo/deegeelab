@@ -67,21 +67,19 @@ $(document).on("ready",function(){
             }
         },
         submitHandler: function (form) {
-            var _form = $(form).serializeArray();
-            console.log(_form);
-            var data = system.ajax('assets/harmony/Process.php?set-leads',_form);
+            let _form = $(form).serializeArray();
+            let data = system.ajax('assets/harmony/Process.php?set-leads',_form);
             data.done(function(data){
-                console.log(data);
-                // if(data == 1){
-                //     Materialize.toast('Thank you. your message has been sent.',2000);
-                //     system.clearForm();
-                //     setTimeout(function(){
-                //         window.location.reload(true);
-                //     },2000);
-                // }
-                // else{
-                //     Materialize.toast('Cannot process request.',4000);
-                // }
+                if(data == 1){
+                    Materialize.toast('Thank you. your message has been sent.',2000);
+                    system.clearForm();
+                    setTimeout(function(){
+                        window.location.reload(true);
+                    },2000);
+                }
+                else{
+                    Materialize.toast('Cannot process request.',4000);
+                }
             });
         }
     });
