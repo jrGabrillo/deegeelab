@@ -97,7 +97,7 @@ html {
 }
 .panel:hover{
   width: 40%;
-  z-index:  1000;
+  /* z-index:  1000; */
 }
 
 *[data-count='one'] {
