@@ -101,43 +101,42 @@ html {
 }
 
 *[data-count='one'] {
-  background: #5d5a5a6e  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.5) center/cover no-repeat;
   left: 0;
 }
 
 *[data-count='one']:hover{
-  background: #11111100 url("../images/background/pillars/bgmarketing.jpg")  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.1) url("../images/background/pillars/bgmarketing.jpg")  center/cover no-repeat;
   left: 0;
 }
 
 *[data-count='two'] {
-  background: #3e3b3b8c  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.4) center/cover no-repeat;
   left: 25%;
 }
 
 *[data-count='two']:hover {
-  background: #33333370 url("../images/background/pillars/bglead.png")  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.1) url("../images/background/pillars/bglead.png")  center/cover no-repeat;
   left: 25%;
 }
 
 *[data-count='three'] {
-  background: #5854545c  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.3);
   left: 50%;
 }
 
 *[data-count='three']:hover {
-  background: #5555557a url("../images/background/pillars/bgbackend.jpg")  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.1) url("../images/background/pillars/bgbackend.jpg")  center/cover no-repeat;
   left: 50%;
 }
 
-
 *[data-count='four'] {
-  background: #6b676752  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.2) center/cover no-repeat;
   left: 75%;
 }
 
 *[data-count='four']:hover {
-  background: #aaaaaa8c url("../images/background/pillars/bgfrontend.jpg")  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.1) url("../images/background/pillars/bgfrontend.jpg")  center/cover no-repeat;
   left: 75%;
 }
 /* --- TEXT --- */

@@ -11,7 +11,7 @@ a {
 }
 body {
     background-size: cover;
-/*     font-family: Open Sans !important; */
+    /* font-family: Open Sans !important; */
 }
 ul {
     list-style-type: none;
@@ -1050,3 +1050,6 @@ ul.skills {
     line-height: unset;
 }
 
+div[data-anchor="home"] .fp-tableCell{
+    background: rgba(72, 72, 72, 0.89);
+}

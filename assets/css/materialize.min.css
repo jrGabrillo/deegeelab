@@ -2373,7 +2373,7 @@ td, th {
 	text-align: center;
 }
 .left {
-	/* float: left !important */
+	float: left !important;
 }
 .right {
 	float: right !important;
@@ -2469,8 +2469,8 @@ nav ul a span.badge {
 	margin-right: -.75rem
 }
 .section {
-	padding-top: 1rem;
-	padding-bottom: 1rem
+	/* padding-top: 1rem; */
+	/* padding-bottom: 1rem; */
 }
 .section.no-pad {
 	padding: 0
