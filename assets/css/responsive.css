@@ -1,6 +1,6 @@
 /*responsive styles*/
 
-.mobile {
+.mobile {:display
     display: none !important;
 }
 #social-icons, #logo {
@@ -40,32 +40,34 @@
 #lead {
     background: url(../images/background/pillars/bglead.png);
     background-size: cover;
-    width: 45%;
+    /*width: 45%;*/
 }
 #backend {
     background: url(../images/background/pillars/bgbackend.jpg);
     background-size: cover;
-    width: 45%;
+    /*width: 45%;*/
 }
 #frontend {
     background: url(../images/background/pillars/bgfrontend.jpg);
     background-size: cover;
-    width: 45%;
+    /*width: 45%;*/
 }
 #social {
     background: url(../images/background/pillars/bgsocial.jpg);
     background-size: cover;
-    width: 45%;
+    /*width: 45%;*/
 }
 #webdev {
     background: url(../images/background/pillars/webdev1.jpg);
     background-size: cover;
-    width: 45%;
+    /*width: 45%;*/
 }
 #marketing {
-    background: url(../images/background/pillars/marketing1.jpg);
+    background: url(../images/background/pillars/bgmarketing.jpg);
     background-size: cover;
-    width: 45%;
+    /*width: 45%;*/
+    background-position-x: -280px;
+
 }
 #backcon {
     background: url(../images/background/pillars/bgcontact.jpg);
