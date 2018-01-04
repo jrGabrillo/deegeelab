@@ -60,7 +60,7 @@
 #webdev {
     background: url(../images/background/pillars/webdev1.jpg);
     background-size: cover;
-    width: 45%;
+    /*width: 45%;*/
 }
 #marketing {
     background: url(../images/background/pillars/bgmarketing.jpg);
