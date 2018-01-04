@@ -995,12 +995,53 @@ ul.skills {
     margin-right:10px;
 }
 
-.node{
-       min-width:100px;
-       min-height: 30px;
-       background: rgba(0, 0, 0, 0.8);
-       padding:5px;
-       color: #fff;
-       text-align: center;
-       border-radius:  3px;
+.node .title{
+   min-width:100px;
+   min-height: 30px;
+   background: rgba(0, 0, 0, 0.8);
+   padding:5px;
+   color: #fff;
+   text-align: center;
+   border-radius:  3px;
+   display:inline-block;
+}
+
+.node .description{
+    cursor:pointer;
+    min-width:0px;
+    height:0px;
+    overflow:hidden;
+    box-sizing:content-box;
+    text-align: left;
+    position: absolute;
+    z-index:1000;
+    border-radius: 3px;
+    -webkit-transition: min-width 0.3s, min-width 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: min-width 0.3s, min-width 0.3s;
+}
+
+.node:hover .description{
+    min-width:250px;
+    min-height:100px;
+    background: #fff;
+    padding: 5px;
+}
+
+.node:hover .title{
+/*     display:none; */
+}
+
+.node .description .image{
+    background-size: cover !important;
+    background-position: center !important;
+    height: 80px;
+}
+
+.node p{
+    font-size:10px;
+}
+
+
+.bold{
+    font-weight:bold;
 }
