@@ -293,7 +293,7 @@ p.label {
     background: #02bad0 !important;
     background: transparent !important;
     border: 2px solid #ccc;
-    padding: 10px;
+    /* padding: 10px; */
     /* color: #fff !important; */
     border-radius: 5px;
     text-transform: uppercase;
@@ -302,7 +302,7 @@ p.label {
 .rnr-button:hover {
     background-color: #02bad0 !important;
     border: 2px solid #fff;
-    padding: 10px;
+    /* padding: 10px; */
     color: #fff;
     border-radius: 5px;
 }

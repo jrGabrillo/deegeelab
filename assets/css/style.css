@@ -188,9 +188,14 @@ h4, h5, h6 {
 }
 /*Social Icons*/
 
-#social-icons {
+#footer {
     position: fixed;
-    bottom: 2%;
+    bottom: 10%;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 #social-icons ul {
     padding: 0;
@@ -961,11 +966,18 @@ ul.skills {
 
 .btn-round{
     border-radius: 20px !important;
+    background:  #02bad0;
 }
 
 #contact_bg{
     background: url("../images/bg_contact_image.png") no-repeat;
     background-size: cover;
-    min-height: 640px;
+    min-height: 300px;
     opacity:  0.6;
+}
+
+#footer ul li{
+    min-width: 100px;
+    display:inline-block;
+    /* height:  10px; */
 }
