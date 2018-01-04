@@ -50,14 +50,16 @@ $(document).on("ready",function(){
         var pos = $(y).position(), _x = pos.top, _y = (pos.left)-50;
         $('#nodes').append(`
             <div class='node animated' style='position:absolute; top:${_x}px; left:${_y}px;'>
-                <div class='description row'>
-                    <div class='col s8'>
-                        <h6 class='bold'>${$(y).data('name')}</h6>
-                        <p>${$(y).data('desc')}</p>
+                <a href="#">
+                    <div class='description row'>
+                        <div class='col s8'>
+                            <h6 class='bold'>${$(y).data('name')}</h6>
+                            <p>${$(y).data('desc')}</p>
+                        </div>
+                        <div class='col s4 image' style='background:url(assets/images/background/pillars/${$(y).data('image')}) no-repeat;'></div>
                     </div>
-                    <div class='col s4 image' style='background:url(assets/images/background/pillars/${$(y).data('image')}) no-repeat;'></div>
-                </div>
-                <span class='title'>${$(y).data('name')}</span>
+                    <span class='title'>${$(y).data('name')}</span>
+                </a>
             </div>
         `);
     });

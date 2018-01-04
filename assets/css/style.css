@@ -1045,3 +1045,8 @@ ul.skills {
 .bold{
     font-weight:bold;
 }
+
+.node a{
+    line-height: unset;
+}
+
