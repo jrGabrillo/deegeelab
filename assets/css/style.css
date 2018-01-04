@@ -21,6 +21,9 @@ p {
     font-size: 20px;
     /* height: 900px; */
 }
+span {
+    font-size: 16px;
+}
 main {
     flex: 1 0 auto;
 }
