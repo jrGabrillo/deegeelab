@@ -55,7 +55,7 @@
 #social {
     background: url(../images/background/pillars/bgsocial.jpg);
     background-size: cover;
-    width: 45%;
+    /*width: 45%;*/
 }
 #webdev {
     background: url(../images/background/pillars/webdev1.jpg);
