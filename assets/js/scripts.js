@@ -50,7 +50,7 @@ $(document).on("ready",function(){
         var pos = $(y).position(), _x = pos.top, _y = (pos.left)-50;
         $('#nodes').append(`
             <div class='node animated' style='position:absolute; top:${_x}px; left:${_y}px;'>
-                <a href="#">
+                <a href="${$(y).data('link')}">
                     <div class='description row'>
                         <div class='col s8'>
                             <h6 class='bold'>${$(y).data('name')}</h6>
