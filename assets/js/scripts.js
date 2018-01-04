@@ -15,7 +15,8 @@ $(document).ready(function() {
         'easingcss3': 'ease',
         'navigation': true,
         'anchors': ['home','pillars','contact'],
-        'navigationPosition': 'left'
+        'navigationPosition': 'left',
+        'scrollOverflow': true,
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -32,9 +33,6 @@ $(document).ready(function() {
         }
     });
 });
-jQuery(window).load(function() {
-    // jQuery('#preloader').fadeOut();
-});
 
 $(document).on("ready",function(){
     var toggleMenu = function() {
@@ -43,9 +41,14 @@ $(document).on("ready",function(){
         $( '.overlay' ).toggleClass( 'block' );
         $( '#social, .logo' ).toggleClass( 'reveal' );
     };
-    //Nav
     $('.navBtn').click( function() {
         toggleMenu();
+    });
+
+    let nodes = $(".nodes").children();
+    $.each(nodes,function(x,y){
+        var pos = $(y).position(), _x = pos.top, _y = (pos.left)-50;
+        $('#nodes').append(`<div class='node' style='position:absolute; top:${_x}px; left:${_y}px;'>${$(y).data('name')}</div>`);
     });
 
     let date = new Date();
