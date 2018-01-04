@@ -3,11 +3,11 @@
 svg circle.st1 {
 	fill: #02BAD0;
 }
-svg circle.st1:hover {
+/*svg circle.st1:hover {
 	fill: #02bad0;
 	stroke-width: 0;
 	stroke: transparent;
-}
+}*/
 svg circle.st1 {
 	fill: #f9f9f9;
 	stroke: #000000;
