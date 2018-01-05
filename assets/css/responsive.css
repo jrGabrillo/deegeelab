@@ -240,4 +240,7 @@ span.head {
     svg:not(:root) {
         max-height: 200px !important;
     }
+    .fullwidth{
+        overflow-x:scroll !important;
+    }
 }

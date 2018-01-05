@@ -1093,5 +1093,21 @@ div[data-anchor="home"] .fp-tableCell{
 }
 
 .fullwidth{
-    overflow:hidden;
+    /* overflow:hidden; */
+}
+
+.enclosed{
+    padding: 0px 0px 50px 0px !important;
+}
+
+.enclosed a{
+    line-height: unset !important;
+}
+
+.enclosed .row{
+   margin-bottom: 0px !important;
+}
+
+.enclosed .divider{
+    margin-bottom: 20px !important;
 }
