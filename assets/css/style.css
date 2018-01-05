@@ -1086,12 +1086,6 @@ div[data-anchor="home"] .fp-tableCell{
     font-size: 12px;
 }
 
-.services-content{
-    min-height: 768px !important;
-    /* max-height: 768px; */
-    overflow: scroll;
-}
-
 .fullwidth{
     /* overflow:hidden; */
 }
