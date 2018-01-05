@@ -117,7 +117,7 @@ p.label {
     }
 }
 #fullpage, #modal_services .modal-content {
-    position: absolute !important;
+    /* position: absolute !important; */
     width: 100% !important;
     top: 0px;
 }
