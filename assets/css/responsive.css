@@ -12,9 +12,10 @@
 .bgpillars {
     background: url("../images/background/bgpillars.jpg");
     width: 100% !important;
-    height: 400px !important;
+    min-height: 400px !important;
     background-repeat: no-repeat;
     background-size: cover;
+    /* overflow: -webkit-paged-y; */
 }
 /*background in homepage*/
 
@@ -40,34 +41,33 @@
 #lead {
     background: url(../images/background/pillars/bglead.png);
     background-size: cover;
-    /*width: 45%;*/
+/*     min-height: 800px; */
 }
 #backend {
     background: url(../images/background/pillars/bgbackend.jpg);
     background-size: cover;
-    /*width: 45%;*/
+    /* min-height: 800px; */
 }
 #frontend {
     background: url(../images/background/pillars/bgfrontend.jpg);
     background-size: cover;
-    /*width: 45%;*/
+/*     min-height: 800px; */
 }
 #social {
     background: url(../images/background/pillars/bgsocial.jpg);
     background-size: cover;
-    /*width: 45%;*/
+    /* min-height: 800px; */
 }
 #webdev {
     background: url(../images/background/pillars/webdev1.jpg);
     background-size: cover;
-    /*width: 45%;*/
+/*     min-height: 800px; */
 }
 #marketing {
     background: url(../images/background/pillars/bgmarketing.jpg);
     background-size: cover;
-    /*width: 45%;*/
     background-position-x: -280px;
-
+/*     min-height: 800px; */
 }
 #backcon {
     background: url(../images/background/pillars/bgcontact.jpg);
@@ -88,358 +88,10 @@
     font-size: 2.5rem;
     text-align: center;
 }
-@media (min-width: 1141px) {
-    /* Desktop */
-    #display {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-    .services .col {
-        margin-top: 40px;
-    }
-    .rnr-parallax3 div[data-display='services-slider'] {
-        display: none;
-    }
-    .rnr-parallax4 div[data-display='portfolio-slider'] {
-        display: none;
-    }
-    .rnr-parallax5 div[data-display='team-slider'] {
-        display: none;
-    }
-    .fp-slidesNav {
-        display: none;
-    }
-    .portfolio-grid .slide {}
-    #modal_services img {
-        width: 100px;
-    }
-}
-@media (max-width: 1140px) {
-    /* Desktop */
-    #display {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-    .services .col {
-        margin-top: 40px;
-    }
-    #display_right img {
-        width: 80%;
-    }
-    #display_right #hand {
-        width: 60%;
-        top: 30%;
-    }
-    .rnr-parallax3 div[data-display='services-slider'] {
-        display: none;
-    }
-    .rnr-parallax4 div[data-display='portfolio-slider'] {
-        display: none;
-    }
-    .rnr-parallax5 div[data-display='team-slider'] {
-        display: none;
-    }
-    .fp-slidesNav {
-        display: none;
-    }
-    #modal_services img {
-        width: 100px;
-    }
-}
-@media (max-width: 993px) {
-    /* Tables */
-    #display {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .services .col {
-        margin-top: 20px;
-    }
-    #display_right {
-        display: block;
-    }
-    #display_right img {
-        width: 80%;
-    }
-    #display_right #hand {
-        width: 50%;
-        margin: 0 auto;
-        top: 40%;
-    }
-    .rnr-parallax3 div[data-display='services-slider'] {
-        display: none;
-    }
-    .rnr-parallax4 div[data-display='portfolio-slider'] {
-        display: none;
-    }
-    .rnr-parallax5 div[data-display='team-slider'] {
-        display: none;
-    }
-    .fp-slidesNav {
-        display: none;
-    }
-    #modal_services img {
-        width: 90px;
-    }
-    #modal_services img.logo {
-        width: 200px;
-    }
-}
-@media (min-width: 320px) and (max-width: 601px) {
-    /* Smartphones */
-    #display {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .services .col {
-        margin-top: 0px;
-    }
-    #display_right {
-        display: none;
-    }
-    #display_form h2 {
-        font-size: 30px;
-    }
-    .rnr-parallax2 {
-        /*text-align: left !important;*/
-    }
-    h1 {
-        font-size: 2.5rem;
-    }
-    p {
-        font-size: 15px;
-    }
-    .rnr-button.flat {
-        font-size: 15px;
-    }
-    .rnr-button.flat i {
-        line-height: 45px;
-    }
-    .rnr-parallax3 div[data-display='services-grid'] {
-        display: none;
-    }
-    .rnr-parallax3 div[data-display='services-slider'] {
-        display: block;
-    }
-    .rnr-parallax3 div[data-display='services-slider'] .carousel {
-        height: 200px !important;
-    }
-    .rnr-parallax3 div[data-display='services-slider'] .carousel p {
-        font-size: 15px !important;
-    }
-    .rnr-parallax4 div[data-display='portfolio-grid'] {
-        display: none;
-    }
-    .rnr-parallax4 div[data-display='portfolio-slider'] {
-        display: block;
-    }
-    .rnr-parallax4 div[data-display='portfolio-slider'] img {
-        width: 50%;
-    }
-    .rnr-parallax4 div[data-display='portfolio-slider'] .carousel p {
-        font-size: 15px !important;
-    }
-    .rnr-parallax5 div[data-display='team-grid'] {
-        display: none;
-    }
-    .rnr-parallax5 div[data-display='team-slider'] {
-        display: block;
-    }
-    .fp-slidesNav {
-        display: block;
-    }
-    .slide .fp-tableCell {
-        height: 100% !important;
-    }
-    .fp-controlArrow {
-        top: 60% !important;
-    }
-    #modal_services img {
-        width: 80px;
-    }
-}
+
 p.label {
     font-size: 15px;
 }
-.rnr_team .images {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-.rnr_team .images img {
-    width: 100px;
-}
-.rnr_team .topImage {
-    position: absolute;
-}
-.rnr_team .topImage img {
-    position: relative;
-    width: 50px;
-    left: -20px;
-    top: -30px;
-    /*background: #fff;*/
-    padding: 5px;
-}
-.rnr-divider {
-    height: 2px;
-    border-left: solid #64c2ec 50px;
-    border-right: solid #f74356 50px;
-    width: 0px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-}
-.rnr-button {
-    background: #02bad0 !important;
-    background: transparent !important;
-    border: 2px solid #ccc;
-    /* padding: 10px; */
-    /* color: #fff !important; */
-    border-radius: 5px;
-    text-transform: uppercase;
-    min-width: 150px;
-}
-.rnr-button:hover {
-    background-color: #02bad0 !important;
-    border: 2px solid #fff;
-    /* padding: 10px; */
-    color: #fff;
-    border-radius: 5px;
-}
-.rnr-parallax4 .card {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    text-align: left;
-}
-.line {
-    border: 2px solid #ccc;
-    min-height: 260px;
-}
-.line small {
-    font-size: 60% !important;
-}
-.invert {
-    filter: invert(100%);
-    -moz-filter: invert(100%);
-    -webkit-filter: invert(100%);
-}
-.hexagon {
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    background-size: cover;
-    margin: 0px auto;
-    height: 150px;
-    width: 130px;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-}
-.hexagon:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-}
-.hexagon-line {
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    background-size: cover;
-    margin: 0px auto;
-    height: 150px;
-    width: 130px;
-}
-.portfolio-icon {
-    top: 40%;
-    position: relative;
-}
-.portfolio-icon .material-icons {
-    font-size: 40px;
-}
-.portfolio-icon .left {
-    position: absolute;
-    left: -10px;
-}
-.portfolio-icon .right {
-    position: absolute;
-    right: -10px;
-}
-.carousel {
-    height: 400px !important;
-}
-.rnr-button.flat {
-    padding: 0px;
-    margin-top: 10px;
-    min-width: 100px;
-}
-.rnr-button.flat i {
-    line-height: 30px;
-}
-.carousel .logo {
-    width: 100px;
-}
-.carousel.carousel-slider .carousel-item p {
-    font-size: 20px !important;
-}
-#rnr_team .label {
-    background-color: #0d1216;
-    top: -40px;
-    position: relative;
-    padding: 5px;
-    border-radius: 3px;
-    border: 2px solid #fff;
-}
-#rnr_team .profile {
-    margin-top: 40px;
-    margin: 0 auto;
-    float: unset;
-    display: inline-block;
-    min-width: 150px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-#rnr_team .profile .chi {
-    background: url('../images/team/chi.png') no-repeat;
-    background-size: cover;
-    display: inline-block;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-}
-#rnr_team .profile .chi:hover {
-    background: url('../images/team/chi2.png') no-repeat;
-    background-size: cover;
-    display: inline-block;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-}
-#rnr_team .profile .chi {
-    background: url('../images/team/chi.png') no-repeat;
-    background-size: cover;
-    display: inline-block;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-}
-#rnr_team .profile:hover>.hexagon {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-}
-#rnr_team .label span {
-    font-size: 15px;
-    line-height: 0px;
-}
-#rnr_team .label span.position {
-    font-size: 10px;
-    line-height: 0px;
-}
-/*#modal_services{
-    max-height: none;
-    top: 0px;
-    bottom:none;
-    overflow: hidden;
-}
-*/
 
 #modal_services .modal-content {
     overflow: hidden;
@@ -514,4 +166,40 @@ span.head {
 
 [data-collapse] {
     display: none
+}
+
+@media (min-width: 1141px) {
+    /* Desktop */
+    .services-content{
+        padding: 50px 50px 100px 50px !important;
+    }
+    .service-banner{
+        min-height: 768px
+    }
+}
+@media (max-width: 1140px) {
+    /* Desktop */
+    .services-content{
+        padding: 50px 50px 100px 50px !important;
+    }
+    .service-banner{
+        min-height: 768px
+    }
+}
+@media (max-width: 993px) {
+    /* Tables */
+    .services-content{
+        padding: 50px 50px 300px 50px !important;
+    }
+    .service-banner{
+        min-height: 768px
+    }}
+@media (min-width: 320px) and (max-width: 601px) {
+    /* Smartphones */
+    .services-content{
+        padding: 50px 50px 600px 50px !important;
+    }
+    .service-banner{
+        min-height: 200px
+    }
 }

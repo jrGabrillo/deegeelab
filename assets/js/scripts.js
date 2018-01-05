@@ -1,9 +1,4 @@
 $(document).ready(function() {
-    (function() {
-        [].slice.call(document.querySelectorAll('.tabs')).forEach(function(el) {
-            new CBPFWTabs(el);
-        });
-    })();
     $('#main-nav').sidr();
     $('#fullpage').fullpage({
         'verticalCentered': true,
@@ -56,7 +51,7 @@ $(document).on("ready",function(){
                             <h6 class='bold'>${$(y).data('name')}</h6>
                             <p>${$(y).data('desc')}</p>
                         </div>
-                        <div class='col s4 image' style='background:url(assets/images/background/pillars/${$(y).data('image')}) no-repeat;'></div>
+                        <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
                     </div>
                     <span class='title'>${$(y).data('name')}</span>
                 </a>

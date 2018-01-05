@@ -3441,7 +3441,7 @@ html {
 	line-height: 1.5;
 	font-family: "Roboto", sans-serif;
 	font-weight: normal;
-	/* color: rgb(255, 255, 255); */
+	color: rgb(255, 255, 255);
 }
 @media only screen and (min-width: 0) {
 	html {
@@ -5606,7 +5606,7 @@ input[type=range]:focus::-ms-fill-upper {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	-webkit-transform: translateX(-105%);
-	transform: translateX(-105%)
+	transform: translateX(-105%);
 }
 .side-nav.right-aligned {
 	right: 0;
@@ -5621,7 +5621,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .side-nav li {
 	float: none;
-	line-height: 48px
+	line-height: 48px;
 }
 .side-nav li.active {
 	background-color: rgba(0, 0, 0, 0.05)
@@ -5639,7 +5639,7 @@ input[type=range]:focus::-ms-fill-upper {
 	background-color: rgba(0, 0, 0, 0.05)
 }
 .side-nav li>a.btn, .side-nav li>a.btn-large, .side-nav li>a.btn-large, .side-nav li>a.btn-flat, .side-nav li>a.btn-floating {
-	margin: 10px 15px
+	margin: 10px 15px;
 }
 .side-nav li>a.btn, .side-nav li>a.btn-large, .side-nav li>a.btn-large, .side-nav li>a.btn-floating {
 	color: #fff
