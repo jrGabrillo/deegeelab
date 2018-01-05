@@ -40,23 +40,16 @@ $(document).on("ready",function(){
         toggleMenu();
     });
 
-    let nodes = $(".nodes").children();
-    $.each(nodes,function(x,y){
-        var pos = $(y).position(), _x = pos.top, _y = (pos.left)-50;
-        $('#nodes').append(`
-            <div class='node animated' style='position:absolute; top:${_x}px; left:${_y}px;'>
-                <a href="${$(y).data('link')}">
-                    <div class='description row'>
-                        <div class='col s8'>
-                            <h6 class='bold'>${$(y).data('name')}</h6>
-                            <p>${$(y).data('desc')}</p>
-                        </div>
-                        <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
-                    </div>
-                    <span class='title'>${$(y).data('name')}</span>
-                </a>
-            </div>
-        `);
+    deegeelab.banner();
+
+    // here
+
+    $(window).on('click resize',function(){
+        deegeelab.banner();
+    });
+
+    $('body').on('click',function(){
+        deegeelab.banner();
     });
 
     let date = new Date();
@@ -104,3 +97,42 @@ $(document).on("ready",function(){
         }
     });
 });
+
+var deegeelab = function(){
+    'use strict';
+    return {
+        ini:function(){
+
+        },
+        banner:function(){
+            console.log('banner');
+            $('#nodes .list').html('');
+            let docWidth = $(document).width(), docHeight = $(document).height();
+            let nodes = $(".nodes").children();
+            $.each(nodes,function(x,y){
+                var pos = $(y).position(),r = $(y).attr('r'), d = (r*2), _x = pos.top, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d*1.3);
+                $('#nodes .list').append(`
+                    <div class='node animated' data-node='${x}' style='position:absolute; top:${_x}px; left:${_y}px;'>
+                        <a href="${$(y).data('link')}">
+                            <div class='description row'>
+                                <div class='col s8'>
+                                    <h6 class='bold'>${$(y).data('name')}</h6>
+                                    <p>${$(y).data('desc')}</p>
+                                </div>
+                                <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
+                            </div>
+                            <span class='title'>${$(y).data('name')}</span>
+                        </a>
+                    </div>
+                `);
+
+                if(pos.left<(docWidth/2)){
+                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width();
+                    
+                    $(this_node).css(`left`,`${(_y-currentWidth)}px`);
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${pos.left}px`});
+                }
+            });
+        }
+    }
+}();

@@ -1003,6 +1003,10 @@ ul.skills {
     margin-right:10px;
 }
 
+.node{
+    width
+}
+
 .node .title{
    min-width:100px;
    min-height: 30px;
@@ -1015,34 +1019,31 @@ ul.skills {
 }
 
 .node .description{
-    cursor:pointer;
-    min-width:0px;
-    height:0px;
-    overflow:hidden;
-    box-sizing:content-box;
-    text-align: left;
-    position: absolute;
-    z-index:1000;
-    border-radius: 3px;
-    -webkit-transition: min-width 0.3s, min-width 0.3s; /* For Safari 3.1 to 6.0 */
-    transition: min-width 0.3s, min-width 0.3s;
+        width: 250px;
+        height:100px;
+        background: #fff;
+        padding: 5px;
+        overflow:hidden;
+        box-sizing:content-box;
+        text-align: left;
+        position: absolute;
+        z-index:1000;
+        border-radius: 3px;
+        -webkit-transition: width 0.3s, width 0.3s; /* For Safari 3.1 to 6.0 */
+        transition: width 0.3s, width 0.3s;
 }
 
 .node:hover .description{
-    min-width:250px;
-    min-height:100px;
+    width:250px;
+    height:100px;
     background: #fff;
     padding: 5px;
-}
-
-.node:hover .title{
-/*     display:none; */
 }
 
 .node .description .image{
     background-size: cover !important;
     background-position: center !important;
-    height: 80px;
+    min-height: 100px;
 }
 
 .node p{
