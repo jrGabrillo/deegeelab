@@ -42,7 +42,13 @@ $(document).on("ready",function(){
 
     deegeelab.banner();
 
-    // here
+    $("circle").mouseover(function(){
+        let node = $(this)[0], _node = $(node).data('node');
+        $(`.node[data-node='${_node}']`).addClass('active');
+    }).mouseleave(function(){
+        let node = $(this)[0], _node = $(node).data('node');
+        $(`.node[data-node='${_node}']`).removeClass('active');        
+    });
 
     $(window).on('click resize',function(){
         deegeelab.banner();
@@ -105,12 +111,12 @@ var deegeelab = function(){
 
         },
         banner:function(){
-            console.log('banner');
+//             console.log('banner');
             $('#nodes .list').html('');
             let docWidth = $(document).width(), docHeight = $(document).height();
             let nodes = $(".nodes").children();
             $.each(nodes,function(x,y){
-                var pos = $(y).position(),r = $(y).attr('r'), d = (r*2), _x = pos.top, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d*1.3);
+                var pos = $(y).position(),r = $(y).attr('r'), d = (r*2), _x = pos.top-r, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
                 $('#nodes .list').append(`
                     <div class='node animated' data-node='${x}' style='position:absolute; top:${_x}px; left:${_y}px;'>
                         <a href="${$(y).data('link')}">
@@ -130,7 +136,7 @@ var deegeelab = function(){
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width();
                     
                     $(this_node).css(`left`,`${(_y-currentWidth)}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${pos.left}px`});
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${150}px`});
                 }
             });
         }

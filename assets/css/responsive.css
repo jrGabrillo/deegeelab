@@ -199,4 +199,45 @@ span.head {
     .service-banner{
         min-height: 200px
     }
+    .text{
+        top: 10% !important;
+    }
+    .text a {
+        top: 0px !important;
+    }
+
+    .left-border{
+        border-left:unset !important;
+    }
+
+    .top-border{
+        border-top: 1px #02bad0 solid !important;
+        margin-bottom:  100;
+        padding:unset !important;
+    }
+
+    .form_holder {
+        border-top: unset !important;
+    }
+
+    #form_query .col{
+        padding: unset !important;
+/*         padding-left: 0px; */
+    }
+
+    input{
+        padding: unset !important;
+    }
+
+    .input-field.col label{
+        left:unset !important;
+    }
+
+    .node .title{
+        font-size:10px;
+    }
+
+    svg:not(:root) {
+        max-height: 200px !important;
+    }
 }
