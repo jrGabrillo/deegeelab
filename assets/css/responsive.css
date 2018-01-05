@@ -39,40 +39,37 @@
 /*Images on every services Pillars*/
 
 #lead {
-    background: url(../images/background/pillars/bglead.png);
+    background: url(../images/background/pillars/bglead.png) no-repeat;
     background-size: cover;
-/*     min-height: 800px; */
+    background-position: center;
 }
 #backend {
-    background: url(../images/background/pillars/bgbackend.jpg);
+    background: url(../images/background/pillars/bgbackend.jpg) no-repeat;
     background-size: cover;
-    /* min-height: 800px; */
+    background-position: center;
 }
 #frontend {
-    background: url(../images/background/pillars/bgfrontend.jpg);
+    background: url(../images/background/pillars/bgfrontend.jpg) no-repeat;
     background-size: cover;
-/*     min-height: 800px; */
+    background-position: center;
 }
 #social {
-    background: url(../images/background/pillars/bgsocial.jpg);
+    background: url(../images/background/pillars/bgsocial.jpg) no-repeat;
     background-size: cover;
-    /* min-height: 800px; */
+    background-position: center;
 }
 #webdev {
-    background: url(../images/background/pillars/webdev1.jpg);
+    background: url(../images/background/pillars/webdev1.jpg) no-repeat;
     background-size: cover;
-/*     min-height: 800px; */
+    background-position: center;
 }
 #marketing {
-    background: url(../images/background/pillars/bgmarketing.jpg);
+    background: url(../images/background/pillars/bgmarketing.jpg) no-repeat;
     background-size: cover;
-    background-position-x: -280px;
-/*     min-height: 800px; */
+    background-position: center;
 }
 #backcon {
-    background: url(../images/background/pillars/bgcontact.jpg);
-    position: relative;
-    object-fit: contain;
+    background: url(../images/background/pillars/bgcontact.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }

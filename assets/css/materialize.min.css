@@ -5742,7 +5742,7 @@ input[type=range]:focus::-ms-fill-upper {
 		transform: translateX(105%)
 	}
 	.side-nav a {
-		padding: 0 16px
+		/* padding: 0 16px; */
 	}
 	.side-nav .user-view, .side-nav .userView {
 		padding: 16px 16px 0
