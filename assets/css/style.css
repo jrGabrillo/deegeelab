@@ -1084,10 +1084,11 @@ div[data-anchor="home"] .fp-tableCell{
 
 .paragraph{
     font-size: 12px;
+    margin-bottom: 30px;
 }
 
 .fullwidth{
-    /* overflow:hidden; */
+    overflow:hidden;
 }
 
 .enclosed{

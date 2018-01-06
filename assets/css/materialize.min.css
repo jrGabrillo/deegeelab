@@ -2087,7 +2087,7 @@ td, th {
 	display: table-cell;
 	text-align: left;
 	vertical-align: middle;
-	border-radius: 2px
+	border-radius: 2px;
 }
 @media only screen and (max-width: 992px) {
 	table.responsive-table {
@@ -2902,7 +2902,7 @@ nav ul a span.badge {
 		width: 50%;
 		margin-left: auto;
 		left: auto;
-		right: auto
+		right: auto;
 	}
 	.row .col.l7 {
 		width: 58.3333333333%;
