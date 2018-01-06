@@ -39,8 +39,14 @@ $(document).on("ready",function(){
     $('.navBtn').click( function() {
         toggleMenu();
     });
-
+    
+    // banner activity
     deegeelab.banner();
+    _idle.ini();
+
+    $('body').on('click',function(){
+        deegeelab.banner();
+    });
 
     $("circle").mouseover(function(){
         let node = $(this)[0], _node = $(node).data('node');
@@ -50,11 +56,7 @@ $(document).on("ready",function(){
         $(`.node[data-node='${_node}']`).removeClass('active');        
     });
 
-    $(window).on('click resize',function(){
-        deegeelab.banner();
-    });
-
-    $('body').on('click',function(){
+    $(window).on('ready resize',function(){
         deegeelab.banner();
     });
 
@@ -104,15 +106,13 @@ $(document).on("ready",function(){
     });
 });
 
+let idleTimerID = 0, timer = 0;
+
 var deegeelab = function(){
     'use strict';
     return {
-        ini:function(){
-
-        },
         getPosLeft:function(width, value){ // width = width of the device, value = current position of node, pos = left or right of the device.
             let check = true, a = 10;
-            console.log(`${width} - ${value}`);
             while(check){
                 if(0){
                     if(width>value)
@@ -127,11 +127,10 @@ var deegeelab = function(){
                         check = false;              
                 }
             }
-            console.log(value);
+
             return value;
         },
         banner:function(posX,posY){
-            console.log('banner');
             $('#nodes .list').html('');
             let docWidth = $(document).width(), docHeight = $(document).height(), nodeWidth = 250, mobileWidth = 0;;
             let nodes = $(".nodes").children();
@@ -156,14 +155,67 @@ var deegeelab = function(){
                 if(pos.left<(docWidth/2)){
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
                     $(this_node).css(`left`,`${(_posLeft)}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${150}px`});
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${100}px`});
                 }
                 else{
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
                     $(this_node).css(`left`,`${_posLeft}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${150}px`});
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${0}px`});
                 }
             });
+        },
+        randomizeNodes:function(){
+            timer = setTimeout(function(){
+                deegeelab.showNode();
+                deegeelab.randomizeNodes();
+            },5000);
+            return timer;
+        },
+        showNode:function(){
+            let r = Math.floor(Math.random()*6);
+            $(`.node`).removeClass('active');
+            $(`#nodes .node[data-node='${r}']`).addClass('active');
+            console.log(r);
+        }
+    }
+}();
+
+var _idle = function(){
+    'use strict';
+    return {
+        ini:function(){
+            this.setup();
+        },
+        setup:function(){
+            document.addEventListener("mousemove", _idle.reset);
+            document.addEventListener("mousedown", _idle.reset);
+            document.addEventListener("keypress", _idle.reset);
+            document.addEventListener("DOMMouseScroll", _idle.reset);
+            document.addEventListener("mousewheel", _idle.reset);
+            document.addEventListener("touchmove", _idle.reset);
+            document.addEventListener("MSPointerMove", _idle.reset);
+         
+            this.startTimer();            
+        },
+        startTimer:function(){
+            idleTimerID = window.setTimeout(_idle.inactive, 10000);
+        },
+        reset:function(e){
+            window.clearTimeout(idleTimerID);
+            _idle.active(e);
+        },
+        inactive:function(){
+            console.log('inactive');
+            deegeelab.showNode();
+            deegeelab.randomizeNodes();
+        },
+        active:function(e){
+            if(e.target.nodeName != "circle"){
+                $(`.node`).removeClass('active');  
+            }
+            window.clearTimeout(timer);
+            window.clearTimeout(idleTimerID);
+            this.startTimer();
         }
     }
 }();
