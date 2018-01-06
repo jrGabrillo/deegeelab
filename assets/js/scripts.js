@@ -110,13 +110,34 @@ var deegeelab = function(){
         ini:function(){
 
         },
-        banner:function(){
-//             console.log('banner');
+        getPosLeft:function(width, value){ // width = width of the device, value = current position of node, pos = left or right of the device.
+            let check = true, a = 10;
+            console.log(`${width} - ${value}`);
+            while(check){
+                if(0){
+                    if(width>value)
+                        value = value + a;                
+                    else
+                        check = false;
+                }
+                else{
+                    if(width<value)
+                        value = value - a;
+                    else
+                        check = false;              
+                }
+            }
+            console.log(value);
+            return value;
+        },
+        banner:function(posX,posY){
+            console.log('banner');
             $('#nodes .list').html('');
-            let docWidth = $(document).width(), docHeight = $(document).height();
+            let docWidth = $(document).width(), docHeight = $(document).height(), nodeWidth = 250, mobileWidth = 0;;
             let nodes = $(".nodes").children();
             $.each(nodes,function(x,y){
                 var pos = $(y).position(),r = $(y).attr('r'), d = (r*2), _x = pos.top-r, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
+
                 $('#nodes .list').append(`
                     <div class='node animated' data-node='${x}' style='position:absolute; top:${_x}px; left:${_y}px;'>
                         <a href="${$(y).data('link')}">
@@ -133,9 +154,13 @@ var deegeelab = function(){
                 `);
 
                 if(pos.left<(docWidth/2)){
-                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width();
-                    
-                    $(this_node).css(`left`,`${(_y-currentWidth)}px`);
+                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
+                    $(this_node).css(`left`,`${(_posLeft)}px`);
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${150}px`});
+                }
+                else{
+                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
+                    $(this_node).css(`left`,`${_posLeft}px`);
                     $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${150}px`});
                 }
             });
