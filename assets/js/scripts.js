@@ -107,7 +107,7 @@ $(document).on("ready",function(){
 });
 
 let idleTimerID = 0, timer = 0;
-
+let docWidth = $(document).width(), docHeight = $(document).height();
 var deegeelab = function(){
     'use strict';
     return {
@@ -132,7 +132,7 @@ var deegeelab = function(){
         },
         banner:function(posX,posY){
             $('#nodes .list').html('');
-            let docWidth = $(document).width(), docHeight = $(document).height(), nodeWidth = 250, mobileWidth = 0;;
+            let nodeWidth = 250, mobileWidth = 0;;
             let nodes = $(".nodes").children();
             $.each(nodes,function(x,y){
                 var pos = $(y).position(),r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);

@@ -1068,16 +1068,22 @@ div[data-anchor="home"] .fp-tableCell{
     z-index: 10000;
 }
 
-.menu{
+.menu-left{
     position:absolute;
     top: 40%;
     left: 0%;
+}
+
+.menu{
     border: 1px solid #02bad0;
-    margin-left: 10px;
+    width:30px;
+    height:30px;
+    margin: 10px 0px 0px 10px;
 }
 
 .menu i{
     color: #02bad0;
+    line-height: 20px;
 }
 
 

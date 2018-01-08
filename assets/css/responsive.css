@@ -86,6 +86,41 @@ p.label {
 .row .col.s5ths {
 	width: 20%;
 }
+
+.deegeelab-pulse {
+	box-shadow: 0 0 0 rgba(2, 186, 208, 0.4);
+	animation: deegeelab-pulse 1s infinite;
+}
+.deegeelab-pulse:hover {
+	animation: deegeelab-pulse 1s infinite;
+}
+
+@-webkit-keyframes deegeelab-pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(2, 186, 208, 0.4);
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 30px rgba(2, 186, 208, 0);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(2, 186, 208, 0);
+	}
+}
+@keyframes deegeelab-pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(2, 186, 208, 0.4);
+		box-shadow: 0 0 0 0 rgba(2, 186, 208, 0.4);
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(2, 186, 208, 0);
+		box-shadow: 0 0 0 10px rgba(2, 186, 208, 0);
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(2, 186, 208, 0);
+		box-shadow: 0 0 0 0 rgba(2, 186, 208, 0);
+	}
+}
+
 @media only screen and (min-width: 601px) {
 	.row .col.m5ths {
 		width: 20%;
@@ -156,10 +191,20 @@ span.head {
 .paragraph tr td:nth-child(1) {
 	vertical-align: top;
 }
+
+.service-menu{
+	margin: 0px;
+	position:  absolute;
+}
+
+.service-menu ul{
+	margin: 0px;
+}
+
 @media (min-width: 994px) {
 	/* Desktop */
 	.services-content {
-		padding: 0px 30px 100px 30px !important;
+		padding: 50px 30px 100px 30px !important;
 		overflow: scroll !important;
 	}
 	.service-banner {
@@ -205,6 +250,14 @@ span.head {
 	}
 	#menu .social-icons{
 		display:none;
+	}
+	
+	.holder{
+		width: 95%;
+		margin: 0 auto;
+		/* position:relative; */
+		/* top: 20%; */
+		margin-top: 50px;
 	}
 }
 @media (min-width: 320px) and (max-width: 601px) {
