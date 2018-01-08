@@ -1,16 +1,14 @@
 /* SVG CSS ONLY */
 
-svg circle.st1 {
-	fill: #02BAD0;
-}
 /*svg circle.st1:hover {
 	fill: #02bad0;
 	stroke-width: 0;
 	stroke: transparent;
 }*/
+
 svg circle.fill-white {
 	fill: #f9f9f9;
-	stroke-width: 0.25;
+	stroke-width: 10;
 	stroke-miterlimit: 10;
 }
 
