@@ -1,4 +1,7 @@
-$(document).ready(function() {
+let idleTimerID = 0, timer = 0;
+let docWidth = $(document).width(), docHeight = $(document).height();
+
+$(document).on("ready",function(){
     $('#main-nav').sidr();
     $('#fullpage').fullpage({
         'verticalCentered': true,
@@ -27,10 +30,8 @@ $(document).ready(function() {
             }
         }
     });
-});
 
-$(document).on("ready",function(){
-    var toggleMenu = function() {
+  var toggleMenu = function() {
         $( 'header' ).toggleClass( 'toggle' );
         $( '.main' ).toggleClass( 'push' );
         $( '.overlay' ).toggleClass( 'block' );
@@ -106,8 +107,6 @@ $(document).on("ready",function(){
     });
 });
 
-let idleTimerID = 0, timer = 0;
-let docWidth = $(document).width(), docHeight = $(document).height();
 var deegeelab = function(){
     'use strict';
     return {
