@@ -159,7 +159,7 @@ span.head {
 @media (min-width: 994px) {
 	/* Desktop */
 	.services-content {
-		padding: 50px 50px 100px 50px !important;
+		padding: 0px 30px 100px 30px !important;
 		overflow: scroll !important;
 	}
 	.service-banner {
@@ -175,7 +175,7 @@ span.head {
 		min-height: 768px
 	}
 	.services-content {
-		padding: 50px 50px 100px 50px !important;
+		padding: 0px 50px 100px 50px !important;
 		overflow: scroll !important;
 	}
 	td, th {
@@ -213,8 +213,17 @@ span.head {
 	.node .title {
 		font-size: 10px;
 	}
+	.node .image{
+		display:none;
+		width: 0px !important;
+	}
+
+	.node .col{
+		width: 100% !important;
+	}
+
 	svg:not(:root) {
-		max-height: 200px !important;
+		max-height: 250px !important;
 	}
 	.fullwidth {
 		overflow-x: scroll !important;
@@ -237,7 +246,7 @@ span.head {
 	}
 	#footer ul li span, #footer ul li a {
 		font-size: 10px !important;
-		line-height: 24px;
+		/* line-height: 24px; */
 	}
 	#footer .right ul li {
 		top: -12px;
@@ -265,4 +274,40 @@ span.head {
 	.fullwidth {
 		overflow: scroll !important;
 	}
-}
+
+	#menu .social-icons{
+		position:fixed;
+		bottom: 10%;
+		padding-left: 25px;
+	}
+
+	#menu .social-icons ul li a{
+		display:inline-block;
+		padding-right: 0px;
+		padding-left: 10px;
+	}
+
+	.menu{
+		display:none;
+	}
+
+	.node.active .description{
+		height:90px !important;
+	}
+
+	.node.active .description img{
+		display:none;
+	}
+
+	.node.active .description h6{
+		font-size:12px;
+	}
+		
+	.node.active .description p{
+		font-size:10px;
+	}
+
+	.node:hover .description, .node.active .description{
+		width:150px !important;
+	}
+}	

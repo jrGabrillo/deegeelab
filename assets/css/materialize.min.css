@@ -3483,7 +3483,7 @@ h3 {
 h4 {
 	font-size: 2.28rem;
 	line-height: 110%;
-	margin: 1.14rem 0 .912rem 0
+	margin: 1.14rem 0 .912rem 0;
 }
 h5 {
 	font-size: 1.64rem;
@@ -5634,7 +5634,7 @@ input[type=range]:focus::-ms-fill-upper {
 	font-weight: 500;
 	height: 48px;
 	line-height: 48px;
-	padding: 0 32px
+	padding: 0 32px;
 }
 .side-nav li>a:hover {
 	background-color: rgba(0, 0, 0, 0.05)

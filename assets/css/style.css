@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 p {
     margin-bottom: 30px;
     /* font-size: 50px; */
     font-weight: normal;
-    /*     font-family: 'walkway_semiboldregular'; */
+    /* font-family: 'walkway_semiboldregular'; */
     line-height: 1.2;
     margin-top: 20px;
 }
@@ -197,7 +197,7 @@ h4, h5, h6 {
     height: 50px;
     width: 100%;
     padding: 5px;
-    /* color: #fff; */
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.8);
     z-index:  10000;
 }
@@ -988,7 +988,7 @@ ul.skills {
     min-width: 40px;
     margin-left:20px;
     display:inline-block;
-    height: 30px;
+    height: 0px;
 }
 
 #footer a{
@@ -1003,13 +1003,9 @@ ul.skills {
     margin-right:10px;
 }
 
-.node{
-    /* width:200px; */
-}
-
 .node .title{
    width:150px;
-   background: rgba(0, 0, 0, 0.8);
+   background: rgba(0, 0, 0, 0.5);
    padding:5px;
    color: #fff;
    text-align: center;
@@ -1023,11 +1019,12 @@ ul.skills {
     overflow:hidden;
     box-sizing:content-box;
     text-align: left;
-    position: relative;
+    position: absolute;
     z-index:1000;
     border-radius: 3px;
     -webkit-transition: width 0.3s, width 0.3s; /* For Safari 3.1 to 6.0 */
     transition: width 0.3s, width 0.3s;
+    z-index:  1000;
 }
 
 .node:hover .description, .node.active .description{
@@ -1068,13 +1065,21 @@ div[data-anchor="home"] .fp-tableCell{
 
 #menu{
     background:rgba(16, 16, 16, 0.9);
+    z-index: 10000;
 }
 
 .menu{
     position:absolute;
-    top: 0%;
+    top: 40%;
     left: 0%;
+    border: 1px solid #02bad0;
+    margin-left: 10px;
 }
+
+.menu i{
+    color: #02bad0;
+}
+
 
 .bulleted{
     font-size: 10px;

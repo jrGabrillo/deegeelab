@@ -155,12 +155,12 @@ var deegeelab = function(){
                 if(pos.left<(docWidth/2)){
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
                     $(this_node).css(`left`,`${(_posLeft)}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${100}px`});
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${_posLeft}px`});
                 }
                 else{
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
                     $(this_node).css(`left`,`${_posLeft}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${0}px`});
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px`});
                 }
             });
         },
@@ -175,7 +175,6 @@ var deegeelab = function(){
             let r = Math.floor(Math.random()*6);
             $(`.node`).removeClass('active');
             $(`#nodes .node[data-node='${r}']`).addClass('active');
-            console.log(r);
         }
     }
 }();
@@ -205,7 +204,6 @@ var _idle = function(){
             _idle.active(e);
         },
         inactive:function(){
-            console.log('inactive');
             deegeelab.showNode();
             deegeelab.randomizeNodes();
         },
