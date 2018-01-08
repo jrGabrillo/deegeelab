@@ -95,6 +95,10 @@ p.label {
 	animation: deegeelab-pulse 1s infinite;
 }
 
+.shadowed{
+	text-shadow: 0px 0px 10px #000;
+}
+
 @-webkit-keyframes deegeelab-pulse {
 	0% {
 		-webkit-box-shadow: 0 0 0 0 rgba(2, 186, 208, 0.4);
@@ -185,7 +189,7 @@ span.head {
 }
 .services-content {
 	min-height: 768px !important;
-	max-height: 768px;
+	/* max-height: 768px; */
 	/* overflow: scroll; */
 }
 .paragraph tr td:nth-child(1) {
@@ -231,7 +235,7 @@ span.head {
 		min-height: 768px
 	}
 	.services-content {
-		padding: 0px 20px 100px 20px !important;
+		padding: 50px 20px 100px 20px !important;
 		overflow: scroll !important;
 	}
 	td, th {
