@@ -195,16 +195,13 @@ span.head {
 .paragraph tr td:nth-child(1) {
 	vertical-align: top;
 }
-
 .service-menu{
 	margin: 0px;
 	position:  absolute;
 }
-
 .service-menu ul{
 	margin: 0px;
 }
-
 @media (min-width: 994px) {
 	/* Desktop */
 	.services-content {
@@ -266,6 +263,18 @@ span.head {
 }
 @media (min-width: 320px) and (max-width: 601px) {
 	/* Smartphones */
+	.service-menu .left a{
+		margin-left:0px;
+	}
+	.service-menu{
+		position:  relative;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.service-menu{
+		height: 50px;
+	}
 	.text {
 		top: 10% !important;
 	}
@@ -364,7 +373,7 @@ span.head {
 		padding-right: 0px;
 		padding-left: 10px;
 	}
-	.menu{
+	.menu-left{
 		display:none;
 	}
 	.node.active .description{

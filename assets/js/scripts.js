@@ -59,7 +59,8 @@ $(document).on("ready",function(){
 
     $(window).on('ready resize',function(){
         deegeelab.banner();
-    });
+        _idle.ini();
+        });
 
     let date = new Date();
     date.setDate(date.getDate() + 7);
