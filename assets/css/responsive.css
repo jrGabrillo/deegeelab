@@ -168,6 +168,17 @@ span.head {
 	td, th {
 		padding: 5px 5px !important;
 	}
+	.overlap-gradient{
+		padding-top:2%;
+	}
+	.text a{
+	  text-shadow:none;
+	  position:relative;
+	  top:150px;
+	}
+	#menu .social-icons{
+		display:none;
+	}	
 }
 @media (min-width: 602px) and (max-width: 993px) {
 	/* Tablet */
@@ -175,11 +186,25 @@ span.head {
 		min-height: 768px
 	}
 	.services-content {
-		padding: 0px 50px 100px 50px !important;
+		padding: 0px 20px 100px 20px !important;
 		overflow: scroll !important;
 	}
 	td, th {
 		padding: 5px 5px !important;
+	}
+	svg:not(:root){
+		height: 345px !important;
+	}
+	.overlap-gradient{
+		background: none !important;
+	}	
+	.text a{
+	  text-shadow:none;
+	  position:relative;
+	  top:0px;
+	}
+	#menu .social-icons{
+		display:none;
 	}
 }
 @media (min-width: 320px) and (max-width: 601px) {
@@ -217,11 +242,9 @@ span.head {
 		display:none;
 		width: 0px !important;
 	}
-
 	.node .col{
 		width: 100% !important;
 	}
-
 	svg:not(:root) {
 		max-height: 250px !important;
 	}
@@ -274,39 +297,31 @@ span.head {
 	.fullwidth {
 		overflow: scroll !important;
 	}
-
 	#menu .social-icons{
 		position:fixed;
 		bottom: 10%;
 		padding-left: 25px;
 	}
-
 	#menu .social-icons ul li a{
 		display:inline-block;
 		padding-right: 0px;
 		padding-left: 10px;
 	}
-
 	.menu{
 		display:none;
 	}
-
 	.node.active .description{
 		height:90px !important;
 	}
-
 	.node.active .description img{
 		display:none;
 	}
-
 	.node.active .description h6{
 		font-size:12px;
 	}
-		
 	.node.active .description p{
 		font-size:10px;
 	}
-
 	.node:hover .description, .node.active .description{
 		width:150px !important;
 	}

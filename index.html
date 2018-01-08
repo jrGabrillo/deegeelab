@@ -90,37 +90,27 @@
                             <!-- tablet -->
                             <div class="hide-on-small-only hide-on-large-only" id='display_tablet'>
                                 <div data-count='one' class="panel col s3 ">
-                                    <div class="bottom">
-                                        <a href="marketing.html">Learn More</a>
-                                    </div>
                                     <div class="text">
                                         <h5>Digital Marketing</h5>
+                                        <a href="marketing.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a>
                                     </div>
                                 </div>
                                 <div data-count='two' class="panel col s3 ">
-                                    <div class="bottom">
-                                        <a href="lead.html">Learn More</a>
-                                    </div>
                                     <div class="text">
                                         <h5>Lead Generation</h5>
+                                        <a href="lead.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a>
                                     </div>
                                 </div>
                                 <div data-count='three' class="panel col s3 ">
-                                    <div class="bottom">
-                                        <a href="backend.html">Learn More</a>
-                                    </div>
                                     <div class="text">
-                                        <h5>Customer Support<br>
-                                        Back End</h5>
+                                        <h5>Customer Support<br>Back End</h5>
+                                        <a href="backend.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a>
                                     </div>
                                 </div>
                                 <div data-count='four' class="panel col s3 ">
-                                    <div class="bottom">
-                                        <a href="frontend.html">Learn More</a>
-                                    </div>
                                     <div class="text">
-                                        <h5>Customer Support<br>
-                                        Front End</h5>
+                                        <h5>Customer Support<br>Front End</h5>
+                                        <a href="frontend.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -156,68 +146,71 @@
                 </div>
             </div>
             <div class="section col s12 Contactbg1" style="padding: 0px;"> <!-- contact us -->
-                <div class="overlap-gradient" style="padding-top: 2%;">
+                <div class="overlap-gradient">
                     <div class="layer wrapper" data-depth="0.3">
                         <!-- desktop -->
                         <div class="" id='display_desktop'><!-- hide-on-med-only hide-on-small-only -->
                             <div class="holder" >
-                                <div class="card form_holder" style="margin: 0 auto;">
-                                    <div class="card-content row">
-                                        <div class="col s12 m5 l4" id='contact_bg'>
-                                            <h4>Let's Talk</h4>
-                                            <p class="black-text">Your success is our success<br> Supercharge your Business Today.</p>
-                                            <ul class="black-text">
-                                                <li class="row">
-                                                    <i class="material-icons left">mail_outline</i> 
-                                                    <span>info@deegeelab.com</span>
-                                                </li>
-                                                <li class="row hide">
-                                                    <i class="material-icons left">phone</i></span>
-                                                    <span>0948 999 9988</span>
-                                                </li>
-                                                <li class="row">
-                                                    <i class="material-icons left">map</i>
-                                                    <span>Suit 3,Level 27 Governor Macquarrie Tower 1 Farrer Place, Sydney NSW 2000 AUSTRALIA</span>
-                                                </li>
-                                                <li class="row">
-                                                    <i class="material-icons left">map</i>
-                                                    <span>Unit 8 Viliran Compound Lingayen, Pangasinan Philippines</span>
-                                                </li>
-                                            </ul>
+                                <div class="card form_holder z-depth-0" style="margin: 0 auto;">
+                                    <div class="card-content">
+                                        <div class="row">
+                                            <div class="col s12 m5 l4" id='contact_bg'>
+                                                <h4>Let's Talk</h4>
+                                                <p class="black-text">Your success is our success<br> Supercharge your Business Today.</p>
+
+                                                <table class="grey-text paragraph">
+                                                    <tr>
+                                                        <td width='1%'><i class="material-icons">mail_outline</i></td>
+                                                        <td>info@deegeelab.com</td>
+                                                    </tr>
+                                                    <tr class="hide">
+                                                        <td width='1%'><i class="material-icons">phone</i></td>
+                                                        <td>0948 999 9988</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width='1%'><i class="material-icons">map</i></td>
+                                                        <td>Suit 3,Level 27 Governor Macquarrie Tower 1 Farrer Place, Sydney NSW 2000 AUSTRALIA</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width='1%'><i class="material-icons">map</i></td>
+                                                        <td>Unit 8 Viliran Compound Lingayen, Pangasinan Philippines</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="col s12 m7 l8 left-border top-border">
+                                                <form id="form_query" method="po st" name="form_query">
+                                                        <div class="input-field col s12">
+                                                            <input class="validate" id="field_name" name="field_name" type="text"> 
+                                                            <label for="field_name">Name</label>
+                                                        </div>
+                                                        <div class="input-field col s12">
+                                                            <input class="validate" id="field_business" name="field_business" type="text"> 
+                                                            <label for="field_business">Business Name</label>
+                                                        </div>
+                                                        <div class="input-field col s12">
+                                                            <input class="validate" id="field_email" name="field_email" type="email"> 
+                                                            <label for="field_email">Contact Email</label>
+                                                        </div>
+                                                        <div class="input-field col s12">
+                                                            <input class="validate" id="field_number" name="field_number" type="number"> 
+                                                            <label for="field_email">Contact Number</label>
+                                                        </div>
+                                                        <div class="input-field col s12">
+                                                            <input id='field_date' type='date' id="field_date" name='field_date'>
+                                                            <label for="field_date" class="active">Schedule a meeting</label>
+                                                        </div>
+                                                        <div class="input-field col s12">
+                                                            <textarea rows='5' class="validate" id="field_message" name="field_message" type="text"></textarea>
+                                                            <label for="field_date">Message</label>
+                                                        </div>
+                                                        <div class="input-field col s12">
+                                                            <button class="right btn-round btn-flat waves-effect waves-light white-text">Send</button>
+                                                        </div>
+                                                        <div class="input-field col s12" style="height:50px"></div>
+                                                    </div>
+                                                </form>
+                                           </div>
                                         </div>
-                                        <div class="col s12 m7 l8 left-border top-border">
-                                            <form id="form_query" method="po st" name="form_query">
-                                                    <div class="input-field col s12">
-                                                        <input class="validate" id="field_name" name="field_name" type="text"> 
-                                                        <label for="field_name">Name</label>
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <input class="validate" id="field_business" name="field_business" type="text"> 
-                                                        <label for="field_business">Business Name</label>
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <input class="validate" id="field_email" name="field_email" type="email"> 
-                                                        <label for="field_email">Contact Email</label>
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <input class="validate" id="field_number" name="field_number" type="number"> 
-                                                        <label for="field_email">Contact Number</label>
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <input id='field_date' type='date' id="field_date" name='field_date'>
-                                                        <label for="field_date" class="active">Schedule a meeting</label>
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <textarea rows='5' class="validate" id="field_message" name="field_message" type="text"></textarea>
-                                                        <label for="field_date">Message</label>
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <button class="right btn-round btn-flat waves-effect waves-light white-text">Send</button>
-                                                    </div>
-                                                    <div class="input-field col s12" style="height:50px"></div>
-                                                </div>
-                                            </form>
-                                       </div>
                                     </div>
                                 </div>
                             </div>
@@ -237,9 +230,9 @@
                 <ul>
                     <li><a href="privacy-policy.html" class="grey-text">Privacy Policy</a></li>
                     <li><a href="terms-of-use.html" class="grey-text">Terms of use</a></li>
-                    <li style="top: -20px;position:  relative;">
+                    <li style="top: 5px;position:  relative;">
                         <a href="https://www.facebook.com/DeeGeeLabAU/"><img width="30px" src="assets/images/icons/fblogo.png"></a>
-                        <a href="https://twitter.com/DeegeelabAU"><img width="35px" src="assets/images/icons/iglogo.png"></a>
+                        <a href="https://twitter.com/DeegeelabAU"><img width="30px" src="assets/images/icons/iglogo.png"></a>
                         <a href="https://www.instagram.com/deegeelab/"><img width="30px" src="assets/images/icons/tlogo.png"></a>
                     </li>
                 </ul>
