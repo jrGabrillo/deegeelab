@@ -135,7 +135,7 @@ var deegeelab = function(){
             let nodeWidth = 250, mobileWidth = 0;;
             let nodes = $(".nodes").children();
             $.each(nodes,function(x,y){
-                var pos = $(y).position(),r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
+                var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
 
                 $('#nodes .list').append(`
                     <div class='node animated' data-node='${x}' style='position:absolute; top:${_x}px; left:${_y}px;'>
