@@ -206,7 +206,7 @@ span.head {
 	/* Desktop */
 	.services-content {
 		padding: 50px 30px 100px 30px !important;
-		overflow: scroll !important;
+		/* overflow: scroll !important; */
 	}
 	.service-banner {
 		min-height: 768px
