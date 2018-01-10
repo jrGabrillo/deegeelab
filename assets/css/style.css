@@ -1042,6 +1042,12 @@ ul.skills {
     transform: rotateX(0deg);
 }
 
+.svg-pulse.active{
+	-webkit-animation: svg-pulse 0.5s linear infinite;
+	transform-origin: center center;
+	fill: #ccc !important;
+}
+
 .node:hover .title, .node.active .title{
     opacity:0;
 }

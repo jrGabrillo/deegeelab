@@ -133,7 +133,7 @@ var deegeelab = function(){
         banner:function(posX,posY){
             $('#nodes .list').html('');
             let nodeWidth = 250, mobileWidth = 0;;
-            let nodes = $(".nodes").children();
+            let nodes = $(".nodes").children('circle.circle-node');
             $.each(nodes,function(x,y){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
 
@@ -156,13 +156,28 @@ var deegeelab = function(){
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
                     $(this_node).css(`left`,`${(_posLeft)}px`);
                     $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${descPos}px`});
-                    // $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${100}px`});
                 }
                 else{
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
                     $(this_node).css(`left`,`${_posLeft}px`);
                     $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px`});
                 }
+            });
+
+            $("circle").mouseover(function(){
+                let node = $(this)[0], _node = $(node).data('node');
+                $(`.svg-pulse[data-node='${_node}']`)[0].classList.add('active');
+            }).mouseleave(function(){
+                let node = $(this)[0], _node = $(node).data('node');
+                $(`.svg-pulse[data-node='${_node}']`)[0].classList.remove('active');
+            });
+
+            $(".node").mouseover(function(){
+                let node = $(this)[0], _node = $(node).data('node');
+                $(`.svg-pulse[data-node='${_node}']`)[0].classList.add('active');
+            }).mouseleave(function(){
+                let node = $(this)[0], _node = $(node).data('node');
+                $(`.svg-pulse[data-node='${_node}']`)[0].classList.remove('active');
             });
         },
         randomizeNodes:function(){

@@ -33,7 +33,11 @@ svg #svgg path.st0 {
 		max-height: 250px;
 	}
 }
-/*svg path#path4 {
-    fill:#02BAD0;
 
-}*/
+@-webkit-keyframes svg-pulse{       
+	0% {-webkit-transform: scale(1.0); opacity: 1;}
+	100% {-webkit-transform: scale(2); opacity: 0;}
+}
+.svg-pulse{
+	fill:transparent !important;
+}
