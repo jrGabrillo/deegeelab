@@ -12,17 +12,17 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.bg {
+.main-section {
 	background: url("../images/background/bbg1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.Contactbg1 {
+.contact-section {
 	background: url("../images/background/bgcontact.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.Pillarbg1 {
+.pillar-section {
 	background: url("../images/background/bgpillar.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;

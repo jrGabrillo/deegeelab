@@ -1,120 +1,133 @@
 let idleTimerID = 0, timer = 0;
 let docWidth = $(document).width(), docHeight = $(document).height();
 
-$(document).on("ready",function(){
-    $('#main-nav').sidr();
-    $('#fullpage').fullpage({
-        'verticalCentered': true,
-        'easing': 'easeInOutCirc',
-        'css3': false,
-        'scrollingSpeed': 1000,
-        'slidesNavigation': true,
-        'slidesNavPosition': 'bottom',
-        'easingcss3': 'ease',
-        'navigation': true,
-        'anchors': ['home','pillars','contact'],
-        'navigationPosition': 'left',
-        'scrollOverflow': true,
-    });
-    $('.screenshots-content, .clients-content').css('height', $(window).height());
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $('body').addClass('browser-mobile');
-    }
-    $(document).mouseup(function(e) {
-        if ($(".sidr-open ")[0]) {
-            var container = $("#sidr");
-            if (!container.is(e.target) // if the target of the click isn't the container...
-                && container.has(e.target).length === 0) // ... nor a descendant of the container
-            {
-                $(".sidr-open #main-nav").click();
-            }
-        }
-    });
-    
-    deegeelab.banner();
-    _idle.ini();
-
-    // $('body').on('click',function(){
-    //     deegeelab.banner();
-    // });
-
-    $("circle").mouseover(function(){
-        let node = $(this)[0], _node = $(node).data('node');
-        $(`.node[data-node='${_node}']`).addClass('active');
-    }).mouseleave(function(){
-        let node = $(this)[0], _node = $(node).data('node');
-        $(`.node[data-node='${_node}']`).removeClass('active');        
-    });
-
-    $(window).on('ready resize',function(){
-        deegeelab.banner();
-        _idle.ini();
-    });
-
-    let e = {target:{nodeName:"square"}};
-    $('.collapsible').collapsible({
-    accordion: false,
-        onOpen: function(el){
-            $("#nodes .list").attr({'class':'hide list'});
-            _idle.active(e);
-        },
-        onClose: function(el){
-            _idle.active(e);
-            setTimeout(function(){       
-                $("#nodes .list").attr({'class':'list'});
-            },100);
-        }
-    });
-
-    let date = new Date();
-    date.setDate(date.getDate() + 7);
-    let mindate = `${date.getFullYear()}-${((date.getMonth()+1)<10?`0${(date.getMonth()+1)}`:(date.getMonth()+1))}-${date.getDate()}`;
-    let maxdate = `${date.getFullYear()}-${((date.getMonth()+6)<10?`0${(date.getMonth()+6)}`:(date.getMonth()+6))}-${date.getDate()}`;
-
-    $("#field_date").attr({"min":mindate});
-    $("#field_date").attr({"max":maxdate});
-
-    $("#form_query").validate({
-        rules: {
-            field_name: {required: true,maxlength: 200},
-            field_business: {required: true,maxlength: 300},
-            field_email: {required: true,maxlength: 300,email:true},
-            field_number: {required: true,maxlength: 50},
-            field_date: {required: true,maxlength: 40},
-            field_message: {required: true,maxlength: 1000},
-        },
-        errorElement : 'div',
-        errorPlacement: function(error, element) {
-            var placement = $(element).data('error');
-            if(placement){
-                $(placement).append(error)
-            } 
-            else{
-                error.insertAfter(element);
-            }
-        },
-        submitHandler: function (form) {
-            let _form = $(form).serializeArray();
-            let data = system.ajax('assets/harmony/Process.php?set-leads',_form);
-            data.done(function(data){
-                if(data == 1){
-                    Materialize.toast('Thank you. your message has been sent.',2000);
-                    system.clearForm();
-                    setTimeout(function(){
-                        window.location.reload(true);
-                    },2000);
-                }
-                else{
-                    Materialize.toast('Cannot process request.',4000);
-                }
-            });
-        }
-    });
-});
-
 var deegeelab = function(){
     'use strict';
     return {
+        ini:function(){
+            $('#main-nav').sidr();
+            $('#fullpage').fullpage({
+                'verticalCentered': true,
+                'easing': 'easeInOutCirc',
+                'css3': false,
+                'scrollingSpeed': 1000,
+                'slidesNavigation': true,
+                'slidesNavPosition': 'bottom',
+                'easingcss3': 'ease',
+                'navigation': true,
+                'anchors': ['home','pillars','contact'],
+                'navigationPosition': 'left',
+                'scrollOverflow': true,
+                onLeave: function(index, nextIndex, direction){
+                    let leavingSection = $(this);
+                    if(index == 1 && direction =='down'){
+                        $('.collapsible').collapsible('close', 0);
+                        $("#nodes .list").attr({'class':'list'});
+                    }
+                },
+            });
+            $('.screenshots-content, .clients-content').css('height', $(window).height());
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('body').addClass('browser-mobile');
+            }
+
+            $(document).mouseup(function(e) {
+                if ($(".sidr-open ")[0]) {
+                    var container = $("#sidr");
+                    if (!container.is(e.target) // if the target of the click isn't the container...
+                        && container.has(e.target).length === 0) // ... nor a descendant of the container
+                    {
+                        $(".sidr-open #main-nav").click();
+                    }
+                }
+            });
+            
+            deegeelab.banner();
+            _idle.ini();
+
+            $("circle").mouseover(function(){
+                let node = $(this)[0], _node = $(node).data('node');
+                $(`.node[data-node='${_node}']`).addClass('active');
+            }).mouseleave(function(){
+                let node = $(this)[0], _node = $(node).data('node');
+                $(`.node[data-node='${_node}']`).removeClass('active');        
+            });
+
+            $(window).on('ready resize',function(){
+                deegeelab.banner();
+                _idle.ini();
+            });
+
+            let e = {target:{nodeName:"square"}};
+            $('.collapsible').collapsible({
+                accordion: false,
+                onOpen: function(el){
+                    $("#nodes .list").attr({'class':'hide list'});
+                    _idle.active(e);
+                },
+                onClose: function(el){
+                    _idle.active(e);
+                    setTimeout(function(){       
+                        $("#nodes .list").attr({'class':'list'});
+                    },100);
+                }
+            });
+
+            deegeelab.applySVG();
+
+            let date = new Date();
+            date.setDate(date.getDate() + 7);
+            let mindate = `${date.getFullYear()}-${((date.getMonth()+1)<10?`0${(date.getMonth()+1)}`:(date.getMonth()+1))}-${date.getDate()}`;
+            let maxdate = `${date.getFullYear()}-${((date.getMonth()+6)<10?`0${(date.getMonth()+6)}`:(date.getMonth()+6))}-${date.getDate()}`;
+
+            $("#field_date").attr({"min":mindate});
+            $("#field_date").attr({"max":maxdate});
+
+            $("#form_query").validate({
+                rules: {
+                    field_name: {required: true,maxlength: 200},
+                    field_business: {required: true,maxlength: 300},
+                    field_email: {required: true,maxlength: 300,email:true},
+                    field_number: {required: true,maxlength: 50},
+                    field_date: {required: true,maxlength: 40},
+                    field_message: {required: true,maxlength: 1000},
+                },
+                errorElement : 'div',
+                errorPlacement: function(error, element) {
+                    var placement = $(element).data('error');
+                    if(placement){
+                        $(placement).append(error)
+                    } 
+                    else{
+                        error.insertAfter(element);
+                    }
+                },
+                submitHandler: function (form) {
+                    let _form = $(form).serializeArray();
+                    let data = system.ajax('assets/harmony/Process.php?set-leads',_form);
+                    data.done(function(data){
+                        if(data == 1){
+                            Materialize.toast('Thank you. your message has been sent.',2000);
+                            system.clearForm();
+                            setTimeout(function(){
+                                window.location.reload(true);
+                            },2000);
+                        }
+                        else{
+                            Materialize.toast('Cannot process request.',4000);
+                        }
+                    });
+                }
+            });
+        },
+        getSVG:function(){
+            let svg = system.html('assets/svg/path.svg');
+            return svg.responseText;
+        },
+        applySVG:function(){
+            let svg = this.getSVG;
+            $('path#path0').attr({"d":svg});
+        },
         getPosLeft:function(width, value){ // width = width of the device, value = current position of node, pos = left or right of the device.
             let check = true, a = 10;
             while(check){
@@ -179,12 +192,10 @@ var deegeelab = function(){
 
             $(".node").mouseover(function(){
                 let node = $(this)[0], _node = $(node).data('node');
-                console.log(_node);
                 $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
                 $(`.svg-pulse[data-node='${_node}']`).attr({'class':'fill-blue svg-pulse active'});
             }).mouseleave(function(){
                 let node = $(this)[0], _node = $(node).data('node');
-                console.log(_node);
                 $(`.svg-pulse[data-node='${_node}']`).attr({'class':'fill-blue svg-pulse'});
             });
         },
@@ -201,7 +212,7 @@ var deegeelab = function(){
             $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
             $(`#nodes .node[data-node='${r}']`).addClass('active');
             $(`.svg-pulse[data-node='${r}']`)[0].classList.add('active');
-        }
+        },
     }
 }();
 
@@ -243,3 +254,25 @@ var _idle = function(){
         }
     }
 }();
+
+$(window).on('load',function(){
+    let count_timer = 0;
+    let load_timer = setInterval(function(){
+        count_timer++;
+        $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
+        if(count_timer == 5){
+            clearInterval(load_timer);
+            deegeelab.ini();
+            setTimeout(function(){
+                $('svg').attr({"class":""});
+                $(".pillar-section").removeClass('hide');
+                $(".contact-section").removeClass('hide');
+                $(".main-section").attr({"style":""});
+                $(".btn-flat").removeClass('hide');
+                $("#why-deegeelab").removeClass('hide');
+                $("#display_tagline").attr({"class":"white-text shadowed"});
+            },2000);
+        }
+    },2000);
+
+});

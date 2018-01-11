@@ -1038,7 +1038,6 @@ ul.skills {
     background: #fff;
     padding: 5px;
     opacity:1;
-    
     transform: rotateX(0deg);
 }
 
@@ -1046,6 +1045,36 @@ ul.skills {
 	-webkit-animation: svg-pulse 0.5s linear infinite;
 	transform-origin: center center;
 	fill: #ccc !important;
+}
+
+.svg-animation-in{
+    -webkit-animation: svg-zoom-in 0.3s linear;
+    transform-origin: center center;
+    -webkit-transform: scale(1.4);
+    fill: #ccc !important;
+}
+.svg-animation-out{
+    -webkit-animation: svg-zoom-out 0.3s linear;
+    transform-origin: center center;
+    -webkit-transform: scale(1.0);
+    fill: #ccc !important;
+}
+
+#display_tagline.loading{
+    margin:0 auto;
+    max-width: 800px;
+}
+
+#display_tagline .progress{
+    display: none;
+}
+
+#display_tagline.loading .progress{
+    display: block;
+}
+#display_tagline .progress .determinate{
+    /* width: 50%; */
+    /* -webkit-transform: scaleX(2) !important; */
 }
 
 .node:hover .title, .node.active .title{
