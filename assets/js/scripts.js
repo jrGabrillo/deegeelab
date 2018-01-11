@@ -262,16 +262,16 @@ $(window).on('load',function(){
         $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
         if(count_timer == 5){
             clearInterval(load_timer);
+            $("#why-deegeelab").removeClass('hide');
+            $(".main-section").attr({"style":""});
             deegeelab.ini();
+            $('svg').attr({"class":"svg-animation-out"});
             setTimeout(function(){
-                $('svg').attr({"class":""});
+                $(".btn-flat").removeClass('hide');
+                $("#display_tagline").attr({"class":"white-text shadowed"});
                 $(".pillar-section").removeClass('hide');
                 $(".contact-section").removeClass('hide');
-                $(".main-section").attr({"style":""});
-                $(".btn-flat").removeClass('hide');
-                $("#why-deegeelab").removeClass('hide');
-                $("#display_tagline").attr({"class":"white-text shadowed"});
-            },2000);
+            },500);
         }
     },2000);
 

@@ -1677,7 +1677,7 @@ img {
 }
 svg:not(:root) {
 	overflow: hidden;
-	height: 350px !important;
+	height: 450px !important;
 	/* max-height: 350px !important; */
 }
 figure {
