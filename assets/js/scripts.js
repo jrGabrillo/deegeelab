@@ -30,24 +30,13 @@ $(document).on("ready",function(){
             }
         }
     });
-
-  var toggleMenu = function() {
-        $( 'header' ).toggleClass( 'toggle' );
-        $( '.main' ).toggleClass( 'push' );
-        $( '.overlay' ).toggleClass( 'block' );
-        $( '#social, .logo' ).toggleClass( 'reveal' );
-    };
-    $('.navBtn').click( function() {
-        toggleMenu();
-    });
     
-    // banner activity
     deegeelab.banner();
     _idle.ini();
 
-    $('body').on('click',function(){
-        deegeelab.banner();
-    });
+    // $('body').on('click',function(){
+    //     deegeelab.banner();
+    // });
 
     $("circle").mouseover(function(){
         let node = $(this)[0], _node = $(node).data('node');
@@ -60,7 +49,22 @@ $(document).on("ready",function(){
     $(window).on('ready resize',function(){
         deegeelab.banner();
         _idle.ini();
-        });
+    });
+
+    let e = {target:{nodeName:"square"}};
+    $('.collapsible').collapsible({
+    accordion: false,
+        onOpen: function(el){
+            $("#nodes .list").attr({'class':'hide list'});
+            _idle.active(e);
+        },
+        onClose: function(el){
+            setTimeout(function(){       
+                _idle.active(e);
+                $("#nodes .list").attr({'class':'list'});
+            },100);
+        }
+    });
 
     let date = new Date();
     date.setDate(date.getDate() + 7);
@@ -166,6 +170,7 @@ var deegeelab = function(){
 
             $("circle").mouseover(function(){
                 let node = $(this)[0], _node = $(node).data('node');
+                $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
                 $(`.svg-pulse[data-node='${_node}']`)[0].classList.add('active');
             }).mouseleave(function(){
                 let node = $(this)[0], _node = $(node).data('node');
@@ -174,6 +179,7 @@ var deegeelab = function(){
 
             $(".node").mouseover(function(){
                 let node = $(this)[0], _node = $(node).data('node');
+                $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
                 $(`.svg-pulse[data-node='${_node}']`)[0].classList.add('active');
             }).mouseleave(function(){
                 let node = $(this)[0], _node = $(node).data('node');
@@ -184,13 +190,15 @@ var deegeelab = function(){
             timer = setTimeout(function(){
                 deegeelab.showNode();
                 deegeelab.randomizeNodes();
-            },5000);
+            },3000);
             return timer;
         },
         showNode:function(){
             let r = Math.floor(Math.random()*6);
             $(`.node`).removeClass('active');
+            $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
             $(`#nodes .node[data-node='${r}']`).addClass('active');
+            $(`.svg-pulse[data-node='${r}']`)[0].classList.add('active');
         }
     }
 }();
@@ -213,7 +221,7 @@ var _idle = function(){
             this.startTimer();            
         },
         startTimer:function(){
-            idleTimerID = window.setTimeout(_idle.inactive, 10000);
+            idleTimerID = window.setTimeout(_idle.inactive, 2000);
         },
         reset:function(e){
             window.clearTimeout(idleTimerID);
@@ -225,7 +233,8 @@ var _idle = function(){
         },
         active:function(e){
             if(e.target.nodeName != "circle"){
-                $(`.node`).removeClass('active');  
+                $(`.node`).removeClass('active');
+                $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
             }
             window.clearTimeout(timer);
             window.clearTimeout(idleTimerID);

@@ -1083,7 +1083,7 @@ div[data-anchor="home"] .fp-tableCell{
 }
 
 .menu-left{
-    position:absolute;
+    position: fixed;
     top: 40%;
     left: 0%;
 }
