@@ -73,8 +73,6 @@ var deegeelab = function(){
                 }
             });
 
-            deegeelab.applySVG();
-
             let date = new Date();
             date.setDate(date.getDate() + 7);
             let mindate = `${date.getFullYear()}-${((date.getMonth()+1)<10?`0${(date.getMonth()+1)}`:(date.getMonth()+1))}-${date.getDate()}`;
@@ -267,8 +265,8 @@ $(window).on('load',function(){
             deegeelab.ini();
             $('svg').attr({"class":"svg-animation-out"});
             setTimeout(function(){
+                $("#display_tagline").removeClass('loading');
                 $(".btn-flat").removeClass('hide');
-                $("#display_tagline").attr({"class":"white-text shadowed"});
                 $(".pillar-section").removeClass('hide');
                 $(".contact-section").removeClass('hide');
             },500);

@@ -1063,6 +1063,7 @@ ul.skills {
 #display_tagline.loading{
     margin:0 auto;
     max-width: 800px;
+    z-index:  1000;
 }
 
 #display_tagline .progress{
