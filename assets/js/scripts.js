@@ -59,8 +59,8 @@ $(document).on("ready",function(){
             _idle.active(e);
         },
         onClose: function(el){
+            _idle.active(e);
             setTimeout(function(){       
-                _idle.active(e);
                 $("#nodes .list").attr({'class':'list'});
             },100);
         }
@@ -179,11 +179,13 @@ var deegeelab = function(){
 
             $(".node").mouseover(function(){
                 let node = $(this)[0], _node = $(node).data('node');
+                console.log(_node);
                 $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
-                $(`.svg-pulse[data-node='${_node}']`)[0].classList.add('active');
+                $(`.svg-pulse[data-node='${_node}']`).attr({'class':'fill-blue svg-pulse active'});
             }).mouseleave(function(){
                 let node = $(this)[0], _node = $(node).data('node');
-                $(`.svg-pulse[data-node='${_node}']`)[0].classList.remove('active');
+                console.log(_node);
+                $(`.svg-pulse[data-node='${_node}']`).attr({'class':'fill-blue svg-pulse'});
             });
         },
         randomizeNodes:function(){
@@ -234,7 +236,6 @@ var _idle = function(){
         active:function(e){
             if(e.target.nodeName != "circle"){
                 $(`.node`).removeClass('active');
-                $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
             }
             window.clearTimeout(timer);
             window.clearTimeout(idleTimerID);
