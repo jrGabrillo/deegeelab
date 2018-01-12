@@ -142,7 +142,6 @@ var deegeelab = function(){
                         check = false;              
                 }
             }
-
             return value;
         },
         banner:function(posX,posY){
@@ -151,9 +150,8 @@ var deegeelab = function(){
             let nodes = $(".nodes").children('circle.circle-node');
             $.each(nodes,function(x,y){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
-
                 $('#nodes .list').append(`
-                    <div class='node animated' data-node='${x}' style='position:absolute; top:${_x}px; left:${_y}px;'>
+                    <div class='node animated' data-node='${x}' style='top:${(_x-180)}px; left:${_y}px;'>
                         <a href="${$(y).data('link')}">
                             <div class='description row'>
                                 <div class='col s8'>
@@ -197,11 +195,28 @@ var deegeelab = function(){
                 $(`.svg-pulse[data-node='${_node}']`).attr({'class':'fill-blue svg-pulse'});
             });
         },
+        repositionNodes:function(posX,posY){
+            let nodeWidth = 250, mobileWidth = 0;;
+            let nodes = $(".nodes").children('circle.circle-node');
+            $.each(nodes,function(x,y){
+                var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
+                if(pos.left<(docWidth/2)){
+                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
+                    $(`#nodes .node[data-node='${x}']`).attr({'style':`top:${(pos.top-150)}px; left:${pos.left-155}px`});
+                }
+                else{
+                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(pos.left+(d)):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
+
+                    console.log(_posLeft);
+                    $(`#nodes .node[data-node='${x}']`).attr({'style':`top:${(pos.top-150)}px; left:${_posLeft}px`});
+                }
+            });
+        },
         randomizeNodes:function(){
             timer = setTimeout(function(){
                 deegeelab.showNode();
                 deegeelab.randomizeNodes();
-            },3000);
+            },5000);
             return timer;
         },
         showNode:function(){
@@ -255,22 +270,44 @@ var _idle = function(){
 
 $(window).on('load',function(){
     let count_timer = 0;
-    let load_timer = setInterval(function(){
-        count_timer++;
-        $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
-        if(count_timer == 5){
-            clearInterval(load_timer);
-            $("#why-deegeelab").removeClass('hide');
-            $(".main-section").attr({"style":""});
-            deegeelab.ini();
-            $('svg').attr({"class":"svg-animation-out"});
-            setTimeout(function(){
-                $("#display_tagline").removeClass('loading');
-                $(".btn-flat").removeClass('hide');
-                $(".pillar-section").removeClass('hide');
-                $(".contact-section").removeClass('hide');
-            },500);
-        }
-    },2000);
+    let hash = window.location.hash;
+    if(hash == "#loaded"){
+        $("#why-deegeelab").removeClass('hide');
+        $(".main-section").attr({"style":""});
+        deegeelab.ini();
+        $('svg').attr({"class":"svg-animation-out"});
+        setTimeout(function(){
+            $("#display_tagline").removeClass('loading');
+            $(".btn-flat").removeClass('hide');
+            $(".pillar-section").removeClass('hide');
+            $(".contact-section").removeClass('hide');
+        },500);
+    }
+    else{
+        let load_timer = setInterval(function(){
+            count_timer++;
+            $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
+            if(count_timer == 5){
+                clearInterval(load_timer);
+                $("#why-deegeelab").removeClass('hide');
+                $(".main-section").attr({"style":""});
+                deegeelab.ini();
+                $('svg').attr({"class":"svg-animation-out"});
+                setTimeout(function(){
+                    $("#display_tagline").removeClass('loading');
+                    $(".btn-flat").removeClass('hide');
+                    $(".pillar-section").removeClass('hide');
+                    $(".contact-section").removeClass('hide');
+                },500);
+            }
+        },2000);        
+    }
 
+    $(window).mousemove(function(e) {
+        let xpos=e.clientX, ypos=e.clientY;
+        xpos=xpos*2; ypos=ypos*2;
+        deegeelab.repositionNodes();
+        $('.main-section').attr({'style':`top:${(-100+(ypos/100))}px;left:${(-100+(xpos/100))}px`});
+        $('#nodes').attr({'style':`position:relative; top:${(5-(ypos/65))}px; left:${((xpos/200))}px`});
+    });
 });

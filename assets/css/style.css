@@ -959,8 +959,18 @@ ul.skills {
     border-left: 1px #02bad0 solid;    
 }
 
-.logo-color{
+#display_tagline{
+    font-size:50px !important;
+}
+
+.lab{
     color:#02bad0 !important;
+    font-size:50px;
+}
+
+.deegee{
+    color:#4a4949 !important;
+    font-size:50px;
 }
 
 .overlap-gradient{
@@ -1032,7 +1042,7 @@ ul.skills {
     transform: rotateX(180deg);
 }
 
-.node:hover .description, .node.active .description{
+.node.active .description{
     width:250px;
     height:100px;
     background: #fff;
@@ -1159,4 +1169,19 @@ div[data-anchor="home"] .fp-tableCell{
 
 .enclosed .divider{
     margin-bottom: 20px !important;
+}
+
+#nodes .list .node{
+    position: absolute;    
+}
+
+#nodes{
+    position: relative;
+    
+}
+
+#nodes, #nodes .list .node{
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }

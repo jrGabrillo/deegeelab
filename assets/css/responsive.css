@@ -16,6 +16,13 @@
 	background: url("../images/background/bbg1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position:  center;
+	position:absolute;
+	top:-10%;
+	left:-10%;
+	width: 120%;
+	height: 120%;
+	/* z-index: 100; */
 }
 .contact-section {
 	background: url("../images/background/bgcontact.jpg");
@@ -31,31 +38,37 @@
 	background: url(../images/background/pillars/bglead.png) no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 #backend {
 	background: url(../images/background/pillars/bgbackend.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
+    background-attachment: fixed;
 }
 #frontend {
 	background: url(../images/background/pillars/bgfrontend.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
+    background-attachment: fixed;
 }
 #social {
 	background: url(../images/background/pillars/bgsocial.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
+    background-attachment: fixed;
 }
 #webdev {
 	background: url(../images/background/pillars/webdev1.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
+    background-attachment: fixed;
 }
 #marketing {
 	background: url(../images/background/pillars/bgmarketing.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
+    background-attachment: fixed;
 }
 #backcon {
 	background: url(../images/background/pillars/bgcontact.jpg) no-repeat;
@@ -97,6 +110,7 @@ p.label {
 
 .shadowed{
 	text-shadow: 0px 0px 10px #000;
+	position:  relative;
 }
 
 #why-deegeelab{
@@ -105,6 +119,7 @@ p.label {
 	padding: 10px 10px 0px 10px;
 	border: none;
 	background: rgba(0,0,0,0.5);
+	position:  relative;
 }
 
 #why-deegeelab .collapsible-header{
