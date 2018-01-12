@@ -12,13 +12,25 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.main-section {
+
+main-section{
+	min-height:768px;
+	vertical-align:middle;
+
+}
+
+.home-section{
+	min-height:768px;
+	overflow:hidden;
+}
+
+.bg-section {
 	background: url("../images/background/bbg1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position:  center;
 	position:absolute;
-	top:-10%;
+	top: 0px !important;
 	left:-10%;
 	width: 120%;
 	height: 120%;
@@ -153,7 +165,7 @@ p.label {
 }
 #fullpage, #modal_services .modal-content {
 	width: 100% !important;
-	top: 0px;
+	top: 0px !important;
 }
 #modal_services .modal-content {
 	position: relative !important;

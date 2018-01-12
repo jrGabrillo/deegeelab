@@ -151,7 +151,7 @@ var deegeelab = function(){
             $.each(nodes,function(x,y){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
                 $('#nodes .list').append(`
-                    <div class='node animated' data-node='${x}' style='top:${(_x-180)}px; left:${_y}px;'>
+                    <div class='node animated' data-node='${x}' style='top:${(_x-150)}px; left:${_y}px;'>
                         <a href="${$(y).data('link')}">
                             <div class='description row'>
                                 <div class='col s8'>
@@ -202,13 +202,11 @@ var deegeelab = function(){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
                 if(pos.left<(docWidth/2)){
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
-                    $(`#nodes .node[data-node='${x}']`).attr({'style':`top:${(pos.top-150)}px; left:${pos.left-155}px`});
+                    $(`#nodes .node[data-node='${x}']`).attr({'style':`top:${(pos.top-190)}px; left:${pos.left-165}px`});
                 }
                 else{
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(pos.left+(d)):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
-
-                    console.log(_posLeft);
-                    $(`#nodes .node[data-node='${x}']`).attr({'style':`top:${(pos.top-150)}px; left:${_posLeft}px`});
+                    $(`#nodes .node[data-node='${x}']`).attr({'style':`top:${(pos.top-190)}px; left:${_posLeft+165}px`});
                 }
             });
         },
@@ -307,7 +305,7 @@ $(window).on('load',function(){
         let xpos=e.clientX, ypos=e.clientY;
         xpos=xpos*2; ypos=ypos*2;
         deegeelab.repositionNodes();
-        $('.main-section').attr({'style':`top:${(-100+(ypos/100))}px;left:${(-100+(xpos/100))}px`});
+        $('.bg-section').attr({'style':`top:${(-130+(ypos/100))}px;left:${(-100+(xpos/100))}px`});
         $('#nodes').attr({'style':`position:relative; top:${(5-(ypos/65))}px; left:${((xpos/200))}px`});
     });
 });
