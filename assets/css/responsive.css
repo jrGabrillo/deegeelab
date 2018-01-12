@@ -13,14 +13,12 @@
 	background-size: cover;
 }
 
-main-section{
-	min-height:768px;
-	vertical-align:middle;
-
+.main-section.loading{
+	padding-top: 100px;
 }
 
 .home-section{
-	min-height:768px;
+	height: 768px;
 	overflow:hidden;
 }
 
@@ -165,7 +163,7 @@ p.label {
 }
 #fullpage, #modal_services .modal-content {
 	width: 100% !important;
-	top: 0px !important;
+	/* top: 0px !important; */
 }
 #modal_services .modal-content {
 	position: relative !important;
