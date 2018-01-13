@@ -151,7 +151,7 @@ var deegeelab = function(){
             $.each(nodes,function(x,y){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
                 $('#nodes .list').append(`
-                    <div class='node animated' data-node='${x}' style='top:${(_x-150)}px; left:${_y}px;'>
+                    <div class='node animated' data-node='${x}' style='top:${(_x)}px; left:${_y}px;'>
                         <a href="${$(y).data('link')}">
                             <div class='description row'>
                                 <div class='col s8'>
@@ -270,7 +270,7 @@ $(window).on('load',function(){
     let count_timer = 0;
     let hash = window.location.hash;
     if(hash == "#loaded"){
-        $("#main-section").removeClass('loading');
+        $(".main-section").removeClass('loading');
         $("#why-deegeelab").removeClass('hide');
         $(".main-section").attr({"style":""});
         $('svg').attr({"class":"svg-animation-out"});
@@ -288,6 +288,7 @@ $(window).on('load',function(){
             $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
             if(count_timer == 5){
                 clearInterval(load_timer);
+                $(".main-section").removeClass('loading');
                 $("#why-deegeelab").removeClass('hide');
                 $(".main-section").attr({"style":""});
                 deegeelab.ini();
@@ -299,14 +300,6 @@ $(window).on('load',function(){
                     $(".contact-section").removeClass('hide');
                 },500);
             }
-        },2000);        
+        },2000);
     }
-
-    $(window).mousemove(function(e) {
-        let xpos=e.clientX, ypos=e.clientY;
-        xpos=xpos*2; ypos=ypos*2;
-        deegeelab.repositionNodes();
-        $('.bg-section').attr({'style':`top:${(-130+(ypos/100))}px;left:${(-100+(xpos/100))}px`});
-        $('#nodes').attr({'style':`position:relative; top:${(5-(ypos/65))}px; left:${((xpos/200))}px`});
-    });
 });

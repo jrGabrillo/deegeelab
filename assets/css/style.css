@@ -1170,18 +1170,3 @@ div[data-anchor="home"] .fp-tableCell{
 .enclosed .divider{
     margin-bottom: 20px !important;
 }
-
-#nodes .list .node{
-    position: absolute;    
-}
-
-#nodes{
-    position: relative;
-    
-}
-
-#nodes, #nodes .list .node{
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
