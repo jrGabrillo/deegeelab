@@ -151,7 +151,11 @@ var deegeelab = function(){
             $.each(nodes,function(x,y){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
                 $('#nodes .list').append(`
+<<<<<<< HEAD
                     <div class='node animated' data-node='${x}' style='top:${(_x)}px; left:${_y}px;'>
+=======
+                    <div class='node animated' data-node='${x}' style='top:${(_x-100)}px; left:${_y}px;'>
+>>>>>>> ed13f2c0c875e06bbd23c32cecc79253ebbe2173
                         <a href="${$(y).data('link')}">
                             <div class='description row'>
                                 <div class='col s8'>

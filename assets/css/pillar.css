@@ -314,6 +314,10 @@ a {}
   height: 100%;
 }
 
+#display_ipad{
+  height: 100%;
+}
+
 #display_mobile .panel{
   position: relative;
   overflow: hidden;
