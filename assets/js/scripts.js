@@ -9,15 +9,16 @@ var deegeelab = function(){
             $('#fullpage').fullpage({
                 'verticalCentered': true,
                 'easing': 'easeInOutCirc',
-                'css3': false,
+                'css3': true,
+                'navigationPosition': 'right',
                 'scrollingSpeed': 1000,
                 'slidesNavigation': true,
                 'slidesNavPosition': 'bottom',
                 'easingcss3': 'ease',
                 'navigation': true,
-                'anchors': ['home','pillars','contact'],
-                'navigationPosition': 'left',
+                'anchors': ['home','pillars','contact','footer'],
                 'scrollOverflow': true,
+                'fitToSection': true,
                 onLeave: function(index, nextIndex, direction){
                     let leavingSection = $(this);
                     if(index == 1 && direction =='down'){
@@ -53,9 +54,8 @@ var deegeelab = function(){
                 $(`.node[data-node='${_node}']`).removeClass('active');        
             });
 
-            $(window).on('ready resize',function(){
+            $(window).on('resize',function(){
                 deegeelab.banner();
-                _idle.ini();
             });
 
             let e = {target:{nodeName:"square"}};
@@ -87,7 +87,9 @@ var deegeelab = function(){
                     field_business: {required: true,maxlength: 300},
                     field_email: {required: true,maxlength: 300,email:true},
                     field_number: {required: true,maxlength: 50},
+                    field_postal: {required: true,maxlength: 40},
                     field_date: {required: true,maxlength: 40},
+                    field_time: {required: true,maxlength: 40},
                     field_message: {required: true,maxlength: 1000},
                 },
                 errorElement : 'div',
@@ -151,7 +153,7 @@ var deegeelab = function(){
             $.each(nodes,function(x,y){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
                 $('#nodes .list').append(`
-                    <div class='node animated' data-node='${x}' style='top:${(_x)}px; left:${_y}px;'>
+                    <div class='node animated' data-node='${x}' style='position:absolute; top:${(_x)}px; left:${_y}px;'>
                         <a href="${$(y).data('link')}">
                             <div class='description row'>
                                 <div class='col s8'>
@@ -168,12 +170,12 @@ var deegeelab = function(){
                 if(pos.left<(docWidth/2)){
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
                     $(this_node).css(`left`,`${(_posLeft)}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${descPos}px`});
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${descPos}px;color:red;`});
                 }
                 else{
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
                     $(this_node).css(`left`,`${_posLeft}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px`});
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px;`});
                 }
             });
 
@@ -266,40 +268,52 @@ var _idle = function(){
     }
 }();
 
+
+$('.loading .main-section .bg').attr({'style': `width: ${docWidth}px; height: ${docHeight}px;`});
 $(window).on('load',function(){
-    let count_timer = 0;
-    let hash = window.location.hash;
-    if(hash == "#loaded"){
-        $(".main-section").removeClass('loading');
-        $("#why-deegeelab").removeClass('hide');
-        $(".main-section").attr({"style":""});
-        $('svg').attr({"class":"svg-animation-out"});
-        setTimeout(function(){
-            deegeelab.ini();
-            $("#display_tagline").removeClass('loading');
+
+            $("#why-deegeelab").removeClass('hide');
             $(".btn-flat").removeClass('hide');
-            $(".pillar-section").removeClass('hide');
-            $(".contact-section").removeClass('hide');
-        },500);
-    }
-    else{
-        let load_timer = setInterval(function(){
-            count_timer++;
-            $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
-            if(count_timer == 5){
-                clearInterval(load_timer);
-                $(".main-section").removeClass('loading');
-                $("#why-deegeelab").removeClass('hide');
-                $(".main-section").attr({"style":""});
+            $('.loading .main-section .bg').fadeOut('fast');
+            $('#fullpage').removeClass('loading');
+            setTimeout(function(){
+                $(".pillar-section").removeClass('hide');
+                $(".contact-section").removeClass('hide');
+                $(".footer-section").removeClass('hide');
                 deegeelab.ini();
                 $('svg').attr({"class":"svg-animation-out"});
-                setTimeout(function(){
-                    $("#display_tagline").removeClass('loading');
-                    $(".btn-flat").removeClass('hide');
-                    $(".pillar-section").removeClass('hide');
-                    $(".contact-section").removeClass('hide');
-                },500);
-            }
-        },2000);
-    }
+            },300);
+
+
+
+    
+    // let count_timer = 0;
+    // let hash = window.location.hash;
+    // let load_timer = setInterval(function(){
+    //     count_timer++;
+    //     $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
+    //     if(count_timer == 5){
+    //         clearInterval(load_timer);
+    //         $("#why-deegeelab").removeClass('hide');
+    //         $(".btn-flat").removeClass('hide');
+    //         $('.loading .main-section .bg').fadeOut('fast');
+    //         $('#fullpage').removeClass('loading');
+    //         setTimeout(function(){
+    //             $(".pillar-section").removeClass('hide');
+    //             $(".contact-section").removeClass('hide');
+    //             $(".footer-section").removeClass('hide');
+    //             deegeelab.ini();
+    //             $('svg').attr({"class":"svg-animation-out"});
+    //         },300);
+    //     }
+    // },2000);
+
+
+
+    $(window).mousemove(function(e) {      
+        let xpos=e.clientX, ypos=e.clientY;       
+        xpos=xpos*2; ypos=ypos*2;     
+        // $('.bg-section').attr({'style':`top:${(-130+(ypos/100))}px;left:${(-100+(xpos/100))}px`});        
+        $('#nodes').attr({'style':`margin:${(5-(ypos/65))}px 0px 0px ${((xpos/200))}px;`});      
+    });
 });

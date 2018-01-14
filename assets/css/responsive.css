@@ -12,27 +12,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.main-section.loading{
-	padding-top: 100px;
-}
-
-.home-section{
-	height: 768px;
-	overflow:hidden;
-}
-
-.bg-section {
+.main-section {
 	background: url("../images/background/bbg1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position:  center;
-	position:absolute;
-	top: 0px !important;
-	left:-10%;
-	width: 150%;
-	height: 150%;
-	/* z-index: 100; */
 }
 .contact-section {
 	background: url("../images/background/bgcontact.jpg");
@@ -48,37 +31,31 @@
 	background: url(../images/background/pillars/bglead.png) no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 }
 #backend {
 	background: url(../images/background/pillars/bgbackend.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-    background-attachment: fixed;
 }
 #frontend {
 	background: url(../images/background/pillars/bgfrontend.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-    background-attachment: fixed;
 }
 #social {
 	background: url(../images/background/pillars/bgsocial.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-    background-attachment: fixed;
 }
 #webdev {
 	background: url(../images/background/pillars/webdev1.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-    background-attachment: fixed;
 }
 #marketing {
 	background: url(../images/background/pillars/bgmarketing.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-    background-attachment: fixed;
 }
 #backcon {
 	background: url(../images/background/pillars/bgcontact.jpg) no-repeat;
@@ -120,7 +97,6 @@ p.label {
 
 .shadowed{
 	text-shadow: 0px 0px 10px #000;
-	position:  relative;
 }
 
 #why-deegeelab{
@@ -129,7 +105,6 @@ p.label {
 	padding: 10px 10px 0px 10px;
 	border: none;
 	background: rgba(0,0,0,0.5);
-	position:  relative;
 }
 
 #why-deegeelab .collapsible-header{
@@ -145,6 +120,74 @@ p.label {
 	padding-top: 0px;
 }
 
+.loading .main-section .bg{
+	background:#000; 
+	position:absolute;
+}
+
+.loading .main-section .stage{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	vertical-align: middle;
+	height: 60%;
+}
+
+.loading .main-section #display_tagline .progress{
+	background:transparent;
+	display: block;
+}
+
+.loading #display_tagline{
+    margin:0 auto;
+    max-width: 800px;
+    z-index:  1000;
+}
+
+#display_tagline .progress{
+    display: none;
+    background: transparent;
+}
+
+.contact-section .layer{
+    /* padding: 50px 0px 20% 0px; */
+}
+
+.footer-section ul li{
+    min-width: 40px;
+    margin-left:20px;
+    display:inline-block;
+    height: 0px;
+}
+
+.footer-section a{
+    line-height: 40px;
+}
+
+.footer-section ul{
+    margin: 0px;
+}
+
+.footer-section img.social-icons{
+    margin-right:10px;
+}
+
+.footer-section {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 1);
+    /* z-index:  10000; */
+}
+#fp-nav{
+	display:none;
+}
 
 @media only screen and (min-width: 601px) {
 	.row .col.m5ths {
@@ -163,7 +206,7 @@ p.label {
 }
 #fullpage, #modal_services .modal-content {
 	width: 100% !important;
-	/* top: 0px !important; */
+	top: 0px;
 }
 #modal_services .modal-content {
 	position: relative !important;
@@ -225,21 +268,6 @@ span.head {
 }
 @media (min-width: 994px) {
 	/* Desktop */
-
-	#nodes .list .node{
-		position: absolute;    
-	}
-
-	#nodes{
-		position: relative;
-	}
-
-	#nodes, #nodes .list .node{
-		-webkit-transition: all 0.3s linear;
-		-moz-transition: all 0.3s linear;
-		transition: all 0.3s linear;
-	}
-
 	.services-content {
 		padding: 50px 30px 100px 30px !important;
 		/* overflow: scroll !important; */
@@ -251,78 +279,47 @@ span.head {
 		padding: 5px 5px !important;
 	}
 	.overlap-gradient{
-		padding-top:2%;
+		/* padding-top:2%; */
 	}
 	.text a{
 	  text-shadow:none;
-	  position:relative;
+	  position: absolute;
 	  top:150px;
 	}
 	#menu .social-icons{
 		display:none;
 	}	
-}
-/* --------Ipad Pro-------- */
-/* Portrait */
-@media (width: 1024px) 
-  and (height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
 
-  	/*Pillars*/
-  	.panel{
-  		position: inherit !important;
-	    width: 50% !important;
-	    height: 683px !important;
-	    float: left !important;
-  	}
-  	.panel:hover{
-  		width: 50% !important;
-  	}
-	/*alignment for contact form*/
-	.row .col.i12{	
-		width: 100% !important;
-	    margin-left: auto !important;
-	    left: auto !important;
-	    right: auto !important;
-	}
-	/*Info resize*/
-	.form_holder {
-		margin: 10% auto auto !important;
-	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 24px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
+	.form_holder{
+		border-top: #02bad0 5px solid; //#4a4949
+		max-width:900%;
+		max-width: 900px;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		vertical-align: middle;
+		display: table;
+		height: 50%;
+		position: absolute;
 	}
 
-}
-/* Landscape */
-@media (height: 1024px) 
-  and (width: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+	.text{
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		vertical-align: middle;
+		height: 40%;
+		position: absolute;
+	}
 
-	/*Info resize*/
-	.form_holder {
-		margin: 8% auto auto !important;
-		max-width: 90% !important;
+	#display_mobile{
+		height: 100%;
 	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 24px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
-	}
+
 
 }
 @media (min-width: 602px) and (max-width: 993px) {
@@ -359,6 +356,36 @@ span.head {
 		/* top: 20%; */
 		margin-top: 50px;
 	}
+	.form_holder{
+		position: relative;
+	}
+
+	.footer-section {
+		position: relative;
+	}
+
+	#why-deegeelab{
+		display: none;
+	}
+
+	.text{
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		vertical-align: middle;
+		height: 80%;
+		position: absolute;
+	}
+	#display_mobile{
+		height: 50%;
+	}
+
+	.loading .main-section .stage{
+		height: 75%;
+	}
+
 }
 @media (min-width: 320px) and (max-width: 601px) {
 	/* Smartphones */
@@ -416,27 +443,32 @@ span.head {
 	.fullwidth {
 		overflow-x: scroll !important;
 	}
-	#footer ul {
+
+	.footer-section {
+		position: relative;
+	}
+
+	.footer-section ul {
 		margin: 10px !important;
 	}
-	#footer ul li {
+	.footer-section ul li {
 		margin-left: 0px !important;
 		min-width: 0px !important;
 	}
-	#footer ul li img, .social-icons img {
+	.footer-section ul li img, .social-icons img {
 		width: 30px !important;
 	}
-	#footer ul li a img {
+	.footer-section ul li a img {
 		display: none;
 	}
-	#footer ul li i {
+	.footer-section ul li i {
 		font-size: 10px !important;
 	}
-	#footer ul li span, #footer ul li a {
+	.footer-section ul li span, .footer-section ul li a {
 		font-size: 10px !important;
 		/* line-height: 24px; */
 	}
-	#footer .right ul li {
+	.footer-section .right ul li {
 		top: -12px;
 		position: relative;
 	}
@@ -489,5 +521,34 @@ span.head {
 	}
 	.node:hover .description, .node.active .description{
 		width:150px !important;
+	}
+	.form_holder{
+		position: relative;
+	}
+	#why-deegeelab{
+		display: none;
+	}	
+
+	.text{
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		vertical-align: middle;
+		height: 100%;
+		position: absolute;
+	}	
+	#display_mobile{
+		height: 25%;
+	}
+
+	.loading .main-section .stage{
+		height: 50%;
+	}
+
+	h4{
+		
+font-size: 30px !important;
 	}
 }	
