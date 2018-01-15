@@ -1778,7 +1778,7 @@ ul:not(.browser-default)>li {
 a {
 	color: #039be5;
 	text-decoration: none;
-	-webkit-tap-highlight-color: transparent
+	-webkit-tap-highlight-color: transparent;
 }
 .valign-wrapper {
 	display: -webkit-box;
@@ -2517,7 +2517,7 @@ nav ul a span.badge {
 	width: 25%;
 	margin-left: auto;
 	left: auto;
-	right: auto
+	right: auto;
 }
 .row .col.s4 {
 	width: 33.3333333333%;

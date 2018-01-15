@@ -43,7 +43,7 @@ var deegeelab = function(){
                 }
             });
             
-            // deegeelab.banner();
+            deegeelab.banner();
             _idle.ini();
 
             $("circle").mouseover(function(){
@@ -143,36 +143,55 @@ var deegeelab = function(){
             return value;
         },
         banner:function(posX,posY){
-            $('#nodes .list').html('');
+            // $('#nodes .list').html('');
             let nodeWidth = 250, mobileWidth = 0;;
             let nodes = $(".nodes").children('circle.circle-node');
             $.each(nodes,function(x,y){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
-                $('#nodes .list').append(`
-                    <div class='node animated' data-node='${x}' style='position:absolute; top:${(_x)}px; left:${_y}px;'>
-                        <a href="${$(y).data('link')}">
-                            <div class='description row'>
-                                <div class='col s8'>
-                                    <h6 class='bold'>${$(y).data('name')}</h6>
-                                    <p>${$(y).data('desc')}</p>
+                
+                if(x<3){
+                    $('#nodes .list #display_leftNodes').append(`
+                        <div class='node animated' data-node='${x}'>
+                            <a href="${$(y).data('link')}">
+                                <div class='description row'>
+                                    <div class='col s8'>
+                                        <h6 class='bold'>${$(y).data('name')}</h6>
+                                        <p>${$(y).data('desc')}</p>
+                                    </div>
+                                    <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
                                 </div>
-                                <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
-                            </div>
-                            <span class='title'>${$(y).data('name')}</span>
-                        </a>
-                    </div>
-                `);
-
-                if(pos.left<(docWidth/2)){
-                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
-                    $(this_node).css(`left`,`${(_posLeft)}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${descPos}px;color:red;`});
+                                <span class='title'>${$(y).data('name')}</span>
+                            </a>
+                        </div>
+                    `);                    
                 }
                 else{
-                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
-                    $(this_node).css(`left`,`${_posLeft}px`);
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px;`});
+                    $('#nodes .list #display_rightNodes').append(`
+                        <div class='node animated' data-node='${x}'>
+                            <a href="${$(y).data('link')}">
+                                <div class='description row'>
+                                    <div class='col s8'>
+                                        <h6 class='bold'>${$(y).data('name')}</h6>
+                                        <p>${$(y).data('desc')}</p>
+                                    </div>
+                                    <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
+                                </div>
+                                <span class='title'>${$(y).data('name')}</span>
+                            </a>
+                        </div>
+                    `);                    
                 }
+
+                // if(pos.left<(docWidth/2)){
+                //     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
+                //     $(this_node).css(`left`,`${(_posLeft)}px`);
+                //     $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${descPos}px;color:red;`});
+                // }
+                // else{
+                //     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
+                //     $(this_node).css(`left`,`${_posLeft}px`);
+                //     $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px;`});
+                // }
             });
 
             $("circle").mouseover(function(){
@@ -272,13 +291,14 @@ $(window).on('load',function(){
         $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
         if(count_timer == 5){
             clearInterval(load_timer);
+            $(".loading").remove();
             $("#fullpage").removeClass('hide');
             setTimeout(function(){
                 deegeelab.ini();
                 $('svg').attr({"class":"svg-animation-out"});
             },300);
         }
-    },1);
+    },3000);
 
     $(window).mousemove(function(e) {      
         let xpos=e.clientX, ypos=e.clientY;       

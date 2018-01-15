@@ -86,7 +86,6 @@ p.label {
 .row .col.s5ths {
 	width: 20%;
 }
-
 .deegeelab-pulse {
 	box-shadow: 0 0 0 rgba(2, 186, 208, 0.4);
 	animation: deegeelab-pulse 1s infinite;
@@ -94,11 +93,9 @@ p.label {
 .deegeelab-pulse:hover {
 	animation: deegeelab-pulse 1s infinite;
 }
-
 .shadowed{
 	text-shadow: 0px 0px 10px #000;
 }
-
 #why-deegeelab{
 	max-width: 600px;
 	margin: 0 auto;
@@ -106,25 +103,21 @@ p.label {
 	border: none;
 	background: rgba(0,0,0,0.5);
 }
-
 #why-deegeelab .collapsible-header{
 	background:transparent !important;
 	border:none;
 	text-align: center;
 }
-
 #why-deegeelab .collapsible-body{
 	background:transparent !important;
 	border:none;
 	text-align: left;
 	padding-top: 0px;
 }
-
 .loading .main-section .bg{
 	background:#000; 
 	position:absolute;
 }
-
 .loading .main-section .stage{
 	position: absolute;
 	margin: auto;
@@ -135,46 +128,37 @@ p.label {
 	vertical-align: middle;
 	height: 60%;
 }
-
 .loading .main-section #display_tagline .progress{
 	background:transparent;
 	display: block;
 }
-
 .loading #display_tagline{
     margin:0 auto;
     max-width: 800px;
     z-index:  1000;
 }
-
 #display_tagline .progress{
     display: none;
     background: transparent;
 }
-
 .contact-section .layer{
     /* padding: 50px 0px 20% 0px; */
 }
-
 .footer-section ul li{
     min-width: 40px;
     margin-left:20px;
     display:inline-block;
     height: 0px;
 }
-
 .footer-section a{
     line-height: 40px;
 }
-
 .footer-section ul{
     margin: 0px;
 }
-
 .footer-section img.social-icons{
     margin-right:10px;
 }
-
 .footer-section {
     /* position: absolute; */
     bottom: 0%;
@@ -188,7 +172,18 @@ p.label {
 #fp-nav{
 	display:none;
 }
-
+#nodes .list{
+	position:absolute;
+	width: 100%;
+	height:  100%;
+	margin: 50px 0px 0px 0px;
+}
+#nodes .list .node{
+	height: 100px;
+	z-index: 10000;
+	position:relative;
+	
+}
 @media only screen and (min-width: 601px) {
 	.row .col.m5ths {
 		width: 20%;
@@ -247,7 +242,6 @@ span.head {
 	font-weight: 600;
 }
 /*Additional Css*/
-
 [data-collapse] {
 	display: none
 }
@@ -294,7 +288,6 @@ span.head {
 	#menu .social-icons{
 		display:none;
 	}	
-
 	.form_holder{
 		border-top: #02bad0 5px solid; //#4a4949
 		max-width:900%;
@@ -309,7 +302,6 @@ span.head {
 		height: 50%;
 		position: absolute;
 	}
-
 	.text{
 		margin: auto;
 		top: 0;
@@ -320,13 +312,11 @@ span.head {
 		height: 40%;
 		position: absolute;
 	}
-
 	.text p{
 		position: absolute; 
 		top:100px; 
 		width: 100%;
 	}	
-
 	#display_mobile{
 		height: 100%;
 	}
@@ -371,7 +361,7 @@ span.head {
 		position: relative;
 	}
 	#why-deegeelab{
-		display: none;
+		/* display: none; */
 	}
 	.text{
 		margin: auto;
@@ -389,6 +379,10 @@ span.head {
 	.loading .main-section .stage{
 		height: 75%;
 	}
+
+	#nodes .list .node{
+
+	}	
 }
 @media (min-width: 320px) and (max-width: 601px) {
 	/* Smartphones */
@@ -446,11 +440,9 @@ span.head {
 	.fullwidth {
 		overflow-x: scroll !important;
 	}
-
 	.footer-section {
 		position: relative;
 	}
-
 	.footer-section ul {
 		margin: 10px !important;
 	}
@@ -530,8 +522,7 @@ span.head {
 	}
 	#why-deegeelab{
 		display: none;
-	}	
-
+	}
 	.text{
 		margin: auto;
 		top: 0;
@@ -551,7 +542,12 @@ span.head {
 	}
 
 	h4{
-		
-font-size: 30px !important;
+		font-size: 30px !important;
 	}
+	#nodes .list .title{
+		display: none;
+	}
+	#nodes .list .node{
+		height: 50px;
+	}	
 }	
