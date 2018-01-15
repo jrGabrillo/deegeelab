@@ -368,10 +368,7 @@ span.head {
 
 }
 /* Landscape */
-@media (height: 1024px) 
-  and (width: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
 
 	/*Info resize*/
 	.form_holder {
@@ -453,7 +450,9 @@ span.head {
 
 	}	
 }
-@media (min-width: 320px) and (max-width: 601px) {
+/*Portrait orientation for mobile*/
+@media screen and (orientation:portrait) { 
+
 	/* Smartphones */
 	.service-menu .left a{
 		margin-left:0px;
@@ -589,9 +588,6 @@ span.head {
 	.form_holder{
 		position: relative;
 	}
-	#why-deegeelab{
-		display: none;
-	}
 	.text{
 		margin: auto;
 		top: 0;
@@ -649,5 +645,10 @@ span.head {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
+	}	
+}
+@media screen and (orientation:landscape) {
+	#nodes .list .title{
+		display: none;
 	}
 }	
