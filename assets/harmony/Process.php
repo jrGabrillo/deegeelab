@@ -55,7 +55,6 @@ $function = new DatabaseClasses;
 
             $mail = $function->mail('rufo.gabrillo@gmail.com, info@deegeelab.com, vinay@deegeelab.com',"New leads for attention",$message);
             print_r($mail);
-            echo 1;
         }
         else{
             $Data = $query->errorInfo();

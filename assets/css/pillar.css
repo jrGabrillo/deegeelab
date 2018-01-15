@@ -102,12 +102,12 @@ html {
 
 *[data-count='one'] {
   background: rgba(99, 98, 98, 0.5) center/cover no-repeat;
-  left: 0;
+  left: 0%;
 }
 
 *[data-count='one']:hover{
-  background: rgba(99, 98, 98, 0.1) url("../images/background/pillars/bgmarketing.jpg")  center/cover no-repeat;
-  left: 0;
+  background: rgba(99, 98, 98, 0.1) url("../images/services/bgmarketing.png")  center/cover no-repeat;
+  left: 0%;
 }
 
 *[data-count='two'] {
@@ -116,7 +116,7 @@ html {
 }
 
 *[data-count='two']:hover {
-  background: rgba(99, 98, 98, 0.1) url("../images/background/pillars/bglead.png")  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.1) url("../images/services/lead.png")  center/cover no-repeat;
   left: 25%;
 }
 
@@ -126,7 +126,7 @@ html {
 }
 
 *[data-count='three']:hover {
-  background: rgba(99, 98, 98, 0.1) url("../images/background/pillars/bgbackend.jpg")  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.1) url("../images/services/bgbackend.png")  center/cover no-repeat;
   left: 50%;
 }
 
@@ -136,7 +136,7 @@ html {
 }
 
 *[data-count='four']:hover {
-  background: rgba(99, 98, 98, 0.1) url("../images/background/pillars/bgfrontend.jpg")  center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.1) url("../images/services/frontend.png")  center/cover no-repeat;
   left: 75%;
 }
 /* --- TEXT --- */

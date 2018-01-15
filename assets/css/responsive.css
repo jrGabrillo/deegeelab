@@ -6,60 +6,67 @@
 	text-align: center;
 }
 .bgpillars {
-	background: url("../images/background/bgpillars.jpg");
+	background: url("../images/services/frontend.png");
 	width: 100% !important;
 	min-height: 400px !important;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .main-section {
-	background: url("../images/background/bbg1.jpg");
+	background: url("../images/bbg1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .contact-section {
-	background: url("../images/background/bgcontact.jpg");
+	background: url("../images/bgcontact.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .pillar-section {
-	background: url("../images/background/bgpillar.jpg");
+	background: url("../images/services/bgpillar.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 #lead {
-	background: url(../images/background/pillars/bglead.png) no-repeat;
+	background: url(../images/services/lead.png) no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: -300px;
+	background-attachment: fixed;
 }
 #backend {
-	background: url(../images/background/pillars/bgbackend.jpg) no-repeat;
+	background: url(../images/services/bgbackend.png) no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 #frontend {
-	background: url(../images/background/pillars/bgfrontend.jpg) no-repeat;
+	background: url(../images/services/frontend.png) no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: -600px 0px;
+	background-attachment:  fixed;
 }
 #social {
-	background: url(../images/background/pillars/bgsocial.jpg) no-repeat;
+	background: url(../images/services/bgsocial.png) no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 #webdev {
-	background: url(../images/background/pillars/webdev1.jpg) no-repeat;
+	background: url(../images/services/webdev.png) no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: -300px;
+	background-attachment: fixed;
 }
 #marketing {
-	background: url(../images/background/pillars/bgmarketing.jpg) no-repeat;
+	background: url(../images/services/bgmarketing.png) no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: -500px;
+	background-attachment: fixed;
 }
 #backcon {
-	background: url(../images/background/pillars/bgcontact.jpg) no-repeat;
+	background: url(../images/services/bgcontact.jpg) no-repeat;
 	background-position: center;
+    background-attachment: fixed;	
 	background-size: cover;
 }
 .icoo {
@@ -390,7 +397,7 @@ span.head {
 	}
 	.services-content {
 		padding: 50px 20px 100px 20px !important;
-		overflow: scroll !important;
+		/* overflow: scroll !important; */
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -611,5 +618,36 @@ span.head {
 	}
 	#nodes .list .node{
 		height: 50px;
-	}	
+	}
+
+	#lead {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+	}
+	#backend {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+	}
+	#frontend {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+	}
+	#social {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+	}
+	#webdev {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+	}
+	#marketing {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+	}
 }	

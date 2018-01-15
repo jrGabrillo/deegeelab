@@ -289,7 +289,7 @@ $(window).on('load',function(){
     let load_timer = setInterval(function(){
         count_timer++;
         $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
-        if(count_timer == 3){
+        if(count_timer == 5){
             clearInterval(load_timer);
             $(".loading").remove();
             $("#fullpage").removeClass('hide');
