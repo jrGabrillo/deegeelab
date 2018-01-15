@@ -289,7 +289,7 @@ $(window).on('load',function(){
     let load_timer = setInterval(function(){
         count_timer++;
         $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
-        if(count_timer == 5){
+        if(count_timer == 3){
             clearInterval(load_timer);
             $(".loading").remove();
             $("#fullpage").removeClass('hide');
@@ -298,7 +298,7 @@ $(window).on('load',function(){
                 $('svg').attr({"class":"svg-animation-out"});
             },300);
         }
-    },3000);
+    },1000);
 
     $(window).mousemove(function(e) {      
         let xpos=e.clientX, ypos=e.clientY;       
@@ -307,10 +307,10 @@ $(window).on('load',function(){
         $('#nodes').attr({'style':`margin:${(5-(ypos/65))}px 0px 0px ${((xpos/200))}px;`});      
     });
 
-    $(window).on('resize',function(){
-        window.location.reload();
-        // setTimeout(function(){
-        //     deegeelab.repositionNodes();
-        // },500);
-    });
+    // $(window).on('resize',function(){
+    //     window.location.reload();
+    //     // setTimeout(function(){
+    //     //     deegeelab.repositionNodes();
+    //     // },500);
+    // });
 });
