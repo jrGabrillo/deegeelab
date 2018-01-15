@@ -13,17 +13,17 @@
 	background-size: cover;
 }
 .main-section {
-	background: url("../images/bbg1.jpg");
+	background: url("../images/background/homepagebg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .contact-section {
-	background: url("../images/bgcontact.jpg");
+	background: url("../images/background/bgcontact.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .pillar-section {
-	background: url("../images/services/bgpillar.jpg");
+	background: url("../images/background/bgpillar.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
