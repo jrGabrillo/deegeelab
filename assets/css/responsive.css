@@ -176,7 +176,7 @@ p.label {
 }
 
 .footer-section {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0%;
     height: 50px;
     width: 100%;
@@ -283,8 +283,13 @@ span.head {
 	}
 	.text a{
 	  text-shadow:none;
-	  position: absolute;
+	  /* position: absolute; */
 	  top:150px;
+	  margin: 0 auto;
+	  /* text-align: center; */
+	  /* left: 20%; */
+	  /* right: 50%; */
+	  /* width: 100%; */
 	}
 	#menu .social-icons{
 		display:none;
@@ -316,11 +321,15 @@ span.head {
 		position: absolute;
 	}
 
+	.text p{
+		position: absolute; 
+		top:100px; 
+		width: 100%;
+	}	
+
 	#display_mobile{
 		height: 100%;
 	}
-
-
 }
 @media (min-width: 602px) and (max-width: 993px) {
 	/* Tablet */
@@ -348,7 +357,6 @@ span.head {
 	#menu .social-icons{
 		display:none;
 	}
-	
 	.holder{
 		width: 95%;
 		margin: 0 auto;
@@ -359,15 +367,12 @@ span.head {
 	.form_holder{
 		position: relative;
 	}
-
 	.footer-section {
 		position: relative;
 	}
-
 	#why-deegeelab{
 		display: none;
 	}
-
 	.text{
 		margin: auto;
 		top: 0;
@@ -375,17 +380,15 @@ span.head {
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 80%;
+		height: 40%;
 		position: absolute;
 	}
 	#display_mobile{
 		height: 50%;
 	}
-
 	.loading .main-section .stage{
 		height: 75%;
 	}
-
 }
 @media (min-width: 320px) and (max-width: 601px) {
 	/* Smartphones */

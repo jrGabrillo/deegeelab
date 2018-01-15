@@ -1766,7 +1766,7 @@ html {
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
-	ng: inherit;
+	box-sizing: inherit;
 }
 ul:not(.browser-default) {
 	padding-left: 0;

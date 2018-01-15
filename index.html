@@ -17,9 +17,19 @@
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div id="fullpage" class="loading">
+        <div class="loading">
+            <div class="logo"><img src='assets/images/icon.png' /></div>
+            <div class="container">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+                <div class="dot dot-4"></div>
+                <div class="dot dot-5"></div>
+                <div class="dot dot-6"></div>
+            </div>
+        </div>
+        <div id="fullpage" class="hide">
             <div class="section main-section">
-                <div class="bg"></div>
                 <div class="stage center">
                     <a href="#" data-activates="menu" class="btn-flat btn-floating grey-text darken-4 menu menu-left hide"><i class="material-icons">menu</i></a>
                     <ul class="collapsible z-depth-0 hide" data-collapsible="accordion" id='why-deegeelab'>
@@ -91,7 +101,87 @@
                                 <circle class="fill-white circle-node" data-node='5' cx="15.2" cy="490.5" r="24" data-link='frontend.html' data-name='Customer Support Front-End' data-image='bghome.jpg' data-desc='Handle office admin processes such as data entry and managing accounting applications.'/>
                             </a>
                         </svg>
-                        <div class='list'></div>
+                        <div class='list row'>
+                            <div class="col s12 m8 l6 offset-m2 offset-l3">
+                                <div class="col s3 left">
+                                    <div class='node' data-node='0'>
+                                        <a href="${$(y).data('link')}">
+                                            <div class='description row'>
+                                                <div class='col s8'>
+                                                    <h6 class='bold'>${$(y).data('name')}</h6>
+                                                    <p>${$(y).data('desc')}</p>
+                                                </div>
+                                                <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
+                                            </div>
+                                            <span class='title'>${$(y).data('name')}</span>
+                                        </a>
+                                    </div>
+                                    <div class='node' data-node='1'>
+                                        <a href="${$(y).data('link')}">
+                                            <div class='description row'>
+                                                <div class='col s8'>
+                                                    <h6 class='bold'>${$(y).data('name')}</h6>
+                                                    <p>${$(y).data('desc')}</p>
+                                                </div>
+                                                <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
+                                            </div>
+                                            <span class='title'>${$(y).data('name')}</span>
+                                        </a>
+                                    </div>
+                                    <div class='node' data-node='2'>
+                                        <a href="${$(y).data('link')}">
+                                            <div class='description row'>
+                                                <div class='col s8'>
+                                                    <h6 class='bold'>${$(y).data('name')}</h6>
+                                                    <p>${$(y).data('desc')}</p>
+                                                </div>
+                                                <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
+                                            </div>
+                                            <span class='title'>${$(y).data('name')}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col s6 "></div>
+                                <div class="col s3 right">
+                                    <div class='node' data-node='3'>
+                                        <a href="${$(y).data('link')}">
+                                            <div class='description row'>
+                                                <div class='col s8'>
+                                                    <h6 class='bold'>${$(y).data('name')}</h6>
+                                                    <p>${$(y).data('desc')}</p>
+                                                </div>
+                                                <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
+                                            </div>
+                                            <span class='title'>${$(y).data('name')}</span>
+                                        </a>
+                                    </div>
+                                    <div class='node' data-node='4'>
+                                        <a href="${$(y).data('link')}">
+                                            <div class='description row'>
+                                                <div class='col s8'>
+                                                    <h6 class='bold'>${$(y).data('name')}</h6>
+                                                    <p>${$(y).data('desc')}</p>
+                                                </div>
+                                                <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
+                                            </div>
+                                            <span class='title'>${$(y).data('name')}</span>
+                                        </a>
+                                    </div>
+                                    <div class='node' data-node='5'>
+                                        <a href="${$(y).data('link')}">
+                                            <div class='description row'>
+                                                <div class='col s8'>
+                                                    <h6 class='bold'>${$(y).data('name')}</h6>
+                                                    <p>${$(y).data('desc')}</p>
+                                                </div>
+                                                <div class='col s4 image' style='background:url(assets/images/services/${$(y).data('image')}) no-repeat;'></div>
+                                            </div>
+                                            <span class='title'>${$(y).data('name')}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <h4 class="white-text shadowed" id='display_tagline'>
                         SuperCharge your Business with <b class='logo-color'>Deegeelab</b>
@@ -102,7 +192,7 @@
                     <a href="#pillars" class="btn-flat btn-floating grey-text darken-4 hide"><i class="material-icons">mouse</i></a>
                 </div>
             </div>  
-            <div class="section pillar-section hide"><!-- Pillar -->
+            <div class="section pillar-section"><!-- Pillar -->
                 <div class="row center">
                     <div class="layer wrapper" data-depth="0.3">
                         <div class="col s6 m12 l3 end" id="container">
@@ -111,25 +201,25 @@
                                 <div data-count='three' class="panel col s12 m6 l3">
                                     <div class="text">
                                         <h5>Customer Support<br>Back End</h5>
-                                        <a href="backend.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a>
+                                        <p><a href="backend.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a></p>
                                     </div>
                                 </div>
                                 <div data-count='four' class="panel col s12 m6 l3">
                                     <div class="text">
                                         <h5>Customer Support<br>Front End</h5>
-                                        <a href="frontend.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a>
+                                        <p><a href="frontend.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a></p>
                                     </div>
                                 </div>
                                 <div data-count='one' class="panel col s12 m6 l3">
                                     <div class="text">
                                         <h5>Digital Marketing</h5>
-                                        <a href="marketing.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a>
+                                        <p><a href="marketing.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a></p>
                                     </div>
                                 </div>
                                 <div data-count='two' class="panel col s12 m6 l3">
                                     <div class="text">
                                         <h5>Lead Generation</h5>
-                                        <a href="lead.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a>
+                                        <p><a href="lead.html" class="btn-round btn-flat waves-effect waves-light white-text">Learn More</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section contact-section hide"> <!-- contact us -->
+            <div class="section contact-section"> <!-- contact us -->
                 <div class="overlap-gradient">
                     <div class="layer wrapper" data-depth="0.3">
                         <div class="holder" >
@@ -215,7 +305,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="section fp-auto-height footer-section hide">
+            <div class="section fp-auto-height footer-section">
                 <div class="left">
                     <ul>
                         <li><img width="60px" src="assets/images/icons/dgwhite.png"></li>
@@ -235,6 +325,7 @@
                 </div>
             </div>
         </div>
+
         <aside id="overlap-gradient">
             <ul id="menu" class="side-nav">
                 <li>

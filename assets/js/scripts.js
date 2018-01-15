@@ -43,7 +43,7 @@ var deegeelab = function(){
                 }
             });
             
-            deegeelab.banner();
+            // deegeelab.banner();
             _idle.ini();
 
             $("circle").mouseover(function(){
@@ -52,10 +52,6 @@ var deegeelab = function(){
             }).mouseleave(function(){
                 let node = $(this)[0], _node = $(node).data('node');
                 $(`.node[data-node='${_node}']`).removeClass('active');        
-            });
-
-            $(window).on('resize',function(){
-                deegeelab.banner();
             });
 
             let e = {target:{nodeName:"square"}};
@@ -204,11 +200,11 @@ var deegeelab = function(){
                 var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
                 if(pos.left<(docWidth/2)){
                     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
-                    $(`#nodes .node[data-node='${x}']`).attr({'style':`top:${(pos.top-150)}px; left:${pos.left-165}px`});
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${descPos}px;color:red;`});
                 }
                 else{
-                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(pos.left+(d)):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
-                    $(`#nodes .node[data-node='${x}']`).attr({'style':`top:${(pos.top-150)}px; left:${_posLeft}px`});
+                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
+                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px;`});
                 }
             });
         },
@@ -268,52 +264,33 @@ var _idle = function(){
     }
 }();
 
-
-$('.loading .main-section .bg').attr({'style': `width: ${docWidth}px; height: ${docHeight}px;`});
 $(window).on('load',function(){
-
-            $("#why-deegeelab").removeClass('hide');
-            $(".btn-flat").removeClass('hide');
-            $('.loading .main-section .bg').fadeOut('fast');
-            $('#fullpage').removeClass('loading');
+    let count_timer = 0;
+    let hash = window.location.hash;
+    let load_timer = setInterval(function(){
+        count_timer++;
+        $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
+        if(count_timer == 5){
+            clearInterval(load_timer);
+            $("#fullpage").removeClass('hide');
             setTimeout(function(){
-                $(".pillar-section").removeClass('hide');
-                $(".contact-section").removeClass('hide');
-                $(".footer-section").removeClass('hide');
                 deegeelab.ini();
                 $('svg').attr({"class":"svg-animation-out"});
             },300);
-
-
-
-    
-    // let count_timer = 0;
-    // let hash = window.location.hash;
-    // let load_timer = setInterval(function(){
-    //     count_timer++;
-    //     $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
-    //     if(count_timer == 5){
-    //         clearInterval(load_timer);
-    //         $("#why-deegeelab").removeClass('hide');
-    //         $(".btn-flat").removeClass('hide');
-    //         $('.loading .main-section .bg').fadeOut('fast');
-    //         $('#fullpage').removeClass('loading');
-    //         setTimeout(function(){
-    //             $(".pillar-section").removeClass('hide');
-    //             $(".contact-section").removeClass('hide');
-    //             $(".footer-section").removeClass('hide');
-    //             deegeelab.ini();
-    //             $('svg').attr({"class":"svg-animation-out"});
-    //         },300);
-    //     }
-    // },2000);
-
-
+        }
+    },1);
 
     $(window).mousemove(function(e) {      
         let xpos=e.clientX, ypos=e.clientY;       
         xpos=xpos*2; ypos=ypos*2;     
         // $('.bg-section').attr({'style':`top:${(-130+(ypos/100))}px;left:${(-100+(xpos/100))}px`});        
         $('#nodes').attr({'style':`margin:${(5-(ypos/65))}px 0px 0px ${((xpos/200))}px;`});      
+    });
+
+    $(window).on('resize',function(){
+        window.location.reload();
+        // setTimeout(function(){
+        //     deegeelab.repositionNodes();
+        // },500);
     });
 });
