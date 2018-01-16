@@ -291,14 +291,17 @@ $(window).on('load',function(){
         $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
         if(count_timer == 5){
             clearInterval(load_timer);
-            $(".loading").remove();
             $("#fullpage").removeClass('hide');
             setTimeout(function(){
                 deegeelab.ini();
                 $('svg').attr({"class":"svg-animation-out"});
             },300);
+            setTimeout(function(){
+                $(".loading").addClass('zoomOut').remove();
+            },300);
         }
     },1000);
+
 
     $(window).mousemove(function(e) {      
         let xpos=e.clientX, ypos=e.clientY;       

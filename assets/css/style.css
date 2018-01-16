@@ -1126,6 +1126,8 @@ div[data-anchor="home"] .fp-tableCell{
   right: 0;
   vertical-align:  middle;
   overflow:  hidden;
+  z-index: 10000;
+  background: #fff;
 }
 
 .logo{

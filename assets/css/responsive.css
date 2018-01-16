@@ -257,8 +257,7 @@ label{
 	text-align: left !important;
 }
 
-/* --------Ipad Pro-------- */
-/* Portrait */
+/* iPad Pro */
 @media (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   	/*Pillars*/
   	.panel{
@@ -290,8 +289,75 @@ label{
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
 		font-size: 24px !important;
 	}
-
 }
+/* iPad */
+@media (width: 768px) and (height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  	/*Pillars*/
+  	.panel{
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
+	  }
+  	.panel:hover{
+  		width: 50% !important;
+  	}
+	/*alignment for contact form*/
+	.row .col.i12{	
+		width: 100% !important;
+	    margin-left: auto !important;
+	    left: auto !important;
+	    right: auto !important;
+	}
+	/*Info resize*/
+	.form_holder {
+		margin: 10% auto auto !important;
+	}
+	.i{
+		font-size: 20px !important;
+	}
+	/*Form resize*/
+	.input-field.col label{
+		font-size: 24px !important;
+	}
+	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+		font-size: 24px !important;
+	}
+}
+
+@media (width: 768px) and (height: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  	/*Pillars*/
+  	.panel{
+	    width: 50% !important;
+	    height: 683px !important;
+	    float: left !important;
+  	}
+  	.panel:hover{
+  		width: 50% !important;
+  	}
+	/*alignment for contact form*/
+	.row .col.i12{	
+		width: 100% !important;
+	    margin-left: auto !important;
+	    left: auto !important;
+	    right: auto !important;
+	}
+	/*Info resize*/
+	.form_holder {
+		margin: 10% auto auto !important;
+	}
+	.i{
+		font-size: 20px !important;
+	}
+	/*Form resize*/
+	.input-field.col label{
+		font-size: 24px !important;
+	}
+	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+		font-size: 24px !important;
+	}
+}
+
+
 @media only screen and (min-width: 601px) {
 	.row .col.m5ths {
 		width: 20%;
@@ -309,7 +375,6 @@ label{
 }	
 /* Landscape */
 @media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-
 	/*Info resize*/
 	.form_holder {
 		margin: 8% auto auto !important;
@@ -324,6 +389,89 @@ label{
 	}
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
 		font-size: 24px !important;
+	}
+}
+@media (height: 1024px) and (width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
+	/*Info resize*/
+	#display_pillar{
+		height:100%;
+	}
+	#display_pillar .panel{
+		width:100%;
+		height:25%;
+	}
+}
+@media (height: 768px) and (width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
+	/*Info resize*/
+	#display_pillar{
+		height:100% !important;
+	}
+	#display_pillar .panel{
+		width: 50% !important;
+		height: 50% !important;
+	}
+	.text{
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		vertical-align: middle;
+		height: 40% !important;
+		position: absolute;
+	}	
+}
+@media (min-width: 994px){
+	/* Desktop */
+	.services-content {
+		padding: 50px 30px 100px 30px !important;
+		/* overflow: scroll !important; */
+	}
+	.service-banner {
+		min-height: 768px
+	}
+	td, th {
+		padding: 5px 5px !important;
+	}
+	.overlap-gradient{
+		/* padding-top:2%; */
+	}
+	.text a{
+	  text-shadow:none;
+	  top: 50px;
+	  margin: 0 auto;
+	}
+	#menu .social-icons{
+		display:none;
+	}	
+	.form_holder{
+		border-top: #02bad0 5px solid; //#4a4949
+		max-width:900%;
+		max-width: 900px;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		vertical-align: middle;
+		display: table;
+		height: 50%;
+		position: absolute;
+	}
+	.text{
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		vertical-align: middle;
+		height: 30%;
+		position: absolute;
+	}
+	.text p{
+	}	
+	#display_pillar{
+		height: 100%;
 	}
 }
 @media (min-width: 602px) and (max-width: 993px) {
@@ -375,84 +523,24 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 40%;
+		height: 60%;
 		position: absolute;
 	}
-	#display_mobile{
+	#display_pillar{
 		height: 50%;
 	}
 	.loading .main-section .stage{
 		height: 75%;
 	}
-
-	#nodes .list .node{
-
-	}	
-}
-/*Portrait orientation for mobile*/
-@media (min-width: 994px) {
-	/* Desktop */
-	.services-content {
-		padding: 50px 30px 100px 30px !important;
-		/* overflow: scroll !important; */
+	#display_pillar{
+		height:100%;
 	}
-	.service-banner {
-		min-height: 768px
-	}
-	td, th {
-		padding: 5px 5px !important;
-	}
-	.overlap-gradient{
-		/* padding-top:2%; */
-	}
-	.text a{
-	  text-shadow:none;
-	  /* position: absolute; */
-	  top:150px;
-	  margin: 0 auto;
-	  /* text-align: center; */
-	  /* left: 20%; */
-	  /* right: 50%; */
-	  /* width: 100%; */
-	}
-	#menu .social-icons{
-		display:none;
-	}	
-	.form_holder{
-		border-top: #02bad0 5px solid; //#4a4949
-		max-width:900%;
-		max-width: 900px;
-		margin: auto;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		vertical-align: middle;
-		display: table;
-		height: 50%;
-		position: absolute;
-	}
-	.text{
-		margin: auto;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		vertical-align: middle;
-		height: 40%;
-		position: absolute;
-	}
-	.text p{
-		position: absolute; 
-		top:100px; 
-		width: 100%;
-	}	
-	#display_mobile{
-		height: 100%;
+	#display_pillar .panel{
+		width:50%;
+		height:50%;
 	}
 }
-@media screen and (orientation:portrait) { 
-
+@media screen and (max-width: 993px) and (orientation:portrait) { 
 	/* Smartphones */
 	.service-menu .left a{
 		margin-left:0px;
@@ -465,9 +553,6 @@ label{
 	}
 	.service-menu{
 		height: 50px;
-	}
-	.text {
-		top: 10% !important;
 	}
 	.text a {
 		top: 0px !important;
@@ -595,11 +680,12 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 100%;
+		height: 80%;
 		position: absolute;
 	}	
-	#display_mobile{
-		height: 25%;
+	#display_pillar{
+		height: 100%;
+		width: 100%;
 	}
 
 	.loading .main-section .stage{
@@ -645,10 +731,17 @@ label{
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
-	}	
+	}
+	#display_pillar{
+		height:100%;
+	}
+	#display_pillar .panel{
+		width:100%;
+		height:25%;
+	}
 }
 @media screen and (orientation:landscape) {
 	#nodes .list .title{
 		/* display: none; */
 	}
-}	
+}
