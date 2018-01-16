@@ -42,6 +42,10 @@
 }
 .menu.up-down{
 	animation: up-down 1s infinite;
+	position: absolute;
+	-webkit-filter: invert(.8);
+	filter: invert(1);
+	/* background: #000; */
 }
 
 .mobile {
