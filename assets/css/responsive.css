@@ -19,6 +19,31 @@
 	-webkit-font-feature-settings: 'liga';
 	-webkit-font-smoothing: antialiased;
 }
+
+.menu i.home{
+	content: url(../images/icons/home.png) !important;
+	width: 100%;
+}
+.menu i.prev{
+	content: url(../images/icons/back.png) !important;
+	width: 100%;
+}
+.menu i.next{
+	content: url(../images/icons/next.png) !important;
+	width: 100%;
+}
+.menu i.nav{
+	content: url(../images/icons/nav.png) !important;
+	width: 100%;
+}
+.menu i.mouse{
+	content: url(../images/icons/ms.png) !important;
+	width: 100%;
+}
+.menu.up-down{
+	animation: up-down 1s infinite;
+}
+
 .mobile {
 	: display display: none !important;
 }
@@ -246,7 +271,7 @@ span.head {
 	vertical-align: top;
 }
 .service-menu{
-	margin: 0px;
+	margin: 10px 0px 0px 0px;
 	position:  absolute;
 }
 .service-menu ul{
@@ -477,10 +502,10 @@ label{
 @media (min-width: 602px) and (max-width: 993px) {
 	/* Tablet */
 	.service-banner {
-		min-height: 768px
+		min-height: 720px;
 	}
 	.services-content {
-		padding: 50px 20px 100px 20px !important;
+		padding: 50px 20px 30px 20px !important;
 		/* overflow: scroll !important; */
 	}
 	td, th {
@@ -540,7 +565,7 @@ label{
 		height:50%;
 	}
 }
-@media screen and (max-width: 993px) and (orientation:portrait) { 
+@media screen and (max-width: 993px) and (orientation: portrait) { 
 	/* Smartphones */
 	.service-menu .left a{
 		margin-left:0px;
@@ -701,36 +726,50 @@ label{
 	#nodes .list .node{
 		height: 50px;
 	}
-
+	.services-content {
+		width: 100% !important;
+	}
 	#lead {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
+		width: 100%;
+		height: 300px;
 	}
 	#backend {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
+		width: 100%;
+		height: 300px;
 	}
 	#frontend {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
+		width: 100%;
+		height: 300px;
 	}
 	#social {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
+		width: 100%;
+		height: 300px;
 	}
 	#webdev {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
+		width: 100%;
+		height: 300px;
 	}
 	#marketing {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
+		width: 100%;
+		height: 300px;
 	}
 	#display_pillar{
 		height:100%;
@@ -739,9 +778,30 @@ label{
 		width:100%;
 		height:25%;
 	}
-}
-@media screen and (orientation:landscape) {
-	#nodes .list .title{
-		/* display: none; */
+	h4{
+	    font-size: 30px !important;
 	}
 }
+@media screen and (orientation:landscape) {
+	#lead {
+		background-position: -300px;
+	}
+	#backend {
+		background-position: center;
+	}
+	#frontend {
+		background-position: -300px 0px;
+	}
+	#social {
+		background-position: center;
+	}
+	#webdev {
+		background-position: -300px;
+	}
+	#marketing {
+		background-position: -200px;
+	}
+	h4{
+	    font-size: 30px !important;
+	}
+ 

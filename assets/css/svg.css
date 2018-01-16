@@ -54,6 +54,12 @@ svg #svgg path.st0 {
 	100% {-webkit-transform: scale(1.0);}
 }
 
+@-webkit-keyframes up-down{       
+	0% {-webkit-transform: scale(1.4); margin:10px 0px 0px 0px;}
+	50% {-webkit-transform: scale(1.5); margin:0px 0px 0px 0px;}
+	100% {-webkit-transform: scale(1.0); margin:10px 0px 0px 0px;}
+}
+
 .svg-pulse{
 	fill:transparent !important;
 }

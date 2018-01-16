@@ -23,21 +23,21 @@
                         <div class="left">
                             <ul>
                                 <li>
-                                    <a href="index.html#loaded" class="menu btn-flat btn-floating"><i class="material-icons">home</i> </a>
+                                    <a href="index.html#loaded" class="menu btn-flat btn-floating"><i class="home"></i></a>
                                 </li>
                             </ul>
                         </div>
                         <div class="right">
                             <ul>
                                 <li>
-                                    <a href="marketing.html" class="menu btn-flat btn-floating"><i class="material-icons">arrow_back</i> </a>
-                                    <a href="webdev.html" class="menu btn-flat btn-floating"><i class="material-icons">arrow_forward</i> </a>
+                                    <a href="marketing.html" class="menu btn-flat btn-floating"><i class="prev"></i></a>
+                                    <a href="webdev.html" class="menu btn-flat btn-floating"><i class="next"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col s12 m6 l6" id='lead'>
-                        <a href="#" data-activates="menu" class="btn-flat btn-floating grey-text darken-4 menu menu-left"><i class="material-icons">menu</i></a>
+                        <a href="#" data-activates="menu" class="btn-flat btn-floating grey-text darken-4 menu menu-left"><i class="nav"></i></a>
                         <div class='service-banner'></div>
                     </div>
                     <div class="col s12 m6 l6 services-content" >
@@ -156,9 +156,8 @@
     <script src="assets/js/materialize.min.js"></script> 
     <script src="assets/js/scrolloverflow.min.js"></script> 
     <script >
-        let docWidth = $(document).width(), docHeight = $(document).height();
-        console.log(docHeight);
-        $(".service-banner").attr({"style":`height:${docHeight}px`});
+        let a = $('.services-content').height();
+        $(".service-banner").attr({"style":`height:${(a+100)}px`});
         $(".menu-left").sideNav();
     </script>
 </html>

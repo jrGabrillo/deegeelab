@@ -301,8 +301,7 @@ $(window).on('load',function(){
             },300);
         }
     },1000);
-
-
+    
     $(window).mousemove(function(e) {      
         let xpos=e.clientX, ypos=e.clientY;       
         xpos=xpos*2; ypos=ypos*2;     
