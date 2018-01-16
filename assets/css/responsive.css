@@ -43,11 +43,18 @@
 .menu.up-down{
 	animation: up-down 1s infinite;
 	position: absolute;
-	-webkit-filter: invert(.8);
-	filter: invert(1);
-	/* background: #000; */
+	/* -webkit-filter: invert(.8); */
+	/* filter: invert(1); */
+	background: rgba(0, 0, 0, 0.3);
 }
-
+body{
+	overflow: hidden;
+}
+.menu.up-down:hover{
+	 -webkit-filter: invert(.8); 
+	 filter: invert(1); 
+	background: rgba(0, 0, 0, 0.3);
+}
 .mobile {
 	: display display: none !important;
 }

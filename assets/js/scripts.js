@@ -241,6 +241,16 @@ var deegeelab = function(){
             $(`#nodes .node[data-node='${r}']`).addClass('active');
             $(`.svg-pulse[data-node='${r}']`)[0].classList.add('active');
         },
+        activate:function(){
+            $("#fullpage").removeClass('hide');
+            setTimeout(function(){
+                deegeelab.ini();
+                $('svg').attr({"class":"svg-animation-out"});
+            },300);
+            setTimeout(function(){
+                $(".loading").addClass('zoomOut').remove();
+            },300);
+        }
     }
 }();
 
@@ -284,24 +294,27 @@ var _idle = function(){
 }();
 
 $(window).on('load',function(){
-    let count_timer = 0;
-    let hash = window.location.hash;
-    let load_timer = setInterval(function(){
-        count_timer++;
-        $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
-        if(count_timer == 5){
-            clearInterval(load_timer);
-            $("#fullpage").removeClass('hide');
-            setTimeout(function(){
-                deegeelab.ini();
-                $('svg').attr({"class":"svg-animation-out"});
-            },300);
-            setTimeout(function(){
-                $(".loading").addClass('zoomOut').remove();
-            },300);
-        }
-    },1000);
-    
+    let data = localStorage.getItem('deegeelab');
+    let date = new Date(), day = date.getUTCDate();
+
+    if((data == null) || (data == "")){
+        localStorage.setItem('deegeelab',day);
+        let count_timer = 0;
+        let hash = window.location.hash;
+        let load_timer = setInterval(function(){
+            count_timer++;
+            $('#display_tagline .progress .determinate').attr({"style":`width:${(count_timer*20)}%`});
+            if(count_timer == 5){
+                clearInterval(load_timer);
+                deegeelab.activate();
+            }
+        },1000);
+    }
+    else{
+        deegeelab.activate();
+    }
+
+
     $(window).mousemove(function(e) {      
         let xpos=e.clientX, ypos=e.clientY;       
         xpos=xpos*2; ypos=ypos*2;     

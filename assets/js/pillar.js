@@ -13,7 +13,6 @@ $(function() {
 function initHoverBoxes(sizes) {
     var column = $('.panel');
     column.mouseenter(function() {
-        console.log((100 - (sizes * 1.3)) / column.length);
         column.removeClass('active').addClass('inactive').css('width', `${(100-(sizes*1.3))/(column.length-1)}%`);
         $(this).css('width', `${(sizes*1.3)}%`);
         $(this).addClass('active').removeClass('inactive');;
