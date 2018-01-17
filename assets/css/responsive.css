@@ -43,13 +43,10 @@
 .menu.up-down{
 	animation: up-down 1s infinite;
 	position: absolute;
-	/* -webkit-filter: invert(.8); */
-	/* filter: invert(1); */
 	background: rgba(0, 0, 0, 0.3);
 }
-body{
-	/*overflow: hidden;*/
-	overflow: scroll;
+body.home{
+	overflow: hidden;
 }
 .menu.up-down:hover{
 	 -webkit-filter: invert(.8); 
@@ -225,14 +222,14 @@ p.label {
     margin-right:10px;
 }
 .footer-section {
-     position: fixed; 
-    bottom: 0%;
-    height: 50px;
-    width: 100%;
-    padding: 5px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 1);
-     /*z-index:  10000; */
+     position: fixed;
+     bottom: 0%;
+     height: 50px;
+     width: 100%;
+     padding: 5px;
+     color: #fff;
+     background-color: rgba(0, 0, 0, 1);
+     z-index:  10000;
 }
 #fp-nav{
 	display:none;
@@ -276,8 +273,6 @@ span.head {
 }
 .services-content {
 	min-height: 768px !important;
-	/* max-height: 768px; */
-	 overflow: scroll; 
 }
 .paragraph tr td:nth-child(1) {
 	vertical-align: top;
@@ -475,7 +470,6 @@ label{
 	/* Desktop */
 	.services-content {
 		padding: 50px 30px 100px 30px !important;
-		 overflow: scroll !important; 
 	}
 	.service-banner {
 		min-height: 768px
