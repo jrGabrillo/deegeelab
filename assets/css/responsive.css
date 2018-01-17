@@ -40,11 +40,13 @@
 	content: url(../images/icons/ms.png) !important;
 	width: 100%;
 }
+.mouse-holder{
+	position:  absolute;
+	width: 100%;
+}
 .menu.up-down{
 	animation: up-down 1s infinite;
-	position: absolute;
 	background: rgba(0, 0, 0, 0.3);
-	margin: 0 auto;
 }
 body.home{
 	overflow: hidden;
