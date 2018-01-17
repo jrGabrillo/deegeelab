@@ -44,6 +44,7 @@
 	animation: up-down 1s infinite;
 	position: absolute;
 	background: rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
 }
 body.home{
 	overflow: hidden;
@@ -803,6 +804,12 @@ label{
 	}
 	h4{
 	    font-size: 30px !important;
+	}
+	#why-deegeelab{
+		top:0px;
+		position: relative;
+		width:100%;
+		float: left;
 	}
 }
 @media screen and (max-width: 1040px) and (orientation:landscape) {
