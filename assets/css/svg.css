@@ -10,7 +10,7 @@ svg circle.fill-white {
 	fill: #f9f9f9;
 	stroke-width: 10;
 	stroke-miterlimit: 10;
-	-webkit-filter: drop-shadow(12px 12px 7px rgb(0, 0, 0));
+	/*-webkit-filter: drop-shadow(12px 12px 7px rgb(0, 0, 0));*/
 	/* filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); */
 }
 
@@ -38,14 +38,30 @@ svg #svgg path.st0 {
 }
 
 @-webkit-keyframes svg-pulse{       
-	0% {-webkit-transform: scale(1.0); opacity: 1;}
-	100% {-webkit-transform: scale(2); opacity: 0;}
+	0% {
+		transform: translate(0%, 0%) scale(1.0); opacity: 1;
+		-moz-transform: translate(0%, 0%) scale(1.0); opacity: 1;
+		-o-transform: translate(0%, 0%) scale(1.0); opacity: 1;
+		-webkit-transform: translate(0%, 0%) scale(1.0); opacity: 1;
+	}
+	100% {
+		transform: translate(0%, 0%) scale(2); opacity: 0;
+		-moz-transform: translate(0%, 0%) scale(2); opacity: 0;
+		-o-transform: translate(0%, 0%) scale(2); opacity: 0;
+		-webkit-transform: translate(0%, 0%) scale(2); opacity: 0;
+	}
 }
 
 @-webkit-keyframes svg-zoom-in{       
-	0% {-webkit-transform: scale(1.0);}
-	90% {-webkit-transform: scale(1.5);}
-	100% {-webkit-transform: scale(1.4);}
+	0% {
+		-webkit-transform: scale(1.0);
+	}
+	90% {
+		-webkit-transform: scale(1.5);
+	}
+	100% {
+		-webkit-transform: scale(1.4);
+	}	
 }
 
 @-webkit-keyframes svg-zoom-out{       

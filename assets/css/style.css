@@ -1009,9 +1009,19 @@ ul.skills {
 }
 
 .svg-pulse.active{
-	-webkit-animation: svg-pulse 0.5s linear infinite;
-	transform-origin: center center;
-	fill: #ccc !important;
+    animation: svg-pulse 0.5s linear infinite;
+    -webkit-animation: svg-pulse 0.5s linear infinite;
+    -moz-animation: svg-pulse 0.5s linear infinite;
+    -o-animation: svg-pulse 0.5s linear infinite;
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform: translate(0%, 0%) !important;
+    -webkit-transform: translate(0%, 0%) !important;
+    -moz-transform: translate(0%, 0%) !important;
+    -o-transform: translate(0%, 0%) !important;
+    fill: #ccc !important;
 }
 
 .svg-animation-in{
