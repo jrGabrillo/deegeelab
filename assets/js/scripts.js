@@ -88,12 +88,11 @@ var deegeelab = function(){
 
             $('.timepicker').pickatime({
                 default: 'now',
-                fromnow: 0,
                 twelvehour: false,
                 donetext: 'OK',
                 cleartext: 'Clear',
                 canceltext: 'Cancel',
-                autoclose: false,
+                autoclose: true,
                 ampmclickable: true,
             });
 
@@ -120,6 +119,7 @@ var deegeelab = function(){
                 },
                 submitHandler: function (form) {
                     let _form = $(form).serializeArray();
+                    _form = [_form[0]['value'],_form[1]['value'],_form[2]['value'],_form[3]['value'],_form[4]['value'],_form[6]['value'],_form[7]['value'],_form[8]['value']];
                     let data = system.ajax('assets/harmony/Process.php?set-leads',_form);
                     data.done(function(data){
                         if(data == 1){

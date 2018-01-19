@@ -21,14 +21,14 @@ $function = new DatabaseClasses;
         $date = $function->PDO_DateAndTime();
         $data = $_POST['data'];
       
-        $name = $function->escape($data[0]['value']);
-        $business = $function->escape($data[1]['value']);
-        $email = $function->escape($data[2]['value']);
-        $number = $function->escape($data[3]['value']);
-        $postal = $function->escape($data[4]['value']);
-        $dateSchedule = $function->escape($data[5]['value']);
-        $timeSchedule = $function->escape($data[6]['value']);
-        $message = $function->escape($data[7]['value']);
+        $name = $function->escape($data[0]);
+        $business = $function->escape($data[1]);
+        $email = $function->escape($data[2]);
+        $number = $function->escape($data[3]);
+        $postal = $function->escape($data[4]);
+        $dateSchedule = $function->escape($data[5]);
+        $timeSchedule = $function->escape($data[6]);
+        $message = $function->escape($data[7]);
 
         $query = $function->PDO(false,"INSERT INTO tbl_leads(id,name,email,message,phone,business_name,booked_date,booked_time,postal,`date`) VALUES ('{$id}',{$name},{$email},{$message},{$number},{$business},{$dateSchedule},{$timeSchedule},{$postal},'{$date}')");
         if($query->execute()){
@@ -40,13 +40,13 @@ $function = new DatabaseClasses;
                                     </div>
                                     <div class='container' style='text-align: center; background: white;padding: 10px;'>
                                         <div style='text-align:left; color:#000;'>
-                                            <p><strong style='font-weight: bold;'>Name:</strong><br>{$data[0]['value']}</p>
-                                            <p><strong style='font-weight: bold;'>Business:</strong><br>{$data[1]['value']}</p>
-                                            <p><strong style='font-weight: bold;'>Email:</strong><br>{$data[2]['value']}</p>
-                                            <p><strong style='font-weight: bold;'>Number:</strong><br>{$data[3]['value']}</p>
-                                            <p><strong style='font-weight: bold;'>Postal:</strong><br>{$data[4]['value']}</p>
-                                            <p><strong style='font-weight: bold;'>Scheduled Date:</strong><br>{$data[5]['value']} {$data[6]['value']}</p>
-                                            <p><strong style='font-weight: bold;'>Message:</strong><br>{$data[7]['value']}</p>
+                                            <p><strong style='font-weight: bold;'>Name:</strong><br>{$data[0]}</p>
+                                            <p><strong style='font-weight: bold;'>Business:</strong><br>{$data[1]}</p>
+                                            <p><strong style='font-weight: bold;'>Email:</strong><br>{$data[2]}</p>
+                                            <p><strong style='font-weight: bold;'>Number:</strong><br>{$data[3]}</p>
+                                            <p><strong style='font-weight: bold;'>Postal:</strong><br>{$data[4]}</p>
+                                            <p><strong style='font-weight: bold;'>Scheduled Date:</strong><br>{$data[5]} {$data[6]}</p>
+                                            <p><strong style='font-weight: bold;'>Message:</strong><br>{$data[7]}</p>
                                         </div>
                                     </div>
                                 </div>
