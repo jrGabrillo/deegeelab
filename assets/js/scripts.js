@@ -74,9 +74,6 @@ var deegeelab = function(){
             let mindate = `${date.getFullYear()}-${((date.getMonth()+1)<10?`0${(date.getMonth()+1)}`:(date.getMonth()+1))}-${date.getDate()}`;
             let maxdate = `${date.getFullYear()}-${((date.getMonth()+6)<10?`0${(date.getMonth()+6)}`:(date.getMonth()+6))}-${date.getDate()}`;
 
-            // $("#field_date").attr({"min":mindate});
-            // $("#field_date").attr({"max":maxdate});
-
             $('.datepicker').pickadate({
                 selectMonths: true,
                 selectYears: false,
@@ -84,18 +81,21 @@ var deegeelab = function(){
                 clear: 'Clear',
                 close: 'Ok',
                 closeOnSelect: true,
-                  min: new Date(mindate),
-                  max: new Date(maxdate)
+                formatSubmit: 'yyyy/mm/dd',
+                min: new Date(mindate),
+                max: new Date(maxdate)
             });
 
             $('.timepicker').pickatime({
-                today: 'Today',
-                clear: 'Clear',
-                close: 'Ok',
-                closeOnSelect: true
+                default: 'now',
+                fromnow: 0,
+                twelvehour: false,
+                donetext: 'OK',
+                cleartext: 'Clear',
+                canceltext: 'Cancel',
+                autoclose: false,
+                ampmclickable: true,
             });
-
-
 
             $("#form_query").validate({
                 rules: {

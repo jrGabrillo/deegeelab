@@ -6524,7 +6524,7 @@ input[type=range]:focus::-ms-fill-upper {
 	position: fixed;
 	-webkit-transition: background 0.15s ease-out, top 0s 0.15s;
 	transition: background 0.15s ease-out, top 0s 0.15s;
-	-webkit-backface-visibility: hidden
+	-webkit-backface-visibility: hidden;
 }
 .picker__frame {
 	position: absolute;
@@ -6597,7 +6597,7 @@ input[type=range]:focus::-ms-fill-upper {
 @media (min-height: 35.875em) {
 	.picker--opened .picker__frame {
 		top: 10%;
-		bottom: auto
+		bottom: auto;
 	}
 }
 .picker__input.picker__input--active {
