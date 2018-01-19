@@ -979,7 +979,7 @@ ul.skills {
    border-radius:  3px;
    display:inline-block;
    z-index: 100;
-   position: re;
+   position: relative;
 }
 
 .node .description{
@@ -1085,7 +1085,10 @@ div[data-anchor="home"] .fp-tableCell{
 }
 
 .menu{
-    /* border: 1px solid #02bad0; */
+    animation: deegeelab-pulse 0.5s linear infinite;
+    -webkit-animation: deegeelab-pulse 0.5s linear infinite;
+    -moz-animation: deegeelab-pulse 0.5s linear infinite;
+    -o-animation: deegeelab-pulse 0.5s linear infinite;
     width:30px;
     height:30px;
     margin: 10px 0px 0px 10px;

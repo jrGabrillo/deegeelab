@@ -74,18 +74,38 @@ var deegeelab = function(){
             let mindate = `${date.getFullYear()}-${((date.getMonth()+1)<10?`0${(date.getMonth()+1)}`:(date.getMonth()+1))}-${date.getDate()}`;
             let maxdate = `${date.getFullYear()}-${((date.getMonth()+6)<10?`0${(date.getMonth()+6)}`:(date.getMonth()+6))}-${date.getDate()}`;
 
-            $("#field_date").attr({"min":mindate});
-            $("#field_date").attr({"max":maxdate});
+            // $("#field_date").attr({"min":mindate});
+            // $("#field_date").attr({"max":maxdate});
+
+            $('.datepicker').pickadate({
+                selectMonths: true,
+                selectYears: false,
+                today: 'Today',
+                clear: 'Clear',
+                close: 'Ok',
+                closeOnSelect: true,
+                  min: new Date(mindate),
+                  max: new Date(maxdate)
+            });
+
+            $('.timepicker').pickatime({
+                today: 'Today',
+                clear: 'Clear',
+                close: 'Ok',
+                closeOnSelect: true
+            });
+
+
 
             $("#form_query").validate({
                 rules: {
                     field_name: {required: true,maxlength: 200},
                     field_business: {required: true,maxlength: 300},
                     field_email: {required: true,maxlength: 300,email:true},
-                    field_number: {required: true,maxlength: 50},
-                    field_postal: {required: true,maxlength: 40},
-                    field_date: {required: true,maxlength: 40},
-                    field_time: {required: true,maxlength: 40},
+                    field_number: {required: true, maxlength: 50},
+                    field_postal: {required: true, maxlength: 4, number:true},
+                    field_date: {required: true, maxlength: 40},
+                    field_time: {required: true, maxlength: 40},
                     field_message: {required: true,maxlength: 1000},
                 },
                 errorElement : 'div',
