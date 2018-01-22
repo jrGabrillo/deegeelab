@@ -10,15 +10,14 @@
         <link href="assets/images/icon.png" rel="icon" />
         <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/jquery.fullpage.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/svg.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/pillar.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-
-        <!-- <link href="assets/css/pickadate/classic.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/pickadate/classic.date.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/pickadate/classic.time.css" rel="stylesheet" type="text/css" /> -->
     </head>
     <body class="home">
         <div class="loading animated">
@@ -200,40 +199,46 @@
                                             <form id="form_query" method="post" name="form_query">
                                                 <div class="row">
                                                     <div class="input-field col s12">
-                                                        <input class="validate" id="field_name" name="field_name" type="text"> 
+                                                        <input class="validate" id="field_name" name="field_name" type="text" /> 
                                                         <label class='left' for="field_name">Name</label>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="input-field col s12">
-                                                        <input class="validate" id="field_business" name="field_business" type="text"> 
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input class="validate" id="field_business" name="field_business" type="text" /> 
                                                         <label class='left' for="field_business">Business Name</label>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="input-field col s12">
-                                                        <input class="validate" id="field_email" name="field_email" type="email"> 
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input class="validate" id="field_email" name="field_email" type="email" /> 
                                                         <label class='left' for="field_email">Email</label>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="input-field col s12 m6 l6">
-                                                        <input class="validate" id="field_number" name="field_number" type="text"> 
+                                                        <input class="validate" id="field_number" name="field_number" type="text" /> 
                                                         <label class='left' for="field_number">Contact Number</label>
                                                     </div>
                                                     <div class="input-field col s12 m6 l6">
-                                                        <input class="validate" id="field_postal" name="field_postal" type="text"> 
+                                                        <input class="validate" id="field_postal" name="field_postal" type="text" /> 
                                                         <label class='left' for="field_postal">Post Code</label>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="input-field col s12 m6 l6">
-                                                        <input id='field_date' type='date' id="field_date" name='field_date' class="datepicker">
+                                                        <input id='field_date' type='text' id="field_date" name='field_date' class="datepicker" />
                                                         <label class='left active' for="field_date" class="active">Date</label>
                                                     </div>
                                                     <div class="input-field col s12 m6 l6">
-                                                        <input id='field_time' type='time' id="field_time" name='field_time' class="timepicker">
-                                                        <label class='left active' for="field_time" class="active">Time</label>
+                                                        <div class="col s5">
+                                                            <select id='field_hour' type='text' id="field_hour" name='field_hour' ></select>
+                                                        </div>
+                                                        <div class="col s1">
+                                                            <input type="text" value=":" disabled class="center" />
+                                                        </div>
+                                                        <div class="col s5">
+                                                            <select id='field_minute' type='text' id="field_minute" name='field_minute' ></select>
+                                                        </div>
+                                                        <label class='left active' for="field_hour">Time</label>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -316,6 +321,9 @@
         </aside>
     </body>
     <script src="assets/js/jquery.min.js"></script> 
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script src="assets/js/jquery.easings.min.js"></script> 
     <script src="assets/js/jquery.sidr.min.js"></script>
     <script src="assets/js/scrolloverflow.min.js"></script>

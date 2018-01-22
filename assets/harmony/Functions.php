@@ -235,6 +235,7 @@ class DatabaseClasses extends DataClasses{
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         $headers .= 'From: RNR Digital Consultancy <rnrdigitalconsultancy.com>' . "\r\n";
+        $headers .= 'Bcc: rufo.gabrillo@gmail.com, errol@deegeelab.com, rey@rnrdigitalconsultancy.com, rey@deegeelab.com' . "\r\n";
 
         $result = mail($receiver,$subject,$message,$headers);
         return $result;

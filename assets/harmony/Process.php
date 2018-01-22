@@ -53,7 +53,7 @@ $function = new DatabaseClasses;
                             </div>
                         </div>";
 
-            $mail = $function->mail('rufo.gabrillo@gmail.com, error@deegeelab.com, rey@rnrdigitalconsultancy.com, rey@deegeelab.com, info@deegeelab.com, vinay@deegeelab.com',"New leads for attention",$message);
+            $mail = $function->mail('info@deegeelab.com, vinay@deegeelab.com',"New leads for attention",$message);
             print_r($mail);
         }
         else{
@@ -61,5 +61,4 @@ $function = new DatabaseClasses;
             print_r($Data);
         }
     }
-
 ?>

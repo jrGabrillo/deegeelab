@@ -74,27 +74,49 @@ var deegeelab = function(){
             let mindate = `${date.getFullYear()}-${((date.getMonth()+1)<10?`0${(date.getMonth()+1)}`:(date.getMonth()+1))}-${date.getDate()}`;
             let maxdate = `${date.getFullYear()}-${((date.getMonth()+6)<10?`0${(date.getMonth()+6)}`:(date.getMonth()+6))}-${date.getDate()}`;
 
-            $('.datepicker').pickadate({
-                selectMonths: true,
-                selectYears: false,
-                today: 'Today',
-                clear: 'Clear',
-                close: 'Ok',
-                closeOnSelect: true,
-                formatSubmit: 'yyyy/mm/dd',
-                min: new Date(mindate),
-                max: new Date(maxdate)
-            });
+            console.log(mindate);
 
-            $('.timepicker').pickatime({
-                default: 'now',
-                twelvehour: false,
-                donetext: 'OK',
-                cleartext: 'Clear',
-                canceltext: 'Cancel',
-                autoclose: true,
-                ampmclickable: true,
-            });
+            // let date = $("#field_date").datepicker({'dateFormat','option'});
+            $("#field_date").datepicker({'dateFormat': "yy-mm-dd",'minDate':mindate,'maxDate':maxdate});
+
+            let hourContent = "<option disabled selected>Hour</option>";
+            for(let x = 8; x<=21; x++){
+                hourContent += `<option>${x}</option>`;
+            }
+            $("#field_hour").html(hourContent);
+            
+            let minuteContent = "<option disabled selected>Minute</option>";
+            for(let x = 1; x<=59; x++){
+                minuteContent += `<option>${x}</option>`;
+            }
+            $("#field_minute").html(minuteContent);
+            $('select').material_select();
+
+            $("#field_hour, #field_minute").on('change',function(e){
+                $('select').material_select('close');
+            })
+
+            // $('.datepicker').pickadate({
+            //     selectMonths: true,
+            //     selectYears: false,
+            //     today: 'Today',
+            //     clear: 'Clear',
+            //     close: 'Ok',
+            //     closeOnSelect: true,
+            //     formatSubmit: 'yyyy/mm/dd',
+            //     min: new Date(mindate),
+            //     max: new Date(maxdate)
+            // });
+
+            // $('.timepicker').pickatime({
+            //     default: 'now',
+            //     twelvehour: false,
+            //     donetext: 'OK',
+            //     cleartext: 'Clear',
+            //     canceltext: 'Cancel',
+            //     autoclose: true,
+            //     ampmclickable: true,
+            // });
 
             $("#form_query").validate({
                 rules: {

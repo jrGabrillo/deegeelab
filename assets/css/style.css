@@ -27,6 +27,10 @@ span {
 main {
     flex: 1 0 auto;
 }
+
+.select-dropdown{
+    max-height:200px;
+}
 /*---------------------------------------
    TYPOGRAPHY                
 -----------------------------------------*/
@@ -908,7 +912,7 @@ SECTIONS
     background-size: cover;
 }
 .select-wrapper span.caret {
-    color: #fff !important;
+    /* color: #fff !important; */
 }
 input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus, input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default), input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus, input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default), input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus, input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default), input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus, input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown {
     /* color: #fff !important; */
@@ -1313,4 +1317,15 @@ a.menu:hover{
   0%, 100% {display:none;}
   33.3% {display:none;}
   66.6% {display:none;}
+}
+
+.ui-datepicker-calendar td {
+    padding: 0px !important;
+    text-align: center;
+}
+
+.ui-datepicker-calendar td a{
+    /* padding: 0px !important; */
+    line-height:  unset;
+    text-align: center;
 }

@@ -4272,10 +4272,10 @@ button.btn-floating {
 }
 .dropdown-content li>a, .dropdown-content li>span {
 	font-size: 16px;
-	color: #64c2ec;
+	/* color: #64c2ec; */
 	display: block;
 	line-height: 22px;
-	padding: 14px 16px
+	padding: 14px 16px;
 }
 .dropdown-content li>span>label {
 	top: 1px;
@@ -6591,7 +6591,7 @@ input[type=range]:focus::-ms-fill-upper {
 	background: transparent;
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1E000000,endColorstr=#1E000000)";
 	zoom: 1;
-	background: rgba(0, 0, 0, 0.32);
+	/* background: rgba(0, 0, 0, 0.32); */
 	-webkit-transition: background 0.15s ease-out;
 	transition: background 0.15s ease-out;
 }

@@ -623,6 +623,21 @@ label{
 }
 @media screen and (max-width: 993px) and (orientation: portrait) { 
 	/* Smartphones */
+	.picker--opened.picker{
+		position: relative;
+		/* top: -200px; */
+	}
+	.picker--opened .picker__holder{
+		/* position: initial; */
+		top: 40% !important;
+		background: transparent !important;
+	}
+	.picker--opened .picker__box{
+		/* min-width: 150%; */
+		/* min-height: 150%; */
+	}
+	.picker--opened .picker__wrap{
+	}
 	.service-menu .left a{
 		margin-left:0px;
 	}
