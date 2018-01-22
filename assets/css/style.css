@@ -31,6 +31,10 @@ main {
 .select-dropdown{
     max-height:200px;
 }
+
+.no-padding{
+    padding:0px !important;
+}
 /*---------------------------------------
    TYPOGRAPHY                
 -----------------------------------------*/
