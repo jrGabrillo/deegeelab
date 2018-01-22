@@ -309,74 +309,74 @@ label{
 @media (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
   	/*Pillars*/
   	.panel{
-	    width: 50% !important;
-	    height: 683px !important;
-	    float: left !important;
+	    -webkit-width: 50% !important;
+	    -webkit-height: 683px !important;
+	    -webkit-float: left !important;
   	}
   	.panel:hover{
-  		width: 50% !important;
+  		-webkit-width: 50% !important;
   	}
 	/*alignment for contact form*/
 	.row .col.i12{	
-		width: 100% !important;
-	    margin-left: auto !important;
-	    left: auto !important;
-	    right: auto !important;
+		-webkit-width: 100% !important;
+	    -webkit-margin-left: auto !important;
+	    -webkit-left: auto !important;
+	    -webkit-right: auto !important;
 	}
 	/*Info resize*/
 	.form_holder {
-		margin: 10% auto auto !important;
+		-webkit-margin: 10% auto auto !important;
 	}
 	.i{
-		font-size: 20px !important;
+		-webkit-font-size: 20px !important;
 	}
 	/*Form resize*/
 	.input-field.col label{
-		font-size: 24px !important;
+		-webkit-font-size: 24px !important;
 	}
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
+		-webkit-font-size: 24px !important;
 	}
 	.node .title{
-		display: none !important;
+		-webkit-display: none !important;
 	}#lead {
-	    background-position: 0px 0px !important;
-	    background-attachment: scroll !important;
-	    width: 100% !important;
-	    height: 435px !important;
+	    -webkit-background-position: 0px 0px !important;
+	    -webkit-background-attachment: scroll !important;
+	    -webkit-width: 100% !important;
+	    -webkit-height: 435px !important;
 	}
 	#backend {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		-webkit-background-attachment: scroll !important;
+		-webkit-background-position: 0px 0px !important;
+		-webkit-width: 100% !important;
+	    -webkit-height: 435px !important;
 	}
 	#frontend {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		-webkit-background-attachment: scroll !important;
+		-webkit-background-position: 0px 0px !important;
+		-webkit-width: 100% !important;
+	    -webkit-height: 435px !important;
 	}
 	#social {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		-webkit-background-attachment: scroll !important;
+		-webkit-background-position: 0px 0px !important;
+		-webkit-width: 100% !important;
+	    -webkit-height: 435px !important;
 	}
 	#webdev {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		-webkit-background-attachment: scroll !important;
+		-webkit-background-position: 0px 0px !important;
+		-webkit-width: 100% !important;
+	    -webkit-height: 435px !important;
 	}
 	#marketing {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		-webkit-background-attachment: scroll !important;
+		-webkit-background-position: 0px 0px !important;
+		-webkit-width: 100% !important;
+	    -webkit-height: 435px !important;
 	}
 	.services-content{
-		width: 100% !important;
+		-webkit-width: 100% !important;
 	}
 
 }
