@@ -222,7 +222,7 @@ p.label {
     /* padding: 50px 0px 20% 0px; */
 }
 .footer-section ul li{
-    min-width: 40px;
+    /*min-width: 40px;*/
     margin-left:20px;
     display:inline-block;
     height: 0px;
@@ -406,6 +406,7 @@ label{
 	.node .title{
 		display: none !important;
 	}
+	/* for frontend image position*/
 	*[data-count='four']:hover {
 	 	background-position: 0px !important;
 	}
@@ -447,6 +448,7 @@ label{
 	.node .title{
 		display: none !important;
 	}
+	/*for pillar images position*/
 	*[data-count='one']:hover{
 		background-position: -850px !important; 
 	}
@@ -709,7 +711,7 @@ label{
 		min-width: 0px !important;
 	}
 	.footer-section ul li img, .social-icons img {
-		width: 30px !important;
+		width: 25px !important;
 	}
 	.footer-section ul li a img {
 		display: none;
