@@ -74,9 +74,6 @@ var deegeelab = function(){
             let mindate = `${date.getFullYear()}-${((date.getMonth()+1)<10?`0${(date.getMonth()+1)}`:(date.getMonth()+1))}-${date.getDate()}`;
             let maxdate = `${date.getFullYear()}-${((date.getMonth()+6)<10?`0${(date.getMonth()+6)}`:(date.getMonth()+6))}-${date.getDate()}`;
 
-            console.log(mindate);
-
-            // let date = $("#field_date").datepicker({'dateFormat','option'});
             $("#field_date").datepicker({'dateFormat': "yy-mm-dd",'minDate':mindate,'maxDate':maxdate});
 
             let hourContent = "<option disabled selected>Hour</option>";
@@ -90,33 +87,12 @@ var deegeelab = function(){
                 minuteContent += `<option>${x}</option>`;
             }
             $("#field_minute").html(minuteContent);
-            $('select').material_select();
 
+            $('select').material_select();
+            
             $("#field_hour, #field_minute").on('change',function(e){
                 $('select').material_select('close');
             })
-
-            // $('.datepicker').pickadate({
-            //     selectMonths: true,
-            //     selectYears: false,
-            //     today: 'Today',
-            //     clear: 'Clear',
-            //     close: 'Ok',
-            //     closeOnSelect: true,
-            //     formatSubmit: 'yyyy/mm/dd',
-            //     min: new Date(mindate),
-            //     max: new Date(maxdate)
-            // });
-
-            // $('.timepicker').pickatime({
-            //     default: 'now',
-            //     twelvehour: false,
-            //     donetext: 'OK',
-            //     cleartext: 'Clear',
-            //     canceltext: 'Cancel',
-            //     autoclose: true,
-            //     ampmclickable: true,
-            // });
 
             $("#form_query").validate({
                 rules: {
@@ -126,7 +102,8 @@ var deegeelab = function(){
                     field_number: {required: true, maxlength: 50},
                     field_postal: {required: true, maxlength: 4, number:true},
                     field_date: {required: true, maxlength: 40},
-                    field_time: {required: true, maxlength: 40},
+                    field_hour: {required: true, maxlength: 40},
+                    field_minute: {required: true, maxlength: 40},
                     field_message: {required: true,maxlength: 1000},
                 },
                 errorElement : 'div',
@@ -141,7 +118,7 @@ var deegeelab = function(){
                 },
                 submitHandler: function (form) {
                     let _form = $(form).serializeArray();
-                    _form = [_form[0]['value'],_form[1]['value'],_form[2]['value'],_form[3]['value'],_form[4]['value'],_form[6]['value'],_form[7]['value'],_form[8]['value']];
+                    _form = [_form[0]['value'],_form[1]['value'],_form[2]['value'],_form[3]['value'],_form[4]['value'],_form[5]['value'],`${_form[6]['value']}:${_form[7]['value']}`,_form[8]['value']];
                     let data = system.ajax('assets/harmony/Process.php?set-leads',_form);
                     data.done(function(data){
                         if(data == 1){
