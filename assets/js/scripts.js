@@ -1,7 +1,11 @@
 let idleTimerID = 0, timer = 0;
 let docWidth = $(document).width(), docHeight = $(document).height();
-let page = window.location.href.replace('footer','contact');                                
-window.location.replace(page);
+                     
+if(window.location.hash == "#footer"){
+    let page = window.location.href.replace('footer','home');                                
+    window.location.replace(page);    
+}
+
 var deegeelab = function(){
     'use strict';
     return {
@@ -84,7 +88,7 @@ var deegeelab = function(){
             $("#field_hour").html(hourContent);
             
             let minuteContent = "<option disabled selected>Minute</option>";
-            for(let x = 1; x<=59; x++){
+            for(let x = 0; x<=59; x++){
                 minuteContent += `<option>${x}</option>`;
             }
             $("#field_minute").html(minuteContent);
