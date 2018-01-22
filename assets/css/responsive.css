@@ -362,7 +362,7 @@ label{
 	}
 	/*Info resize*/
 	.form_holder {
-		margin: 10% auto auto !important;
+		margin: 5% auto auto !important;
 	}
 	.i{
 		font-size: 20px !important;
@@ -389,29 +389,25 @@ label{
   	.panel:hover{
   		width: 50% !important;
   	}
-	/*alignment for contact form*/
-	.row .col.i12{	
-		width: 100% !important;
-	    margin-left: auto !important;
-	    left: auto !important;
-	    right: auto !important;
-	}
 	/*Info resize*/
 	.form_holder {
-		margin: 10% auto auto !important;
+		margin: 5% auto auto !important;
 	}
 	.i{
 		font-size: 20px !important;
 	}
 	/*Form resize*/
 	.input-field.col label{
-		font-size: 24px !important;
+		font-size: 20px !important;
 	}
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
+		font-size: 20px !important;
 	}
 	.node .title{
 		display: none !important;
+	}
+	*[data-count='four']:hover {
+	 	background-position: 0px !important;
 	}
 }
 
@@ -450,6 +446,18 @@ label{
 	}
 	.node .title{
 		display: none !important;
+	}
+	*[data-count='one']:hover{
+		background-position: -850px !important; 
+	}
+	*[data-count='two']:hover {
+		background-position: -800px !important;
+	}
+	*[data-count='three']:hover {
+		background-position: -250px !important; 
+	}
+	*[data-count='four']:hover {
+	 	background-position: -728px !important;
 	}
 }
 @media (height: 1024px) and (width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -621,7 +629,7 @@ label{
 		width:350px !important;
 	}
 }
-@media screen and (max-width: 993px) and (orientation: portrait) { 
+@media screen and (max-width: 767px) and (orientation: portrait) { 
 	/* Smartphones */
 	.picker--opened.picker{
 		position: relative;
@@ -707,7 +715,7 @@ label{
 		display: none;
 	}
 	.footer-section ul li i {
-		font-size: 10px !important;
+		font-size: 16px !important;
 	}
 	.footer-section ul li span, .footer-section ul li a {
 		font-size: 10px !important;
@@ -865,13 +873,13 @@ label{
 }
 @media screen and (max-width: 1040px) and (orientation:landscape) {
 	#lead {
-		/*background-position: -300px;*/
+		background-position: -500px !important;
 	}
 	#backend {
 		/*background-position: center;*/
 	}
 	#frontend {
-		background-position: -300px;
+		background-position: -500px !important;
 	}
 	#social {
 		/*background-position: center;*/
@@ -880,7 +888,7 @@ label{
 		/*background-position: -300px;*/
 	}
 	#marketing {
-		background-position: -350px !important;
+		background-position: -500px !important;
 	}
 	h4{
 	    font-size: 30px !important;
