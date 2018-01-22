@@ -222,8 +222,8 @@ p.label {
     /* padding: 50px 0px 20% 0px; */
 }
 .footer-section ul li{
-    min-width: 40px;
-    margin-left:20px;
+    /*min-width: 40px;*/
+    margin-left:30px;
     display:inline-block;
     height: 0px;
 }
@@ -306,7 +306,7 @@ label{
 
 
 /* iPad Pro */
-@media (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
   	/*Pillars*/
   	.panel{
 	    width: 50% !important;
@@ -339,11 +339,49 @@ label{
 	}
 	.node .title{
 		display: none !important;
+	}#lead {
+	    background-position: 0px 0px !important;
+	    background-attachment: scroll !important;
+	    width: 100% !important;
+	    height: 435px !important;
+	}
+	#backend {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	#frontend {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	#social {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	#webdev {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	#marketing {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	.services-content{
+		width: 100% !important;
 	}
 
 }
 /* iPad */
-@media (width: 768px) and (height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media (width: 768px) and (height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
   	/*Pillars*/
   	.panel{
 	    width: 50% !important;
@@ -377,9 +415,48 @@ label{
 	.node .title{
 		display: none !important;
 	}
+	#lead {
+	    background-position: 0px 0px !important;
+	    background-attachment: scroll !important;
+	    width: 100% !important;
+	    height: 435px !important;
+	}
+	#backend {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	#frontend {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	#social {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	#webdev {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	#marketing {
+		background-attachment: scroll !important;
+		background-position: 0px 0px !important;
+		width: 100% !important;
+	    height: 435px !important;
+	}
+	.services-content{
+		width: 100% !important;
+	}
 }
 
-@media (width: 1024px) and (height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media (width: 1024px) and (height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
   	/*Pillars*/
   	.panel{
 	    width: 50% !important;
@@ -406,8 +483,41 @@ label{
 	.node .title{
 		display: none !important;
 	}
+	/* for frontend image position*/
 	*[data-count='four']:hover {
 	 	background-position: 0px !important;
+	}
+	#lead {
+		background-attachment: scroll !important;
+		background-position: -600px !important;
+	}
+	#backend {
+		background-attachment: scroll !important;
+		background-position: -200px !important;
+	}
+	#frontend {
+		background-attachment: scroll !important;
+		background-position: -850px !important;
+	}
+	#social {
+		background-attachment: scroll !important;
+		background-position: -200px !important;
+	}
+	#webdev {
+		background-attachment: scroll !important;
+	}
+	#marketing {
+		background-attachment: scroll !important;
+		background-position: -900px !important;
+	}
+	h4{
+	    font-size: 30px !important;
+	}
+	.node .title{
+		display: none !important;
+	}
+	svg{
+		width:600px !important;
 	}
 }
 
@@ -428,7 +538,7 @@ label{
 	}
 }	
 /* Landscape */
-@media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
 	/*Info resize*/
 	.form_holder {
 		margin: 8% auto auto !important;
@@ -447,6 +557,7 @@ label{
 	.node .title{
 		display: none !important;
 	}
+	/*for pillar images position*/
 	*[data-count='one']:hover{
 		background-position: -850px !important; 
 	}
@@ -458,6 +569,29 @@ label{
 	}
 	*[data-count='four']:hover {
 	 	background-position: -728px !important;
+	}
+	#lead {
+		background-attachment: scroll !important;
+		background-position: -350px !important;
+	}
+	#backend {
+		background-attachment: scroll !important;
+		background-position: -200px !important;
+	}
+	#frontend {
+		background-attachment: scroll !important;
+		background-position: -850px !important;
+	}
+	#social {
+		background-attachment: scroll !important;
+		background-position: -200px !important;
+	}
+	#webdev {
+		background-attachment: scroll !important;
+	}
+	#marketing {
+		background-attachment: scroll !important;
+		background-position: -800px !important;
 	}
 }
 @media (height: 1024px) and (width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -709,7 +843,7 @@ label{
 		min-width: 0px !important;
 	}
 	.footer-section ul li img, .social-icons img {
-		width: 30px !important;
+		width: 25px !important;
 	}
 	.footer-section ul li a img {
 		display: none;
@@ -871,21 +1005,21 @@ label{
 		width:600px !important;
 	}
 }
-@media screen and (max-width: 1040px) and (orientation:landscape) {
+/*@media screen and (max-width: 1040px) and (orientation:landscape) {
 	#lead {
 		background-position: -500px !important;
 	}
 	#backend {
-		/*background-position: center;*/
+		background-position: center;
 	}
 	#frontend {
 		background-position: -500px !important;
 	}
 	#social {
-		/*background-position: center;*/
+		background-position: center;
 	}
 	#webdev {
-		/*background-position: -300px;*/
+		background-position: -300px;
 	}
 	#marketing {
 		background-position: -500px !important;
@@ -899,4 +1033,4 @@ label{
 	svg{
 		width:600px !important;
 	}
-}
+}*/
