@@ -1,6 +1,7 @@
 let idleTimerID = 0, timer = 0;
 let docWidth = $(document).width(), docHeight = $(document).height();
-
+let page = window.location.href.replace('footer','contact');                                
+window.location.replace(page);
 var deegeelab = function(){
     'use strict';
     return {
@@ -125,7 +126,8 @@ var deegeelab = function(){
                             Materialize.toast('Thank you. your message has been sent.',2000);
                             system.clearForm();
                             setTimeout(function(){
-                                window.location.reload(true);
+                                let page = window.location.href.replace('footer','contact');                                
+                                window.location.replace(page); 
                             },2000);
                         }
                         else{
@@ -200,17 +202,6 @@ var deegeelab = function(){
                         </div>
                     `);                    
                 }
-
-                // if(pos.left<(docWidth/2)){
-                //     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
-                //     $(this_node).css(`left`,`${(_posLeft)}px`);
-                //     $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${descPos}px;color:red;`});
-                // }
-                // else{
-                //     let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
-                //     $(this_node).css(`left`,`${_posLeft}px`);
-                //     $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px;`});
-                // }
             });
 
             $("circle").mouseover(function(){
