@@ -102,37 +102,37 @@ body.home{
 	background: url(../images/services/lead.png) no-repeat;
 	background-size: cover;
 	background-position: -400px;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 #backend {
 	background: url(../images/services/bgbackend.png) no-repeat;
 	background-size: cover;
 	background-position: -200px;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 #frontend {
 	background: url(../images/services/frontend.png) no-repeat;
 	background-size: cover;
 	background-position: -600px;
-	/*background-attachment:  fixed;*/
+	background-attachment:  fixed;
 }
 #social {
 	background: url(../images/services/bgsocial.png) no-repeat;
 	background-size: cover;
 	background-position: center;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 #webdev {
 	background: url(../images/services/webdev.png) no-repeat;
 	background-size: cover;
 	background-position: -300px;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 #marketing {
 	background: url(../images/services/bgmarketing.png) no-repeat;
 	background-size: cover;
 	background-position: -600px;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 #backcon {
 	background: url(../images/services/bgcontact.jpg) no-repeat;
@@ -240,7 +240,7 @@ p.label {
     margin-right:10px;
 }
 .footer-section {
-     position: fixed;
+     /*position: fixed;*/
      bottom: 0%;
      /*height: 50px;*/
      width: 100%;
@@ -650,7 +650,7 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 40% !important;
+		height: 40%;
 		position: absolute;
 	}	
 }
@@ -790,7 +790,7 @@ label{
 	}
 	#display_pillar .panel{
 		width:50%;
-		height:50%;
+		/*height:50%;*/
 	}
 	.node .title{
 		display: none !important;
@@ -1004,7 +1004,7 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 80%;
+		height: 80% !important;
 		position: absolute;
 	}	
 	#display_pillar{
@@ -1139,5 +1139,5 @@ label{
     margin: auto;
     vertical-align: middle;
     position: absolute;
-    height: 60%;
+    height: 20%;
 }
