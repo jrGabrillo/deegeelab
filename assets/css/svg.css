@@ -117,3 +117,12 @@ svg #svgg path.st0 {
 	}
 }
 
+.middle{
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	vertical-align: middle;
+	height: unset !important;
+}
+
