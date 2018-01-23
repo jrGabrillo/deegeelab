@@ -58,7 +58,7 @@ var deegeelab = function(){
             let mql = window.matchMedia("(orientation: portrait)");  
             mql.addListener(function(m) {
                 if(m.matches) {
-                    console.log('xxx');
+                    $('.panel').attr({'style':'','class':'panel'});
                 }
                 else {
                     pillar.ini();
