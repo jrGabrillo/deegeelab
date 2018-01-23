@@ -100,38 +100,38 @@ body.home{
 #lead {
 	background: url(../images/services/lead.png) no-repeat;
 	background-size: cover;
-	background-position: -300px;
-	background-attachment: fixed;
+	background-position: -400px;
+	/*background-attachment: fixed;*/
 }
 #backend {
 	background: url(../images/services/bgbackend.png) no-repeat;
 	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+	background-position: -200px;
+	/*background-attachment: fixed;*/
 }
 #frontend {
 	background: url(../images/services/frontend.png) no-repeat;
 	background-size: cover;
-	background-position: -400px;
-	background-attachment:  fixed;
+	background-position: -600px;
+	/*background-attachment:  fixed;*/
 }
 #social {
 	background: url(../images/services/bgsocial.png) no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 }
 #webdev {
 	background: url(../images/services/webdev.png) no-repeat;
 	background-size: cover;
 	background-position: -300px;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 }
 #marketing {
 	background: url(../images/services/bgmarketing.png) no-repeat;
 	background-size: cover;
-	background-position: -400px;
-	background-attachment: fixed;
+	background-position: -600px;
+	/*background-attachment: fixed;*/
 }
 #backcon {
 	background: url(../images/services/bgcontact.jpg) no-repeat;
@@ -692,7 +692,7 @@ label{
 		width:600px !important;
 	}
 }
-@media (min-width: 602px) and (max-width: 993px) {
+@media (min-width: 720px) and (max-width: 1024px) {
 	/* Tablet */
 	.service-banner {
 		min-height: 100%;
@@ -761,6 +761,51 @@ label{
 	}
 	svg{
 		width:350px !important;
+	}
+	.services-content {
+		width: 100% !important;
+	}
+	#lead {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+		width: 100%;
+		height: 419px;
+	}
+	#backend {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+		width: 100%;
+		height: 419px;
+	}
+	#frontend {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+		width: 100%;
+		height: 419px;
+	}
+	#social {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+		width: 100%;
+		height: 419px;
+	}
+	#webdev {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+		width: 100%;
+		height: 419px;
+	}
+	#marketing {
+		background-size: cover;
+		background-position: 0px 0px;
+		background-attachment: scroll;
+		width: 100%;
+		height: 419px;
 	}
 }
 @media screen and (max-width: 767px) and (orientation: portrait) { 
