@@ -1,10 +1,10 @@
 let idleTimerID = 0, timer = 0;
 let docWidth = $(document).width(), docHeight = $(document).height();
                      
-if(window.location.hash == "#footer"){
-    let page = window.location.href.replace('footer','home');                                
-    window.location.replace(page);    
-}
+// if(window.location.hash == "#footer"){
+//     let page = window.location.href.replace('footer','home');                                
+//     window.location.replace(page);    
+// }
 
 var deegeelab = function(){
     'use strict';
