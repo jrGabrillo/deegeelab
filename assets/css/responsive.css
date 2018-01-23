@@ -1094,6 +1094,9 @@ label{
 	#display_pillar{
 		height:100%;
 	}
+	.text-middle {
+	    height: 50% !important;
+	}
   	.panel{
 	    width: 50% !important;
 	    height: 50% !important;
