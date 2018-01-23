@@ -99,6 +99,7 @@ var deegeelab = function(){
                 $('select').material_select('close');
             })
 
+            let h = $(".contact-section .fp-scrollable").height()*1.1;
             $("#form_query").validate({
                 rules: {
                     field_name: {required: true,maxlength: 200},
@@ -114,6 +115,9 @@ var deegeelab = function(){
                 errorElement : 'div',
                 errorPlacement: function(error, element) {
                     var placement = $(element).data('error');
+                    $(".contact-section, .contact-section .fp-scrollable,.contact-section .fp-tableCell").height(h);
+                    console.log(h);
+
                     if(placement){
                         $(placement).append(error)
                     } 
