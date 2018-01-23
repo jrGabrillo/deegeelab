@@ -73,6 +73,10 @@ body.home{
 	width: 100%;
 	text-align: center;
 }
+
+.pillar-title{
+	height: 100px;
+}
 .bgpillars {
 	/*background: url("../images/services/frontend.png");*/
 	width: 100% !important;
@@ -306,6 +310,9 @@ label{
 /* iPad Pro */
 @media (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
   	/*Pillars*/
+	.pillar-title{
+		height: 50px;
+	}
   	.panel{
 	    width: 50% !important;
 	    height: 683px !important;
@@ -381,6 +388,9 @@ label{
 /* iPad */
 @media (width: 768px) and (height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
   	/*Pillars*/
+	.pillar-title{
+		height: 50px;
+	}
   	.panel{
 	    width: 50% !important;
 	    height: 50% !important;
@@ -453,14 +463,16 @@ label{
 		width: 100% !important;
 	}
 }
-
 @media (width: 1024px) and (height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
   	/*Pillars*/
+	.pillar-title{
+		height: 50px;
+	}
   	.panel{
-	    width: 50% !important;
-	    height: 683px !important;
+/* 	    width: 50% !important; */
+/* 	    height: 683px !important; */
 	    float: left !important;
-  	}
+	 }
   	.panel:hover{
   		width: 50% !important;
   	}
@@ -518,8 +530,6 @@ label{
 		width:600px !important;
 	}
 }
-
-
 @media only screen and (min-width: 601px) {
 	.row .col.m5ths {
 		width: 20%;
@@ -538,6 +548,9 @@ label{
 /* Landscape */
 @media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
 	/*Info resize*/
+	.pillar-title{
+		height: 50px;
+	}
 	.form_holder {
 		/* margin: 8% auto auto !important; */
 		max-width: 90% !important;
@@ -594,6 +607,9 @@ label{
 }
 @media (height: 1024px) and (width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
 	/*Info resize*/
+	.pillar-title{
+		height: 50px;
+	}
 	#display_pillar{
 		height:100%;
 	}
@@ -604,6 +620,9 @@ label{
 }
 @media (height: 768px) and (width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
 	/*Info resize*/
+	.pillar-title{
+		height: 50px;
+	}
 	#display_pillar{
 		height:100% !important;
 	}
@@ -624,6 +643,9 @@ label{
 }
 @media (min-width: 994px){
 	/* Desktop */
+	.pillar-title{
+		height: 50px;
+	}
 	.picker--opened.picker{
 		position: relative;
 		top: -200px;
@@ -651,8 +673,8 @@ label{
 	}
 	.text a{
 	  text-shadow:none;
-	  top: 50px;
-	  margin: 0 auto;
+	  /* top: 50px; */
+	  /* margin: 0 auto; */
 	}
 	#menu .social-icons{
 		display:none;
@@ -678,7 +700,7 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 30%;
+		height: 10%;
 		position: absolute;
 	}
 	.text p{
@@ -692,6 +714,9 @@ label{
 }
 @media (min-width: 602px) and (max-width: 993px) {
 	/* Tablet */
+	.pillar-title{
+		height: 50px;
+	}
 	.service-banner {
 		min-height: 100%;
 	}
@@ -763,6 +788,9 @@ label{
 }
 @media screen and (max-width: 767px) and (orientation: portrait) { 
 	/* Smartphones */
+	.pillar-title{
+		height: 50px;
+	}
 	.picker--opened.picker{
 		position: relative;
 		/* top: -200px; */
@@ -1004,6 +1032,9 @@ label{
 	}
 }
 @media screen and (max-width: 767px) and (orientation:landscape) {
+	.pillar-title{
+		height: 50px;
+	}
 	#lead {
 		background-position: -200px !important;
 	}

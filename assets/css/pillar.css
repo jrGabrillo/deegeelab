@@ -68,7 +68,7 @@ html {
 
 *[data-count='two']:hover {
   background: rgba(99, 98, 98, 0.1) url("../images/services/lead.png")  center/cover no-repeat;
-  /*background-position:-500px; */
+  /* background-position:-500px; */
 }
 
 *[data-count='three'] {
