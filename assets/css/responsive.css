@@ -437,38 +437,38 @@ label{
 		display: none !important;
 	}
 	#lead {
-	    background-position: 0px 0px !important;
+	    background-position: center !important;
 	    background-attachment: scroll !important;
 	    width: 100% !important;
 	    height: 435px !important;
 	}
 	#backend {
 		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
+		background-position: center !important;
 		width: 100% !important;
 	    height: 435px !important;
 	}
 	#frontend {
 		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
+		background-position: center !important;
 		width: 100% !important;
 	    height: 435px !important;
 	}
 	#social {
 		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
+		background-position: center !important;
 		width: 100% !important;
 	    height: 435px !important;
 	}
 	#webdev {
 		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
+		background-position: center !important;
 		width: 100% !important;
 	    height: 435px !important;
 	}
 	#marketing {
 		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
+		background-position: center !important;
 		width: 100% !important;
 	    height: 435px !important;
 	}
@@ -483,7 +483,7 @@ label{
 	}
   	.panel{
 /* 	    width: 50% !important; */
-/* 	    height: 683px !important; */
+ 	    height: 100% !important; 
 	    float: left !important;
 	}
   	.panel:hover{
@@ -776,7 +776,7 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 60%;
+		height: 40% !important;
 		position: absolute;
 	}
 	#display_pillar{
@@ -790,7 +790,7 @@ label{
 	}
 	#display_pillar .panel{
 		width:50%;
-		/*height:50%;*/
+		height:50%;
 	}
 	.node .title{
 		display: none !important;
@@ -803,42 +803,42 @@ label{
 	}
 	#lead {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#backend {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#frontend {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#social {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#webdev {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#marketing {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
@@ -1030,42 +1030,42 @@ label{
 	}
 	#lead {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#backend {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#frontend {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#social {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#webdev {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#marketing {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
@@ -1106,22 +1106,22 @@ label{
 		height: unset;
 	}
 	#lead {
-		background-position: -200px !important;
+		background-position: -200px;
 	}
 	#backend {
 		background-position: center;
 	}
 	#frontend {
-		background-position: -300px !important;
+		background-position: -300px;
 	}
 	#social {
 		background-position: center;
 	}
 	#webdev {
-		background-position: -100px !important;
+		background-position: -100px;
 	}
 	#marketing {
-		background-position: -300px !important;
+		background-position: -300px;
 	}
 	h4{
 	    font-size: 30px !important;
