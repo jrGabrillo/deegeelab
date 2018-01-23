@@ -692,7 +692,7 @@ label{
 		width:600px !important;
 	}
 }
-@media (min-width: 602px) and (max-width: 993px) {
+@media (min-width: 602px) and (max-width: 1280px) {
 	/* Tablet */
 	.service-banner {
 		min-height: 720px;
@@ -761,6 +761,27 @@ label{
 	}
 	svg{
 		width:350px !important;
+	}
+	/*alignment for contact form*/
+	.row .col.i12{	
+		width: 100% !important;
+	    margin-left: auto !important;
+	    left: auto !important;
+	    right: auto !important;
+	}
+	/*Info resize*/
+	.form_holder {
+		margin: 5% auto auto !important;
+	}
+	.i{
+		font-size: 20px !important;
+	}
+	/*Form resize*/
+	.input-field.col label{
+		font-size: 24px !important;
+	}
+	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+		font-size: 24px !important;
 	}
 }
 @media screen and (max-width: 993px) and (orientation: portrait) { 
