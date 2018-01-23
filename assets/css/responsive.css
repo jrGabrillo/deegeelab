@@ -74,7 +74,7 @@ body.home{
 }
 
 .pillar-title{
-	height: 100px;
+	/* height: 100px; */
 }
 .bgpillars {
 	/*background: url("../images/services/frontend.png");*/
@@ -224,9 +224,11 @@ p.label {
 }
 .footer-section ul li{
     min-width: 40px;
-    margin-left:30px;
+    /* margin-left:30px; */
     display:inline-block;
     height: 0px;
+    /* border-right: 1px solid #333; */
+    /* border-left: 1px solid #ccc; */
 }
 .footer-section a{
     /* line-height: 40px; */
@@ -304,6 +306,17 @@ span.head {
 
 label{
 	text-align: left !important;
+}	
+
+#menu .social-icons{
+	position:fixed;
+	bottom: 10%;
+	padding-left: 25px;
+}
+#menu .social-icons ul li a{
+	display:inline-block;
+	padding-right: 0px;
+	padding-left: 10px;
 }
 
 
@@ -314,9 +327,9 @@ label{
 		height: 50px;
 	}
   	.panel{
-	    width: 50% !important;
-	    height: 683px !important;
-	    float: left !important;
+	    /*width: 50% !important;*/
+	    /*height: 683px !important;*/
+	    /*float: left !important;*/
   	}
   	.panel:hover{
   		width: 50% !important;
@@ -395,7 +408,7 @@ label{
 	    width: 50% !important;
 	    height: 50% !important;
 	    float: left !important;
-	  }
+	}
   	.panel:hover{
   		width: 50% !important;
   	}
@@ -918,7 +931,7 @@ label{
 		width: 25px !important;
 	}
 	.footer-section ul li a img {
-		display: none;
+		/* display: none; */
 	}
 	.footer-section ul li i {
 		font-size: 16px !important;
@@ -1078,8 +1091,16 @@ label{
 	}
 }
 @media screen and (max-width: 767px) and (orientation:landscape) {
+	#display_pillar{
+		height:100%;
+	}
+  	.panel{
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
+	}	
 	.pillar-title{
-		height: 50px;
+		height: unset;
 	}
 	#lead {
 		background-position: -200px !important;
@@ -1108,4 +1129,15 @@ label{
 	svg{
 		width:600px !important;
 	}
+}
+
+.text-middle {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    vertical-align: middle;
+    position: absolute;
+    height: 60%;
 }
