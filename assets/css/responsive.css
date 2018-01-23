@@ -112,7 +112,7 @@ body.home{
 #frontend {
 	background: url(../images/services/frontend.png) no-repeat;
 	background-size: cover;
-	background-position: -600px 0px;
+	background-position: -400px;
 	background-attachment:  fixed;
 }
 #social {
