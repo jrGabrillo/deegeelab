@@ -237,12 +237,13 @@ p.label {
 .footer-section {
      position: fixed;
      bottom: 0%;
-     height: 50px;
+     /*height: 50px;*/
      width: 100%;
      /* padding: 5px; */
      color: #fff;
      background-color: rgba(0, 0, 0, 1);
      z-index:  10000;
+     margin-bottom: 0px !important;
 }
 #fp-nav{
 	display:none;
@@ -877,13 +878,14 @@ label{
 	}
 	.footer-section {
 		position: relative;
+
 	}
 	.footer-section ul {
 		/* margin: 10px !important; */
 	}
 	.footer-section ul li {
 		margin-left: 0px !important;
-		min-width: 0px !important;
+		min-width: 40px !important;
 	}
 	.footer-section ul li img, .social-icons img {
 		width: 25px !important;
