@@ -19,7 +19,6 @@
 	-webkit-font-feature-settings: 'liga';
 	-webkit-font-smoothing: antialiased;
 }
-
 .menu i.home{
 	background: url(../images/icons/home.png) no-repeat !important;
 	background-size: contain !important; 

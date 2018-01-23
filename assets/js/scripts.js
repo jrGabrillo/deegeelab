@@ -26,6 +26,9 @@ var deegeelab = function(){
                 'fitToSection': true,
                 onLeave: function(index, nextIndex, direction){
                     let leavingSection = $(this);
+                    console.log('xx');
+                    $("#field_date").datepicker( "hide" );
+                    $("#field_date").blur();
                     if(index == 1 && direction =='down'){
                         $('.collapsible').collapsible('close', 0);
                         $("#nodes .list").attr({'class':'list'});
