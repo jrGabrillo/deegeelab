@@ -110,7 +110,7 @@ body.home{
 #frontend {
 	background: url(../images/services/frontend.png) no-repeat;
 	background-size: cover;
-	background-position: -600px 0px;
+	background-position: -400px;
 	background-attachment:  fixed;
 }
 #social {
@@ -128,7 +128,7 @@ body.home{
 #marketing {
 	background: url(../images/services/bgmarketing.png) no-repeat;
 	background-size: cover;
-	background-position: -500px;
+	background-position: -400px;
 	background-attachment: fixed;
 }
 #backcon {
@@ -304,7 +304,7 @@ label{
 
 
 /* iPad Pro */
-@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
+@media (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
   	/*Pillars*/
   	.panel{
 	    width: 50% !important;
@@ -536,7 +536,7 @@ label{
 	}
 }	
 /* Landscape */
-@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
+@media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
 	/*Info resize*/
 	.form_holder {
 		/* margin: 8% auto auto !important; */
@@ -570,7 +570,7 @@ label{
 	}
 	#lead {
 		background-attachment: scroll !important;
-		background-position: -500px !important;
+		background-position: -350px !important;
 	}
 	#backend {
 		background-attachment: scroll !important;
@@ -592,7 +592,7 @@ label{
 		background-position: -800px !important;
 	}
 }
-@media (height: 1024px) and (width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+@media (height: 1024px) and (width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
 	/*Info resize*/
 	#display_pillar{
 		height:100%;
@@ -602,7 +602,7 @@ label{
 		height:25%;
 	}
 }
-@media (height: 768px) and (width: 1024px) and (-webkit-min-device-pixel-ratio: 0) {
+@media (height: 768px) and (width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
 	/*Info resize*/
 	#display_pillar{
 		height:100% !important;
@@ -690,10 +690,10 @@ label{
 		width:600px !important;
 	}
 }
-@media (min-width: 602px) and (max-width: 1280px) {
+@media (min-width: 602px) and (max-width: 993px) {
 	/* Tablet */
 	.service-banner {
-		min-height: 720px;
+		min-height: 100%;
 	}
 	.services-content {
 		padding: 50px 20px 30px 20px !important;
@@ -760,29 +760,8 @@ label{
 	svg{
 		width:350px !important;
 	}
-	/*alignment for contact form*/
-	.row .col.i12{	
-		width: 100% !important;
-	    margin-left: auto !important;
-	    left: auto !important;
-	    right: auto !important;
-	}
-	/*Info resize*/
-	.form_holder {
-		margin: 5% auto auto !important;
-	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 24px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
-	}
 }
-@media screen and (max-width: 993px) and (orientation: portrait) { 
+@media screen and (max-width: 767px) and (orientation: portrait) { 
 	/* Smartphones */
 	.picker--opened.picker{
 		position: relative;
@@ -967,42 +946,42 @@ label{
 		background-position: 0px 0px;
 		background-attachment: scroll;
 		width: 100%;
-		height: 100%;
+		height: 248px;
 	}
 	#backend {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
 		width: 100%;
-		height: 100%;
+		height: 248px;
 	}
 	#frontend {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
 		width: 100%;
-		height: 100%;
+		height: 248px;
 	}
 	#social {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
 		width: 100%;
-		height: 100%;
+		height: 248px;
 	}
 	#webdev {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
 		width: 100%;
-		height: 100%;
+		height: 248px;
 	}
 	#marketing {
 		background-size: cover;
 		background-position: 0px 0px;
 		background-attachment: scroll;
 		width: 100%;
-		height: 100%;
+		height: 248px;
 	}
 	#display_pillar{
 		height:100%;
@@ -1024,7 +1003,7 @@ label{
 		width:600px !important;
 	}
 }
-@media screen and (max-height: 640px) and (orientation:landscape) {
+@media screen and (max-width: 767px) and (orientation:landscape) {
 	#lead {
 		background-position: -200px !important;
 	}
@@ -1038,10 +1017,10 @@ label{
 		background-position: center;
 	}
 	#webdev {
-		background-position: -300px;
+		background-position: -100px !important;
 	}
 	#marketing {
-		background-position: -200px !important;
+		background-position: -300px !important;
 	}
 	h4{
 	    font-size: 30px !important;
