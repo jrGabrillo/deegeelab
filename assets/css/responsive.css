@@ -485,7 +485,7 @@ label{
 /* 	    width: 50% !important; */
 /* 	    height: 683px !important; */
 	    float: left !important;
-	 }
+	}
   	.panel:hover{
   		width: 50% !important;
   	}
@@ -510,7 +510,7 @@ label{
 	*[data-count='four']:hover {
 	 	background-position: 0px !important;
 	}
-	#lead {
+	/*#lead {
 		background-attachment: scroll !important;
 		background-position: -600px !important;
 	}
@@ -532,7 +532,7 @@ label{
 	#marketing {
 		background-attachment: scroll !important;
 		background-position: -900px !important;
-	}
+	}*/
 	h4{
 	    font-size: 30px !important;
 	}
