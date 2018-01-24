@@ -332,8 +332,6 @@ label{
 		}
 	}	*/
 @media screen and (min-width: 994px){
-/*desktop and up*/
-@media only screen and (min-width: 993px){
 	/* Desktop */
 	.pillar-title{
 		height: 50px;
@@ -405,10 +403,6 @@ label{
 	}
 }
 @media screen and (min-device-width: 720px) and (max-device-width: 1024px) {
-
-
-/*tablet*/
-@media only screen and (min-width: 641px) and (max-width: 992px){
 	/* Tablet */
 
   	.panel{
@@ -594,11 +588,6 @@ label{
 	}
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) { 
-}
-
-/*smartphone*/
-@media screen and (max-width: 640px){ 
-
 	/* Smartphones */
 	svg{
 		width:600px !important;
