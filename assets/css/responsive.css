@@ -102,19 +102,19 @@ body.home{
 	background: url(../images/services/lead.png) no-repeat;
 	background-size: cover;
 	background-position: -400px;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 #backend {
 	background: url(../images/services/bgbackend.png) no-repeat;
 	background-size: cover;
 	background-position: -200px;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 #frontend {
 	background: url(../images/services/frontend.png) no-repeat;
 	background-size: cover;
 	background-position: -600px;
-	/*background-attachment:  fixed;*/
+	background-attachment:  fixed;
 }
 #social {
 	background: url(../images/services/bgsocial.png) no-repeat;
@@ -126,7 +126,7 @@ body.home{
 	background: url(../images/services/webdev.png) no-repeat;
 	background-size: cover;
 	background-position: -300px;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 #marketing {
 	background: url(../images/services/bgmarketing.png) no-repeat;
@@ -240,7 +240,7 @@ p.label {
     margin-right:10px;
 }
 .footer-section {
-     position: fixed;
+     /*position: fixed;*/
      bottom: 0%;
      /*height: 50px;*/
      width: 100%;
@@ -327,7 +327,7 @@ label{
 		height: 50px;
 	}
   	.panel{
-	    /*width: 50% !important;*/
+	    width: 50% !important;
 	    /*height: 683px !important;*/
 	    /*float: left !important;*/
   	}
@@ -437,40 +437,40 @@ label{
 		display: none !important;
 	}
 	#lead {
-	    background-position: 0px 0px !important;
-	    background-attachment: scroll !important;
-	    width: 100% !important;
-	    height: 435px !important;
+	    background-position: center;
+	    background-attachment: scroll;
+	    width: 100%;
+	    height: 435px;
 	}
 	#backend {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		background-attachment: scroll;
+		background-position: center;
+		width: 100%;
+	    height: 435px;
 	}
 	#frontend {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		background-attachment: scroll;
+		background-position: center;
+		width: 100%;
+	    height: 435px;
 	}
 	#social {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		background-attachment: scroll;
+		background-position: center;
+		width: 100%;
+	    height: 435px;
 	}
 	#webdev {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		background-attachment: scroll;
+		background-position: center;
+		width: 100%;
+	    height: 435px;
 	}
 	#marketing {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
+		background-attachment: scroll;
+		background-position: center;
+		width: 100%;
+	    height: 435px;
 	}
 	.services-content{
 		width: 100% !important;
@@ -483,9 +483,9 @@ label{
 	}
   	.panel{
 /* 	    width: 50% !important; */
-/* 	    height: 683px !important; */
+ 	    height: 100% !important; 
 	    float: left !important;
-	 }
+	}
   	.panel:hover{
   		width: 50% !important;
   	}
@@ -510,7 +510,7 @@ label{
 	*[data-count='four']:hover {
 	 	background-position: 0px !important;
 	}
-	#lead {
+	/*#lead {
 		background-attachment: scroll !important;
 		background-position: -600px !important;
 	}
@@ -532,7 +532,7 @@ label{
 	#marketing {
 		background-attachment: scroll !important;
 		background-position: -900px !important;
-	}
+	}*/
 	h4{
 	    font-size: 30px !important;
 	}
@@ -685,7 +685,7 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 40% !important;
+		height: 40%;
 		position: absolute;
 	}	
 	*[data-count='one']:hover{
@@ -846,7 +846,7 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 60%;
+		height: 40% !important;
 		position: absolute;
 	}
 	#display_pillar{
@@ -866,46 +866,46 @@ label{
 		width:350px !important;
 	}
 	.services-content {
-		width: 100% !important;
+		width: 100%;
 	}
 	#lead {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#backend {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#frontend {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#social {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#webdev {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
 	}
 	#marketing {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 419px;
@@ -1095,42 +1095,42 @@ label{
 	}
 	#lead {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#backend {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#frontend {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#social {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#webdev {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
 	}
 	#marketing {
 		background-size: cover;
-		background-position: 0px 0px;
+		background-position: center;
 		background-attachment: scroll;
 		width: 100%;
 		height: 248px;
@@ -1159,6 +1159,9 @@ label{
 	#display_pillar{
 		height:100%;
 	}
+	.text-middle {
+	    height: 50% !important;
+	}
   	.panel{
 	    width: 50% !important;
 	    height: 50% !important;
@@ -1168,19 +1171,19 @@ label{
 		height: unset;
 	}
 	#lead {
-		background-position: -200px !important;
+		background-position: -center;
 	}
 	#backend {
 		background-position: center;
 	}
 	#frontend {
-		background-position: -300px !important;
+		background-position: -center;
 	}
 	#social {
 		background-position: center;
 	}
 	#webdev {
-		background-position: -100px !important;
+		background-position: -center;
 	}
 	#marketing {
 		/* background-position: -300px !important; */
@@ -1209,5 +1212,5 @@ label{
     margin: auto;
     vertical-align: middle;
     position: absolute;
-    height: 60%;
+    height: 20%;
 }
