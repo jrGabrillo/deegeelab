@@ -1978,6 +1978,9 @@ ul.staggered-list li {
 	-webkit-transform-origin: 0 50%;
 	transform-origin: 0 50%
 }
+.show-on-small{
+	display:none !important;
+}
 @media only screen and (max-width: 600px) {
 	.hide-on-small-only, .hide-on-small-and-down {
 		display: none !important

@@ -121,8 +121,11 @@ svg #svgg path.st0 {
 	position: relative;
 	top: 0;
 	bottom: 0;
+	left: 0;
+	right: 0;
 	margin: auto;
 	vertical-align: middle;
 	height: unset !important;
+	/* width: 100%; */
 }
 
