@@ -332,6 +332,8 @@ label{
 		}
 	}	*/
 @media screen and (min-width: 994px){
+/*desktop and up*/
+@media only screen and (min-width: 993px){
 	/* Desktop */
 	.pillar-title{
 		height: 50px;
@@ -403,9 +405,64 @@ label{
 	}
 }
 @media screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+
+
+/*tablet*/
+@media only screen and (min-width: 641px) and (max-width: 992px){
 	/* Tablet */
+
+  	.panel{
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
+	}
 	.pillar-title{
-		height: 50px;
+		/* height: 50px; */
+	}
+	#display_pillar{
+		height:100% !important;
+	}
+	#display_pillar .panel{
+		width: 50% !important;
+		height: 50% !important;
+	}
+	*[data-count='one']:hover{
+		background-position: -100px !important;
+	}
+	*[data-count='two']:hover {
+		background-position: -10px !important;
+	}
+	*[data-count='three']:hover {
+		background-position: -0px !important;
+	}
+	*[data-count='four']:hover {
+	 	background-position: -0px !important;
+	}
+	#lead {
+		background-attachment: scroll !important;
+		background-position: -350px !important;
+	}
+	#backend {
+		background-attachment: scroll !important;
+		background-position: -200px !important;
+	}
+	#frontend {
+		background-attachment: scroll !important;
+		background-position: -850px !important;
+	}
+	#social {
+		background-attachment: scroll !important;
+		background-position: -200px !important;
+	}
+	#webdev {
+		background-attachment: scroll !important;
+	}
+	#marketing {
+		background-attachment: scroll !important;
+		background-position: -800px !important;
+	}
+	.pillar-title{
+		/* height: 50px; */
 	}
 	.service-banner {
 		/*height: -webkit-fill-available !important;*/
@@ -423,7 +480,11 @@ label{
 		height: 50px;
 	}
 	.services-content {
+
 		width: 100% !important;
+		padding: 50px 20px 30px 20px !important;
+		width: 100%;
+
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -447,7 +508,7 @@ label{
 		margin: 0 auto;
 		/* position:relative; */
 		/* top: 20%; */
-		margin-top: 50px;
+		/* margin-top: 50px; */
 	}
 	.form_holder{
 		position: relative;
@@ -465,7 +526,7 @@ label{
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 40% !important;
+		height: 70% !important;
 		position: absolute;
 	}
 	#display_pillar{
@@ -485,6 +546,7 @@ label{
 	svg{
 		width:350px !important;
 	}
+
 	.services-content {
 		width: 100%;
 	}
@@ -532,7 +594,17 @@ label{
 	}
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) { 
+}
+
+/*smartphone*/
+@media screen and (max-width: 640px){ 
+
 	/* Smartphones */
+  	.panel{
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
+	}
 	.pillar-title{
 		/* height: 50px; */
 	}
@@ -771,6 +843,7 @@ label{
 		width:600px !important;
 	}
 }
+
 /*@media only screen and (max-width: 600px) {
 	.show-on-small {
 		display: block !important
@@ -787,3 +860,4 @@ label{
     position: absolute;
     height: 20%;
 }
+

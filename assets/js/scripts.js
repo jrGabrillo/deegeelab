@@ -27,7 +27,7 @@ var deegeelab = function(){
                 onLeave: function(index, nextIndex, direction){
                     let leavingSection = $(this);
                     $("#field_date").datepicker( "hide" );
-                    $("#field_date").blur();
+                    $("input, select, textarea").blur();
                     if(index == 1 && direction =='down'){
                         $('.collapsible').collapsible('close', 0);
                         $("#nodes .list").attr({'class':'list'});
@@ -56,6 +56,7 @@ var deegeelab = function(){
 
             let mql = window.matchMedia("(orientation: portrait)");  
             mql.addListener(function(m) {
+                $.fn.fullpage.reBuild();
                 if(m.matches) {
                     $('.panel').attr({'style':'','class':'panel'});
                 }
