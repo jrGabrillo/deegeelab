@@ -316,22 +316,22 @@ label{
 	padding-right: 0px;
 	padding-left: 10px;
 }
-@media only screen and (min-width: 601px) {
-	.row .col.m5ths {
-		width: 20%;
+	/*@media only screen and (min-width: 601px) {
+		.row .col.m5ths {
+			width: 20%;
+		}
 	}
-}
-@media only screen and (min-width: 993px) {
-	.row .col.l5ths {
-		width: 20%;
+	@media only screen and (min-width: 993px) {
+		.row .col.l5ths {
+			width: 20%;
+		}
 	}
-}
-@media only screen and (min-width: 1201px) {
-	.row .col.xl5ths {
-		width: 20%;
-	}
-}	
-@media (min-width: 994px){
+	@media only screen and (min-width: 1201px) {
+		.row .col.xl5ths {
+			width: 20%;
+		}
+	}	*/
+@media screen and (min-width: 994px){
 	/* Desktop */
 	.pillar-title{
 		height: 50px;
@@ -353,7 +353,7 @@ label{
 		padding: 50px 30px 100px 30px !important;
 	}
 	.service-banner {
-		min-height: 768px
+		 height: -webkit-fill-available !important; 
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -402,16 +402,28 @@ label{
 		width:600px !important;
 	}
 }
-@media (min-width: 720px) and (max-width: 1024px) {
+@media screen and (min-device-width: 720px) and (max-device-width: 1024px) {
 	/* Tablet */
 	.pillar-title{
 		height: 50px;
 	}
 	.service-banner {
-		min-height: 100%;
+		/*height: -webkit-fill-available !important;*/
+	}
+	.service-menu .left a{
+		margin-left:0px;
+	}
+	.service-menu{
+		position:  relative;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.service-menu{
+		height: 50px;
 	}
 	.services-content {
-		padding: 50px 20px 30px 20px !important;
+		width: 100% !important;
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -457,14 +469,15 @@ label{
 		position: absolute;
 	}
 	#display_pillar{
-		height: 50%;
+		/* height: 50%; */
 	}
 	.loading .main-section .stage{
 		height: 75%;
 	}
 	#display_pillar .panel{
-		width:50%;
-		height: 100%;
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
 	}
 	.node .title{
 		display: none !important;
@@ -476,49 +489,49 @@ label{
 		width: 100%;
 	}
 	#lead {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
 	}
 	#backend {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
 	}
 	#frontend {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
 	}
 	#social {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
 	}
 	#webdev {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
 	}
 	#marketing {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
 	}
 }
-@media screen and (max-width: 767px) { 
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) { 
 	/* Smartphones */
 	.pillar-title{
 		/* height: 50px; */
@@ -573,10 +586,6 @@ label{
 	.input-field.col label {
 		/* left: unset !important; */
 	}
-	.node .title {
-		font-size: 10px;
-		display: none !important;
-	}
 	.node .image{
 		display:none;
 		width: 0px !important;
@@ -624,9 +633,9 @@ label{
 	.services-content {
 		min-height: 650px !important;
 	}
-	.service-banner {
+	/*.service-banner {
 		height: 150px !important;
-	}
+	}*/
 	td, th {
 		padding: 5px 5px !important;
 	}
@@ -680,10 +689,6 @@ label{
 		vertical-align: middle;
 		height: 90% !important;
 		position: absolute;
-	}	
-	#display_pillar{
-		height: 100%;
-		width: 100%;
 	}
 	.loading .main-section .stage{
 		height: 50%;
@@ -691,11 +696,8 @@ label{
 	h4{
 		font-size: 30px !important;
 	}
-	#nodes .list .title{
-		display: none;
-	}
-	#nodes .list .node{
-		height: 50px;
+	.node .title{
+		display: none !important;
 	}
 	.services-content {
 		width: 100% !important;
@@ -745,9 +747,16 @@ label{
 	#display_pillar{
 		height:100%;
 	}
-	#display_pillar .panel{
-		width:100%;
-		height:25%;
+	.text-middle {
+	    height: 50% !important;
+	}
+  	.panel{
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
+	}	
+	.pillar-title{
+		height: unset;
 	}
 	h4{
 	    font-size: 30px !important;
@@ -762,12 +771,12 @@ label{
 		width:600px !important;
 	}
 }
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
 	.show-on-small {
 		display: block !important
 	}
 }
-
+*/
 .text-middle {
     top: 0;
     bottom: 0;
