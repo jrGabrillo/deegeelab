@@ -1,8 +1,5 @@
 /* Desktop */
-@media screen and (min-width: 994px){
-	.pillar-title{
-		height: 50px;
-	}
+@media only screen and (min-width: 993px){
 	h4 {
 	    font-size: 30px !important;
 	}
@@ -62,6 +59,7 @@
 		width:600px !important;
 	}
 }
+
 /*tablet*/
 @media only screen and (min-width: 641px) and (max-width: 992px){
 	h4 {
@@ -83,10 +81,6 @@
 		height: 50% !important;
 	}
 	*[data-count='one']:hover{
-		background-position: -10px !important;
-	}
-	*[data-count='two']:hover {
-		background-position: -0px !important;
 		background-position: -100px !important;
 	}
 	*[data-count='two']:hover {
@@ -253,16 +247,9 @@
 		height: 419px !important;
 	}
 }
-@media screen and (min-device-width: 320px) and (max-device-width: 800px) { 
-	/* Smartphones */
-	svg{
-		width:600px !important;
-	}
- 	.panel{
-	    width: 50% !important;
-	    height: 50% !important;
-	    float: left !important;
-	}
+
+/*smartphone*/
+@media screen and (max-width: 640px){ 
 
 	#display_pillar .panel {
 	    width: 100%;
