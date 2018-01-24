@@ -1,5 +1,8 @@
 let idleTimerID = 0, timer = 0;
 let docWidth = $(document).width(), docHeight = $(document).height();
+
+let venString = window.navigator.vendor;
+console.log(venString);
                      
 if(window.location.hash == "#footer"){
     let page = window.location.href.replace('footer','home');                                
