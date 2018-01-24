@@ -250,7 +250,6 @@
 
 /*smartphone*/
 @media screen and (max-width: 640px){ 
-
 	#display_pillar .panel {
 	    width: 100%;
 	    height: 25%;

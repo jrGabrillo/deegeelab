@@ -1,5 +1,5 @@
 /* iPad Pro */
-@media (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
   	/*Pillars*/
 	.pillar-title{
 		height: 50px;
@@ -74,155 +74,8 @@
 	.services-content{
 		width: 100% !important;
 	}
-
 }
-/* iPad */
-@media (width: 768px) and (height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
-  	/*Pillars*/
-	.pillar-title{
-		height: 50px;
-	}
-  	.panel{
-	    width: 50% !important;
-	    height: 50% !important;
-	    float: left !important;
-	}
-  	.panel:hover{
-  		width: 50% !important;
-  	}
-	/*alignment for contact form*/
-	.row .col.i12{	
-		width: 100% !important;
-	    margin-left: auto !important;
-	    left: auto !important;
-	    right: auto !important;
-	}
-	/*Info resize*/
-	.form_holder {
-		margin: 5% auto auto !important;
-	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 24px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
-	}
-	.node .title{
-		display: none !important;
-	}
-	#lead {
-	    background-position: center;
-	    background-attachment: scroll;
-	    width: 100%;
-	    height: 435px;
-	}
-	#backend {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	#frontend {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	#social {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	#webdev {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	#marketing {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	.services-content{
-		width: 100% !important;
-	}
-}
-@media (width: 1024px) and (height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
-  	/*Pillars*/
-	.pillar-title{
-		height: 50px;
-	}
-  	.panel{
-/* 	    width: 50% !important; */
- 	    height: 100% !important; 
-	    float: left !important;
-	}
-  	.panel:hover{
-  		width: 50% !important;
-  	}
-	/*Info resize*/
-	.form_holder {
-		margin: 5% auto auto !important;
-	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 20px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 20px !important;
-	}
-	.node .title{
-		display: none !important;
-	}
-	/* for frontend image position*/
-	*[data-count='four']:hover {
-	 	background-position: 0px !important;
-	}
-	/*#lead {
-		background-attachment: scroll !important;
-		background-position: -600px !important;
-	}
-	#backend {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#frontend {
-		background-attachment: scroll !important;
-		background-position: -850px !important;
-	}
-	#social {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#webdev {
-		background-attachment: scroll !important;
-	}
-	#marketing {
-		background-attachment: scroll !important;
-		background-position: -900px !important;
-	}*/
-	h4{
-	    font-size: 30px !important;
-	}
-	.node .title{
-		display: none !important;
-	}
-	svg{
-		width:600px !important;
-	}
-}
-
-@media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
+@media only screen and (min-width: 1366px) and (orientation: landscape) {
 	/*Info resize*/
 	.pillar-title{
 		height: 50px;
@@ -281,58 +134,19 @@
 		background-position: -800px !important;
 	}
 }
-@media (height: 1024px) and (width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
-	/*Info resize*/
+
+/*iPad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+	h4 {
+	    font-size: 30px !important;
+	}
+  	.panel{
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
+	}
 	.pillar-title{
-		height: 50px;
-	}
-	#display_pillar{
-		height:100%;
-	}
-	#display_pillar .panel{
-		width:100%;
-		height:25%;
-	}
-	*[data-count='one']:hover{
-		background-position: -400px !important;
-	}
-	*[data-count='two']:hover {
-		background-position: -300px !important;
-	}
-	*[data-count='three']:hover {
-		background-position: -150px !important;
-	}
-	*[data-count='four']:hover {
-	 	background-position: -350px !important;
-	}
-	#lead {
-		background-attachment: scroll !important;
-		background-position: -350px !important;
-	}
-	#backend {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#frontend {
-		background-attachment: scroll !important;
-		background-position: -850px !important;
-	}
-	#social {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#webdev {
-		background-attachment: scroll !important;
-	}
-	#marketing {
-		background-attachment: scroll !important;
-		background-position: -800px !important;
-	}
-}
-@media (height: 768px) and (width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
-	/*Info resize*/
-	.pillar-title{
-		height: 50px;
+		/* height: 50px; */
 	}
 	#display_pillar{
 		height:100% !important;
@@ -341,21 +155,11 @@
 		width: 50% !important;
 		height: 50% !important;
 	}
-	.text{
-		margin: auto;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		vertical-align: middle;
-		height: 40%;
-		position: absolute;
-	}	
 	*[data-count='one']:hover{
-		background-position: -100px !important;
+		background-position: -0px !important;
 	}
 	*[data-count='two']:hover {
-		background-position: -10px !important;
+		background-position: -0px !important;
 	}
 	*[data-count='three']:hover {
 		background-position: -0px !important;
@@ -386,45 +190,350 @@
 		background-attachment: scroll !important;
 		background-position: -800px !important;
 	}
+	.pillar-title{
+		/* height: 50px; */
+	}
+	.service-banner {
+		/*height: -webkit-fill-available !important;*/
+	}
+	.service-menu .left a{
+		margin-left:0px;
+	}
+	.service-menu{
+		position:  relative;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.service-menu{
+		height: 50px;
+	}
+	.services-content {
+
+		width: 100% !important;
+		padding: 50px 20px 30px 20px !important;
+		width: 100%;
+
+	}
+	td, th {
+		padding: 5px 5px !important;
+	}
+	svg:not(:root){
+		height: 345px !important;
+	}
+	.overlap-gradient{
+		background: none !important;
+	}	
+	.text a{
+	  text-shadow:none;
+	  position:relative;
+	  top:0px;
+	}
+	#menu .social-icons{
+		display:none;
+	}
+	.holder{
+		width: 95%;
+		margin: 0 auto;
+		/* position:relative; */
+		/* top: 20%; */
+		/* margin-top: 50px; */
+	}
+	.form_holder{
+		position: relative;
+	}
+	.footer-section {
+		position: relative;
+	}
+	#why-deegeelab{
+		/* display: none; */
+	}
+	.text{
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		vertical-align: middle;
+		height: 70% !important;
+		position: absolute;
+	}
+	#display_pillar{
+		/* height: 50%; */
+	}
+	.loading .main-section .stage{
+		height: 75%;
+	}
+	.node .title{
+		display: none !important;
+	}
+	svg{
+		width:350px !important;
+	}
+
+	.services-content {
+		width: 100%;
+	}
+	#lead {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
+	}
+	#backend {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
+	}
+	#frontend {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
+	}
+	#social {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
+	}
+	#webdev {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
+	}
+	#marketing {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100% !important;
+		height: 419px !important;
+	}
 }
-@media only screen and (min-device-width: 320px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 2){
+
+/*iPhone*/
+@media only screen and (max-device-width : 767px) {
+	#display_pillar .panel {
+	    width: 100%;
+	    height: 25%;
+	}
+	.pillar-title{
+		/* height: 50px; */
+	}
+	.service-menu .left a{
+		margin-left:0px;
+	}
+	.service-menu{
+		position:  relative;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.service-menu{
+		height: 50px;
+	}
+	.text a {
+		top: 0px !important;
+	}
+	.left-border {
+		border-left: unset !important;
+	}
+	.top-border {
+		border-top: 1px #02bad0 solid !important;
+		margin-bottom: 100;
+		padding: unset !important;
+	}
+	.form_holder {
+		border-top: unset !important;
+	}
+	#form_query .col {
+		padding: unset !important;
+	}
+	input {
+		padding: unset !important;
+	}
+	.input-field.col label {
+		/* left: unset !important; */
+	}
+	.node .image{
+		display:none;
+		width: 0px !important;
+	}
+	.node .col{
+		width: 100% !important;
+	}
+	svg:not(:root) {
+		height: 250px !important;
+	}
+	.fullwidth {
+		overflow-x: scroll !important;
+	}
+	.footer-section {
+		position: relative;
+
+	}
+	.footer-section ul {
+		/* margin: 10px !important; */
+	}
+	.footer-section ul li {
+		margin-left: 0px !important;
+		min-width: 40px !important;
+	}
+	.footer-section ul li img, .social-icons img {
+		width: 25px !important;
+	}
+	.footer-section ul li a img {
+		/* display: none; */
+	}
+	.footer-section ul li i {
+		font-size: 16px !important;
+	}
+	.footer-section ul li span, .footer-section ul li a {
+		font-size: 10px !important;
+		/* line-height: 24px; */
+	}
+	.footer-section .right ul li {
+		/* top: -12px; */
+		/* position: relative; */
+	}
+	.form_holder .row {
+		margin-bottom: 0px !important;
+	}
+	.services-content {
+		min-height: 650px !important;
+	}
+	/*.service-banner {
+		height: 150px !important;
+	}*/
+	td, th {
+		padding: 5px 5px !important;
+	}
+	.scroll {
+		padding-bottom: 70px !important;
+	}
+	.scroll .btn-round {
+		width: 100%;
+		text-align: center;
+	}
+	.fullwidth {
+		overflow: scroll !important;
+	}
+	#menu .social-icons{
+		position:fixed;
+		bottom: 10%;
+		padding-left: 25px;
+	}
+	#menu .social-icons ul li a{
+		display:inline-block;
+		padding-right: 0px;
+		padding-left: 10px;
+	}
+	.menu-left{
+		display:none;
+	}
+	.node.active .description{
+		height:90px !important;
+	}
+	.node.active .description img{
+		display:none;
+	}
+	.node.active .description h6{
+		font-size:12px;
+	}
+	.node.active .description p{
+		font-size:10px;
+	}
+	.node:hover .description, .node.active .description{
+		width:150px !important;
+	}
+	.form_holder{
+		position: relative;
+	}
+	.text{
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		vertical-align: middle;
+		height: 90% !important;
+		position: absolute;
+	}
+	.loading .main-section .stage{
+		height: 50%;
+	}
+	h4{
+		font-size: 30px !important;
+	}
+	.node .title{
+		display: none !important;
+	}
+	.services-content {
+		width: 100% !important;
+	}
+	#lead {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100%;
+		height: 248px;
+	}
+	#backend {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100%;
+		height: 248px;
+	}
+	#frontend {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100%;
+		height: 248px;
+	}
+	#social {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100%;
+		height: 248px;
+	}
+	#webdev {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100%;
+		height: 248px;
+	}
+	#marketing {
+		background-size: cover !important;
+		background-position: center !important;
+		background-attachment: scroll !important;
+		width: 100%;
+		height: 248px;
+	}
 	#display_pillar{
 		height:100%;
 	}
-	.text-middle {
-	    height: 50% !important;
-	}
-  	.panel{
-	    width: 50% !important;
-	    height: 50% !important;
-	    float: left !important;
-	}	
 	.pillar-title{
 		height: unset;
-	}
-	#lead {
-		background-position: center;
-	}
-	#backend {
-		background-position: center;
-	}
-	#frontend {
-		background-position: center;
-	}
-	#social {
-		background-position: center;
-	}
-	#webdev {
-		background-position: center;
-	}
-	#marketing {
-		 background-position: center; 
 	}
 	h4{
 	    font-size: 30px !important;
 	}
-	.node .title{
-		display: none !important;
+	#why-deegeelab{
+		top:0px;
+		position: relative;
+		width:100%;
+		/* float: left; */
 	}
 	svg{
 		width:600px !important;
