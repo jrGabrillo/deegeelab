@@ -518,7 +518,7 @@ label{
 		height: 419px;
 	}
 }
-@media screen and (max-width: 767px) and (orientation: portrait) { 
+@media screen and (max-width: 767px) { 
 	/* Smartphones */
 	.pillar-title{
 		/* height: 50px; */

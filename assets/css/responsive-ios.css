@@ -222,7 +222,6 @@
 	}
 }
 
-/* Landscape */
 @media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
 	/*Info resize*/
 	.pillar-title{
@@ -388,7 +387,7 @@
 		background-position: -800px !important;
 	}
 }
-@media screen and (max-width: 767px) and (orientation:landscape) {
+@media only screen and (min-device-width: 320px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 2){
 	#display_pillar{
 		height:100%;
 	}
@@ -404,22 +403,22 @@
 		height: unset;
 	}
 	#lead {
-		background-position: -center;
+		background-position: center;
 	}
 	#backend {
 		background-position: center;
 	}
 	#frontend {
-		background-position: -center;
+		background-position: center;
 	}
 	#social {
 		background-position: center;
 	}
 	#webdev {
-		background-position: -center;
+		background-position: center;
 	}
 	#marketing {
-		/* background-position: -300px !important; */
+		 background-position: center; 
 	}
 	h4{
 	    font-size: 30px !important;
