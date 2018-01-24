@@ -1,730 +1,5 @@
-@font-face {
-	font-family: 'Material Icons';
-	font-style: normal;
-	font-weight: 400;
-	src: url(../fonts/material-design-icons/material-icons.woff2) format('woff2');
-}
-.material-icons {
-	font-family: 'Material Icons';
-	font-weight: normal;
-	font-style: normal;
-	font-size: 24px;
-	line-height: 1;
-	letter-spacing: normal;
-	text-transform: none;
-	display: inline-block;
-	white-space: nowrap;
-	word-wrap: normal;
-	direction: ltr;
-	-webkit-font-feature-settings: 'liga';
-	-webkit-font-smoothing: antialiased;
-}
-.menu i.home{
-	background: url(../images/icons/home.png) no-repeat !important;
-	background-size: contain !important; 
-	width: 100%;
-	height: 100%;
-}
-.menu i.prev{
-	background: url(../images/icons/back.png) no-repeat !important;
-	background-size: contain !important; 
-	width: 100%;
-	height: 100%;
-}
-.menu i.next{
-	background: url(../images/icons/next.png) no-repeat !important;
-	background-size: contain !important; 
-	width: 100%;
-	height: 100%;
-}
-.menu i.nav{
-	background: url(../images/icons/nav.png) no-repeat !important;
-	background-size: contain !important;
-	width: 100%;
-	height: 100%;
-}
-.menu i.mouse{
-	background: url(../images/icons/ms.png) no-repeat !important;
-	background-size: contain !important; 
-	width: 100%;
-	height: 100%;
-}
-.mouse-holder{	
-	position:  absolute;
-	width: 100%;
-}
-.menu.up-down{
-	animation: up-down 1s infinite;
-	background: rgba(0, 0, 0, 0.3);
-}
-body.home{
-	overflow: hidden;
-}
-.menu.up-down:hover{
-	 -webkit-filter: invert(.8); 
-	 filter: invert(1); 
-	background: rgba(0, 0, 0, 0.3);
-}
-.mobile {
-	: display display: none !important;
-}
-#social-icons, #logo {
-	width: 100%;
-	text-align: center;
-}
-
-.pillar-title{
-	/* height: 100px; */
-}
-.bgpillars {
-	/*background: url("../images/services/frontend.png");*/
-	width: 100% !important;
-	min-height: 400px !important;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.main-section {
-	background: url("../images/background/homepagebg.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.contact-section {
-	background: url("../images/background/bgcontact.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.pillar-section {
-	background: url("../images/background/bgpillar.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#lead {
-	background: url(../images/services/lead.png) no-repeat;
-	background-size: cover;
-	background-position: -400px;
-	background-attachment: fixed;
-}
-#backend {
-	background: url(../images/services/bgbackend.png) no-repeat;
-	background-size: cover;
-	background-position: -200px;
-	background-attachment: fixed;
-}
-#frontend {
-	background: url(../images/services/frontend.png) no-repeat;
-	background-size: cover;
-	background-position: -600px;
-	background-attachment:  fixed;
-}
-#social {
-	background: url(../images/services/bgsocial.png) no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
-#webdev {
-	background: url(../images/services/webdev.png) no-repeat;
-	background-size: cover;
-	background-position: -300px;
-	background-attachment: fixed;
-}
-#marketing {
-	background: url(../images/services/bgmarketing.png) no-repeat;
-	background-size: cover;
-	background-position: -600px;
-	background-attachment: fixed;
-}
-#backcon {
-	background: url(../images/services/bgcontact.jpg) no-repeat;
-	background-position: center;
-    background-attachment: fixed;	
-	background-size: cover;
-}
-.icoo {
-	background: url("../Logo/DeegeelabLogo.png");
-	position: relative;
-	height: 80px;
-	width: 80px;
-}
-#modal_services .modal-content h1 {
-	font-size: 2.5rem;
-	text-align: center;
-}
-p.label {
-	font-size: 15px;
-}
-#modal_services .modal-content {
-	overflow: hidden;
-}
-.s5ths, .m5ths, .l5ths, .xl5ths {
-	margin-left: auto;
-	left: auto;
-	right: auto;
-}
-.row .col.s5ths {
-	width: 20%;
-}
-.deegeelab-pulse {
-	box-shadow: 0 0 0 rgba(2, 186, 208, 0.4);
-	animation: deegeelab-pulse 1s infinite;
-}
-.deegeelab-pulse:hover {
-	animation: deegeelab-pulse 1s infinite;
-}
-.shadowed{
-	text-shadow: 0px 0px 10px #000;
-}
-#why-deegeelab{
-	max-width: 600px;
-	margin: 0 auto;
-	padding: 10px 10px 0px 10px;
-	border: none;
-	background: rgba(0,0,0,0.5);
-}
-#why-deegeelab .collapsible-header{
-	background:transparent !important;
-	border:none;
-	text-align: center;
-}
-#why-deegeelab .collapsible-body{
-	background:transparent !important;
-	border:none;
-	text-align: left;
-	padding-top: 0px;
-}
-.loading .main-section .bg{
-	background:#000; 
-	position:absolute;
-}
-.loading .main-section .stage{
-	position: absolute;
-	margin: auto;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	vertical-align: middle;
-	height: 60%;
-}
-.loading .main-section #display_tagline .progress{
-	background:transparent;
-	display: block;
-}
-.loading #display_tagline{
-    margin:0 auto;
-    max-width: 800px;
-    z-index:  1000;
-}
-#display_tagline .progress{
-    display: none;
-    background: transparent;
-}
-.contact-section .layer{
-    /* padding: 50px 0px 20% 0px; */
-}
-.footer-section ul li{
-    min-width: 40px;
-    /* margin-left:30px; */
-    display:inline-block;
-    height: 0px;
-    /* border-right: 1px solid #333; */
-    /* border-left: 1px solid #ccc; */
-}
-.footer-section a{
-    /* line-height: 40px; */
-}
-.footer-section ul{
-    /* margin: 0px; */
-}
-.footer-section img.social-icons{
-    margin-right:10px;
-}
-.footer-section {
-     /*position: fixed;*/
-     bottom: 0%;
-     /*height: 50px;*/
-     width: 100%;
-     /* padding: 5px; */
-     color: #fff;
-     background-color: rgba(0, 0, 0, 1);
-     z-index:  10000;
-     margin-bottom: 0px !important;
-}
-#fp-nav{
-	display:none;
-}
-#nodes .list{
-	position:absolute;
-	width: 100%;
-	height:  100%;
-	margin: 50px 0px 0px 0px;
-}
-#nodes .list .node{
-	height: 100px;
-	z-index: 10000;
-	position:relative;
-	
-}
-#fullpage, #modal_services .modal-content {
-	width: 100% !important;
-	top: 0px;
-}
-#modal_services .modal-content {
-	position: relative !important;
-	width: 100% !important;
-	top: 0px;
-}
-#modal_services canvas {
-	position: absolute !important;
-}
-/* fallback */
-
-img.icondrop {
-	width: 100px;
-}
-span.head {
-	font-size: 25px;
-	font-weight: 600;
-}
-/*Additional Css*/
-[data-collapse] {
-	display: none
-}
-.services-content {
-	min-height: 768px !important;
-}
-.paragraph tr td:nth-child(1) {
-	vertical-align: top;
-}
-.service-menu{
-	margin: 10px 0px 0px 0px;
-	position:  absolute;
-}
-.service-menu ul{
-	margin: 0px;
-}
-
-label{
-	text-align: left !important;
-}	
-
-#menu .social-icons{
-	position:fixed;
-	bottom: 10%;
-	padding-left: 25px;
-}
-#menu .social-icons ul li a{
-	display:inline-block;
-	padding-right: 0px;
-	padding-left: 10px;
-}
-
-
-/* iPad Pro */
-@media (width: 1024px) and (height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
-  	/*Pillars*/
-	.pillar-title{
-		height: 50px;
-	}
-  	.panel{
-	    width: 50% !important;
-	    /*height: 683px !important;*/
-	    /*float: left !important;*/
-  	}
-  	.panel:hover{
-  		width: 50% !important;
-  	}
-	/*alignment for contact form*/
-	.row .col.i12{	
-		width: 100% !important;
-	    margin-left: auto !important;
-	    left: auto !important;
-	    right: auto !important;
-	}
-	/*Info resize*/
-	.form_holder {
-		margin: 10% auto auto !important;
-	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 24px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
-	}
-	.node .title{
-		display: none !important;
-	}#lead {
-	    background-position: 0px 0px !important;
-	    background-attachment: scroll !important;
-	    width: 100% !important;
-	    height: 435px !important;
-	}
-	#backend {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
-	}
-	#frontend {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
-	}
-	#social {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
-	}
-	#webdev {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
-	}
-	#marketing {
-		background-attachment: scroll !important;
-		background-position: 0px 0px !important;
-		width: 100% !important;
-	    height: 435px !important;
-	}
-	.services-content{
-		width: 100% !important;
-	}
-
-}
-/* iPad */
-@media (width: 768px) and (height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 0) {
-  	/*Pillars*/
-	.pillar-title{
-		height: 50px;
-	}
-  	.panel{
-	    width: 50% !important;
-	    height: 50% !important;
-	    float: left !important;
-	}
-  	.panel:hover{
-  		width: 50% !important;
-  	}
-	/*alignment for contact form*/
-	.row .col.i12{	
-		width: 100% !important;
-	    margin-left: auto !important;
-	    left: auto !important;
-	    right: auto !important;
-	}
-	/*Info resize*/
-	.form_holder {
-		margin: 5% auto auto !important;
-	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 24px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
-	}
-	.node .title{
-		display: none !important;
-	}
-	#lead {
-	    background-position: center;
-	    background-attachment: scroll;
-	    width: 100%;
-	    height: 435px;
-	}
-	#backend {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	#frontend {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	#social {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	#webdev {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	#marketing {
-		background-attachment: scroll;
-		background-position: center;
-		width: 100%;
-	    height: 435px;
-	}
-	.services-content{
-		width: 100% !important;
-	}
-}
-@media (width: 1024px) and (height: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
-  	/*Pillars*/
-	.pillar-title{
-		height: 50px;
-	}
-  	.panel{
-/* 	    width: 50% !important; */
- 	    height: 100% !important; 
-	    float: left !important;
-	}
-  	.panel:hover{
-  		width: 50% !important;
-  	}
-	/*Info resize*/
-	.form_holder {
-		margin: 5% auto auto !important;
-	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 20px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 20px !important;
-	}
-	.node .title{
-		display: none !important;
-	}
-	/* for frontend image position*/
-	*[data-count='four']:hover {
-	 	background-position: 0px !important;
-	}
-	/*#lead {
-		background-attachment: scroll !important;
-		background-position: -600px !important;
-	}
-	#backend {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#frontend {
-		background-attachment: scroll !important;
-		background-position: -850px !important;
-	}
-	#social {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#webdev {
-		background-attachment: scroll !important;
-	}
-	#marketing {
-		background-attachment: scroll !important;
-		background-position: -900px !important;
-	}*/
-	h4{
-	    font-size: 30px !important;
-	}
-	.node .title{
-		display: none !important;
-	}
-	svg{
-		width:600px !important;
-	}
-}
-@media only screen and (min-width: 601px) {
-	.row .col.m5ths {
-		width: 20%;
-	}
-}
-@media only screen and (min-width: 993px) {
-	.row .col.l5ths {
-		width: 20%;
-	}
-}
-@media only screen and (min-width: 1201px) {
-	.row .col.xl5ths {
-		width: 20%;
-	}
-}	
-/* Landscape */
-@media (height: 1024px) and (width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 0) {
-	/*Info resize*/
-	.pillar-title{
-		height: 50px;
-	}
-	.form_holder {
-		/* margin: 8% auto auto !important; */
-		max-width: 90% !important;
-	}
-	.i{
-		font-size: 20px !important;
-	}
-	/*Form resize*/
-	.input-field.col label{
-		font-size: 24px !important;
-	}
-	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-		font-size: 24px !important;
-	}
-	.node .title{
-		display: none !important;
-	}
-	/*for pillar images position*/
-	*[data-count='one']:hover{
-		background-position: -850px !important; 
-	}
-	*[data-count='two']:hover {
-		background-position: -800px !important;
-	}
-	*[data-count='three']:hover {
-		background-position: -250px !important; 
-	}
-	*[data-count='four']:hover {
-	 	background-position: -728px !important;
-	}
-	#lead {
-		background-attachment: scroll !important;
-		background-position: -350px !important;
-	}
-	#backend {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#frontend {
-		background-attachment: scroll !important;
-		background-position: -850px !important;
-	}
-	#social {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#webdev {
-		background-attachment: scroll !important;
-	}
-	#marketing {
-		background-attachment: scroll !important;
-		background-position: -800px !important;
-	}
-}
-@media (height: 1024px) and (width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) {
-	/*Info resize*/
-	.pillar-title{
-		height: 50px;
-	}
-	#display_pillar{
-		height:100%;
-	}
-	#display_pillar .panel{
-		width:100%;
-		height:25%;
-	}
-	*[data-count='one']:hover{
-		background-position: -400px !important;
-	}
-	*[data-count='two']:hover {
-		background-position: -300px !important;
-	}
-	*[data-count='three']:hover {
-		background-position: -150px !important;
-	}
-	*[data-count='four']:hover {
-	 	background-position: -350px !important;
-	}
-	#lead {
-		background-attachment: scroll !important;
-		background-position: -350px !important;
-	}
-	#backend {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#frontend {
-		background-attachment: scroll !important;
-		background-position: -850px !important;
-	}
-	#social {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#webdev {
-		background-attachment: scroll !important;
-	}
-	#marketing {
-		background-attachment: scroll !important;
-		background-position: -800px !important;
-	}
-}
-@media (height: 768px) and (width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
-	/*Info resize*/
-	.pillar-title{
-		height: 50px;
-	}
-	#display_pillar{
-		height:100% !important;
-	}
-	#display_pillar .panel{
-		width: 50% !important;
-		height: 50% !important;
-	}
-	.text{
-		margin: auto;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		vertical-align: middle;
-		height: 40%;
-		position: absolute;
-	}	
-	*[data-count='one']:hover{
-		background-position: -100px !important;
-	}
-	*[data-count='two']:hover {
-		background-position: -10px !important;
-	}
-	*[data-count='three']:hover {
-		background-position: -0px !important;
-	}
-	*[data-count='four']:hover {
-	 	background-position: -0px !important;
-	}
-	#lead {
-		background-attachment: scroll !important;
-		background-position: -350px !important;
-	}
-	#backend {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#frontend {
-		background-attachment: scroll !important;
-		background-position: -850px !important;
-	}
-	#social {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#webdev {
-		background-attachment: scroll !important;
-	}
-	#marketing {
-		background-attachment: scroll !important;
-		background-position: -800px !important;
-	}
-}
-@media (min-width: 994px){
+/*desktop and up*/
+@media only screen and (min-width: 993px){
 	/* Desktop */
 	.pillar-title{
 		height: 50px;
@@ -795,8 +70,61 @@ label{
 		width:600px !important;
 	}
 }
-@media (min-width: 720px) and (max-width: 1024px) {
+
+/*tablet*/
+@media only screen and (min-width: 641px) and (max-width: 992px){
 	/* Tablet */
+
+  	.panel{
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
+	}
+	.pillar-title{
+		height: 50px;
+	}
+	#display_pillar{
+		height:100% !important;
+	}
+	#display_pillar .panel{
+		width: 50% !important;
+		height: 50% !important;
+	}
+	*[data-count='one']:hover{
+		background-position: -100px !important;
+	}
+	*[data-count='two']:hover {
+		background-position: -10px !important;
+	}
+	*[data-count='three']:hover {
+		background-position: -0px !important;
+	}
+	*[data-count='four']:hover {
+	 	background-position: -0px !important;
+	}
+	#lead {
+		background-attachment: scroll !important;
+		background-position: -350px !important;
+	}
+	#backend {
+		background-attachment: scroll !important;
+		background-position: -200px !important;
+	}
+	#frontend {
+		background-attachment: scroll !important;
+		background-position: -850px !important;
+	}
+	#social {
+		background-attachment: scroll !important;
+		background-position: -200px !important;
+	}
+	#webdev {
+		background-attachment: scroll !important;
+	}
+	#marketing {
+		background-attachment: scroll !important;
+		background-position: -800px !important;
+	}
 	.pillar-title{
 		height: 50px;
 	}
@@ -805,6 +133,7 @@ label{
 	}
 	.services-content {
 		padding: 50px 20px 30px 20px !important;
+		width: 100%;
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -865,54 +194,16 @@ label{
 	svg{
 		width:350px !important;
 	}
-	.services-content {
-		width: 100%;
-	}
-	#lead {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
-	}
-	#backend {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
-	}
-	#frontend {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
-	}
-	#social {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
-	}
-	#webdev {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
-	}
-	#marketing {
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		width: 100%;
-		height: 419px;
-	}
 }
-@media screen and (max-width: 767px) and (orientation: portrait) { 
+
+/*smartphone*/
+@media screen and (max-width: 640px){ 
 	/* Smartphones */
+  	.panel{
+	    width: 50% !important;
+	    height: 50% !important;
+	    float: left !important;
+	}
 	.pillar-title{
 		/* height: 50px; */
 	}
@@ -1154,63 +445,4 @@ label{
 	svg{
 		width:600px !important;
 	}
-}
-@media screen and (max-width: 767px) and (orientation:landscape) {
-	#display_pillar{
-		height:100%;
-	}
-	.text-middle {
-	    height: 50% !important;
-	}
-  	.panel{
-	    width: 50% !important;
-	    height: 50% !important;
-	    float: left !important;
-	}	
-	.pillar-title{
-		height: unset;
-	}
-	#lead {
-		background-position: -center;
-	}
-	#backend {
-		background-position: center;
-	}
-	#frontend {
-		background-position: -center;
-	}
-	#social {
-		background-position: center;
-	}
-	#webdev {
-		background-position: -center;
-	}
-	#marketing {
-		/* background-position: -300px !important; */
-	}
-	h4{
-	    font-size: 30px !important;
-	}
-	.node .title{
-		display: none !important;
-	}
-	svg{
-		width:600px !important;
-	}
-}
-@media only screen and (max-width: 600px) {
-	.show-on-small {
-		display: block !important
-	}
-}
-
-.text-middle {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    vertical-align: middle;
-    position: absolute;
-    height: 20%;
 }
