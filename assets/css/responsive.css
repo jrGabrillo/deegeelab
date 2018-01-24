@@ -1,7 +1,10 @@
 /* Desktop */
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 1025px){
 	h4 {
 	    font-size: 30px !important;
+	}
+	*[data-count='four']:hover{
+		background-position: -500px !important;
 	}
 	#display_pillar{
 		height: 100%;
@@ -13,7 +16,7 @@
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 10% !important;
+		height: 15% !important;
 		position: absolute;
 	}
 	.text p{
@@ -30,7 +33,7 @@
 		padding: 50px 30px 0px 30px !important;
 	}
 	.service-banner {
-		 height: -webkit-fill-available !important; 
+		 /* height: -webkit-fill-available !important; */
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -61,7 +64,7 @@
 }
 
 /*tablet*/
-@media only screen and (min-width: 641px) and (max-width: 992px){
+@media only screen and (min-width: 640px) and (max-width: 1024px){
 	h4 {
 	    font-size: 30px !important;
 	}
@@ -81,16 +84,16 @@
 		height: 50% !important;
 	}
 	*[data-count='one']:hover{
-		background-position: -100px !important;
+		/* background-position: -100px !important; */
 	}
 	*[data-count='two']:hover {
-		background-position: -10px !important;
+		/* background-position: -10px !important; */
 	}
 	*[data-count='three']:hover {
 		background-position: -0px !important;
 	}
 	*[data-count='four']:hover {
-	 	background-position: -300px !important;
+	 	/* background-position: -300px !important; */
 	}
 	#lead {
 		background-attachment: scroll !important;
@@ -162,7 +165,7 @@
 		margin: 0 auto;
 		/* position:relative; */
 		/* top: 20%; */
-		/* margin-top: 50px; */
+		margin-top: 100px;
 	}
 	.form_holder{
 		position: relative;
@@ -180,7 +183,7 @@
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 70% !important;
+		height: 50% !important;
 		position: absolute;
 	}
 	#display_pillar{
@@ -454,7 +457,7 @@
 		height:100%;
 	}
 	.text-middle {
-	    height: 80% !important;
+	    height: 50% !important;
 	}	
 	.pillar-title{
 		height: unset;

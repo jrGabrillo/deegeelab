@@ -54,12 +54,12 @@ html {
 }
 
 *[data-count='one'] {
-  background: rgba(99, 98, 98, 0.5) center/cover no-repeat;
+  background: rgba(99, 98, 98, 0.5) no-repeat;
 }
 
 *[data-count='one']:hover{
   background: rgba(99, 98, 98, 0.1) url("../images/services/bgmarketing.png")  center/cover no-repeat;
-  /*background-position:-600px;*/
+  /* background-position:-600px; */
 }
 
 *[data-count='two'] {
@@ -86,7 +86,7 @@ html {
 
 *[data-count='four']:hover {
   background: rgba(99, 98, 98, 0.1) url("../images/services/frontend.png") center/cover no-repeat;
-  /*background-position: -600px;*/
+  /* background-position: -601px; */
 }
 /* --- TEXT --- */
 
