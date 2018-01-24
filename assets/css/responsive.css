@@ -336,8 +336,7 @@ label{
 	/* Desktop */
 	.pillar-title{
 		height: 50px;
-/* Desktop */
-@media only screen and (min-width: 993px){
+	}
 	h4 {
 	    font-size: 30px !important;
 	}
@@ -397,10 +396,6 @@ label{
 		width:600px !important;
 	}
 }
-@media screen and (min-device-width: 720px) and (max-device-width: 1024px) {
-	/* Tablet */
-
-
 /*tablet*/
 @media only screen and (min-width: 641px) and (max-width: 992px){
 	h4 {
@@ -601,9 +596,7 @@ label{
 	    width: 50% !important;
 	    height: 50% !important;
 	    float: left !important;
-
-/*smartphone*/
-@media screen and (max-width: 640px){ 
+	}
 
 	#display_pillar .panel {
 	    width: 100%;
