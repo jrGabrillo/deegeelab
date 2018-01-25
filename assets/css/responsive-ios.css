@@ -6,8 +6,6 @@
 	}
   	.panel{
 	    width: 50% !important;
-	    /*height: 683px !important;*/
-	    /*float: left !important;*/
   	}
   	.panel:hover{
   		width: 50% !important;
@@ -33,9 +31,7 @@
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
 		font-size: 24px !important;
 	}
-	.node .title{
-		/*display: none !important;*/
-	}#lead {
+	#lead {
 	    background-position: 0px 0px !important;
 	    background-attachment: scroll !important;
 	    width: 100% !important;
@@ -93,9 +89,6 @@
 	}
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
 		font-size: 24px !important;
-	}
-	.node .title{
-		/*display: none !important;*/
 	}
 	/*for pillar images position*/
 	*[data-count='one']:hover{
