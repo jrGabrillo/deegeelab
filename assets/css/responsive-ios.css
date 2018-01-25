@@ -322,7 +322,7 @@
 		padding: unset !important;
 	}
 	.form_holder {
-		border-top: unset !important;
+		/* border-top: unset !important; */
 	}
 	#form_query .col {
 		padding: unset !important;

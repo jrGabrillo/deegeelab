@@ -1430,6 +1430,10 @@ p.label {
 .shadowed{
     text-shadow: 0px 0px 10px #000;
 }
+.form_holder{
+    border-top: solid;
+    border-top-color: #02bad0;
+}
 
 #why-deegeelab{
     max-width: 600px;
