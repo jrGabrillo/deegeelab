@@ -12,9 +12,9 @@ class DatabaseClasses extends DataClasses{
 
 	function DBCon(){
 		$host = "localhost";
-		$dataBase = "db_deegeelab";
-		$user = "root";
-		$password = "";
+		$dataBase = "db_deegeelab"; //db_deegeelab7836
+		$user = "root"; //user_deegeelab02
+		$password = ""; //user_deegeelab027836
 		try{
 			$PDO = new PDO('mysql:host='.$host.';dbname='.$dataBase, $user, $password);
 			return $PDO; $PDO = null;
@@ -231,11 +231,11 @@ class DatabaseClasses extends DataClasses{
 		return $sql;
 	}
 
-	function mail($receiver,$subject,$message){
+	function mail($receiver,$subject,$message,$bcc){
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $headers .= 'From: RNR Digital Consultancy <rnrdigitalconsultancy.com>' . "\r\n";
-        $headers .= 'Bcc: rufo.gabrillo@gmail.com, errol@deegeelab.com, rey@rnrdigitalconsultancy.com, rey@deegeelab.com' . "\r\n";
+        $headers .= 'From: Deegeelab PTY. LTD. <deegeelab.com>' . "\r\n";
+        $headers .= $bcc;
 
         $result = mail($receiver,$subject,$message,$headers);
         return $result;
