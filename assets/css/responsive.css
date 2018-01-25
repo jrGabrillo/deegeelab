@@ -1,5 +1,5 @@
 /* Desktop */
-@media only screen and (min-width: 1025px){
+@media screen and (min-width: 1025px){
 	h4 {
 	    font-size: 30px !important;
 	}
@@ -19,27 +19,14 @@
 		height: 15% !important;
 		position: absolute;
 	}
-	.text p{
-	}	
-	.text a{
-	  text-shadow:none;
-	  /* top: 50px; */
-	  /* margin: 0 auto; */
-	}
 	.pillar-title{
 		height: 50px;
 	}
 	.services-content {
 		padding: 50px 30px 0px 30px !important;
 	}
-	.service-banner {
-		 /* height: -webkit-fill-available !important; */
-	}
 	td, th {
 		padding: 5px 5px !important;
-	}
-	.overlap-gradient{
-		/* padding-top:2%; */
 	}
 	#menu .social-icons{
 		display:none;
@@ -68,61 +55,12 @@
 	h4 {
 	    font-size: 30px !important;
 	}
-  	.panel{
-	    width: 50% !important;
-	    height: 50% !important;
-	    float: left !important;
-	}
-	.pillar-title{
-		/* height: 50px; */
-	}
 	#display_pillar{
 		height:100% !important;
 	}
 	#display_pillar .panel{
 		width: 50% !important;
 		height: 50% !important;
-	}
-	*[data-count='one']:hover{
-		/* background-position: -100px !important; */
-	}
-	*[data-count='two']:hover {
-		/* background-position: -10px !important; */
-	}
-	*[data-count='three']:hover {
-		background-position: -0px !important;
-	}
-	*[data-count='four']:hover {
-	 	/* background-position: -300px !important; */
-	}
-	#lead {
-		background-attachment: scroll !important;
-		background-position: -350px !important;
-	}
-	#backend {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#frontend {
-		background-attachment: scroll !important;
-		background-position: -850px !important;
-	}
-	#social {
-		background-attachment: scroll !important;
-		background-position: -200px !important;
-	}
-	#webdev {
-		background-attachment: scroll !important;
-	}
-	#marketing {
-		background-attachment: scroll !important;
-		background-position: -800px !important;
-	}
-	.pillar-title{
-		/* height: 50px; */
-	}
-	.service-banner {
-		/*height: -webkit-fill-available !important;*/
 	}
 	.service-menu .left a{
 		margin-left:0px;
@@ -163,18 +101,13 @@
 	.holder{
 		width: 95%;
 		margin: 0 auto;
-		/* position:relative; */
-		/* top: 20%; */
-		margin-top: 100px;
+		margin-top: 50px !important;
 	}
 	.form_holder{
 		position: relative;
 	}
 	.footer-section {
 		position: relative;
-	}
-	#why-deegeelab{
-		/* display: none; */
 	}
 	.text{
 		margin: auto;
@@ -186,26 +119,14 @@
 		height: 50% !important;
 		position: absolute;
 	}
-	#display_pillar{
-		/* height: 50%; */
-	}
 	.loading .main-section .stage{
 		height: 75%;
 	}
-	#display_pillar .panel{
-	    width: 50% !important;
-	    height: 50% !important;
-	    float: left !important;
-	}
 	.node .title{
-		display: none !important;
+		display: block !important;
 	}
 	svg{
 		width:350px !important;
-	}
-
-	.services-content {
-		width: 100%;
 	}
 	#lead {
 		background-size: cover !important;
@@ -258,13 +179,10 @@
 	    height: 25%;
 	}
 	.pillar-title{
-		/* height: 50px; */
+		 height: 50px; 
 	}
 	.service-menu .left a{
 		margin-left:0px;
-	}
-	.service-menu{
-		position:  relative;
 	}
 	.menu {
 		display: inline-block;
@@ -293,7 +211,7 @@
 		padding: unset !important;
 	}
 	.input-field.col label {
-		/* left: unset !important; */
+		left: unset !important;
 	}
 	.node .image{
 		display:none;
@@ -310,10 +228,6 @@
 	}
 	.footer-section {
 		position: relative;
-
-	}
-	.footer-section ul {
-		/* margin: 10px !important; */
 	}
 	.footer-section ul li {
 		margin-left: 0px !important;
@@ -322,19 +236,11 @@
 	.footer-section ul li img, .social-icons img {
 		width: 25px !important;
 	}
-	.footer-section ul li a img {
-		/* display: none; */
-	}
 	.footer-section ul li i {
 		font-size: 16px !important;
 	}
 	.footer-section ul li span, .footer-section ul li a {
 		font-size: 10px !important;
-		/* line-height: 24px; */
-	}
-	.footer-section .right ul li {
-		/* top: -12px; */
-		/* position: relative; */
 	}
 	.form_holder .row {
 		margin-bottom: 0px !important;
@@ -342,9 +248,6 @@
 	.services-content {
 		min-height: 650px !important;
 	}
-	/*.service-banner {
-		height: 150px !important;
-	}*/
 	td, th {
 		padding: 5px 5px !important;
 	}
