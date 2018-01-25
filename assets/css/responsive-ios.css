@@ -92,16 +92,16 @@
 	}
 	/*for pillar images position*/
 	*[data-count='one']:hover{
-		background-position: -850px !important; 
+		/* background-position: -800px !important; */
 	}
 	*[data-count='two']:hover {
-		background-position: -800px !important;
+		background-position: -650px !important;
 	}
 	*[data-count='three']:hover {
 		background-position: -250px !important; 
 	}
 	*[data-count='four']:hover {
-	 	background-position: -728px !important;
+	 	/* background-position: -530px !important; */
 	}
 	#lead {
 		background-attachment: scroll !important;
@@ -135,7 +135,7 @@
   	.panel{
 	    width: 50% !important;
 	    height: 50% !important;
-	    float: left !important;
+	    /* float: left !important; */
 	}
 	.pillar-title{
 		/* height: 50px; */
@@ -147,17 +147,11 @@
 		width: 50% !important;
 		height: 50% !important;
 	}
-	*[data-count='one']:hover{
-		background-position: -0px !important;
-	}
 	*[data-count='two']:hover {
-		background-position: -0px !important;
+		/* background-position: -0px !important; */
 	}
 	*[data-count='three']:hover {
-		background-position: -0px !important;
-	}
-	*[data-count='four']:hover {
-	 	/* background-position: -0px !important; */
+		/* background-position: -0px !important; */
 	}
 	#lead {
 		background-attachment: scroll !important;
@@ -195,11 +189,9 @@
 		height: 50px;
 	}
 	.services-content {
-
 		width: 100% !important;
 		padding: 50px 20px 30px 20px !important;
 		width: 100%;
-
 	}
 	td, th {
 		padding: 5px 5px !important;

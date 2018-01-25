@@ -4800,6 +4800,7 @@ input:not([type])+label:after, input[type=text]:not(.browser-default)+label:afte
 	margin-bottom: 1rem
 }
 .input-field.col label {
+	top: -20px;
 	left: .75rem;
 }
 .input-field.col .prefix~label, .input-field.col .prefix~.validate~label {
