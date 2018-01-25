@@ -34,7 +34,7 @@
 		font-size: 24px !important;
 	}
 	.node .title{
-		display: none !important;
+		/*display: none !important;*/
 	}#lead {
 	    background-position: 0px 0px !important;
 	    background-attachment: scroll !important;
@@ -95,7 +95,7 @@
 		font-size: 24px !important;
 	}
 	.node .title{
-		display: none !important;
+		/*display: none !important;*/
 	}
 	/*for pillar images position*/
 	*[data-count='one']:hover{
@@ -165,7 +165,7 @@
 		background-position: -0px !important;
 	}
 	*[data-count='four']:hover {
-	 	background-position: -0px !important;
+	 	/* background-position: -0px !important; */
 	}
 	#lead {
 		background-attachment: scroll !important;
@@ -219,7 +219,7 @@
 		padding: 5px 5px !important;
 	}
 	svg:not(:root){
-		height: 345px !important;
+		height: 250px !important;
 	}
 	.overlap-gradient{
 		background: none !important;
@@ -255,7 +255,7 @@
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 70% !important;
+		height: 40% !important;
 		position: absolute;
 	}
 	#display_pillar{
@@ -319,7 +319,7 @@
 }
 
 /*iPhone*/
-@media only screen and (max-device-width : 767px) {
+@media only screen and (max-device-width: 767px) {
 	#display_pillar .panel {
 	    width: 100%;
 	    height: 25%;
@@ -360,7 +360,7 @@
 		padding: unset !important;
 	}
 	.input-field.col label {
-		/* left: unset !important; */
+		left: unset !important;
 	}
 	.node .image{
 		display:none;
@@ -463,7 +463,7 @@
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 90% !important;
+		height: 80% !important;
 		position: absolute;
 	}
 	.loading .main-section .stage{
