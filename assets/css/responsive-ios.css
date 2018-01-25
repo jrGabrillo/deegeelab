@@ -235,9 +235,9 @@
 	.holder{
 		width: 95%;
 		margin: 0 auto;
-		/* position:relative; */
-		/* top: 20%; */
-		/* margin-top: 50px; */
+		position:relative;
+		top: 20%;
+		margin-top: 50px;
 	}
 	.form_holder{
 		position: relative;

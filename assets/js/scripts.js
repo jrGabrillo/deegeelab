@@ -118,20 +118,17 @@ var deegeelab = function(){
                 rules: {
                     field_name: {required: true,maxlength: 200},
                     field_business: {required: true,maxlength: 300},
-                    field_email: {required: true,maxlength: 300,email:true},
+                    field_email: {required: true,maxlength: 300, email:true},
                     field_number: {required: true, maxlength: 50},
                     field_postal: {required: true, maxlength: 4, number:true},
                     field_date: {required: true, maxlength: 40},
-                    field_hour: {required: true, maxlength: 40},
-                    field_minute: {required: true, maxlength: 40},
+                    field_time: {required: true, maxlength: 40, checkTime:true},
                     field_message: {required: true,maxlength: 1000},
                 },
                 errorElement : 'div',
                 errorPlacement: function(error, element) {
                     var placement = $(element).data('error');
                     $(".contact-section, .contact-section .fp-scrollable,.contact-section .fp-tableCell").height(h);
-                    console.log(h);
-
                     if(placement){
                         $(placement).append(error)
                     } 
@@ -141,9 +138,10 @@ var deegeelab = function(){
                 },
                 submitHandler: function (form) {
                     let _form = $(form).serializeArray();
-                    _form = [_form[0]['value'],_form[1]['value'],_form[2]['value'],_form[3]['value'],_form[4]['value'],_form[5]['value'],`${_form[6]['value']}:${_form[7]['value']}`,_form[8]['value']];
+                    _form = [_form[0]['value'],_form[1]['value'],_form[2]['value'],_form[3]['value'],_form[4]['value'],_form[5]['value'],_form[6]['value'],_form[7]['value']];
                     let data = system.ajax('assets/harmony/Process.php?set-leads',_form);
                     data.done(function(data){
+                        console.log(data);
                         if(data == 1){
                             Materialize.toast('Thank you. your message has been sent.',2000);
                             system.clearForm();

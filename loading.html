@@ -18,6 +18,28 @@
     </head>
     <body>
 
+
+    
+        <div class='box' style='width: 800px; height: 550px; box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0); center; margin: 0 auto; ; border-radius: 10px; font-family: arial;'>
+            <div class='box' style='width: 100%; margin:auto;'>
+                <div style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;overflow: hidden; border: 1px solid #ccc;'>
+                    <div class='header' style='background: #02bad0; border-top-right-radius: 10px; border-top-left-radius: 10px; padding:10px 0px 10px 0px; text-align: center;'>
+                        You received a message from Deegeelab's contact form
+                    </div>
+                    <div class='container' style='text-align: center; background: white;padding: 10px;'>
+                        <div style='text-align:left; color:#000;'>
+                            <p><strong style='font-weight: bold;'>Name:</strong><br>{$data[0]}</p>
+                            <p><strong style='font-weight: bold;'>Business:</strong><br>{$data[1]}</p>
+                            <p><strong style='font-weight: bold;'>Email:</strong><br>{$data[2]}</p>
+                            <p><strong style='font-weight: bold;'>Number:</strong><br>{$data[3]}</p>
+                            <p><strong style='font-weight: bold;'>Postal:</strong><br>{$data[4]}</p>
+                            <p><strong style='font-weight: bold;'>Scheduled Date:</strong><br>{$data[5]} {$data[6]}</p>
+                            <p><strong style='font-weight: bold;'>Message:</strong><br>{$data[7]}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="assets/js/jquery.min.js"></script> 
     <script src="assets/js/jquery.easings.min.js"></script> 
