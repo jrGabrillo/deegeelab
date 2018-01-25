@@ -211,7 +211,7 @@
 		padding: unset !important;
 	}
 	.input-field.col label {
-		left: unset !important;
+		/*left: unset !important;*/
 	}
 	.node .image{
 		display:none;
