@@ -4,7 +4,7 @@
 	    font-size: 30px !important;
 	}
 	*[data-count='four']:hover{
-		background-position: -500px !important;
+		background-position: -600px !important;
 	}
 	#display_pillar{
 		height: 100%;
@@ -202,7 +202,7 @@
 		padding: unset !important;
 	}
 	.form_holder {
-		border-top: unset !important;
+		/* border-top: unset !important; */
 	}
 	#form_query .col {
 		padding: unset !important;
@@ -211,7 +211,7 @@
 		padding: unset !important;
 	}
 	.input-field.col label {
-		left: unset !important;
+		/*left: unset !important;*/
 	}
 	.node .image{
 		display:none;

@@ -1,4 +1,4 @@
-/* iPad Pro */
+/* iPad Pro portrait*/
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
   	/*Pillars*/
 	.pillar-title{
@@ -6,8 +6,6 @@
 	}
   	.panel{
 	    width: 50% !important;
-	    /*height: 683px !important;*/
-	    /*float: left !important;*/
   	}
   	.panel:hover{
   		width: 50% !important;
@@ -33,9 +31,7 @@
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
 		font-size: 24px !important;
 	}
-	.node .title{
-		/*display: none !important;*/
-	}#lead {
+	#lead {
 	    background-position: 0px 0px !important;
 	    background-attachment: scroll !important;
 	    width: 100% !important;
@@ -75,13 +71,13 @@
 		width: 100% !important;
 	}
 }
+/* iPad Pro landscape*/
 @media only screen and (min-width: 1366px) and (orientation: landscape) {
 	/*Info resize*/
 	.pillar-title{
 		height: 50px;
 	}
 	.form_holder {
-		/* margin: 8% auto auto !important; */
 		max-width: 90% !important;
 	}
 	.i{
@@ -94,21 +90,18 @@
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
 		font-size: 24px !important;
 	}
-	.node .title{
-		/*display: none !important;*/
-	}
 	/*for pillar images position*/
 	*[data-count='one']:hover{
-		background-position: -850px !important; 
+		/* background-position: -800px !important; */
 	}
 	*[data-count='two']:hover {
-		background-position: -800px !important;
+		background-position: -650px !important;
 	}
 	*[data-count='three']:hover {
 		background-position: -250px !important; 
 	}
 	*[data-count='four']:hover {
-	 	background-position: -728px !important;
+	 	/* background-position: -530px !important; */
 	}
 	#lead {
 		background-attachment: scroll !important;
@@ -134,7 +127,6 @@
 		background-position: -800px !important;
 	}
 }
-
 /*iPad*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 	h4 {
@@ -143,7 +135,7 @@
   	.panel{
 	    width: 50% !important;
 	    height: 50% !important;
-	    float: left !important;
+	    /* float: left !important; */
 	}
 	.pillar-title{
 		/* height: 50px; */
@@ -155,17 +147,11 @@
 		width: 50% !important;
 		height: 50% !important;
 	}
-	*[data-count='one']:hover{
-		background-position: -0px !important;
-	}
 	*[data-count='two']:hover {
-		background-position: -0px !important;
+		/* background-position: -0px !important; */
 	}
 	*[data-count='three']:hover {
-		background-position: -0px !important;
-	}
-	*[data-count='four']:hover {
-	 	/* background-position: -0px !important; */
+		/* background-position: -0px !important; */
 	}
 	#lead {
 		background-attachment: scroll !important;
@@ -190,12 +176,6 @@
 		background-attachment: scroll !important;
 		background-position: -800px !important;
 	}
-	.pillar-title{
-		/* height: 50px; */
-	}
-	.service-banner {
-		/*height: -webkit-fill-available !important;*/
-	}
 	.service-menu .left a{
 		margin-left:0px;
 	}
@@ -209,11 +189,9 @@
 		height: 50px;
 	}
 	.services-content {
-
 		width: 100% !important;
 		padding: 50px 20px 30px 20px !important;
 		width: 100%;
-
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -244,9 +222,6 @@
 	}
 	.footer-section {
 		position: relative;
-	}
-	#why-deegeelab{
-		/* display: none; */
 	}
 	.text{
 		margin: auto;
@@ -317,15 +292,11 @@
 		height: 419px !important;
 	}
 }
-
 /*iPhone*/
 @media only screen and (max-device-width: 767px) {
 	#display_pillar .panel {
 	    width: 100%;
 	    height: 25%;
-	}
-	.pillar-title{
-		/* height: 50px; */
 	}
 	.service-menu .left a{
 		margin-left:0px;
@@ -351,16 +322,13 @@
 		padding: unset !important;
 	}
 	.form_holder {
-		border-top: unset !important;
+		/* border-top: unset !important; */
 	}
 	#form_query .col {
 		padding: unset !important;
 	}
 	input {
 		padding: unset !important;
-	}
-	.input-field.col label {
-		left: unset !important;
 	}
 	.node .image{
 		display:none;
@@ -379,9 +347,6 @@
 		position: relative;
 
 	}
-	.footer-section ul {
-		/* margin: 10px !important; */
-	}
 	.footer-section ul li {
 		margin-left: 0px !important;
 		min-width: 40px !important;
@@ -389,19 +354,11 @@
 	.footer-section ul li img, .social-icons img {
 		width: 25px !important;
 	}
-	.footer-section ul li a img {
-		/* display: none; */
-	}
 	.footer-section ul li i {
 		font-size: 16px !important;
 	}
 	.footer-section ul li span, .footer-section ul li a {
 		font-size: 10px !important;
-		/* line-height: 24px; */
-	}
-	.footer-section .right ul li {
-		/* top: -12px; */
-		/* position: relative; */
 	}
 	.form_holder .row {
 		margin-bottom: 0px !important;
@@ -409,9 +366,6 @@
 	.services-content {
 		min-height: 650px !important;
 	}
-	/*.service-banner {
-		height: 150px !important;
-	}*/
 	td, th {
 		padding: 5px 5px !important;
 	}
@@ -533,7 +487,6 @@
 		top:0px;
 		position: relative;
 		width:100%;
-		/* float: left; */
 	}
 	svg{
 		width:600px !important;
