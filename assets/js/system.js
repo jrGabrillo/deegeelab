@@ -56,7 +56,7 @@ var system = function() {
 			return system.ajax('../assets/harmony/Process.php?send-mail', [email, subject, message]);
 		},
 		clearForm: function() {
-			$("form").find('input:text, input:password, input:file, select, textarea').val('');
+			$("form").find('input, input:email, input:text, input:password, input:file, select, textarea').val('');
 			$("form").find('error').html('');
 			$("form").find('input:text, input:password, input:file, select, textarea').removeClass("valid");
 			$("form").find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');
@@ -72,24 +72,6 @@ var system = function() {
 				}
 			}
 			return objects;
-		},
-		froala: function(element) {
-			$(function() {
-				$(element).froalaEditor({
-					toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-', 'insertLink', 'insertTable', '|', 'emoticons', 'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|', 'spellChecker', 'help', 'html', '|', 'undo', 'redo'],
-					quickInsertButtons: ['table', 'ol', 'ul', 'hr']
-				});
-			});
-		},
-		forceLogout: function(_function) { //300000
-			$(document).idle({
-				onIdle: function() {
-					Materialize.toast('Force log out initiated.', 1000, '', function() {
-						_function();
-					});
-				},
-				idle: 300000
-			});
 		},
 		sortResults: function(data, prop, asc) {
 			data = data.sort(function(a, b) {
