@@ -113,7 +113,7 @@ var deegeelab = function(){
                 $('select').material_select('close');
             })
 
-            let h = $(".contact-section .fp-scrollable").height()*1.1;
+            let h = $(".contact-section .fp-tableCell").height()*1.1;
             $("#form_query").validate({
                 rules: {
                     field_name: {required: true,maxlength: 200},
