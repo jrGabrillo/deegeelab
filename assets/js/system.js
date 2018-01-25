@@ -56,7 +56,7 @@ var system = function() {
 			return system.ajax('../assets/harmony/Process.php?send-mail', [email, subject, message]);
 		},
 		clearForm: function() {
-			$("form").find('input, input:email, input:text, input:password, input:file, select, textarea').val('');
+			$("form").find('input:email, input:text, input:password, input:file, select, textarea').val('');
 			$("form").find('error').html('');
 			$("form").find('input:text, input:password, input:file, select, textarea').removeClass("valid");
 			$("form").find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');
