@@ -1,4 +1,4 @@
-/* iPad Pro */
+/* iPad Pro portrait*/
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
   	/*Pillars*/
 	.pillar-title{
@@ -71,13 +71,13 @@
 		width: 100% !important;
 	}
 }
+/* iPad Pro landscape*/
 @media only screen and (min-width: 1366px) and (orientation: landscape) {
 	/*Info resize*/
 	.pillar-title{
 		height: 50px;
 	}
 	.form_holder {
-		/* margin: 8% auto auto !important; */
 		max-width: 90% !important;
 	}
 	.i{
@@ -127,7 +127,6 @@
 		background-position: -800px !important;
 	}
 }
-
 /*iPad*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 	h4 {
@@ -183,12 +182,6 @@
 		background-attachment: scroll !important;
 		background-position: -800px !important;
 	}
-	.pillar-title{
-		/* height: 50px; */
-	}
-	.service-banner {
-		/*height: -webkit-fill-available !important;*/
-	}
 	.service-menu .left a{
 		margin-left:0px;
 	}
@@ -237,9 +230,6 @@
 	}
 	.footer-section {
 		position: relative;
-	}
-	#why-deegeelab{
-		/* display: none; */
 	}
 	.text{
 		margin: auto;
@@ -310,15 +300,11 @@
 		height: 419px !important;
 	}
 }
-
 /*iPhone*/
 @media only screen and (max-device-width: 767px) {
 	#display_pillar .panel {
 	    width: 100%;
 	    height: 25%;
-	}
-	.pillar-title{
-		/* height: 50px; */
 	}
 	.service-menu .left a{
 		margin-left:0px;
@@ -352,9 +338,6 @@
 	input {
 		padding: unset !important;
 	}
-	.input-field.col label {
-		/* left: unset !important; */
-	}
 	.node .image{
 		display:none;
 		width: 0px !important;
@@ -372,9 +355,6 @@
 		position: relative;
 
 	}
-	.footer-section ul {
-		/* margin: 10px !important; */
-	}
 	.footer-section ul li {
 		margin-left: 0px !important;
 		min-width: 40px !important;
@@ -382,19 +362,11 @@
 	.footer-section ul li img, .social-icons img {
 		width: 25px !important;
 	}
-	.footer-section ul li a img {
-		/* display: none; */
-	}
 	.footer-section ul li i {
 		font-size: 16px !important;
 	}
 	.footer-section ul li span, .footer-section ul li a {
 		font-size: 10px !important;
-		/* line-height: 24px; */
-	}
-	.footer-section .right ul li {
-		/* top: -12px; */
-		/* position: relative; */
 	}
 	.form_holder .row {
 		margin-bottom: 0px !important;
@@ -402,9 +374,6 @@
 	.services-content {
 		min-height: 650px !important;
 	}
-	/*.service-banner {
-		height: 150px !important;
-	}*/
 	td, th {
 		padding: 5px 5px !important;
 	}
@@ -526,7 +495,6 @@
 		top:0px;
 		position: relative;
 		width:100%;
-		/* float: left; */
 	}
 	svg{
 		width:600px !important;
