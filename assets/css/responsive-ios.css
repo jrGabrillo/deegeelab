@@ -95,10 +95,10 @@
 		/* background-position: -800px !important; */
 	}
 	*[data-count='two']:hover {
-		background-position: -650px !important;
+		/*background-position: -650px !important;*/
 	}
 	*[data-count='three']:hover {
-		background-position: -250px !important; 
+		/*background-position: -250px !important; */
 	}
 	*[data-count='four']:hover {
 	 	/* background-position: -530px !important; */
