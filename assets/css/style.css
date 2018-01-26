@@ -951,12 +951,16 @@ ul.skills {
     transform: rotateX(0deg);
 }
 
+svg{
+    width:100% !important;
+}
+
 .svg-pulse.active{
     animation: svg-pulse 0.5s linear infinite;
     -webkit-animation: svg-pulse 0.5s linear infinite;
     -moz-animation: svg-pulse 0.5s linear infinite;
     -o-animation: svg-pulse 0.5s linear infinite;
-    transform-origin: center center;
+    /* transform-origin: center center; */
     -webkit-transform-origin: center center;
     -moz-transform-origin: center center;
     -o-transform-origin: center center;
@@ -965,6 +969,7 @@ ul.skills {
     -moz-transform: translate(0%, 0%) !important;
     -o-transform: translate(0%, 0%) !important;
     fill: #ccc !important;
+    transform-box: fill-box;
 }
 
 .svg-animation-in{
@@ -1565,6 +1570,16 @@ label{
     display:inline-block;
     padding-right: 0px;
     padding-left: 10px;
+}
+.middle{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    vertical-align: middle;
+    height: unset !important;
 }
 .text-middle {
     top: 0;

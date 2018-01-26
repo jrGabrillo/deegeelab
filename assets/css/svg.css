@@ -32,15 +32,6 @@ svg #svgg path.st0 {
 	box-shadow: 19px 20px 5px 17px #888;
 	-webkit-box-shadow: -5px -5px 5px #888 !important;
 }
-@media screen and (max-width: 420px) {
-	.loading svg:not(:root) {
-		height: 200px !important;
-	}
-	svg:not(:root) {
-		height: 250px !important;
-		width: 350px !important;
-	}
-}
 
 @-webkit-keyframes svg-pulse{       
 	0% {
@@ -129,3 +120,13 @@ svg #svgg path.st0 {
 	/* width: 100%; */
 }
 
+/*@media screen and (max-width: 420px) {
+	.loading svg:not(:root) {
+		height: 200px !important;
+	}
+	svg:not(:root) {
+		height: 250px !important;
+		width: 100% !important;
+	}
+}
+*/
