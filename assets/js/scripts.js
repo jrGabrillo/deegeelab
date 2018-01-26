@@ -192,7 +192,7 @@ var deegeelab = function(){
                 
                 if(x<3){
                     $('#nodes .list #display_leftNodes').append(`
-                        <div class='node animated' data-node='${x}'>
+                        <div class='node animated active' data-node='${x}'>
                             <a href="${$(y).data('link')}">
                                 <div class='description row'>
                                     <div class='col s8'>
