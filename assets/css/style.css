@@ -921,7 +921,7 @@ ul.skills {
    text-align: center;
    border-radius:  3px;
    display:inline-block;
-   z-index: 100;
+   z-index: 99999;
    position: relative;
 }
 
@@ -932,8 +932,8 @@ ul.skills {
     opacity:0;
     box-sizing:content-box;
     text-align: left;
-    position: absolute;
-    z-index: 10000;
+    position: relative;
+    z-index: 100;
     border-radius: 3px;
     -webkit-transition: width 0.1s, width 0.1s; /* For Safari 3.1 to 6.0 */
     transition: width 0.1s, width 0.1s;
@@ -1524,15 +1524,15 @@ p.label {
     display:none;
 }
 #nodes .list{
-    position:absolute;
-    width: 100%;
+    position: absolute;
     height:  100%;
+    top: 0;
     margin: 50px 0px 0px 0px;
 }
 #nodes .list .node{
     height: 100px;
     z-index: 10000;
-    position:relative;
+    position: relative;
 }
 /* fallback */
 img.icondrop {
