@@ -893,9 +893,9 @@ ul.skills {
 
 .overlap-gradient{
 	width:100%;
-	height: 100%;
-	background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));;
-	background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));;
+	height: 94%;
+	background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
+	background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
 	background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
 }
@@ -1517,7 +1517,6 @@ p.label {
      background-color: rgba(0, 0, 0, 1);
      z-index:  10000;
      margin-bottom: 10px !important;
-     /* top: 60px; */
 }
 #fp-nav{
     display:none;

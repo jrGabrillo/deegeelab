@@ -43,7 +43,6 @@
 		vertical-align: middle;
 		display: table;
 		height: 50%;
-		/* position: absolute; */
 	}
 	svg{
 		width:600px !important;
@@ -80,6 +79,28 @@
 		padding: 50px 20px 30px 20px !important;
 		width: 100%;
 
+	}
+	.node .image{
+		display: none;
+		width: 0px !important;
+	}
+	.node .col{
+		width: 100% !important;
+	}
+	.node.active .description{
+		height:90px !important;
+	}
+	.node.active .description img{
+		display:none;
+	}
+	.node.active .description h6{
+		font-size:12px;
+	}
+	.node.active .description p{
+		font-size:10px;
+	}
+	.node:hover .description, .node.active .description{
+		width:150px !important;
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -122,9 +143,6 @@
 	.loading .main-section .stage{
 		height: 75%;
 	}
-	/*.node .title{
-		display: block !important;
-	}*/
 	svg{
 		width:350px !important;
 	}
