@@ -914,6 +914,9 @@ ul.skills {
 }
 
 .node .title{
+   position: relative;
+   z-index: 0;
+   top: -101px;
    width:150px;
    background: rgba(0, 0, 0, 0.5);
    padding:5px;
@@ -921,21 +924,19 @@ ul.skills {
    text-align: center;
    border-radius:  3px;
    display:inline-block;
-   z-index: 100;
-   position: relative;
 }
 
 .node .description{
+    position: relative;
+    z-index: 10000;
     width: 250px;
     height:100px;
     overflow:hidden;
     opacity:0;
     box-sizing:content-box;
     text-align: left;
-    position: absolute;
-    z-index: 10000;
     border-radius: 3px;
-    -webkit-transition: width 0.1s, width 0.1s; /* For Safari 3.1 to 6.0 */
+    -webkit-transition: width 0.1s, width 0.1s;
     transition: width 0.1s, width 0.1s;
     transform-style: preserve-3d;
     transition: all 0.3s linear;
@@ -943,8 +944,6 @@ ul.skills {
 }
 
 .node:hover .description, .node.active .description{
-    /* width:250px; */
-    /* height:100px; */
     background: #fff;
     padding: 5px;
     opacity:1;
@@ -960,7 +959,7 @@ svg{
     -webkit-animation: svg-pulse 0.5s linear infinite;
     -moz-animation: svg-pulse 0.5s linear infinite;
     -o-animation: svg-pulse 0.5s linear infinite;
-    /* transform-origin: center center; */
+     transform-origin: center center; 
     -webkit-transform-origin: center center;
     -moz-transform-origin: center center;
     -o-transform-origin: center center;
@@ -1526,13 +1525,13 @@ p.label {
 #nodes .list{
     position:absolute;
     width: 100%;
-    height:  100%;
-    margin: 50px 0px 0px 0px;
+    /* height:  100%; */
+    margin: 20px 0px 0px 0px;
 }
 #nodes .list .node{
     height: 100px;
     z-index: 10000;
-    position:relative;
+    position: relative;
 }
 /* fallback */
 img.icondrop {
