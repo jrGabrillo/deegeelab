@@ -51,8 +51,8 @@ var deegeelab = function(){
             });
             
             deegeelab.banner();
-            _idle.ini();
-            pillar.ini();
+            // _idle.ini();
+            // pillar.ini();
 
             let mql = window.matchMedia("(orientation: portrait)");  
             mql.addListener(function(m) {
@@ -141,13 +141,13 @@ var deegeelab = function(){
                     _form = [_form[0]['value'],_form[1]['value'],_form[2]['value'],_form[3]['value'],_form[4]['value'],_form[5]['value'],_form[6]['value'],_form[7]['value']];
                     let data = system.ajax('assets/harmony/Process.php?set-leads',_form);
                     data.done(function(data){
-                        console.log(data);
                         if(data == 1){
                             Materialize.toast('Thank you. your message has been sent.',2000);
                             system.clearForm();
                             setTimeout(function(){
                                 let page = window.location.href.replace('footer','contact');                                
-                                window.location.replace(page); 
+                                window.location.replace(page);
+                                console.log(data);
                             },2000);
                         }
                         else{
@@ -258,11 +258,11 @@ var deegeelab = function(){
             });
         },
         randomizeNodes:function(){
-            timer = setTimeout(function(){
-                deegeelab.showNode();
-                deegeelab.randomizeNodes();
-            },5000);
-            return timer;
+            // timer = setTimeout(function(){
+            //     deegeelab.showNode();
+            //     deegeelab.randomizeNodes();
+            // },5000);
+            // return timer;
         },
         showNode:function(){
             let r = Math.floor(Math.random()*6);
