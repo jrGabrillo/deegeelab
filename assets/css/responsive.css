@@ -4,7 +4,7 @@
 	    font-size: 30px !important;
 	}
 	*[data-count='four']:hover{
-		background-position: -600px !important;
+		/*background-position: -0px !important;*/
 	}
 	#display_pillar{
 		height: 100%;

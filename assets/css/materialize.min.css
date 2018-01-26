@@ -4800,7 +4800,6 @@ input:not([type])+label:after, input[type=text]:not(.browser-default)+label:afte
 	margin-bottom: 1rem
 }
 .input-field.col label {
-	top: -15px;
 	left: .75rem;
 }
 .input-field.col .prefix~label, .input-field.col .prefix~.validate~label {
@@ -4829,7 +4828,8 @@ input:not([type])+label:after, input[type=text]:not(.browser-default)+label:afte
 	-webkit-transform: translateY(-14px) scale(0.8);
 	transform: translateY(-14px) scale(0.8);
 	-webkit-transform-origin: 0 0;
-	transform-origin: 0 0
+	transform-origin: 0 0;
+	top: -9px;
 }
 .input-field .prefix {
 	position: absolute;
