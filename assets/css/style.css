@@ -1508,7 +1508,7 @@ p.label {
     margin-right:10px;
 }
 .footer-section {
-     position: absolute;
+     position: relative;
      bottom: 0%;
      /* height: 50px; */
      width: 100%;
