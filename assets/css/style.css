@@ -1508,16 +1508,16 @@ p.label {
     margin-right:10px;
 }
 .footer-section {
-     /* position: fixed; */
-     bottom: 0%;
-     /*height: 50px;*/
+     position: relative;
+     /* bottom: 0%; */
+     /* height: 50px; */
      width: 100%;
-     /* padding: 5px; */
+     padding: 5px;
      color: #fff;
      background-color: rgba(0, 0, 0, 1);
      z-index:  10000;
-     margin-bottom: 0px !important;
-     /* top: 20px; */
+     margin-bottom: 10px !important;
+     /* top: 60px; */
 }
 #fp-nav{
     display:none;
@@ -1604,4 +1604,13 @@ label{
     .show-on-small {
         display: block !important
     }
+}
+
+.holder{
+    /* width: 95%; */
+    /* margin: 0 auto; */
+    /* position:relative; */
+    /* top: 20%; */
+    /* margin-top: 50px; */
+    padding: 50px 0px 50px 0px;
 }

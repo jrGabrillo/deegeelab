@@ -32,7 +32,7 @@
 		display:none;
 	}	
 	.form_holder{
-		border-top: #02bad0 5px solid; //#4a4949
+		border-top: #02bad0 5px solid;
 		max-width:900%;
 		max-width: 900px;
 		margin: auto;
@@ -43,7 +43,7 @@
 		vertical-align: middle;
 		display: table;
 		height: 50%;
-		position: absolute;
+		/* position: absolute; */
 	}
 	svg{
 		width:600px !important;
