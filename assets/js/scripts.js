@@ -258,11 +258,11 @@ var deegeelab = function(){
             });
         },
         randomizeNodes:function(){
-            // timer = setTimeout(function(){
-            //     deegeelab.showNode();
-            //     deegeelab.randomizeNodes();
-            // },5000);
-            // return timer;
+            timer = setTimeout(function(){
+                deegeelab.showNode();
+                deegeelab.randomizeNodes();
+            },5000);
+            return timer;
         },
         showNode:function(){
             let r = Math.floor(Math.random()*6);
