@@ -321,8 +321,8 @@
 		margin-bottom: 100;
 		padding: unset !important;
 	}
-	.form_holder {
-		/* border-top: unset !important; */
+	.mouse-holder{
+		display: none !important;
 	}
 	#form_query .col {
 		padding: unset !important;
