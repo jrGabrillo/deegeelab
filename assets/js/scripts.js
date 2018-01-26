@@ -51,8 +51,8 @@ var deegeelab = function(){
             });
             
             deegeelab.banner();
-            // _idle.ini();
-            // pillar.ini();
+            _idle.ini();
+            pillar.ini();
 
             let mql = window.matchMedia("(orientation: portrait)");  
             mql.addListener(function(m) {
