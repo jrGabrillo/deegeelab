@@ -239,9 +239,9 @@
 	.loading .main-section .stage{
 		height: 75%;
 	}
-	/*.node .title{
+	.node .title{
 		display: none !important;
-	}*/
+	}
 	svg{
 		width:350px !important;
 	}
