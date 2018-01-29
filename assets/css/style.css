@@ -1382,41 +1382,48 @@ body.home{
     background-size: cover;
     background-position: -400px;
     background-attachment: fixed;
+    height: 964px;
 }
 #backend {
     background: url(../images/services/bgbackend.png) no-repeat;
     background-size: cover;
     background-position: -200px;
     background-attachment: fixed;
+    height: 964px;
 }
 #frontend {
     background: url(../images/services/frontend.png) no-repeat;
     background-size: cover;
     background-position: -600px;
     background-attachment:  fixed;
+    height: 964px;
 }
 #social {
     background: url(../images/services/bgsocial.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 964px;
 }
 #webdev {
     background: url(../images/services/webdev.png) no-repeat;
     background-size: cover;
     background-position: -300px;
     background-attachment: fixed;
+    height: 964px;
 }
 #marketing {
     background: url(../images/services/bgmarketing.png) no-repeat;
     background-size: cover;
     background-position: -600px;
     background-attachment: fixed;
+    height: 964px;
 }
 #backcon {
     background: url(../images/services/bgcontact.jpg) no-repeat;
     background-position: center;
-    background-attachment: fixed;   
+    background-attachment: fixed;  
+    height: 964px; 
     background-size: cover;
 }
 .icoo {

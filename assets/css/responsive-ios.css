@@ -113,9 +113,6 @@
 		background-attachment: scroll !important;
 		background-position: -800px !important;
 	}
-	.footer-section{
-		position: absolute !important;
-	}
 }
 /*iPad*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
@@ -268,7 +265,7 @@
 
 }
 /*iPhone*/
-@media only screen and (min-width: 375px)(max-device-width: 767px) {
+@media only screen and (max-device-width: 767px) {
 	#display_pillar .panel {
 	    width: 100%;
 	    height: 25%;
@@ -414,42 +411,42 @@
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#backend {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#frontend {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#social {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#webdev {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#marketing {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#display_pillar{
 		height:100%;
