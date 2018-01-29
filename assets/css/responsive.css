@@ -215,10 +215,14 @@
 		border-left: unset !important;
 	}
 	.top-border {
-		border-top: 1px #02bad0 solid !important;
+		/*border-top: 1px #02bad0 solid !important;*/
 		margin-bottom: 100;
 		padding: unset !important;
 	}
+	.holder{
+		padding: 0 !important;
+	}
+
 	.form_holder {
 		/* border-top: unset !important; */
 	}

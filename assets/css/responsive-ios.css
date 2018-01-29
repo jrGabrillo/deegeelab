@@ -307,6 +307,9 @@
 	.menu {
 		display: inline-block;
 	}
+	.holder{
+		padding: 0 !important;
+	}
 	.service-menu{
 		height: 50px;
 	}
@@ -317,7 +320,7 @@
 		border-left: unset !important;
 	}
 	.top-border {
-		border-top: 1px #02bad0 solid !important;
+		/*border-top: 1px #02bad0 solid !important;*/.
 		margin-bottom: 100;
 		padding: unset !important;
 	}
@@ -352,7 +355,7 @@
 		min-width: 40px !important;
 	}
 	.footer-section ul li img, .social-icons img {
-		width: 25px !important;
+		width: 20px !important;
 	}
 	.footer-section ul li i {
 		font-size: 16px !important;
