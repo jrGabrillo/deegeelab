@@ -307,6 +307,9 @@
 	.menu {
 		display: inline-block;
 	}
+	.contact-section .layer{
+		padding: 0px 0px 3% 0px !important; 
+	}
 	.holder{
 		padding: 0 !important;
 	}
