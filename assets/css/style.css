@@ -893,7 +893,7 @@ ul.skills {
 
 .overlap-gradient{
 	width:100%;
-	/* height: 94%; */
+	 height: 95%; 
 	background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
 	background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
 	background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
@@ -1487,7 +1487,7 @@ p.label {
     background: transparent;
 }
 .contact-section .layer{
-    /* padding: 50px 0px 20% 0px; */
+     padding: 10px 0px 10% 0px; 
 }
 
 .footer-section ul li{
@@ -1606,10 +1606,5 @@ label{
 }
 
 .holder{
-    /* width: 95%; */
-    /* margin: 0 auto; */
-    /* position:relative; */
-    /* top: 20%; */
-    /* margin-top: 50px; */
-    padding: 50px 0px 250px 0px;
+    padding: 50px 0px 150px 0px;
 }

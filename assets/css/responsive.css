@@ -107,9 +107,6 @@
 	}
 	svg:not(:root){
 		height: 345px !important;
-	}
-	.overlap-gradient{
-		background: none !important;
 	}	
 	.text a{
 	  text-shadow:none;

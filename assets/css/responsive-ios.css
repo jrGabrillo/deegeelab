@@ -17,6 +17,9 @@
 	    left: auto !important;
 	    right: auto !important;
 	}
+	.contact-section .layer{
+		padding: 0px 0px 3% 0px !important; 
+	}
 	/*Info resize*/
 	.form_holder {
 		margin: 10% auto auto !important;
@@ -76,6 +79,9 @@
 	/*Info resize*/
 	.pillar-title{
 		height: 50px;
+	}
+	.contact-section .layer {
+	    padding: 10px 0px 8% 0px !important;
 	}
 	.form_holder {
 		max-width: 90% !important;
@@ -198,9 +204,6 @@
 	}
 	svg:not(:root){
 		height: 250px !important;
-	}
-	.overlap-gradient{
-		background: none !important;
 	}	
 	.text a{
 	  text-shadow:none;
@@ -239,9 +242,6 @@
 	.loading .main-section .stage{
 		height: 75%;
 	}
-	/*.node .title{
-		display: none !important;
-	}*/
 	svg{
 		width:350px !important;
 	}
