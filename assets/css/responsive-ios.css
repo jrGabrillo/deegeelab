@@ -17,9 +17,9 @@
 	    left: auto !important;
 	    right: auto !important;
 	}
-	.contact-section .layer{
-		padding: 0px 0px 3% 0px !important; 
-	}
+	/*.contact-section .layer{
+		padding: 1px 0px 23% 0px !important; 
+	}*/
 	/*Info resize*/
 	.form_holder {
 		margin: 10% auto auto !important;
@@ -73,6 +73,9 @@
 	.services-content{
 		width: 100% !important;
 	}
+	.overlap-gradient {
+	    height: 95% !important;
+	}
 }
 /* iPad Pro landscape*/
 @media only screen and (min-width: 1366px) and (orientation: landscape) {
@@ -80,9 +83,9 @@
 	.pillar-title{
 		height: 50px;
 	}
-	.contact-section .layer {
-	    padding: 10px 0px 8% 0px !important;
-	}
+	/*.contact-section .layer {
+	    padding: 20px !important;
+	}*/
 	.form_holder {
 		max-width: 90% !important;
 	}
@@ -225,6 +228,7 @@
 	}
 	.footer-section {
 		position: relative;
+		bottom: 0% !important;
 	}
 	.text{
 		margin: auto;
@@ -291,6 +295,13 @@
 		width: 100% !important;
 		height: 419px !important;
 	}
+	.fp-scroller {
+	    height: 100%;
+	}
+	.overlap-gradient{
+		height: 95% !important;
+	}
+
 }
 /*iPhone*/
 @media only screen and (max-device-width: 767px) {
@@ -307,9 +318,9 @@
 	.menu {
 		display: inline-block;
 	}
-	.contact-section .layer{
+	/*.contact-section .layer{
 		padding: 0px 0px 3% 0px !important; 
-	}
+	}*/
 	.holder{
 		padding: 0 !important;
 	}
@@ -357,14 +368,14 @@
 		margin-left: 0px !important;
 		min-width: 40px !important;
 	}
-	.footer-section ul li img, .social-icons img {
-		width: 20px !important;
+	.social-icons img{
+		width: 16px;
 	}
 	.footer-section ul li i {
 		font-size: 16px !important;
 	}
 	.footer-section ul li span, .footer-section ul li a {
-		font-size: 10px !important;
+		font-size: 8px !important;
 	}
 	.form_holder .row {
 		margin-bottom: 0px !important;

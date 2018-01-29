@@ -47,6 +47,12 @@
 	svg{
 		width:600px !important;
 	}
+	.fp-scroller {
+	    height: 100%;
+	}
+	.overlap-gradient{
+		height: 94% !important;
+	}
 }
 
 /*tablet*/
@@ -116,6 +122,9 @@
 	#menu .social-icons{
 		display:none;
 	}
+	/*.contact-section .layer {
+	    padding: 49px 0px 31% 0px !important;
+	}*/
 	.holder{
 		width: 95%;
 		margin: 0 auto;
@@ -252,14 +261,14 @@
 		margin-left: 0px !important;
 		min-width: 40px !important;
 	}
-	.footer-section ul li img, .social-icons img {
-		width: 25px !important;
-	}
 	.footer-section ul li i {
 		font-size: 16px !important;
 	}
 	.footer-section ul li span, .footer-section ul li a {
-		font-size: 10px !important;
+		font-size: 8px !important;
+	}
+	.social-icons img{
+		width: 16px;
 	}
 	.form_holder .row {
 		margin-bottom: 0px !important;
