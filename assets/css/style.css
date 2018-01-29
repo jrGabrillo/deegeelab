@@ -1512,7 +1512,7 @@ p.label {
 }
 .footer-section {
      position: relative;
-     bottom: 1%;
+     bottom: 0%;
      /* height: 50px; */
      width: 100%;
      /*padding: 5px;*/
