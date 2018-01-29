@@ -1605,7 +1605,7 @@ label{
 
 @media only screen and (max-width: 600px) {
     .show-on-small {
-        display: block !important
+        display: block !important;
     }
 }
 
