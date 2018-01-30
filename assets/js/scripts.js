@@ -65,14 +65,6 @@ var deegeelab = function(){
                 }
             });          
 
-            $("circle").mouseover(function(){
-                let node = $(this)[0], _node = $(node).data('node');
-                $(`.node[data-node='${_node}']`).addClass('active');
-            }).mouseleave(function(){
-                let node = $(this)[0], _node = $(node).data('node');
-                $(`.node[data-node='${_node}']`).removeClass('active');        
-            });
-
             let e = {target:{nodeName:"square"}};
             $('.collapsible').collapsible({
                 accordion: false,
@@ -184,7 +176,6 @@ var deegeelab = function(){
             return value;
         },
         banner:function(posX,posY){
-            // $('#nodes .list').html('');
             let nodeWidth = 250, mobileWidth = 0;;
             let nodes = $(".nodes").children('circle.circle-node');
             $.each(nodes,function(x,y){
@@ -192,7 +183,7 @@ var deegeelab = function(){
                 
                 if(x<3){
                     $('#nodes .list #display_leftNodes').append(`
-                        <div class='node animated active' data-node='${x}'>
+                        <div class='node animated' data-node='${x}'>
                             <a href="${$(y).data('link')}">
                                 <div class='description row'>
                                     <div class='col s8'>
@@ -224,37 +215,30 @@ var deegeelab = function(){
                 }
             });
 
+            let r = Math.floor(Math.random()*6);
+            $(`#nodes .node[data-node='${r}']`).addClass('active');
+
             $("circle").mouseover(function(){
                 let node = $(this)[0], _node = $(node).data('node');
                 $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
                 $(`.svg-pulse[data-node='${_node}']`)[0].classList.add('active');
+                $(`.node[data-node='${_node}']`).addClass('active');
             }).mouseleave(function(){
                 let node = $(this)[0], _node = $(node).data('node');
                 $(`.svg-pulse[data-node='${_node}']`)[0].classList.remove('active');
+                $(`.node[data-node='${_node}']`).removeClass('active');  
             });
 
             $(".node").mouseover(function(){
+                $(`.node`).removeClass('active');  
                 let node = $(this)[0], _node = $(node).data('node');
                 $(`.svg-pulse`).attr({'class':'fill-blue svg-pulse'});
                 $(`.svg-pulse[data-node='${_node}']`).attr({'class':'fill-blue svg-pulse active'});
+                $(`.node[data-node='${_node}']`).addClass('active');
             }).mouseleave(function(){
                 let node = $(this)[0], _node = $(node).data('node');
                 $(`.svg-pulse[data-node='${_node}']`).attr({'class':'fill-blue svg-pulse'});
-            });
-        },
-        repositionNodes:function(posX,posY){
-            let nodeWidth = 250, mobileWidth = 0;;
-            let nodes = $(".nodes").children('circle.circle-node');
-            $.each(nodes,function(x,y){
-                var pos = $(y).position(), r = $(y).attr('r'), d = (r*2), _x = pos.top-r+20, _y = (pos.left<(docWidth/2))?pos.left:pos.left+(d);
-                if(pos.left<(docWidth/2)){
-                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), descPos = (docWidth>601)?-100:(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10, _posLeft = (docWidth>601)?(_y-currentWidth):(deegeelab.getPosLeft(0,(_y+nodeWidth)))+10;
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:${descPos}px;color:red;`});
-                }
-                else{
-                    let this_node = $(`#nodes .node[data-node='${x}']`)[0], currentWidth = $(this_node).width(), _posLeft = (docWidth>601)?(_y):(deegeelab.getPosLeft((docWidth-50),(_y+nodeWidth)))-100;
-                    $(`#nodes .node[data-node='${x}'] .description`).attr({'style':`left:-${30}px;`});
-                }
+                $(`.node`).removeClass('active');  
             });
         },
         randomizeNodes:function(){
@@ -314,7 +298,7 @@ var _idle = function(){
         },
         active:function(e){
             if(e.target.nodeName != "circle"){
-                $(`.node`).removeClass('active');
+                // $(`.node`).removeClass('active');
             }
             window.clearTimeout(timer);
             window.clearTimeout(idleTimerID);
@@ -371,7 +355,6 @@ $(window).on('load',function(){
     else{
         deegeelab.activate();
     }
-
 
     $(window).mousemove(function(e) {      
         let xpos=e.clientX, ypos=e.clientY;       

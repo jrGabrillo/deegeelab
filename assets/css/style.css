@@ -946,7 +946,8 @@ ul.skills {
     transform: rotateX(180deg);
 }
 
-.node:hover .description, .node.active .description{
+/*.node:hover .description, .node.active .description{*/
+.node.active .description{
     background: #fff;
     padding: 5px;
     opacity:1;
@@ -992,7 +993,8 @@ svg{
     /* -webkit-transform: scaleX(2) !important; */
 }
 
-.node:hover .title, .node.active .title{
+/*.node:hover .title, .node.active .title{*/
+.node.active .title{
     opacity:0;
 }
 
