@@ -1336,7 +1336,7 @@ a.menu:hover{
     width: 100%;
 }
 .menu.up-down{
-    animation: up-down 1s infinite;
+    -webkit-animation: up-down 1s infinite;
     background: rgba(0, 0, 0, 0.3);
 }
 body.home{
