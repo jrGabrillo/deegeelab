@@ -18,7 +18,7 @@ ul {
     padding: 0;
 }
 p {
-    font-size: 12px;
+    font-size: 15px;
     /* height: 900px; */
 }
 span {
@@ -1050,13 +1050,13 @@ div[data-anchor="home"] .fp-tableCell{
     /* color: #02bad0; */
     line-height: 20px;
 }
-
-
+td {
+	font-size: 15px;
+}
 .bulleted{
     font-size: 10px !important;
-    margin-right:20px;
     margin-right: 20px;
-    margin-top: 4px;
+    vertical-align: middle;
 }
 
 .paragraph{
