@@ -1055,7 +1055,7 @@ td {
 }
 .bulleted{
     font-size: 10px !important;
-    margin-right: 20px;
+    margin: 0px 20px 4px 0px;
     vertical-align: middle;
 }
 
@@ -1385,48 +1385,48 @@ body.home{
     background-size: cover;
     background-position: -400px;
     background-attachment: fixed;
-    height: 964px;
+    height: 1024px;
 }
 #backend {
     background: url(../images/services/bgbackend.png) no-repeat;
     background-size: cover;
     background-position: -200px;
     background-attachment: fixed;
-    height: 964px;
+    height: 1024px;
 }
 #frontend {
     background: url(../images/services/frontend.png) no-repeat;
     background-size: cover;
     background-position: -600px;
     background-attachment:  fixed;
-    height: 964px;
+    height: 1050px;
 }
 #social {
     background: url(../images/services/bgsocial.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 964px;
+    height: 1024px;
 }
 #webdev {
     background: url(../images/services/webdev.png) no-repeat;
     background-size: cover;
     background-position: -300px;
     background-attachment: fixed;
-    height: 964px;
+    height: 1024px;
 }
 #marketing {
     background: url(../images/services/bgmarketing.png) no-repeat;
     background-size: cover;
     background-position: -600px;
     background-attachment: fixed;
-    height: 964px;
+    height: 1024px;
 }
 #backcon {
     background: url(../images/services/bgcontact.jpg) no-repeat;
     background-position: center;
     background-attachment: fixed;  
-    height: 964px; 
+    height: 1024px; 
     background-size: cover;
 }
 .icoo {
