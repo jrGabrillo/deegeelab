@@ -47,6 +47,9 @@
 	svg{
 		width:600px !important;
 	}
+	.fp-scroller {
+	    height: 100%;
+	}
 }
 
 /*tablet*/
@@ -107,9 +110,6 @@
 	}
 	svg:not(:root){
 		height: 345px !important;
-	}
-	.overlap-gradient{
-		background: none !important;
 	}	
 	.text a{
 	  text-shadow:none;
@@ -119,6 +119,9 @@
 	#menu .social-icons{
 		display:none;
 	}
+	/*.contact-section .layer {
+	    padding: 49px 0px 31% 0px !important;
+	}*/
 	.holder{
 		width: 95%;
 		margin: 0 auto;
@@ -215,10 +218,14 @@
 		border-left: unset !important;
 	}
 	.top-border {
-		border-top: 1px #02bad0 solid !important;
+		/*border-top: 1px #02bad0 solid !important;*/
 		margin-bottom: 100;
 		padding: unset !important;
 	}
+	.holder{
+		padding: 0 !important;
+	}
+
 	.form_holder {
 		/* border-top: unset !important; */
 	}
@@ -251,14 +258,14 @@
 		margin-left: 0px !important;
 		min-width: 40px !important;
 	}
-	.footer-section ul li img, .social-icons img {
-		width: 25px !important;
-	}
 	.footer-section ul li i {
 		font-size: 16px !important;
 	}
 	.footer-section ul li span, .footer-section ul li a {
-		font-size: 10px !important;
+		font-size: 8px !important;
+	}
+	.social-icons img{
+		width: 16px;
 	}
 	.form_holder .row {
 		margin-bottom: 0px !important;
@@ -337,42 +344,42 @@
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#backend {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#frontend {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#social {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#webdev {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#marketing {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#display_pillar{
 		height:100%;

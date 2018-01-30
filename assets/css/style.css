@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5 p {
     margin-top: 20px;
 }
 h4, h5, h6 {
-    font-weight: 300
+    font-weight: 500
 }
 .move {
     background: url("../images/backback.jpg");
@@ -85,6 +85,9 @@ h4, h5, h6 {
     width: 100%;
     height: 100%;
 }
+/*.fp-scroller{
+    height: 100%;
+}*/
 .wrap {
     margin-left: auto;
     margin-right: auto;
@@ -893,7 +896,7 @@ ul.skills {
 
 .overlap-gradient{
 	width:100%;
-	/* height: 94%; */
+    height: calc(100% - 60px);
 	background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
 	background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
 	background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5),rgba(255,255,255,0));
@@ -1049,7 +1052,12 @@ div[data-anchor="home"] .fp-tableCell{
 
 .bulleted{
     font-size: 10px !important;
+<<<<<<< HEAD
     margin-right:20px;
+=======
+    margin-right: 20px;
+    margin-top: 4px;
+>>>>>>> fa75ad58bd1252ea27a7e9a413a2fa7300f558e2
 }
 
 .paragraph{
@@ -1378,41 +1386,48 @@ body.home{
     background-size: cover;
     background-position: -400px;
     background-attachment: fixed;
+    height: 964px;
 }
 #backend {
     background: url(../images/services/bgbackend.png) no-repeat;
     background-size: cover;
     background-position: -200px;
     background-attachment: fixed;
+    height: 964px;
 }
 #frontend {
     background: url(../images/services/frontend.png) no-repeat;
     background-size: cover;
     background-position: -600px;
     background-attachment:  fixed;
+    height: 964px;
 }
 #social {
     background: url(../images/services/bgsocial.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 964px;
 }
 #webdev {
     background: url(../images/services/webdev.png) no-repeat;
     background-size: cover;
     background-position: -300px;
     background-attachment: fixed;
+    height: 964px;
 }
 #marketing {
     background: url(../images/services/bgmarketing.png) no-repeat;
     background-size: cover;
     background-position: -600px;
     background-attachment: fixed;
+    height: 964px;
 }
 #backcon {
     background: url(../images/services/bgcontact.jpg) no-repeat;
     background-position: center;
-    background-attachment: fixed;   
+    background-attachment: fixed;  
+    height: 964px; 
     background-size: cover;
 }
 .icoo {
@@ -1486,9 +1501,9 @@ p.label {
     display: none;
     background: transparent;
 }
-.contact-section .layer{
-    /* padding: 50px 0px 20% 0px; */
-}
+/*.contact-section .layer{
+     padding: 10px 0px 10% 0px; 
+}*/
 
 .footer-section ul li{
     min-width: 40px;
@@ -1508,13 +1523,13 @@ p.label {
     margin-right:10px;
 }
 .footer-section {
-     position: absolute;
+     position: relative;
      bottom: 0%;
      /* height: 50px; */
      width: 100%;
-     padding: 5px;
+     /*padding: 5px;*/
      color: #fff;
-     background-color: rgba(0, 0, 0, 1);
+     background-color: rgba(0, 0, 0, 0.8);
      z-index:  10000;
      margin-bottom: 0px;
 }
@@ -1545,7 +1560,7 @@ span.head {
     display: none
 }
 .services-content {
-    min-height: 768px !important;
+    min-height: 887px !important;
 }
 .paragraph tr td:nth-child(1) {
     vertical-align: top;
@@ -1601,15 +1616,10 @@ label{
 
 @media only screen and (max-width: 600px) {
     .show-on-small {
-        display: block !important
+        display: block !important;
     }
 }
 
 .holder{
-    /* width: 95%; */
-    /* margin: 0 auto; */
-    /* position:relative; */
-    /* top: 20%; */
-    /* margin-top: 50px; */
-    padding: 50px 0px 200px 0px;
+    padding: 20px 0 0 0;
 }

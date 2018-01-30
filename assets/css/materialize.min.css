@@ -2463,16 +2463,12 @@ nav ul a span.badge {
 }
 @media only screen and (min-width: 993px) {
 	.container {
-		width: 70%
+		width: 70%;
 	}
 }
 .container .row {
 	margin-left: -.75rem;
 	margin-right: -.75rem
-}
-.section {
-	/* padding-top: 1rem; */
-	/* padding-bottom: 1rem; */
 }
 .section.no-pad {
 	padding: 0

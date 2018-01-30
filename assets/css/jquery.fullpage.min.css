@@ -83,7 +83,7 @@ html.fp-enabled,
     position: relative;
 }
 .fp-scroller{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .iScrollIndicator{
     border: 0 !important;

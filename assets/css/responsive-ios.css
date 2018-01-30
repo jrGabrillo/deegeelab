@@ -90,19 +90,6 @@
 	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
 		font-size: 24px !important;
 	}
-	/*for pillar images position*/
-	*[data-count='one']:hover{
-		/* background-position: -800px !important; */
-	}
-	*[data-count='two']:hover {
-		/*background-position: -650px !important;*/
-	}
-	*[data-count='three']:hover {
-		/*background-position: -250px !important; */
-	}
-	*[data-count='four']:hover {
-	 	/* background-position: -530px !important; */
-	}
 	#lead {
 		background-attachment: scroll !important;
 		background-position: -350px !important;
@@ -135,10 +122,6 @@
   	.panel{
 	    width: 50% !important;
 	    height: 50% !important;
-	    /* float: left !important; */
-	}
-	.pillar-title{
-		/* height: 50px; */
 	}
 	#display_pillar{
 		height:100% !important;
@@ -146,12 +129,6 @@
 	#display_pillar .panel{
 		width: 50% !important;
 		height: 50% !important;
-	}
-	*[data-count='two']:hover {
-		/* background-position: -0px !important; */
-	}
-	*[data-count='three']:hover {
-		/* background-position: -0px !important; */
 	}
 	#lead {
 		background-attachment: scroll !important;
@@ -198,9 +175,6 @@
 	}
 	svg:not(:root){
 		height: 250px !important;
-	}
-	.overlap-gradient{
-		background: none !important;
 	}	
 	.text a{
 	  text-shadow:none;
@@ -215,13 +189,13 @@
 		margin: 0 auto;
 		position:relative;
 		top: 20%;
-		/*margin-top: 50px;*/
 	}
 	.form_holder{
 		position: relative;
 	}
 	.footer-section {
 		position: relative;
+		bottom: 0% !important;
 	}
 	.text{
 		margin: auto;
@@ -233,15 +207,9 @@
 		height: 40% !important;
 		position: absolute;
 	}
-	#display_pillar{
-		/* height: 50%; */
-	}
 	.loading .main-section .stage{
 		height: 75%;
 	}
-	/*.node .title{
-		display: none !important;
-	}*/
 	svg{
 		width:350px !important;
 	}
@@ -291,6 +259,10 @@
 		width: 100% !important;
 		height: 419px !important;
 	}
+	.fp-scroller {
+	    height: 100%;
+	}
+
 }
 /*iPhone*/
 @media only screen and (max-device-width: 767px) {
@@ -307,6 +279,9 @@
 	.menu {
 		display: inline-block;
 	}
+	.holder{
+		padding: 0 !important;
+	}
 	.service-menu{
 		height: 50px;
 	}
@@ -317,7 +292,6 @@
 		border-left: unset !important;
 	}
 	.top-border {
-		border-top: 1px #02bad0 solid !important;
 		margin-bottom: 100;
 		padding: unset !important;
 	}
@@ -351,14 +325,14 @@
 		margin-left: 0px !important;
 		min-width: 40px !important;
 	}
-	.footer-section ul li img, .social-icons img {
-		width: 25px !important;
+	.social-icons img{
+		width: 16px;
 	}
 	.footer-section ul li i {
 		font-size: 16px !important;
 	}
 	.footer-section ul li span, .footer-section ul li a {
-		font-size: 10px !important;
+		font-size: 8px !important;
 	}
 	.form_holder .row {
 		margin-bottom: 0px !important;
@@ -437,42 +411,42 @@
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#backend {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#frontend {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#social {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#webdev {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#marketing {
 		background-size: cover !important;
 		background-position: center !important;
 		background-attachment: scroll !important;
 		width: 100%;
-		height: 248px;
+		height: 248px !important;
 	}
 	#display_pillar{
 		height:100%;
