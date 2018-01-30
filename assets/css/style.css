@@ -1048,7 +1048,7 @@ div[data-anchor="home"] .fp-tableCell{
 
 
 .bulleted{
-    font-size: 10px;
+    font-size: 10px !important;
     margin-right:20px;
 }
 
