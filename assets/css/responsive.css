@@ -1,4 +1,4 @@
-/* Desktop */
+405/* Desktop */
 @media screen and (min-width: 1025px){
 	h4 {
 	    font-size: 30px !important;
@@ -402,4 +402,7 @@
 	svg{
 		width:600px !important;
 	}
+	/*.footer{
+		padding: 0 .6rem !important;
+	}*/
 }
