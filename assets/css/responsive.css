@@ -103,7 +103,7 @@
 		font-size:10px;
 	}
 	.node:hover .description, .node.active .description{
-		width:150px !important;
+		width:125px !important;
 	}
 	td, th {
 		padding: 5px 5px !important;
@@ -200,7 +200,7 @@
 	    height: 25%;
 	}
 	.pillar-title{
-		 height: 50px; 
+		 font-size: 20px; 
 	}
 	.service-menu .left a{
 		margin-left:0px;
@@ -404,5 +404,12 @@
 	}
 	p.mouse-holder{
 		display: none;
+	}
+	.footer-section div{
+		padding-left: 7px !important;
+	}
+	#display_leftNodes{
+		padding: 0px;
+    	width: 42%;
 	}
 }
