@@ -405,4 +405,7 @@
 	.footer{
 		padding: 0 .6rem !important;
 	}
+	p.mouse-holder{
+		display: none;
+	}
 }

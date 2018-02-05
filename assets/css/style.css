@@ -1049,6 +1049,7 @@ div[data-anchor="home"] .fp-tableCell{
 .menu i{
     /* color: #02bad0; */
     line-height: 20px;
+    vertical-align: -3px;
 }
 td {
 	font-size: 15px;

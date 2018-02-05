@@ -391,7 +391,7 @@
 		bottom: 0;
 		left: 0;
 		vertical-align: middle;
-		height: 80% !important;
+		/*height: 80% !important;*/
 		position: absolute;
 	}
 	.loading .main-section .stage{
