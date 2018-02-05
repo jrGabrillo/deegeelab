@@ -383,9 +383,6 @@
 	}
 	#display_pillar{
 		height:100%;
-	}
-	.text-middle {
-	    height: 50% !important;
 	}	
 	.pillar-title{
 		height: unset;
