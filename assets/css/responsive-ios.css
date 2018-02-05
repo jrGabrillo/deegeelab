@@ -265,7 +265,7 @@
 
 }
 /*iPhone*/
-@media only screen and (max-device-width: 767px) {
+@media screen and (max-width: 767px) {
 	#display_pillar .panel {
 	    width: 100%;
 	    height: 25%;
@@ -379,7 +379,7 @@
 		font-size:10px;
 	}
 	.node:hover .description, .node.active .description{
-		width:150px !important;
+		width:250px !important;
 	}
 	.form_holder{
 		position: relative;
